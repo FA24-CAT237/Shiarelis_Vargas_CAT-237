@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Tilemap",
 			"name": "Tilemap",
 			"author": "Scirra",
@@ -17,7 +24,11 @@
 	"uniqueId": "p9dsjr0f8j1",
 	"objectTypes": {
 		"items": [
-			"Tilemap"
+			"Tilemap",
+			"Cloud1",
+			"Cloud2",
+			"Cloud3",
+			"Star"
 		],
 		"subfolders": []
 	},
