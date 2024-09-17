@@ -1,0 +1,73 @@
+{
+	"name": "Enemy1",
+	"plugin-id": "Sprite",
+	"sid": 813132079713784,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 178453592334664
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 992630776437322
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 12,
+						"height": 12,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6056858,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0,
+								0.75,
+								0,
+								0.9166666666666666,
+								0.08333333333333333,
+								1,
+								0.25,
+								1,
+								0.6666666666666666,
+								0.9166666666666666,
+								1,
+								0.08333333333333333,
+								1,
+								0,
+								0.6666666666666666,
+								0,
+								0.25,
+								0.08333333333333333,
+								0.08333333333333333
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 232866832616407,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

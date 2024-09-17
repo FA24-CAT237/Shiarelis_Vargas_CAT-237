@@ -1,0 +1,61 @@
+{
+	"name": "Astronaut",
+	"plugin-id": "Sprite",
+	"sid": 994062619637665,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 555797626252148
+		},
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 277562477543856
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 34,
+						"height": 59,
+						"originX": 10.823529411764707,
+						"originY": 0.4745762711864407,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 21724,
+						"collisionPoly": {
+							"points": [
+								0.38235294117647056,
+								0.01694915254237288,
+								1,
+								0.01694915254237288,
+								1,
+								0.9830508474576272,
+								0.35294117647058826,
+								0.9830508474576272
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 892221585478457,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

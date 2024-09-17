@@ -1,5 +1,191 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 225693244775347,
+					"parameters": {
+						"key": 39
+					}
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "Astronaut",
+					"sid": 785832930180501
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Astronaut",
+					"sid": 214123488174635,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 287691395841322
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 883823700389413,
+					"parameters": {
+						"key": 37
+					}
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "Astronaut",
+					"sid": 816210809340728,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Astronaut",
+					"sid": 780413301429804,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 223218974873606
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Astronaut",
+					"sid": 811303515988922,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "Astronaut",
+					"sid": 278729156671282,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [],
+			"sid": 852406900604524
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-stopped",
+					"objectClass": "Astronaut",
+					"sid": 741053773790153,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "Astronaut",
+					"sid": 541552161424033,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [],
+			"sid": 147639358951194
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 334228477468475,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [],
+			"sid": 600011496723533
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-landed",
+					"objectClass": "Astronaut",
+					"sid": 692082492301413,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [],
+			"sid": 209842637443330
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Astronaut",
+					"sid": 427694139731813,
+					"parameters": {
+						"object": "Enemy1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 387669524989907
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Astronaut",
+					"sid": 772979791356389,
+					"parameters": {
+						"object": "Enemy2"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 214371746309163
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Astronaut",
+					"sid": 113173500312299,
+					"parameters": {
+						"object": "Enemy3"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 179484956102819
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Astronaut",
+					"sid": 180094551748564,
+					"parameters": {
+						"object": "Enemy4"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 275234088550833
+		}
+	],
 	"sid": 510917748129844
 }

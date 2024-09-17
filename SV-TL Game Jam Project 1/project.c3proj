@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -15,8 +22,36 @@
 		},
 		{
 			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Tilemap",
 			"name": "Tilemap",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Platform",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -29,7 +64,19 @@
 			"Cloud2",
 			"Cloud3",
 			"Star",
-			"Sprite"
+			"Sprite",
+			"Astronaut",
+			"Enemy1",
+			"Enemy2",
+			"Enemy3",
+			"Enemy4",
+			"Solids",
+			"Solids2",
+			"Solids3",
+			"Solids4",
+			"Keyboard",
+			"Heart",
+			"Ship"
 		],
 		"subfolders": []
 	},
