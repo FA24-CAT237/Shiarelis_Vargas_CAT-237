@@ -76,7 +76,8 @@
 			"Solids4",
 			"Keyboard",
 			"Heart",
-			"Ship"
+			"Ship",
+			"Enemy5"
 		],
 		"subfolders": []
 	},

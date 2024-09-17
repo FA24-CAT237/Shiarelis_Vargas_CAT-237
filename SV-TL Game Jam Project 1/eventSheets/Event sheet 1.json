@@ -185,6 +185,21 @@
 			],
 			"actions": [],
 			"sid": 275234088550833
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Astronaut",
+					"sid": 830084073755708,
+					"parameters": {
+						"object": "Heart"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 464441213364734
 		}
 	],
 	"sid": 510917748129844
