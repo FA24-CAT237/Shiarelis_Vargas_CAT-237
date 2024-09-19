@@ -207,10 +207,10 @@
 				{
 					"id": "subtract-from-instvar",
 					"objectClass": "Astronaut",
-					"sid": 210244570849014,
+					"sid": 532352676315089,
 					"parameters": {
 						"instance-variable": "Health",
-						"value": "1"
+						"value": "2"
 					}
 				}
 			],
