@@ -97,7 +97,9 @@
 			"Star3",
 			"Star4",
 			"Star5",
-			"Star6"
+			"Star6",
+			"Chest",
+			"Bullet"
 		],
 		"subfolders": []
 	},

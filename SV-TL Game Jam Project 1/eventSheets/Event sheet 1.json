@@ -692,6 +692,160 @@
 				}
 			],
 			"sid": 981308229769723
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Astronaut",
+					"sid": 548770843476380,
+					"parameters": {
+						"object": "Chest"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Chest",
+					"sid": 273696276119004
+				}
+			],
+			"sid": 426200804770255
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 216993861895541,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Astronaut",
+					"sid": 557602387606306,
+					"parameters": {
+						"object": "Bullet",
+						"layer": "\"Game\"",
+						"image-point": "1",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 495791334559005
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Bullet",
+					"sid": 987500223199074,
+					"parameters": {
+						"object": "Enemy1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Enemy1",
+					"sid": 517118895665314
+				}
+			],
+			"sid": 185905388811384
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Bullet",
+					"sid": 444059915842735,
+					"parameters": {
+						"object": "Enemy2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Enemy2",
+					"sid": 846885559677006
+				}
+			],
+			"sid": 299645615789261
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Bullet",
+					"sid": 631423605038022,
+					"parameters": {
+						"object": "Enemy3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Enemy3",
+					"sid": 316080541926186
+				}
+			],
+			"sid": 934583091211693
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Bullet",
+					"sid": 275451255305905,
+					"parameters": {
+						"object": "Enemy4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Enemy4",
+					"sid": 824101791498687
+				}
+			],
+			"sid": 574994731841154
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Bullet",
+					"sid": 401669239974055,
+					"parameters": {
+						"object": "Enemy5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Enemy5",
+					"sid": 655573215707381
+				}
+			],
+			"sid": 986762105703360
 		}
 	],
 	"sid": 510917748129844
