@@ -10,6 +10,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 754367212680540
+		},
+		{
+			"name": "CanTeleport",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 746428265626904
 		}
 	],
 	"behaviorTypes": [

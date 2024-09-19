@@ -1,21 +1,10 @@
 {
-	"name": "Cloud3",
+	"name": "Star2",
 	"plugin-id": "Sprite",
-	"sid": 626480894431222,
+	"sid": 847017630216582,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Tween",
-			"name": "Tween",
-			"sid": 745020889003462
-		},
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 242298644615975
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -29,13 +18,13 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3814284,
+						"imageSpriteId": 2907750,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 749903681205325,
+				"sid": 931403593901330,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -50,8 +50,22 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "scrollto",
 			"name": "Scroll To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -78,7 +92,12 @@
 			"Heart",
 			"Ship",
 			"Enemy5",
-			"TiledBackground"
+			"TiledBackground",
+			"Star2",
+			"Star3",
+			"Star4",
+			"Star5",
+			"Star6"
 		],
 		"subfolders": []
 	},

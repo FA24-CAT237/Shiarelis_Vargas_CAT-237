@@ -272,34 +272,9 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "Astronaut",
-					"sid": 830084073755708,
+					"sid": 602415574326510,
 					"parameters": {
-						"object": "Heart"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "subtract-from-instvar",
-					"objectClass": "Astronaut",
-					"sid": 619733559838837,
-					"parameters": {
-						"instance-variable": "Health",
-						"value": "1"
-					}
-				}
-			],
-			"sid": 464441213364734
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Astronaut",
-					"sid": 347063336994583,
-					"parameters": {
-						"object": "Ship"
+						"object": "Enemy5"
 					}
 				}
 			],
@@ -315,6 +290,297 @@
 				}
 			],
 			"sid": 604568339700481
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Astronaut",
+					"sid": 839631408334357,
+					"parameters": {
+						"object": "Heart"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Astronaut",
+					"sid": 272238838417339,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 872652314068316
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Astronaut",
+					"sid": 756216231334091,
+					"parameters": {
+						"object": "Ship"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Ship",
+					"sid": 207190087153828,
+					"parameters": {
+						"animation": "\"Take-Off\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 924549281593161
+				}
+			],
+			"sid": 158957051812593
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Astronaut",
+					"sid": 809790104926901,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 206668079939377
+				}
+			],
+			"sid": 668677702816841
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Astronaut",
+					"sid": 527258842087038,
+					"parameters": {
+						"object": "Star"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Astronaut",
+					"sid": 460565479744567,
+					"parameters": {
+						"instance-variable": "CanTeleport"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Astronaut",
+					"sid": 672595192951738,
+					"parameters": {
+						"instance-variable": "CanTeleport",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "Astronaut",
+					"sid": 621801247970694,
+					"parameters": {
+						"object": "Star2",
+						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 108325468981532,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Astronaut",
+					"sid": 308272581587531,
+					"parameters": {
+						"instance-variable": "CanTeleport",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 752659962644607
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Astronaut",
+					"sid": 986333108293761,
+					"parameters": {
+						"object": "Star3"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Astronaut",
+					"sid": 460693271834090,
+					"parameters": {
+						"instance-variable": "CanTeleport"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Astronaut",
+					"sid": 954599809598968,
+					"parameters": {
+						"instance-variable": "CanTeleport",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "Astronaut",
+					"sid": 398185178148582,
+					"parameters": {
+						"object": "Star4",
+						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 127372791489492,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Astronaut",
+					"sid": 380708094050103,
+					"parameters": {
+						"instance-variable": "CanTeleport",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 903151750701670
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Astronaut",
+					"sid": 385593827078155,
+					"parameters": {
+						"object": "Star5"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Astronaut",
+					"sid": 243193344772724,
+					"parameters": {
+						"instance-variable": "CanTeleport"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Astronaut",
+					"sid": 252736732049402,
+					"parameters": {
+						"instance-variable": "CanTeleport",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "Astronaut",
+					"sid": 600211234401556,
+					"parameters": {
+						"object": "Star6",
+						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 100308395587796,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Astronaut",
+					"sid": 804293533161795,
+					"parameters": {
+						"instance-variable": "CanTeleport",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 483883357234314
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Astronaut",
+					"sid": 634951214111038,
+					"parameters": {
+						"object": "Cloud1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "Cloud1",
+					"sid": 581523605364964,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"Bounce\"",
+						"property": "offsetY",
+						"end-value": "0",
+						"time": "5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 985671949596402
 		}
 	],
 	"sid": 510917748129844
