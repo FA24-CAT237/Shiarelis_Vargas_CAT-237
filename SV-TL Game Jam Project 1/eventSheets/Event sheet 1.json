@@ -559,28 +559,139 @@
 					"parameters": {
 						"object": "Cloud1"
 					}
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "Astronaut",
+					"sid": 845635197914944,
+					"behaviorType": "Platform"
 				}
 			],
 			"actions": [
 				{
 					"id": "tween-one-property",
 					"objectClass": "Cloud1",
-					"sid": 581523605364964,
+					"sid": 494716594239487,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"Bounce\"",
 						"property": "offsetY",
-						"end-value": "0",
-						"time": "5",
-						"ease": "default",
+						"end-value": "Cloud1.Y+25",
+						"time": ".1",
+						"ease": "easeinoutexpo",
 						"destroy-on-complete": "no",
 						"loop": "no",
-						"ping-pong": "no",
+						"ping-pong": "yes",
 						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "Astronaut",
+					"sid": 126587773184510,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-y": "-900"
 					}
 				}
 			],
 			"sid": 985671949596402
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Astronaut",
+					"sid": 481043665647470,
+					"parameters": {
+						"object": "Cloud2"
+					}
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "Astronaut",
+					"sid": 160423615799590,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "Cloud2",
+					"sid": 314960396914994,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"Bounce\"",
+						"property": "offsetY",
+						"end-value": "Cloud2.Y+25",
+						"time": ".1",
+						"ease": "easeinoutexpo",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "yes",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "Astronaut",
+					"sid": 482375572966159,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-y": "-900"
+					}
+				}
+			],
+			"sid": 690549979962181
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Astronaut",
+					"sid": 877978359150272,
+					"parameters": {
+						"object": "Cloud3"
+					}
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "Astronaut",
+					"sid": 840638908597386,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "Cloud3",
+					"sid": 901035980006591,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"Bounce\"",
+						"property": "offsetX",
+						"end-value": "Cloud3.Y+25",
+						"time": ".1",
+						"ease": "easeinoutexpo",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "yes",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "Astronaut",
+					"sid": 667119879976342,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-y": "-900"
+					}
+				}
+			],
+			"sid": 981308229769723
 		}
 	],
 	"sid": 510917748129844
