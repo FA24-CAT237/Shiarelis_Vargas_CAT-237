@@ -3,7 +3,15 @@
 	"plugin-id": "Sprite",
 	"sid": 994062619637665,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "Health",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 754367212680540
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Platform",

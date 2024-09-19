@@ -178,7 +178,17 @@
 					}
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Astronaut",
+					"sid": 673640146442220,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "1"
+					}
+				}
+			],
 			"sid": 387669524989907
 		},
 		{
@@ -193,7 +203,17 @@
 					}
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Astronaut",
+					"sid": 210244570849014,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "1"
+					}
+				}
+			],
 			"sid": 214371746309163
 		},
 		{
@@ -208,7 +228,17 @@
 					}
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Astronaut",
+					"sid": 786512695097433,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "1"
+					}
+				}
+			],
 			"sid": 179484956102819
 		},
 		{
@@ -223,7 +253,17 @@
 					}
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Astronaut",
+					"sid": 136012993204557,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "1"
+					}
+				}
+			],
 			"sid": 275234088550833
 		},
 		{
@@ -238,7 +278,17 @@
 					}
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Astronaut",
+					"sid": 619733559838837,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "1"
+					}
+				}
+			],
 			"sid": 464441213364734
 		},
 		{
@@ -253,7 +303,17 @@
 					}
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Astronaut",
+					"sid": 827111256542172,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "1"
+					}
+				}
+			],
 			"sid": 604568339700481
 		}
 	],
