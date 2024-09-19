@@ -76,7 +76,17 @@
 					"behaviorType": "Platform"
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Astronaut",
+					"sid": 549467623834611,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				}
+			],
 			"sid": 852406900604524
 		},
 		{
@@ -95,7 +105,17 @@
 					"behaviorType": "Platform"
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Astronaut",
+					"sid": 352548335844362,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
 			"sid": 147639358951194
 		},
 		{
@@ -110,7 +130,17 @@
 					}
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Astronaut",
+					"sid": 710352378364296,
+					"parameters": {
+						"animation": "\"Jump\"",
+						"from": "beginning"
+					}
+				}
+			],
 			"sid": 600011496723533
 		},
 		{
@@ -123,7 +153,17 @@
 					"behaviorType": "Platform"
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Astronaut",
+					"sid": 477704678077536,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
 			"sid": 209842637443330
 		},
 		{
@@ -200,6 +240,21 @@
 			],
 			"actions": [],
 			"sid": 464441213364734
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Astronaut",
+					"sid": 347063336994583,
+					"parameters": {
+						"object": "Ship"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 604568339700481
 		}
 	],
 	"sid": 510917748129844

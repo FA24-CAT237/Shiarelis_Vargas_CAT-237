@@ -789,7 +789,7 @@
 					"type": "Astronaut",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -879,7 +879,7 @@
 						"x": -453,
 						"y": 1803,
 						"width": 80,
-						"height": 66,
+						"height": 71.5,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -936,8 +936,8 @@
 					"world": {
 						"x": -515,
 						"y": 2270,
-						"width": 398,
-						"height": 269,
+						"width": 477.59999999999997,
+						"height": 291.4166666666667,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -994,8 +994,8 @@
 					"world": {
 						"x": -359,
 						"y": 1516,
-						"width": 88,
-						"height": 69,
+						"width": 105.60000000000001,
+						"height": 75.9,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1052,7 +1052,7 @@
 					"world": {
 						"x": -581,
 						"y": 1616,
-						"width": 90,
+						"width": 126,
 						"height": 84,
 						"originX": 0.5,
 						"originY": 0.5,
