@@ -1,22 +1,21 @@
 {
-	"name": "Tilemap",
-	"plugin-id": "Tilemap",
-	"sid": 308764032588387,
+	"name": "Solids6",
+	"plugin-id": "TiledBg",
+	"sid": 397331108851161,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 2816,
-		"height": 1536,
+		"width": 250,
+		"height": 250,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
-		"imageSpriteId": 4032502,
+		"imageSpriteId": 7923098,
 		"useCollisionPoly": true,
 		"tag": ""
-	},
-	"tile-collision-polys": {}
+	}
 }

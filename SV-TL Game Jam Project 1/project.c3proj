@@ -99,7 +99,10 @@
 			"Star5",
 			"Star6",
 			"Chest",
-			"Bullet"
+			"Bullet",
+			"Solids5",
+			"Solids6",
+			"Solids7"
 		],
 		"subfolders": []
 	},
