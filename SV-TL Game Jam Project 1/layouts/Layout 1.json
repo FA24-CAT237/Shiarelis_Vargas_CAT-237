@@ -7,54 +7,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Tilemap",
-					"properties": {
-						"initially-visible": true,
-						"tile-width": 32,
-						"tile-height": 32,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
-					},
-					"uid": 2,
-					"instanceVariables": {},
-					"behaviors": {},
-					"ownData": {
-						"tilemapData": {
-							"width": 114,
-							"height": 92,
-							"max-width": 145,
-							"max-height": 149,
-							"data": "42x0,3261,4x3976,3488hv,3400hv,142x0,3268,4x3976,3487hv,3399hv,122x0,3272hv,3184hv,18x0,3269,4x3976,3486hv,3398hv,122x0,3271hv,3183hv,18x0,3270,4x3976,3485hv,3397hv,122x0,3270hv,3182hv,18x0,3271,4x3976,3488hv,3400hv,122x0,3269hv,3181hv,9x0,3272hv,3184hv,7x0,3272,3360,3448,2x3976,3487hv,3399hv,122x0,3268hv,3180hv,9x0,3271hv,3183hv,9x0,3268,2x3976,3486hv,3398hv,122x0,3267hv,3179hv,9x0,3270hv,3182hv,9x0,3269,2x3976,3485hv,3397hv,122x0,3266hv,3178hv,9x0,3269hv,3181hv,9x0,3272,2x3976,3632,123x0,3265hv,3177hv,9x0,3268hv,3180hv,9x0,3277,2x3448,2x3632,122x0,3264hv,3176hv,9x0,3267hv,3179hv,9x0,3268,2x3448,2x3632,122x0,3263hv,3175hv,9x0,3266hv,3178hv,9x0,3277,2x3448,2x3632,122x0,3262hv,3174hv,9x0,3265hv,3177hv,10x0,2x3448,3365hd,3366hd,122x0,3261hv,3173hv,9x0,3264hv,3176hv,10x0,2x3632,3277hd,3278hd,133x0,3263hv,3175hv,147x0,3262hv,3174hv,147x0,3261hv,3173hv,306x0,3272hv,3184hv,147x0,3271hv,3183hv,147x0,3270hv,3182hv,147x0,3269hv,3181hv,147x0,3268hv,3180hv,147x0,3267hv,3179hv,112x0,3272hv,3184hv,33x0,3266hv,3178hv,112x0,3271hv,3183hv,33x0,3265hv,3177hv,112x0,3270hv,3182hv,33x0,3264hv,3176hv,112x0,3269hv,3181hv,33x0,3263hv,3175hv,112x0,3268hv,3180hv,33x0,3262hv,3174hv,112x0,3267hv,3179hv,33x0,3261hv,3173hv,112x0,3266hv,3178hv,147x0,3265hv,3177hv,147x0,3264hv,3176hv,147x0,3263hv,3175hv,28x0,3272hv,3184hv,117x0,3262hv,3174hv,28x0,3271hv,3183hv,117x0,3261hv,3173hv,28x0,3270hv,3182hv,147x0,3269hv,3181hv,147x0,3268hv,3180hv,147x0,3267hv,3179hv,147x0,3266hv,3178hv,147x0,3265hv,3177hv,147x0,3264hv,3176hv,147x0,3263hv,3175hv,147x0,3262hv,3174hv,147x0,3261hv,3173hv,2494x0,2128vd,2127vd,2126vd,2125vd,2124vd,2123vd,2122vd,2121vd,2120vd,2119vd,2118vd,2117vd,137x0,2216vd,2215vd,2214vd,2213vd,2212vd,2211vd,2210vd,2209vd,2208vd,2207vd,2206vd,2205vd,1338x0,3272hv,3184hv,147x0,3271hv,3183hv,147x0,3270hv,3182hv,147x0,3269hv,3181hv,147x0,3268hv,3180hv,147x0,3267hv,3179hv,147x0,3266hv,3178hv,9x0,2844vd,2843vd,2842vd,2841vd,2840vd,2839vd,2838vd,2837vd,130x0,3265hv,3177hv,9x0,2932vd,2931vd,2930vd,2929vd,2928vd,2927vd,2926vd,2925vd,130x0,3264hv,3176hv,147x0,3263hv,3175hv,147x0,3262hv,3174hv,147x0,3261hv,3173hv,450x0,2925hd,2926hd,2927hd,2928hd,2929hd,2930hd,2931hd,2932hd,141x0,2837hd,2838hd,2839hd,2840hd,2841hd,2842hd,2843hd,2844hd,724x0,2205hd,2206hd,2207hd,2208hd,2209hd,2210hd,2211hd,2212hd,2213hd,2214hd,2215hd,2216hd,137x0,2117hd,2118hd,2119hd,2120hd,2121hd,2122hd,2123hd,2124hd,2125hd,2126hd,2127hd,2128hd,1206x0,3360hv,3272hv,3184hv,146x0,3359hv,3271hv,3183hv,146x0,3358hv,3270hv,3182hv,146x0,3357hv,3269hv,3181hv,146x0,3356hv,3268hv,3180hv,146x0,3355hv,3267hv,3179hv,146x0,3354hv,3266hv,3178hv,13x0,3270hv,3182hv,131x0,3353hv,3265hv,3177hv,13x0,3269hv,3181hv,131x0,3352hv,3264hv,3176hv,13x0,3268hv,3180hv,131x0,3351hv,3263hv,3175hv,13x0,3267hv,3179hv,131x0,3350hv,3262hv,3174hv,13x0,3266hv,3178hv,131x0,3349hv,3261hv,3173hv,13x0,3265hv,3177hv,147x0,3264hv,3176hv,147x0,3263hv,3175hv,147x0,3262hv,3174hv,42x0,197hv,4530x0"
-						},
-						"tile-width": 32,
-						"tile-height": 32,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
-					},
-					"world": {
-						"x": 0,
-						"y": 5,
-						"width": 3675,
-						"height": 2944,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Cloud1",
 					"properties": {
 						"initially-visible": true,
@@ -693,35 +645,6 @@
 					}
 				},
 				{
-					"type": "Sprite",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 25,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 3540,
-						"y": 139,
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Enemy5",
 					"properties": {
 						"initially-visible": true,
@@ -769,14 +692,14 @@
 						"blend-margin-x": 0.1,
 						"blend-margin-y": 0.1
 					},
-					"uid": 39,
+					"uid": 2,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -1053,
-						"y": 1925,
-						"width": 1029,
-						"height": 1018,
+						"x": 1,
+						"y": -1,
+						"width": 3678,
+						"height": 2936,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -808,6 +731,89 @@
 				1
 			],
 			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "SubBackground",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Tilemap",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 39,
+					"instanceVariables": {},
+					"behaviors": {},
+					"ownData": {
+						"tilemapData": {
+							"width": 114,
+							"height": 92,
+							"max-width": 145,
+							"max-height": 149,
+							"data": "42x0,3261,4x3976,3488hv,3400hv,142x0,3268,4x3976,3487hv,3399hv,122x0,3272hv,3184hv,18x0,3269,4x3976,3486hv,3398hv,122x0,3271hv,3183hv,18x0,3270,4x3976,3485hv,3397hv,122x0,3270hv,3182hv,18x0,3271,4x3976,3488hv,3400hv,122x0,3269hv,3181hv,9x0,3272hv,3184hv,7x0,3272,3360,3448,2x3976,3487hv,3399hv,122x0,3268hv,3180hv,9x0,3271hv,3183hv,9x0,3268,2x3976,3486hv,3398hv,122x0,3267hv,3179hv,9x0,3270hv,3182hv,9x0,3269,2x3976,3485hv,3397hv,122x0,3266hv,3178hv,9x0,3269hv,3181hv,9x0,3272,2x3976,3632,123x0,3265hv,3177hv,9x0,3268hv,3180hv,9x0,3277,2x3448,2x3632,122x0,3264hv,3176hv,9x0,3267hv,3179hv,9x0,3268,2x3448,2x3632,122x0,3263hv,3175hv,9x0,3266hv,3178hv,9x0,3277,2x3448,2x3632,122x0,3262hv,3174hv,9x0,3265hv,3177hv,10x0,2x3448,3365hd,3366hd,122x0,3261hv,3173hv,9x0,3264hv,3176hv,10x0,2x3632,3277hd,3278hd,133x0,3263hv,3175hv,147x0,3262hv,3174hv,147x0,3261hv,3173hv,306x0,3272hv,3184hv,147x0,3271hv,3183hv,147x0,3270hv,3182hv,147x0,3269hv,3181hv,147x0,3268hv,3180hv,147x0,3267hv,3179hv,112x0,3272hv,3184hv,33x0,3266hv,3178hv,112x0,3271hv,3183hv,33x0,3265hv,3177hv,112x0,3270hv,3182hv,33x0,3264hv,3176hv,112x0,3269hv,3181hv,33x0,3263hv,3175hv,112x0,3268hv,3180hv,33x0,3262hv,3174hv,112x0,3267hv,3179hv,33x0,3261hv,3173hv,112x0,3266hv,3178hv,147x0,3265hv,3177hv,147x0,3264hv,3176hv,147x0,3263hv,3175hv,28x0,3272hv,3184hv,117x0,3262hv,3174hv,28x0,3271hv,3183hv,117x0,3261hv,3173hv,28x0,3270hv,3182hv,147x0,3269hv,3181hv,147x0,3268hv,3180hv,147x0,3267hv,3179hv,147x0,3266hv,3178hv,147x0,3265hv,3177hv,147x0,3264hv,3176hv,147x0,3263hv,3175hv,147x0,3262hv,3174hv,147x0,3261hv,3173hv,2494x0,2128vd,2127vd,2126vd,2125vd,2124vd,2123vd,2122vd,2121vd,2120vd,2119vd,2118vd,2117vd,137x0,2216vd,2215vd,2214vd,2213vd,2212vd,2211vd,2210vd,2209vd,2208vd,2207vd,2206vd,2205vd,1338x0,3272hv,3184hv,147x0,3271hv,3183hv,147x0,3270hv,3182hv,147x0,3269hv,3181hv,147x0,3268hv,3180hv,147x0,3267hv,3179hv,147x0,3266hv,3178hv,9x0,2844vd,2843vd,2842vd,2841vd,2840vd,2839vd,2838vd,2837vd,130x0,3265hv,3177hv,9x0,2932vd,2931vd,2930vd,2929vd,2928vd,2927vd,2926vd,2925vd,130x0,3264hv,3176hv,147x0,3263hv,3175hv,147x0,3262hv,3174hv,147x0,3261hv,3173hv,450x0,2925hd,2926hd,2927hd,2928hd,2929hd,2930hd,2931hd,2932hd,141x0,2837hd,2838hd,2839hd,2840hd,2841hd,2842hd,2843hd,2844hd,724x0,2205hd,2206hd,2207hd,2208hd,2209hd,2210hd,2211hd,2212hd,2213hd,2214hd,2215hd,2216hd,137x0,2117hd,2118hd,2119hd,2120hd,2121hd,2122hd,2123hd,2124hd,2125hd,2126hd,2127hd,2128hd,1206x0,3360hv,3272hv,3184hv,146x0,3359hv,3271hv,3183hv,146x0,3358hv,3270hv,3182hv,146x0,3357hv,3269hv,3181hv,146x0,3356hv,3268hv,3180hv,146x0,3355hv,3267hv,3179hv,146x0,3354hv,3266hv,3178hv,13x0,3270hv,3182hv,131x0,3353hv,3265hv,3177hv,13x0,3269hv,3181hv,131x0,3352hv,3264hv,3176hv,13x0,3268hv,3180hv,131x0,3351hv,3263hv,3175hv,13x0,3267hv,3179hv,131x0,3350hv,3262hv,3174hv,13x0,3266hv,3178hv,131x0,3349hv,3261hv,3173hv,13x0,3265hv,3177hv,147x0,3264hv,3176hv,147x0,3263hv,3175hv,147x0,3262hv,3174hv,42x0,197hv,4530x0"
+						},
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": 0,
+						"y": 2,
+						"width": 3675,
+						"height": 2944,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 252834213759425,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.5019607843137255,
+				0.5019607843137255,
+				0.5019607843137255,
+				1
+			],
+			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -1155,6 +1161,35 @@
 						"height": 425,
 						"originX": 0.46875,
 						"originY": -1.1440677966101696,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 25,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 3531,
+						"y": 156,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
