@@ -205,10 +205,10 @@
 						}
 					},
 					"world": {
-						"x": 1017,
-						"y": 2076,
-						"width": 181,
-						"height": 115.5,
+						"x": 1052,
+						"y": 2093.5,
+						"width": 111,
+						"height": 80.5,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -365,7 +365,7 @@
 						},
 						"Sine": {
 							"properties": {
-								"movement": "horizontal",
+								"movement": "vertical",
 								"wave": "sine",
 								"period": 4,
 								"period-random": 0,
@@ -988,7 +988,7 @@
 								"jump-strength": 650,
 								"gravity": 1000,
 								"max-fall-speed": 1000,
-								"double-jump": false,
+								"double-jump": true,
 								"jump-sustain": 0,
 								"default-controls": true,
 								"enabled": true
