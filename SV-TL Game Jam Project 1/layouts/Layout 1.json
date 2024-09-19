@@ -7,6 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
+<<<<<<< Updated upstream
 					"type": "Cloud1",
 					"properties": {
 						"initially-visible": true,
@@ -689,6 +690,8 @@
 					}
 				},
 				{
+=======
+>>>>>>> Stashed changes
 					"type": "Enemy5",
 					"properties": {
 						"initially-visible": true,
@@ -893,7 +896,8 @@
 					"sid": 833448311417884,
 					"tags": "",
 					"instanceVariables": {
-						"Health": 2
+						"Health": 2,
+						"CanTeleport": false
 					},
 					"behaviors": {
 						"Platform": {
