@@ -16,6 +16,8 @@
 						"live-preview": false
 					},
 					"uid": 3,
+					"sid": 294896927953295,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -45,6 +47,8 @@
 						"live-preview": false
 					},
 					"uid": 4,
+					"sid": 525397340224654,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -74,6 +78,8 @@
 						"live-preview": false
 					},
 					"uid": 5,
+					"sid": 828258147010108,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -103,6 +109,8 @@
 						"live-preview": false
 					},
 					"uid": 6,
+					"sid": 904708049415824,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -132,6 +140,8 @@
 						"live-preview": false
 					},
 					"uid": 7,
+					"sid": 587209077871716,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -161,6 +171,8 @@
 						"live-preview": false
 					},
 					"uid": 8,
+					"sid": 520881742894667,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -190,6 +202,8 @@
 						"live-preview": false
 					},
 					"uid": 9,
+					"sid": 820898167930184,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -219,6 +233,8 @@
 						"live-preview": false
 					},
 					"uid": 10,
+					"sid": 375200056530087,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -248,6 +264,8 @@
 						"live-preview": false
 					},
 					"uid": 11,
+					"sid": 785273088109141,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -277,6 +295,8 @@
 						"live-preview": false
 					},
 					"uid": 12,
+					"sid": 701654610369684,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -306,6 +326,8 @@
 						"live-preview": false
 					},
 					"uid": 13,
+					"sid": 492160391009868,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -335,6 +357,8 @@
 						"live-preview": false
 					},
 					"uid": 14,
+					"sid": 968357871647837,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -364,6 +388,8 @@
 						"live-preview": false
 					},
 					"uid": 15,
+					"sid": 792274604791554,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -393,6 +419,8 @@
 						"live-preview": false
 					},
 					"uid": 16,
+					"sid": 494283785576361,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -422,6 +450,8 @@
 						"live-preview": false
 					},
 					"uid": 17,
+					"sid": 369189328164911,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -451,6 +481,8 @@
 						"live-preview": false
 					},
 					"uid": 18,
+					"sid": 565626198079360,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -480,6 +512,8 @@
 						"live-preview": false
 					},
 					"uid": 19,
+					"sid": 701867528152379,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -509,6 +543,8 @@
 						"live-preview": false
 					},
 					"uid": 20,
+					"sid": 957638431015983,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -538,6 +574,8 @@
 						"live-preview": false
 					},
 					"uid": 21,
+					"sid": 239826405983650,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -567,6 +605,8 @@
 						"live-preview": false
 					},
 					"uid": 22,
+					"sid": 752731260257016,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -596,6 +636,8 @@
 						"live-preview": false
 					},
 					"uid": 23,
+					"sid": 496434101926657,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -625,6 +667,8 @@
 						"live-preview": false
 					},
 					"uid": 24,
+					"sid": 531112366728361,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -654,6 +698,8 @@
 						"live-preview": false
 					},
 					"uid": 38,
+					"sid": 137699587413502,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -693,6 +739,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 2,
+					"sid": 429529176988986,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -762,6 +810,8 @@
 						"drawing-mode": "top-to-right"
 					},
 					"uid": 39,
+					"sid": 120942772936419,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"ownData": {
@@ -770,7 +820,7 @@
 							"height": 92,
 							"max-width": 145,
 							"max-height": 149,
-							"data": "42x0,3261,4x3976,3488hv,3400hv,142x0,3268,4x3976,3487hv,3399hv,122x0,3272hv,3184hv,18x0,3269,4x3976,3486hv,3398hv,122x0,3271hv,3183hv,18x0,3270,4x3976,3485hv,3397hv,122x0,3270hv,3182hv,18x0,3271,4x3976,3488hv,3400hv,122x0,3269hv,3181hv,9x0,3272hv,3184hv,7x0,3272,3360,3448,2x3976,3487hv,3399hv,122x0,3268hv,3180hv,9x0,3271hv,3183hv,9x0,3268,2x3976,3486hv,3398hv,122x0,3267hv,3179hv,9x0,3270hv,3182hv,9x0,3269,2x3976,3485hv,3397hv,122x0,3266hv,3178hv,9x0,3269hv,3181hv,9x0,3272,2x3976,3632,123x0,3265hv,3177hv,9x0,3268hv,3180hv,9x0,3277,2x3448,2x3632,122x0,3264hv,3176hv,9x0,3267hv,3179hv,9x0,3268,2x3448,2x3632,122x0,3263hv,3175hv,9x0,3266hv,3178hv,9x0,3277,2x3448,2x3632,122x0,3262hv,3174hv,9x0,3265hv,3177hv,10x0,2x3448,3365hd,3366hd,122x0,3261hv,3173hv,9x0,3264hv,3176hv,10x0,2x3632,3277hd,3278hd,133x0,3263hv,3175hv,147x0,3262hv,3174hv,147x0,3261hv,3173hv,306x0,3272hv,3184hv,147x0,3271hv,3183hv,147x0,3270hv,3182hv,147x0,3269hv,3181hv,147x0,3268hv,3180hv,147x0,3267hv,3179hv,112x0,3272hv,3184hv,33x0,3266hv,3178hv,112x0,3271hv,3183hv,33x0,3265hv,3177hv,112x0,3270hv,3182hv,33x0,3264hv,3176hv,112x0,3269hv,3181hv,33x0,3263hv,3175hv,112x0,3268hv,3180hv,33x0,3262hv,3174hv,112x0,3267hv,3179hv,33x0,3261hv,3173hv,112x0,3266hv,3178hv,147x0,3265hv,3177hv,147x0,3264hv,3176hv,147x0,3263hv,3175hv,28x0,3272hv,3184hv,117x0,3262hv,3174hv,28x0,3271hv,3183hv,117x0,3261hv,3173hv,28x0,3270hv,3182hv,147x0,3269hv,3181hv,147x0,3268hv,3180hv,147x0,3267hv,3179hv,147x0,3266hv,3178hv,147x0,3265hv,3177hv,147x0,3264hv,3176hv,147x0,3263hv,3175hv,147x0,3262hv,3174hv,147x0,3261hv,3173hv,2494x0,2128vd,2127vd,2126vd,2125vd,2124vd,2123vd,2122vd,2121vd,2120vd,2119vd,2118vd,2117vd,137x0,2216vd,2215vd,2214vd,2213vd,2212vd,2211vd,2210vd,2209vd,2208vd,2207vd,2206vd,2205vd,1338x0,3272hv,3184hv,147x0,3271hv,3183hv,147x0,3270hv,3182hv,147x0,3269hv,3181hv,147x0,3268hv,3180hv,147x0,3267hv,3179hv,147x0,3266hv,3178hv,9x0,2844vd,2843vd,2842vd,2841vd,2840vd,2839vd,2838vd,2837vd,130x0,3265hv,3177hv,9x0,2932vd,2931vd,2930vd,2929vd,2928vd,2927vd,2926vd,2925vd,130x0,3264hv,3176hv,147x0,3263hv,3175hv,147x0,3262hv,3174hv,147x0,3261hv,3173hv,450x0,2925hd,2926hd,2927hd,2928hd,2929hd,2930hd,2931hd,2932hd,141x0,2837hd,2838hd,2839hd,2840hd,2841hd,2842hd,2843hd,2844hd,724x0,2205hd,2206hd,2207hd,2208hd,2209hd,2210hd,2211hd,2212hd,2213hd,2214hd,2215hd,2216hd,137x0,2117hd,2118hd,2119hd,2120hd,2121hd,2122hd,2123hd,2124hd,2125hd,2126hd,2127hd,2128hd,1206x0,3360hv,3272hv,3184hv,146x0,3359hv,3271hv,3183hv,146x0,3358hv,3270hv,3182hv,146x0,3357hv,3269hv,3181hv,146x0,3356hv,3268hv,3180hv,146x0,3355hv,3267hv,3179hv,146x0,3354hv,3266hv,3178hv,13x0,3270hv,3182hv,131x0,3353hv,3265hv,3177hv,13x0,3269hv,3181hv,131x0,3352hv,3264hv,3176hv,13x0,3268hv,3180hv,131x0,3351hv,3263hv,3175hv,13x0,3267hv,3179hv,131x0,3350hv,3262hv,3174hv,13x0,3266hv,3178hv,131x0,3349hv,3261hv,3173hv,13x0,3265hv,3177hv,147x0,3264hv,3176hv,147x0,3263hv,3175hv,147x0,3262hv,3174hv,42x0,197hv,4530x0"
+							"data": "56x0,3173,3261,3349,3437,3481v,3393v,143x0,3174,3262,3350,3438,3482v,3394v,143x0,3175,3263,3351,3439,3483v,3395v,143x0,3176,3264,3352,3440,3484v,3396v,143x0,3177,3265,3353,3441,3481v,3393v,143x0,3178,3266,3354,3442,3482v,3394v,143x0,3179,3267,3355,3443,3483v,3395v,143x0,3180,3268,3356,3444,3484v,3396v,143x0,3180h,3268h,3356h,3444h,3481v,3393v,143x0,3179h,3267h,3355h,3443h,3482v,3394v,143x0,3178h,3266h,3354h,3442h,3483v,3395v,143x0,3177h,3265h,3353h,3441h,3484v,3396v,143x0,3176h,3264h,3352h,3440h,3481v,3393v,143x0,3175h,3263h,3351h,3439h,3482v,3394v,143x0,3174h,3262h,3350h,3438h,3483v,3395v,143x0,3173h,3261h,3349h,3437h,3484v,3396v,884x0,3181h,3269h,3357h,3445h,145x0,3180h,3268h,3356h,3444h,145x0,3179h,3267h,3355h,3443h,145x0,3178h,3266h,3354h,3442h,145x0,3177h,3265h,3353h,3441h,145x0,3176h,3264h,3352h,3440h,145x0,3175h,3263h,3351h,3439h,1034x0,3181h,3269h,3357h,3445h,145x0,3180h,3268h,3356h,3444h,145x0,3179h,3267h,3355h,3443h,145x0,3178h,3266h,3354h,3442h,145x0,3177h,3265h,3353h,3441h,145x0,3176h,3264h,3352h,3440h,145x0,3175h,3263h,3351h,3439h,145x0,3181h,3269h,3357h,3445h,145x0,3180h,3268h,3356h,3444h,145x0,3179h,3267h,3355h,3443h,145x0,3178h,3266h,3354h,3442h,145x0,3177h,3265h,3353h,3441h,145x0,3176h,3264h,3352h,3440h,145x0,3175h,3263h,3351h,3439h,9976x0,3262hv,3174hv,42x0,197hv,4530x0"
 						},
 						"tile-width": 32,
 						"tile-height": 32,
@@ -840,6 +890,8 @@
 						"live-preview": false
 					},
 					"uid": 26,
+					"sid": 833448311417884,
+					"tags": "",
 					"instanceVariables": {
 						"Health": 2
 					},
@@ -891,6 +943,8 @@
 						"live-preview": false
 					},
 					"uid": 27,
+					"sid": 828682542519674,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Platform": {
@@ -949,6 +1003,8 @@
 						"live-preview": false
 					},
 					"uid": 28,
+					"sid": 957423158877715,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Platform": {
@@ -1007,6 +1063,8 @@
 						"live-preview": false
 					},
 					"uid": 29,
+					"sid": 848816315694801,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Platform": {
@@ -1065,6 +1123,8 @@
 						"live-preview": false
 					},
 					"uid": 30,
+					"sid": 267398803478225,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Platform": {
@@ -1123,6 +1183,8 @@
 						"live-preview": false
 					},
 					"uid": 36,
+					"sid": 209034671800331,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1152,6 +1214,8 @@
 						"live-preview": false
 					},
 					"uid": 37,
+					"sid": 780357550166067,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1181,6 +1245,8 @@
 						"live-preview": false
 					},
 					"uid": 25,
+					"sid": 688002314234213,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1289,6 +1355,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 31,
+					"sid": 225798131008060,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1328,6 +1396,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 32,
+					"sid": 599950328501639,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1367,6 +1437,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 33,
+					"sid": 442959558005240,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1406,6 +1478,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 34,
+					"sid": 725042082996998,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1490,6 +1564,10 @@
 			"global": false
 		}
 	],
+	"scene-graphs-folder-root": {
+		"items": [],
+		"subfolders": []
+	},
 	"sid": 327668282091130,
 	"nonworld-instances": [],
 	"effectTypes": [],
