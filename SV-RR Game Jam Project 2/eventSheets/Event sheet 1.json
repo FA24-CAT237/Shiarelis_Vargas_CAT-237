@@ -77,17 +77,6 @@
 							}
 						},
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 618713373258835,
-							"disabled": true,
-							"parameters": {
-								"variable": "wave",
-								"comparison": 0,
-								"value": "0"
-							}
-						},
-						{
 							"id": "trigger-once-while-true",
 							"objectClass": "System",
 							"sid": 725312817792673
@@ -126,98 +115,6 @@
 						}
 					],
 					"sid": 303662285157639
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 721571414842228,
-							"parameters": {
-								"variable": "wave",
-								"comparison": 0,
-								"value": "2"
-							}
-						},
-						{
-							"id": "trigger-once-while-true",
-							"objectClass": "System",
-							"sid": 836064840375629
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 660119159141252,
-							"parameters": {
-								"variable": "spawnFortuneTimer",
-								"value": "3"
-							}
-						},
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 556263889715369,
-							"parameters": {
-								"object-to-create": "FortuneCookie",
-								"layer": "1",
-								"x": "random(ViewportWidth(\"Game\"))",
-								"y": "0",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						}
-					],
-					"sid": 647445708760665,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 646394258733645,
-							"parameters": {
-								"variable": "wave",
-								"comparison": 0,
-								"value": "4"
-							}
-						},
-						{
-							"id": "trigger-once-while-true",
-							"objectClass": "System",
-							"sid": 600523099393461
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 747532235409903,
-							"parameters": {
-								"variable": "spawnFortuneTimer",
-								"value": "1"
-							}
-						},
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 733925657081477,
-							"parameters": {
-								"object-to-create": "FortuneCookie",
-								"layer": "1",
-								"x": "random(ViewportWidth(\"Game\"))",
-								"y": "0",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						}
-					],
-					"sid": 696090461422393,
-					"disabled": true
 				}
 			],
 			"sid": 983699696704075
@@ -260,35 +157,21 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 773247476305656,
+							"sid": 710838686528985,
 							"parameters": {
 								"variable": "spawnPinwheelTimer",
-								"comparison": 0,
+								"comparison": 2,
 								"value": "0"
 							}
-						},
-						{
-							"id": "trigger-once-while-true",
-							"objectClass": "System",
-							"sid": 560701252733985
 						}
 					],
 					"actions": [
 						{
-							"id": "reset-eventvar",
-							"objectClass": "System",
-							"sid": 446543243506207,
-							"parameters": {
-								"variable": "spawnPinwheelTimer"
-							}
-						},
-						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 778004988415199,
-							"disabled": true,
+							"sid": 273865426434780,
 							"parameters": {
-								"variable": "spawnFortuneTimer",
+								"variable": "spawnPinwheelTimer",
 								"value": "int(random(0,3))"
 							}
 						},
