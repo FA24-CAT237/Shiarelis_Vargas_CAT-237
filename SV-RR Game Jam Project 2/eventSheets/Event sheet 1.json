@@ -32,6 +32,16 @@
 			"sid": 666011130744482
 		},
 		{
+			"eventType": "variable",
+			"name": "FallingSpeed",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 206652211707608
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Fortune Cookies",
@@ -145,6 +155,15 @@
 							"sid": 508480270864629,
 							"parameters": {
 								"variable": "spawnPinwheelTimer",
+								"value": "1"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 412346663313090,
+							"parameters": {
+								"variable": "FallingSpeed",
 								"value": "1"
 							}
 						}
