@@ -193,6 +193,57 @@
 				}
 			],
 			"sid": 961540887121808
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlatePlayer",
+					"sid": 460958750875627,
+					"parameters": {
+						"object": "FortuneCookie"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "FortuneCookie",
+					"sid": 936635965572650
+				}
+			],
+			"sid": 599329981222984
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlatePlayer",
+					"sid": 641987398746023,
+					"parameters": {
+						"object": "Pinwheel"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "PlatePlayer",
+					"sid": 633376348509336,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Pinwheel",
+					"sid": 206020612143534
+				}
+			],
+			"sid": 207873195418848
 		}
 	],
 	"sid": 570725407226283
