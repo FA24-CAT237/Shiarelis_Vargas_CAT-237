@@ -208,6 +208,15 @@
 			],
 			"actions": [
 				{
+					"id": "add-to-instvar",
+					"objectClass": "PlatePlayer",
+					"sid": 207744030361323,
+					"parameters": {
+						"instance-variable": "Score",
+						"value": "1"
+					}
+				},
+				{
 					"id": "destroy",
 					"objectClass": "FortuneCookie",
 					"sid": 936635965572650
@@ -241,9 +250,110 @@
 					"id": "destroy",
 					"objectClass": "Pinwheel",
 					"sid": 206020612143534
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "PlatePlayer",
+					"sid": 579243359580726,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Pixellate\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 466983796058747,
+					"parameters": {
+						"seconds": ".5"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "PlatePlayer",
+					"sid": 853498285088503,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Pixellate\""
+					}
 				}
 			],
 			"sid": 207873195418848
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "PlatePlayer",
+					"sid": 903406431941639,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "PlatePlayer",
+					"sid": 957077887991872
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 661725843788440,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 441288202760986
+				}
+			],
+			"sid": 189490522326850
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "PlatePlayer",
+					"sid": 853578593576708,
+					"parameters": {
+						"instance-variable": "Score",
+						"comparison": 0,
+						"value": "10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "FortuneText",
+					"sid": 434100537742733,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 112922307409876,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 132054785945718
+				}
+			],
+			"sid": 635776633183095
 		}
 	],
 	"sid": 570725407226283
