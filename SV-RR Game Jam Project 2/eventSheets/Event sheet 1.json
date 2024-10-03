@@ -373,6 +373,66 @@
 				}
 			],
 			"sid": 635776633183095
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 191145297029408
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "ScoreText",
+					"sid": 655722167614449,
+					"parameters": {
+						"x": "10",
+						"y": "300"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ScoreText",
+					"sid": 972955714410703,
+					"parameters": {
+						"text": "PlatePlayer.Score "
+					}
+				}
+			],
+			"sid": 309852593193183
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 315204650684636
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "PlayerText",
+					"sid": 940020839262020,
+					"parameters": {
+						"object": "PlatePlayer",
+						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PlayerText",
+					"sid": 289158361923455,
+					"parameters": {
+						"text": "PlatePlayer.Health"
+					}
+				}
+			],
+			"sid": 283056754901471
 		}
 	],
 	"sid": 570725407226283

@@ -94,7 +94,9 @@
 					"Pinwheel",
 					"PlatePlayer",
 					"FortuneText",
-					"Fortune"
+					"Fortune",
+					"PlayerText",
+					"ScoreText"
 				],
 				"subfolders": [],
 				"name": "Sprites"
