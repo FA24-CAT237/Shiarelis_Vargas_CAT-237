@@ -238,8 +238,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": -73,
-						"y": 274,
+						"x": -62,
+						"y": 171,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -324,8 +324,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 16,
-						"y": -105,
+						"x": 9,
+						"y": -90,
 						"width": 143,
 						"height": 69,
 						"originX": 0,
@@ -375,10 +375,10 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 10,
-						"y": -193,
-						"width": 200,
-						"height": 63,
+						"x": 260,
+						"y": -75,
+						"width": 92,
+						"height": 47,
 						"originX": 0,
 						"originY": 0,
 						"color": [

@@ -79,9 +79,19 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 232213403440805,
+							"sid": 292018712292138,
 							"parameters": {
 								"variable": "spawnFortuneTimer",
+								"comparison": 2,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 491810850511893,
+							"parameters": {
+								"variable": "wave",
 								"comparison": 0,
 								"value": "0"
 							}
@@ -103,11 +113,12 @@
 							}
 						},
 						{
-							"id": "reset-eventvar",
+							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 991007763407383,
+							"sid": 188375102010018,
 							"parameters": {
-								"variable": "spawnFortuneTimer"
+								"variable": "spawnFortuneTimer",
+								"value": "int(random(1,3))"
 							}
 						},
 						{
@@ -125,6 +136,270 @@
 						}
 					],
 					"sid": 303662285157639
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 979794014392994,
+							"parameters": {
+								"variable": "spawnFortuneTimer",
+								"comparison": 2,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 629010687422719,
+							"parameters": {
+								"variable": "wave",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 832503061263523
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 928162406260668,
+							"parameters": {
+								"variable": "wave",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 795984897160185,
+							"parameters": {
+								"variable": "spawnFortuneTimer",
+								"value": "int(random(1,2))"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 700469135953840,
+							"parameters": {
+								"object-to-create": "FortuneCookie",
+								"layer": "1",
+								"x": "random(ViewportWidth(\"Game\"))",
+								"y": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 748644077244521
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 213803639703290,
+							"parameters": {
+								"variable": "spawnFortuneTimer",
+								"comparison": 2,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 184630664398372,
+							"parameters": {
+								"variable": "wave",
+								"comparison": 5,
+								"value": "2"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 666166654710387
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 870582099194155,
+							"disabled": true,
+							"parameters": {
+								"variable": "wave",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 848547525852795,
+							"parameters": {
+								"variable": "spawnFortuneTimer",
+								"value": "1"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 261502136384517,
+							"parameters": {
+								"object-to-create": "FortuneCookie",
+								"layer": "1",
+								"x": "random(ViewportWidth(\"Game\"))",
+								"y": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 160711219710692
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 874064093305196,
+							"parameters": {
+								"variable": "wave",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-world-gravity",
+							"objectClass": "FortuneCookie",
+							"sid": 560698716722145,
+							"behaviorType": "Physics",
+							"parameters": {
+								"gravity": "20"
+							}
+						}
+					],
+					"sid": 978695142099961
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 550041587392589,
+							"parameters": {
+								"variable": "wave",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-world-gravity",
+							"objectClass": "FortuneCookie",
+							"sid": 367427645177441,
+							"behaviorType": "Physics",
+							"parameters": {
+								"gravity": "25"
+							}
+						}
+					],
+					"sid": 103077262612909
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 184560980983465,
+							"parameters": {
+								"variable": "wave",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-world-gravity",
+							"objectClass": "FortuneCookie",
+							"sid": 724658619434359,
+							"behaviorType": "Physics",
+							"parameters": {
+								"gravity": "30"
+							}
+						}
+					],
+					"sid": 662546404643150
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 635992292471398,
+							"parameters": {
+								"variable": "wave",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-world-gravity",
+							"objectClass": "FortuneCookie",
+							"sid": 274441742082116,
+							"behaviorType": "Physics",
+							"parameters": {
+								"gravity": "35"
+							}
+						}
+					],
+					"sid": 957197704708723
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 927676535178038,
+							"parameters": {
+								"variable": "wave",
+								"comparison": 5,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-world-gravity",
+							"objectClass": "FortuneCookie",
+							"sid": 410348269889146,
+							"behaviorType": "Physics",
+							"parameters": {
+								"gravity": "40"
+							}
+						}
+					],
+					"sid": 528698678583870
 				}
 			],
 			"sid": 983699696704075
@@ -142,9 +417,9 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 710119198290128,
+							"sid": 858896360816489,
 							"parameters": {
-								"interval-seconds": "1.0"
+								"interval-seconds": ".5"
 							}
 						}
 					],
@@ -162,6 +437,7 @@
 							"id": "add-to-eventvar",
 							"objectClass": "System",
 							"sid": 412346663313090,
+							"disabled": true,
 							"parameters": {
 								"variable": "FallingSpeed",
 								"value": "1"
@@ -182,6 +458,21 @@
 								"comparison": 2,
 								"value": "0"
 							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 984135038185661,
+							"parameters": {
+								"variable": "wave",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 227718378121532
 						}
 					],
 					"actions": [
@@ -209,230 +500,391 @@
 						}
 					],
 					"sid": 184659779308294
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 816580901789915,
+							"parameters": {
+								"variable": "spawnPinwheelTimer",
+								"comparison": 2,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 736860433299271,
+							"parameters": {
+								"variable": "wave",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 687611401117053
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 267631131339282,
+							"parameters": {
+								"variable": "spawnPinwheelTimer",
+								"value": "int(random(0,1))"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 160069275664247,
+							"parameters": {
+								"object-to-create": "Pinwheel",
+								"layer": "1",
+								"x": "random(ViewportWidth(\"Game\"))",
+								"y": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 399102008633260
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 538038294933104,
+							"parameters": {
+								"variable": "spawnPinwheelTimer",
+								"comparison": 2,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 848944566657920,
+							"parameters": {
+								"variable": "wave",
+								"comparison": 5,
+								"value": "2"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 556378475827303
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 712319438710131,
+							"parameters": {
+								"variable": "spawnPinwheelTimer",
+								"value": ".5"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 654733605040736,
+							"parameters": {
+								"object-to-create": "Pinwheel",
+								"layer": "1",
+								"x": "random(ViewportWidth(\"Game\"))",
+								"y": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 473505713758574
 				}
 			],
 			"sid": 961540887121808
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Collisions",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "PlatePlayer",
-					"sid": 460958750875627,
-					"parameters": {
-						"object": "FortuneCookie"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "add-to-instvar",
-					"objectClass": "PlatePlayer",
-					"sid": 207744030361323,
-					"parameters": {
-						"instance-variable": "Score",
-						"value": "1"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "PlatePlayer",
+							"sid": 788669038722103,
+							"parameters": {
+								"object": "FortuneCookie"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-instvar",
+							"objectClass": "PlatePlayer",
+							"sid": 700239733690974,
+							"parameters": {
+								"instance-variable": "Score",
+								"value": "1"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "FortuneCookie",
+							"sid": 821026823741448
+						}
+					],
+					"sid": 764159750722413
 				},
 				{
-					"id": "destroy",
-					"objectClass": "FortuneCookie",
-					"sid": 936635965572650
-				}
-			],
-			"sid": 599329981222984
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "PlatePlayer",
-					"sid": 641987398746023,
-					"parameters": {
-						"object": "Pinwheel"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "subtract-from-instvar",
-					"objectClass": "PlatePlayer",
-					"sid": 633376348509336,
-					"parameters": {
-						"instance-variable": "Health",
-						"value": "1"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "PlatePlayer",
+							"sid": 678369298645501,
+							"parameters": {
+								"object": "Pinwheel"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "PlatePlayer",
+							"sid": 167927511656118,
+							"parameters": {
+								"instance-variable": "Health",
+								"value": "1"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Pinwheel",
+							"sid": 763147836169530
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "PlatePlayer",
+							"sid": 958640804013322,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"Pixellate\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 377295678920267,
+							"parameters": {
+								"seconds": ".5"
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "PlatePlayer",
+							"sid": 726786531109457,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"Pixellate\""
+							}
+						}
+					],
+					"sid": 636159888867314
 				},
 				{
-					"id": "destroy",
-					"objectClass": "Pinwheel",
-					"sid": 206020612143534
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "PlatePlayer",
+							"sid": 104609539374129,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "PlatePlayer",
+							"sid": 693175559509611
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 159981384110099,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 844726623608007
+						}
+					],
+					"sid": 513958582820670
 				},
 				{
-					"id": "set-effect-enabled",
-					"objectClass": "PlatePlayer",
-					"sid": 579243359580726,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"Pixellate\""
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "PlatePlayer",
+							"sid": 140911709513610,
+							"parameters": {
+								"instance-variable": "Score",
+								"comparison": 5,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "FortuneCookie",
+							"sid": 808537190353185,
+							"disabled": true,
+							"behaviorType": "Physics",
+							"parameters": {
+								"mode": "disabled"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 285092386220162,
+							"parameters": {
+								"variable": "spawnPinwheelTimer",
+								"value": "30"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Pinwheel",
+							"sid": 586923411344846,
+							"behaviorType": "Physics",
+							"parameters": {
+								"mode": "disabled"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 641025590300149,
+							"parameters": {
+								"object-to-create": "FortuneCookie",
+								"layer": "1",
+								"x": "random(ViewportWidth(\"Game\"))",
+								"y": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Fortune",
+							"sid": 999110287441966,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 684894409454549,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 254362061815308
+						}
+					],
+					"sid": 989726023347071
 				},
 				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 466983796058747,
-					"parameters": {
-						"seconds": ".5"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 158398521315317
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "ScoreText",
+							"sid": 323748349449845,
+							"parameters": {
+								"x": "10",
+								"y": "300"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ScoreText",
+							"sid": 747003024970822,
+							"parameters": {
+								"text": "PlatePlayer.Score "
+							}
+						}
+					],
+					"sid": 194048458672028
 				},
 				{
-					"id": "set-effect-enabled",
-					"objectClass": "PlatePlayer",
-					"sid": 853498285088503,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"Pixellate\""
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 540129380656432
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "PlayerText",
+							"sid": 664824516722270,
+							"parameters": {
+								"object": "PlatePlayer",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "PlayerText",
+							"sid": 273361523738786,
+							"parameters": {
+								"text": "PlatePlayer.Health"
+							}
+						}
+					],
+					"sid": 163567632146616
 				}
 			],
-			"sid": 207873195418848
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "PlatePlayer",
-					"sid": 903406431941639,
-					"parameters": {
-						"instance-variable": "Health",
-						"comparison": 0,
-						"value": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "PlatePlayer",
-					"sid": 957077887991872
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 661725843788440,
-					"parameters": {
-						"seconds": "1.0"
-					}
-				},
-				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 441288202760986
-				}
-			],
-			"sid": 189490522326850
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "PlatePlayer",
-					"sid": 853578593576708,
-					"parameters": {
-						"instance-variable": "Score",
-						"comparison": 0,
-						"value": "10"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "Fortune",
-					"sid": 260192609306971,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 112922307409876,
-					"parameters": {
-						"seconds": "5"
-					}
-				},
-				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 132054785945718
-				}
-			],
-			"sid": 635776633183095
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 191145297029408
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "ScoreText",
-					"sid": 655722167614449,
-					"parameters": {
-						"x": "10",
-						"y": "300"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "ScoreText",
-					"sid": 972955714410703,
-					"parameters": {
-						"text": "PlatePlayer.Score "
-					}
-				}
-			],
-			"sid": 309852593193183
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 315204650684636
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position-to-another-object",
-					"objectClass": "PlayerText",
-					"sid": 940020839262020,
-					"parameters": {
-						"object": "PlatePlayer",
-						"image-point-optional": "0"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "PlayerText",
-					"sid": 289158361923455,
-					"parameters": {
-						"text": "PlatePlayer.Health"
-					}
-				}
-			],
-			"sid": 283056754901471
+			"sid": 635986889287971
 		}
 	],
 	"sid": 570725407226283
