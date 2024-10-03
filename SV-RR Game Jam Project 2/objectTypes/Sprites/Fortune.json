@@ -1,0 +1,59 @@
+{
+	"name": "Fortune",
+	"plugin-id": "Sprite",
+	"sid": 756745272718981,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 390,
+						"height": 230,
+						"originX": 0.48813938198553586,
+						"originY": 0.752476370510397,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2468063,
+						"collisionPoly": {
+							"points": [
+								0.9459434582511506,
+								0,
+								1,
+								0.05561436672967869,
+								1,
+								0.7137618147448015,
+								1,
+								0.9847637051039696,
+								0.7978303747534516,
+								1,
+								0,
+								1,
+								0,
+								0.7911909262759924,
+								0,
+								0.6363327032136105
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 382568167142801,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -86,16 +86,15 @@
 	],
 	"uniqueId": "royusbhenu2",
 	"objectTypes": {
-		"items": [
-			"TiledBackground"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
 					"FortuneCookie",
 					"Pinwheel",
 					"PlatePlayer",
-					"FortuneText"
+					"FortuneText",
+					"Fortune"
 				],
 				"subfolders": [],
 				"name": "Sprites"
@@ -103,7 +102,8 @@
 			{
 				"items": [
 					"Platform",
-					"Tilemap"
+					"Tilemap",
+					"TiledBackground"
 				],
 				"subfolders": [],
 				"name": "Environment"

@@ -352,8 +352,8 @@
 			"actions": [
 				{
 					"id": "set-visible",
-					"objectClass": "FortuneText",
-					"sid": 434100537742733,
+					"objectClass": "Fortune",
+					"sid": 260192609306971,
 					"parameters": {
 						"visibility": "visible"
 					}
