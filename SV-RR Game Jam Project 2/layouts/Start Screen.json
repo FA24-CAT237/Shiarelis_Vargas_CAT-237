@@ -72,7 +72,7 @@
 						"wrapping": "word",
 						"text-direction": "ltr",
 						"icon-set": -1,
-						"initially-visible": false,
+						"initially-visible": true,
 						"origin": "top-left",
 						"read-aloud": false
 					},
