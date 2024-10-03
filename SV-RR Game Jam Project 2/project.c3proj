@@ -86,7 +86,9 @@
 	],
 	"uniqueId": "royusbhenu2",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"ScoreBackground"
+		],
 		"subfolders": [
 			{
 				"items": [

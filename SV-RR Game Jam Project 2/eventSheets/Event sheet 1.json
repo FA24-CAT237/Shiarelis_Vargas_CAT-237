@@ -836,10 +836,10 @@
 						{
 							"id": "set-position",
 							"objectClass": "ScoreText",
-							"sid": 323748349449845,
+							"sid": 846414600121857,
 							"parameters": {
 								"x": "10",
-								"y": "300"
+								"y": "400"
 							}
 						},
 						{
