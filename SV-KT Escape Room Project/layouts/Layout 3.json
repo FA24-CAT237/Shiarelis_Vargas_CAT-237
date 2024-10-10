@@ -1,12 +1,12 @@
 {
-	"name": "Layout 1",
+	"name": "Layout 3",
 	"layers": [
 		{
 			"name": "BG",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [],
-			"sid": 605947996243639,
+			"sid": 629161423807563,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -40,7 +40,7 @@
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [],
-			"sid": 960749462491303,
+			"sid": 240874635638636,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -74,7 +74,7 @@
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [],
-			"sid": 241709274727179,
+			"sid": 172665687878857,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -108,7 +108,7 @@
 		"items": [],
 		"subfolders": []
 	},
-	"sid": 317044145782784,
+	"sid": 116948409113814,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1708,
