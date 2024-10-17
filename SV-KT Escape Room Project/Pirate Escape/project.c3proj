@@ -8,6 +8,27 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Json",
+			"name": "JSON",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -15,15 +36,22 @@
 		},
 		{
 			"type": "plugin",
-			"id": "TiledBg",
-			"name": "Tiled Background",
+			"id": "Tilemap",
+			"name": "Tilemap",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
-			"type": "plugin",
-			"id": "Tilemap",
-			"name": "Tilemap",
+			"type": "behavior",
+			"id": "TileMovement",
+			"name": "Tile movement",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -34,10 +62,11 @@
 			"BG",
 			"Clams",
 			"Pirate",
-			"PianoCave",
+			"Piano",
 			"MazeWalls",
-			"ChestPicrossGrid",
-			"ChestPicross"
+			"JSON",
+			"Keyboard",
+			"Mouse"
 		],
 		"subfolders": []
 	},
@@ -59,7 +88,11 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Event sheet 1",
+			"Event sheet 2",
+			"Event sheet 3",
+			"Event sheet 4",
+			"Event sheet 5"
 		],
 		"subfolders": []
 	},
@@ -146,7 +179,16 @@
 			"subfolders": []
 		},
 		"general": {
-			"items": [],
+			"items": [
+				{
+					"name": "pix-editor.json",
+					"type": "application/json",
+					"sid": 523779990920715,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		}
 	},

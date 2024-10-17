@@ -1,0 +1,227 @@
+{
+	"name": "Event sheet 5",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 417572634707970,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Piano",
+					"sid": 992105867983754,
+					"parameters": {
+						"instance-variable": "KeyPressed1",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 108432532001554
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 845449916883301,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Piano",
+					"sid": 117077429640942,
+					"parameters": {
+						"animation": "\"Key2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Piano",
+					"sid": 324501964663249,
+					"parameters": {
+						"instance-variable": "KeyPressed2",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 839000201631760
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 494996792539545,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Piano",
+					"sid": 187851508635666,
+					"parameters": {
+						"animation": "\"Key3\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Piano",
+					"sid": 919125123885328,
+					"parameters": {
+						"instance-variable": "KeyPressed3",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 259518070043660
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 899864009341869,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Piano",
+					"sid": 623216938650198,
+					"parameters": {
+						"animation": "\"Key4\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Piano",
+					"sid": 880836842572350,
+					"parameters": {
+						"instance-variable": "KeyPressed4",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 796332434821034
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 765263935272488,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Piano",
+					"sid": 165096447122784,
+					"parameters": {
+						"animation": "\"Key5\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Piano",
+					"sid": 872451524433062,
+					"parameters": {
+						"instance-variable": "KeyPressed5",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 748713364380064
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 289002963029799,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Piano",
+					"sid": 694216817918116,
+					"parameters": {
+						"animation": "\"Key6\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Piano",
+					"sid": 781570036912797,
+					"parameters": {
+						"instance-variable": "KeyPressed6",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 650301724270524
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Piano",
+					"sid": 603528792342198,
+					"parameters": {
+						"instance-variable": "KeyPressed1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Piano",
+					"sid": 485240054387369,
+					"parameters": {
+						"animation": "\"Key1\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 699674195850149
+		}
+	],
+	"sid": 240658990189305
+}

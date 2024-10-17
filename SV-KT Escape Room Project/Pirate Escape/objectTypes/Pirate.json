@@ -4,7 +4,13 @@
 	"sid": 580334209961040,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "TileMovement",
+			"name": "TileMovement",
+			"sid": 254974598656289
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -19,7 +25,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1862571,
+						"imageSpriteId": 9481486,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
