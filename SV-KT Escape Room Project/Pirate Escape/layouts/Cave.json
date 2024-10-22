@@ -88,7 +88,9 @@
 					"uid": 3,
 					"sid": 308672374872554,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Confirm": false
+					},
 					"behaviors": {
 						"Sine": {
 							"properties": {
@@ -211,7 +213,9 @@
 					"uid": 14,
 					"sid": 727111878724518,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Confirm": false
+					},
 					"behaviors": {
 						"Sine": {
 							"properties": {
@@ -284,7 +288,9 @@
 					"uid": 13,
 					"sid": 253992448936572,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Confirm": false
+					},
 					"behaviors": {
 						"MoveTo": {
 							"properties": {
@@ -545,6 +551,41 @@
 						"height": 64,
 						"originX": 0.5,
 						"originY": 0.625,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "RestartButton",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 27,
+					"sid": 934484041725880,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 934484041725880,
+						"expanded": true
+					},
+					"world": {
+						"x": 721,
+						"y": 93,
+						"width": 211.20658319282825,
+						"height": 167.13766780711043,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

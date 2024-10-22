@@ -54,6 +54,11 @@
 						"variable": "PlayAnimation",
 						"value": "true"
 					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "RestartButton",
+					"sid": 912074067462727
 				}
 			],
 			"sid": 753780795586229
@@ -720,6 +725,15 @@
 						"variable": "PlayAnimation"
 					},
 					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Clamily",
+					"sid": 371066163847382,
+					"parameters": {
+						"instance-variable": "Confirm"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [],
@@ -735,6 +749,15 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Clamily",
+							"sid": 975175655553041,
+							"parameters": {
+								"instance-variable": "Confirm",
+								"value": "true"
+							}
+						},
 						{
 							"id": "set-animation-frame",
 							"objectClass": "Clam2",
@@ -795,9 +818,27 @@
 						"variable": "PlayAnimation"
 					},
 					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Clamily",
+					"sid": 547020157678930,
+					"parameters": {
+						"instance-variable": "Confirm"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Clamily",
+					"sid": 152334737491583,
+					"parameters": {
+						"instance-variable": "Confirm",
+						"value": "true"
+					}
+				},
 				{
 					"id": "set-animation-frame",
 					"objectClass": "Clam",
@@ -815,9 +856,12 @@
 					}
 				},
 				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 228356416993015
+					"id": "set-visible",
+					"objectClass": "RestartButton",
+					"sid": 181692623210452,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 279332097959100
@@ -843,9 +887,27 @@
 						"variable": "PlayAnimation"
 					},
 					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Clamily",
+					"sid": 723334690517157,
+					"parameters": {
+						"instance-variable": "Confirm"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Clamily",
+					"sid": 328379661974479,
+					"parameters": {
+						"instance-variable": "Confirm",
+						"value": "true"
+					}
+				},
 				{
 					"id": "set-animation-frame",
 					"objectClass": "Clam3",
@@ -863,9 +925,12 @@
 					}
 				},
 				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 558433147979702
+					"id": "set-visible",
+					"objectClass": "RestartButton",
+					"sid": 454000763880765,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 163222849299319
@@ -895,6 +960,78 @@
 				}
 			],
 			"sid": 231382520241639
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 489556418981508,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "RestartButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 895137772017350
+				}
+			],
+			"sid": 436060974734371
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 263979380599446,
+					"parameters": {
+						"object": "RestartButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "RestartButton",
+					"sid": 641474308235052,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 795892607819566
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 197744016511673,
+					"parameters": {
+						"object": "RestartButton"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "RestartButton",
+					"sid": 159717108588422,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 176226574544841
 		}
 	],
 	"sid": 860969932998343

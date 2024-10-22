@@ -1,16 +1,10 @@
 {
-	"name": "Dolphin",
+	"name": "RestartButton",
 	"plugin-id": "Sprite",
-	"sid": 977511610883275,
+	"sid": 435600139754746,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Sin",
-			"name": "Sine",
-			"sid": 764074148537498
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -25,13 +19,27 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2634557,
+						"imageSpriteId": 4794006,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8610684,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 756107844394430,
+				"sid": 503049031428523,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

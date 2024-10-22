@@ -10,6 +10,156 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 356502250210043
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 543225152598384,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Pirate",
+					"sid": 626502306528788,
+					"parameters": {
+						"object": "RedXSpot"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "RedXSpot",
+					"sid": 829722391797482
+				}
+			],
+			"sid": 897707247121267
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 747447405922133,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Pirate",
+					"sid": 868501326914656,
+					"parameters": {
+						"object": "RedXSpot2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "RedXSpot2",
+					"sid": 717330812064607
+				}
+			],
+			"sid": 470317793415603
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 315289791412759,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Pirate",
+					"sid": 414631412170382,
+					"parameters": {
+						"object": "RedXSpot3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "RedXSpot3",
+					"sid": 147351571454777
+				}
+			],
+			"sid": 863681818828351
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 860281181550175,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Pirate",
+					"sid": 583812352450378,
+					"parameters": {
+						"object": "RedXSpot4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "RedXSpot4",
+					"sid": 317851106265941
+				}
+			],
+			"sid": 461422860557713
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 203199832840995,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Pirate",
+					"sid": 393495923038983,
+					"parameters": {
+						"object": "RedXSpot5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "RedXSpot5",
+					"sid": 183883952938699
+				}
+			],
+			"sid": 604738467933708
 		}
 	],
 	"sid": 711488796191431

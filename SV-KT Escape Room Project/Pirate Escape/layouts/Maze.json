@@ -42,7 +42,7 @@
 					}
 				},
 				{
-					"type": "RedXSpot",
+					"type": "RedXSpot2",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -51,17 +51,17 @@
 						"live-preview": false
 					},
 					"uid": 15,
-					"sid": 234020813105919,
+					"sid": 522162510001037,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 234020813105919,
+						"sid": 522162510001037,
 						"expanded": true
 					},
 					"world": {
-						"x": 34,
-						"y": 33,
+						"x": 31,
+						"y": 355,
 						"width": 20,
 						"height": 20,
 						"originX": 0.5,
@@ -77,7 +77,7 @@
 					}
 				},
 				{
-					"type": "RedXSpot",
+					"type": "RedXSpot3",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -86,17 +86,17 @@
 						"live-preview": false
 					},
 					"uid": 16,
-					"sid": 110051162989799,
+					"sid": 874962135231737,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 110051162989799,
+						"sid": 874962135231737,
 						"expanded": true
 					},
 					"world": {
-						"x": 31,
-						"y": 356,
+						"x": 33,
+						"y": 30,
 						"width": 20,
 						"height": 20,
 						"originX": 0.5,
@@ -112,7 +112,7 @@
 					}
 				},
 				{
-					"type": "RedXSpot",
+					"type": "RedXSpot4",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -121,17 +121,52 @@
 						"live-preview": false
 					},
 					"uid": 18,
-					"sid": 847342030325224,
+					"sid": 534504568911981,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 847342030325224,
+						"sid": 534504568911981,
+						"expanded": true
+					},
+					"world": {
+						"x": 449,
+						"y": 292,
+						"width": 20,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "RedXSpot5",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 28,
+					"sid": 781444182016280,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 781444182016280,
 						"expanded": true
 					},
 					"world": {
 						"x": 286,
-						"y": 448,
+						"y": 455,
 						"width": 20,
 						"height": 20,
 						"originX": 0.5,
@@ -243,6 +278,41 @@
 					}
 				},
 				{
+					"type": "RedXSpot",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 12,
+					"sid": 991362919254539,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 991362919254539,
+						"expanded": true
+					},
+					"world": {
+						"x": 609,
+						"y": 36,
+						"width": 20,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Pirate",
 					"properties": {
 						"initially-visible": true,
@@ -279,41 +349,6 @@
 						"y": 450,
 						"width": 16,
 						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "RedXSpot",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 12,
-					"sid": 936842707219910,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 936842707219910,
-						"expanded": true
-					},
-					"world": {
-						"x": 686,
-						"y": 32,
-						"width": 20,
-						"height": 20,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

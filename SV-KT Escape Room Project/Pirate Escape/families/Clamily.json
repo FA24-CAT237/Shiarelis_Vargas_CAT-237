@@ -1,0 +1,21 @@
+{
+	"name": "Clamily",
+	"plugin-id": "Sprite",
+	"sid": 574442557559011,
+	"instanceVariables": [
+		{
+			"name": "Confirm",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 563101854697916
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Clam3",
+		"Clam2",
+		"Clam"
+	]
+}

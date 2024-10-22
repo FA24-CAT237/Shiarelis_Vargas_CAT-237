@@ -99,14 +99,22 @@
 			"Arrow1",
 			"Arrow2",
 			"Arrow3",
-			"ClamSelector"
+			"ClamSelector",
+			"RestartButton",
+			"RedXSpot2",
+			"RedXSpot3",
+			"RedXSpot4",
+			"RedXSpot5"
 		],
 		"subfolders": []
 	},
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"Clamily",
+			"Exes"
+		],
 		"subfolders": []
 	},
 	"layouts": {
