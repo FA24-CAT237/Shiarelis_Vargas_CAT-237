@@ -1,5 +1,901 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "SolvedPuzzle1",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 455434134726291
+		},
+		{
+			"eventType": "variable",
+			"name": "PlayAnimation",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 300466209136608
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 324792131489214
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "Clam",
+					"sid": 855435308733252
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Clam2",
+					"sid": 251786934465052
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Clam3",
+					"sid": 319619136247046
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 580674217220895,
+					"parameters": {
+						"variable": "PlayAnimation",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 753780795586229
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 815998488060019,
+					"parameters": {
+						"variable": "PlayAnimation"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 708498020518601
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 749422322251716,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Clam",
+					"sid": 865288628606596,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Clam2",
+					"sid": 171346793385130,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Clam3",
+					"sid": 171378878526252,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 265318999005264,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Clam",
+					"sid": 904377488564505,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Clam2",
+					"sid": 717913796731835,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Clam3",
+					"sid": 311005758271082,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 721341672370620,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam",
+					"sid": 659618815151223,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "428",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam2",
+					"sid": 388955551682790,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "214",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 296302029131493,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam",
+					"sid": 927223573479834,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "642",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam3",
+					"sid": 692750501091780,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "428",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 721052979133191,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam2",
+					"sid": 451210067991347,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "642",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam",
+					"sid": 399725984343757,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "428",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam3",
+					"sid": 730504165014605,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "214",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 607099052148154,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam2",
+					"sid": 288538849098758,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "428",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam",
+					"sid": 980102397090202,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "214",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam3",
+					"sid": 320273515468133,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "642",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 130810778374443,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam2",
+					"sid": 575959758620635,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "642",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam",
+					"sid": 791487819714714,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "214",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam3",
+					"sid": 715998628556954,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "428",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 423730305997998,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam2",
+					"sid": 883486903322169,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "214",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam",
+					"sid": 631227592368212,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "428",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam3",
+					"sid": 348106985207971,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "642",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 722110081841697,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "Clam",
+					"sid": 448740256960688,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"max-speed": "428"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "Clam2",
+					"sid": 783249040325257,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"max-speed": "428"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "Clam3",
+					"sid": 202391755699950,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"max-speed": "428"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam2",
+					"sid": 466960563678738,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "642",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam",
+					"sid": 658994112813461,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "428",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam3",
+					"sid": 180258115117049,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "214",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 306684512852496,
+					"parameters": {
+						"seconds": ".5"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam2",
+					"sid": 749878127153546,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "214",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam",
+					"sid": 261449949967312,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "642",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam3",
+					"sid": 185012973249949,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "428",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 529374982355910,
+					"parameters": {
+						"seconds": ".5"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam2",
+					"sid": 109194617010137,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "428",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam3",
+					"sid": 815113864914670,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "214",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 989512077949986,
+					"parameters": {
+						"seconds": ".5"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam",
+					"sid": 977715945907516,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "428",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam2",
+					"sid": 721833807958427,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "642",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 582822875650090,
+					"parameters": {
+						"seconds": ".5"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam",
+					"sid": 810783309872158,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "642",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam2",
+					"sid": 396039242246212,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "214",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam3",
+					"sid": 933568504391484,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "428",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 330114576503265,
+					"parameters": {
+						"seconds": ".5"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Clam",
+					"sid": 279804381508709,
+					"disabled": true,
+					"behaviorType": "Orbit",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-target",
+					"objectClass": "Clam",
+					"sid": 498973554276727,
+					"disabled": true,
+					"behaviorType": "Orbit",
+					"parameters": {
+						"x": "RotationSpotMiddle.X",
+						"y": "RotationSpotMiddle.Y"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Clam2",
+					"sid": 296731253026648,
+					"disabled": true,
+					"behaviorType": "Orbit",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Clam2",
+					"sid": 595845462397230,
+					"disabled": true,
+					"behaviorType": "Orbit",
+					"parameters": {
+						"speed": "-428"
+					}
+				},
+				{
+					"id": "set-target",
+					"objectClass": "Clam2",
+					"sid": 134825850436117,
+					"disabled": true,
+					"behaviorType": "Orbit",
+					"parameters": {
+						"x": "RotationSpotMiddle.X",
+						"y": "RotationSpotMiddle.Y"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 972838262768340,
+					"disabled": true,
+					"parameters": {
+						"seconds": ".5"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Clam",
+					"sid": 728513443678562,
+					"disabled": true,
+					"behaviorType": "Orbit",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Clam2",
+					"sid": 606943428160244,
+					"disabled": true,
+					"behaviorType": "Orbit",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 357391964722219,
+					"parameters": {
+						"variable": "PlayAnimation",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Arrow1",
+					"sid": 576590295093196,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Arrow2",
+					"sid": 902943502074916,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Arrow3",
+					"sid": 664599407052529,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 465374839182948
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 218945240012823,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Clam2"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 389931333776706,
+					"parameters": {
+						"variable": "PlayAnimation"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 207845464361839,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 694686131024326
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Clam2",
+							"sid": 458065132179031,
+							"parameters": {
+								"frame-number": "1"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Dolphin",
+							"sid": 761420297987080,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 799414457809244,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Dolphin",
+							"sid": 826878299938497,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						}
+					],
+					"sid": 432395993616658
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 861448230334132,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Clam"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 475404397568693,
+					"parameters": {
+						"variable": "PlayAnimation"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Clam",
+					"sid": 580295367378552,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 832444280865995,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 228356416993015
+				}
+			],
+			"sid": 279332097959100
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 258032790178574,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Clam3"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 955675020206164,
+					"parameters": {
+						"variable": "PlayAnimation"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Clam3",
+					"sid": 847074459613335,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 486935475461927,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 558433147979702
+				}
+			],
+			"sid": 163222849299319
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 956092344789931,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Dolphin"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 153878266312226,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 231382520241639
+		}
+	],
 	"sid": 860969932998343
 }

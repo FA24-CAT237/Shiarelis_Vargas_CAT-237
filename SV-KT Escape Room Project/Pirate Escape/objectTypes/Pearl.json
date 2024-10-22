@@ -1,0 +1,67 @@
+{
+	"name": "Pearl",
+	"plugin-id": "Sprite",
+	"sid": 808827302395964,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4148370,
+						"collisionPoly": {
+							"points": [
+								0.46875,
+								0.3125,
+								0.59375,
+								0.3125,
+								0.65625,
+								0.34375,
+								0.75,
+								0.4375,
+								0.75,
+								0.59375,
+								0.65625,
+								0.6875,
+								0.59375,
+								0.71875,
+								0.46875,
+								0.71875,
+								0.40625,
+								0.6875,
+								0.3125,
+								0.59375,
+								0.3125,
+								0.4375,
+								0.40625,
+								0.34375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 589158537581193,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

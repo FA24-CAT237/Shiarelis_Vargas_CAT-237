@@ -1,5 +1,16 @@
 {
 	"name": "Event sheet 2",
-	"events": [],
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "SolvedPuzzle2",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 356502250210043
+		}
+	],
 	"sid": 711488796191431
 }

@@ -2,6 +2,16 @@
 	"name": "Event sheet 5",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "SolvedPuzzle5",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 456536964141566
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{

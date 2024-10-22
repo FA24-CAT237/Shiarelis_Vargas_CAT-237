@@ -5,43 +5,7 @@
 			"name": "BG",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [
-				{
-					"type": "BG",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Sea",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 12,
-					"sid": 902470802963181,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 902470802963181,
-						"expanded": true
-					},
-					"world": {
-						"x": 428,
-						"y": 89,
-						"width": 854,
-						"height": 854,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
+			"instances": [],
 			"sid": 127985939940793,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -153,5 +117,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Event sheet 2"
+	"eventSheet": "Event sheet 3"
 }

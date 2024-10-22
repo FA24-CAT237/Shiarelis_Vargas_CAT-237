@@ -43,6 +43,27 @@
 		},
 		{
 			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Move To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Orbit",
+			"name": "Orbit",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "TileMovement",
 			"name": "Tile movement",
 			"author": "Scirra",
@@ -60,13 +81,25 @@
 	"objectTypes": {
 		"items": [
 			"BG",
-			"Clams",
+			"Clam",
 			"Pirate",
 			"Piano",
 			"MazeWalls",
 			"JSON",
 			"Keyboard",
-			"Mouse"
+			"Mouse",
+			"Dolphin",
+			"Pearl",
+			"Clam2",
+			"Clam3",
+			"RedXSpot",
+			"RotationSpotMiddle",
+			"RotationSpotLeft",
+			"RotationSpotRight",
+			"Arrow1",
+			"Arrow2",
+			"Arrow3",
+			"ClamSelector"
 		],
 		"subfolders": []
 	},
