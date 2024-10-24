@@ -1,19 +1,14 @@
 {
-	"name": "Pirate",
+	"name": "MazeDoor",
 	"plugin-id": "Sprite",
-	"sid": 580334209961040,
+	"sid": 472500122931602,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "TileMovement",
-			"name": "TileMovement",
-			"sid": 254974598656289
-		},
-		{
-			"behaviorId": "bound",
-			"name": "BoundToLayout",
-			"sid": 205948118486649
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 122156466218623
 		}
 	],
 	"effectTypes": [],
@@ -22,21 +17,21 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 32,
+						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9481486,
+						"imageSpriteId": 2409040,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 427849843065009,
+				"sid": 391414180806815,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -15,12 +15,11 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-click",
-					"objectClass": "Mouse",
-					"sid": 543225152598384,
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 213701484199394,
 					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked"
+						"key": 32
 					}
 				},
 				{
@@ -34,9 +33,25 @@
 			],
 			"actions": [
 				{
-					"id": "destroy",
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 431774369290147,
+					"parameters": {
+						"object-to-create": "DigConfirm",
+						"layer": "2",
+						"x": "Pirate.X",
+						"y": "Pirate.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
 					"objectClass": "RedXSpot",
-					"sid": 829722391797482
+					"sid": 659723777675580,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 897707247121267
@@ -45,12 +60,11 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-click",
-					"objectClass": "Mouse",
-					"sid": 747447405922133,
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 686236478624437,
 					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked"
+						"key": 32
 					}
 				},
 				{
@@ -64,9 +78,25 @@
 			],
 			"actions": [
 				{
-					"id": "destroy",
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 312534211308949,
+					"parameters": {
+						"object-to-create": "DigConfirm",
+						"layer": "2",
+						"x": "Pirate.X",
+						"y": "Pirate.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
 					"objectClass": "RedXSpot2",
-					"sid": 717330812064607
+					"sid": 579721833620131,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 470317793415603
@@ -75,12 +105,11 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-click",
-					"objectClass": "Mouse",
-					"sid": 315289791412759,
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 328223622877678,
 					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked"
+						"key": 32
 					}
 				},
 				{
@@ -94,9 +123,25 @@
 			],
 			"actions": [
 				{
-					"id": "destroy",
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 854209745407941,
+					"parameters": {
+						"object-to-create": "DigConfirm",
+						"layer": "2",
+						"x": "Pirate.X",
+						"y": "Pirate.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
 					"objectClass": "RedXSpot3",
-					"sid": 147351571454777
+					"sid": 775654914886625,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 863681818828351
@@ -105,12 +150,11 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-click",
-					"objectClass": "Mouse",
-					"sid": 860281181550175,
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 667839671348300,
 					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked"
+						"key": 32
 					}
 				},
 				{
@@ -124,9 +168,25 @@
 			],
 			"actions": [
 				{
-					"id": "destroy",
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 262012925108285,
+					"parameters": {
+						"object-to-create": "DigConfirm",
+						"layer": "2",
+						"x": "Pirate.X",
+						"y": "Pirate.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
 					"objectClass": "RedXSpot4",
-					"sid": 317851106265941
+					"sid": 993550459744882,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 461422860557713
@@ -135,12 +195,11 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-click",
-					"objectClass": "Mouse",
-					"sid": 203199832840995,
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 656256038494107,
 					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked"
+						"key": 32
 					}
 				},
 				{
@@ -154,12 +213,57 @@
 			],
 			"actions": [
 				{
-					"id": "destroy",
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 443645577747962,
+					"parameters": {
+						"object-to-create": "DigConfirm",
+						"layer": "2",
+						"x": "Pirate.X",
+						"y": "Pirate.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
 					"objectClass": "RedXSpot5",
-					"sid": 183883952938699
+					"sid": 984653860019689,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 604738467933708
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 452147952948806,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 123978887076651,
+					"parameters": {
+						"object-to-create": "DigUnconfirm",
+						"layer": "0",
+						"x": "Pirate.X",
+						"y": "Pirate.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 687706662389402
 		}
 	],
 	"sid": 711488796191431

@@ -10,7 +10,7 @@
 					"type": "BG",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Sea",
+						"initial-animation": "Rotation Puzzle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -25,10 +25,10 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 428,
-						"y": 89,
-						"width": 854,
-						"height": 854,
+						"x": 432,
+						"y": 239,
+						"width": 253.68,
+						"height": 154,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

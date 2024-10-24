@@ -78,6 +78,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "bound",
+			"name": "Bound to layout",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
@@ -114,7 +121,11 @@
 			"RedXSpot5",
 			"Particles",
 			"Particles2",
-			"Particles3"
+			"Particles3",
+			"DigConfirm",
+			"DigUnconfirm",
+			"MazeDoor",
+			"Quicksand"
 		],
 		"subfolders": []
 	},
