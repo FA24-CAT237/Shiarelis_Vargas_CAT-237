@@ -1032,6 +1032,213 @@
 				}
 			],
 			"sid": 176226574544841
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 550852922006330,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Clam"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 596003766669915,
+					"parameters": {
+						"variable": "PlayAnimation"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Clamily",
+					"sid": 200300123621325,
+					"parameters": {
+						"instance-variable": "Confirm"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Clam",
+					"sid": 665180467813250,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 412276779976762,
+					"parameters": {
+						"object-to-create": "Particles",
+						"layer": "1",
+						"x": "Clam.X",
+						"y": "Clam.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 155132400677553,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Particles",
+					"sid": 562962499557783
+				}
+			],
+			"sid": 928492335258393
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 287868234584801,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Clam2"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 478024132279699,
+					"parameters": {
+						"variable": "PlayAnimation"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Clamily",
+					"sid": 868626600778112,
+					"parameters": {
+						"instance-variable": "Confirm"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Clam2",
+					"sid": 401345479210082,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 828234797879483,
+					"parameters": {
+						"object-to-create": "Particles2",
+						"layer": "1",
+						"x": "Clam2.X",
+						"y": "Clam2.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 479849115012028,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Particles2",
+					"sid": 738049100411446
+				}
+			],
+			"sid": 133538090959781
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 638663524830259,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Clam3"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 994583411630805,
+					"parameters": {
+						"variable": "PlayAnimation"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Clamily",
+					"sid": 386407917864597,
+					"parameters": {
+						"instance-variable": "Confirm"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Clam3",
+					"sid": 209391377435730,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 612322819621188,
+					"parameters": {
+						"object-to-create": "Particles3",
+						"layer": "1",
+						"x": "Clam3.X",
+						"y": "Clam3.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 165083068716888,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Particles3",
+					"sid": 790952062328568
+				}
+			],
+			"sid": 748362024061648
 		}
 	],
 	"sid": 860969932998343

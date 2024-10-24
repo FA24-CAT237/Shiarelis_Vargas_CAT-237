@@ -136,10 +136,10 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 420,
-						"y": 604,
+						"x": 287,
+						"y": 375,
 						"width": 250,
-						"height": 186,
+						"height": 206,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -190,8 +190,8 @@
 	"sid": 555028730802939,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 1708,
-	"height": 960,
+	"width": 854,
+	"height": 480,
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,
