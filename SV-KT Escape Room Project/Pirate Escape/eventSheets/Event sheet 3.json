@@ -10,6 +10,245 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 874366069350486
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 207271748828039,
+					"parameters": {
+						"key": 13
+					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "TextInput",
+					"sid": 719993967469772,
+					"parameters": {
+						"text": "\"chest\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Answer",
+					"sid": 340331220481703,
+					"parameters": {
+						"text": "\"Password Accepted!\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 696959815021285,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 589434461658364,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 135121903352008
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 302207842582625,
+					"parameters": {
+						"key": 13
+					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "TextInput",
+					"sid": 682893518402711,
+					"parameters": {
+						"text": "\"chest\"",
+						"case": "case-insensitive"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Answer",
+					"sid": 468984654508154,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Answer",
+					"sid": 661914813773639,
+					"parameters": {
+						"text": "\"Try Again\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 487827526454720,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Answer",
+					"sid": 167155110226446,
+					"parameters": {
+						"text": "\"Enter 5-Letter Password\""
+					}
+				}
+			],
+			"sid": 179184236047758
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 250562755805120
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Answer",
+					"sid": 574777670046729,
+					"parameters": {
+						"text": "\"Enter 5-Letter Password\""
+					}
+				}
+			],
+			"sid": 642173742398984
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 679387173042946,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "SandSpot1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "start-fade",
+					"objectClass": "SandSpot1",
+					"sid": 162830794207978,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 249038614470307,
+					"parameters": {
+						"object-to-create": "SandBlow",
+						"layer": "2",
+						"x": "Mouse.X",
+						"y": "Mouse.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 427109525286948
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 862005810945136,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "SandSpot2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "start-fade",
+					"objectClass": "SandSpot2",
+					"sid": 850720442468870,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 732278617688609,
+					"parameters": {
+						"object-to-create": "SandBlow",
+						"layer": "2",
+						"x": "Mouse.X",
+						"y": "Mouse.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 860010832749566
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 368411583382862,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "SandSpot3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "start-fade",
+					"objectClass": "SandSpot3",
+					"sid": 466897577919134,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 772686231332473,
+					"parameters": {
+						"object-to-create": "SandBlow",
+						"layer": "2",
+						"x": "Mouse.X",
+						"y": "Mouse.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 345783125550772
 		}
 	],
 	"sid": 621207810367692

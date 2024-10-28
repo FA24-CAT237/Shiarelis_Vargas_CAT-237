@@ -43,8 +43,29 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TextBox",
+			"name": "Text input",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Tilemap",
 			"name": "Tilemap",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -125,7 +146,20 @@
 			"DigConfirm",
 			"DigUnconfirm",
 			"MazeDoor",
-			"Quicksand"
+			"Quicksand",
+			"TextInput",
+			"Answer",
+			"BagMenu",
+			"Note3",
+			"Note1",
+			"SandSpot1",
+			"SandSpot2",
+			"SandSpot3",
+			"Sprite2",
+			"SandBlow",
+			"Note4",
+			"Note2",
+			"Note2MissingPiece"
 		],
 		"subfolders": []
 	},

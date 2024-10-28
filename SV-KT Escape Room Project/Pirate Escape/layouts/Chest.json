@@ -75,7 +75,43 @@
 			"name": "Game",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "Note2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 44,
+					"sid": 232334060162690,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 232334060162690,
+						"expanded": true
+					},
+					"world": {
+						"x": 519,
+						"y": -198,
+						"width": 216,
+						"height": 152,
+						"originX": 0.5277777777777778,
+						"originY": 0.7105263157894737,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 484473308892662,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
