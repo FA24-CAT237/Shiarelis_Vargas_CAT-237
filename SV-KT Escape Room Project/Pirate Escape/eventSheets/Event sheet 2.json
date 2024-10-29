@@ -220,6 +220,15 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 105790978970254,
+					"parameters": {
+						"variable": "Note1",
+						"value": "true"
+					}
 				}
 			],
 			"sid": 461422860557713

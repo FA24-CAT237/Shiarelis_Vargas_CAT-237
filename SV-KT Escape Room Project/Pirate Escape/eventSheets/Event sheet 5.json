@@ -776,6 +776,339 @@
 				}
 			],
 			"sid": 893946176165485
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 135885919711333,
+					"parameters": {
+						"variable": "Note1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 792522115573313,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 461599782251950
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Note1",
+							"sid": 355983134078486,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "BagMenu",
+								"image-point": "1",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 377837314165795
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 157893987487161,
+					"parameters": {
+						"variable": "Note2"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 984477474483682,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 717099341258383
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Note2",
+							"sid": 291605855615515,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "BagMenu",
+								"image-point": "2",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 297017147344531
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 792502840184192,
+					"parameters": {
+						"variable": "Note2MissingPiece"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 801259830552439,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 317000920285518
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Note2MissingPiece",
+							"sid": 278982680040151,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "BagMenu",
+								"image-point": "3",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 668754954870947
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 718106773069184,
+					"parameters": {
+						"variable": "Note3"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 854438816856460,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 437602365829313
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Note3",
+							"sid": 921759519904522,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "BagMenu",
+								"image-point": "4",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 121089801590575
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 504674526222003,
+					"parameters": {
+						"variable": "Note4"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 543532469359054,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 255074797276642
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Note4",
+							"sid": 617683938764258,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "BagMenu",
+								"image-point": "5",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 517735442295520
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 462521011131993
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "PianoRope",
+					"sid": 218763751825422,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "Piano",
+						"image-point": "1",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 889670414665443,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-dragging",
+					"objectClass": "PianoRope",
+					"sid": 800176534098196,
+					"disabled": true,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [],
+			"sid": 155801221545348,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 848871785698235
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "Piano",
+							"sid": 424294937706780,
+							"parameters": {
+								"object": "PianoRope",
+								"image-point-optional": "0"
+							}
+						}
+					],
+					"sid": 950420038996889
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-dragging",
+					"objectClass": "PianoRope",
+					"sid": 309340477576656,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PianoRope",
+					"sid": 208048113609989,
+					"parameters": {
+						"animation": "\"Animation 2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 848370292454709
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-dragging",
+					"objectClass": "PianoRope",
+					"sid": 919493607797213,
+					"behaviorType": "DragDrop",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PianoRope",
+					"sid": 243486833268101,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 611003294188575
 		}
 	],
 	"sid": 240658990189305

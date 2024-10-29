@@ -337,6 +337,50 @@
 				{
 					"id": "compare-boolean-eventvar",
 					"objectClass": "System",
+					"sid": 147398542881338,
+					"parameters": {
+						"variable": "Note2"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 710897637835530,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 149846830970852
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Note2",
+							"sid": 178747955208100,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "BagMenu",
+								"image-point": "2",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 344377655964103
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
 					"sid": 516266118890380,
 					"parameters": {
 						"variable": "Note3"
@@ -379,45 +423,46 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 284298466416878,
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 719725066279951,
 					"parameters": {
-						"variable": "Note2"
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "NoteCollect"
 					}
 				}
 			],
-			"actions": [],
-			"sid": 772297572105889,
-			"children": [
+			"actions": [
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 936486042792366
-						}
-					],
-					"actions": [
-						{
-							"id": "pin-to-object-imagepoint",
-							"objectClass": "Note2",
-							"sid": 614487099078928,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "BagMenu",
-								"image-point": "2",
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
-							}
-						}
-					],
-					"sid": 457211082816125
+					"id": "destroy",
+					"objectClass": "NoteCollect",
+					"sid": 274531004448212
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 712696638513949,
+					"parameters": {
+						"object-to-create": "NoteParticles",
+						"layer": "1",
+						"x": "Mouse.X",
+						"y": "Mouse.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 428631834254355,
+					"parameters": {
+						"variable": "Note2",
+						"value": "true"
+					}
 				}
-			]
+			],
+			"sid": 609611233455849
 		}
 	],
 	"sid": 621207810367692

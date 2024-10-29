@@ -638,6 +638,172 @@
 					}
 				},
 				{
+					"id": "set-max-speed",
+					"objectClass": "Clam",
+					"sid": 583404759803836,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"max-speed": "856"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "Clam2",
+					"sid": 676269383571219,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"max-speed": "856"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "Clam3",
+					"sid": 301901640164275,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"max-speed": "856"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam2",
+					"sid": 613183432026438,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "642",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam",
+					"sid": 185639119997178,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "214",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 137789872532167,
+					"parameters": {
+						"seconds": ".25"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam2",
+					"sid": 266902762239475,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "428",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam3",
+					"sid": 457048820386179,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "642",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 622965092015648,
+					"parameters": {
+						"seconds": ".25"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam3",
+					"sid": 834104886072834,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "214",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam",
+					"sid": 779895086737833,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "642",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 266617007820521,
+					"parameters": {
+						"seconds": ".125"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "Clam",
+					"sid": 107356327164473,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"max-speed": "1712"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "Clam2",
+					"sid": 408765223869651,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"max-speed": "1712"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "Clam3",
+					"sid": 667954966521440,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"max-speed": "1712"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam",
+					"sid": 306903222116836,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "428",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Clam2",
+					"sid": 750940271183657,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "642",
+						"y": "365",
+						"mode": "direct"
+					}
+				},
+				{
 					"id": "set-enabled",
 					"objectClass": "Clam",
 					"sid": 279804381508709,

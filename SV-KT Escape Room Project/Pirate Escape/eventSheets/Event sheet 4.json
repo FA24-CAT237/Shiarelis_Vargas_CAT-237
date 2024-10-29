@@ -756,9 +756,220 @@
 						"animation": "\"Animation 2\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 556061706616378,
+					"parameters": {
+						"object-to-create": "NoteParticles",
+						"layer": "1",
+						"x": "Mouse.X",
+						"y": "Mouse.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
 				}
 			],
 			"sid": 721188611956637
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 548910753784229,
+					"parameters": {
+						"variable": "Note1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 614987047408680,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 549593291180760
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Note1",
+							"sid": 248729295676793,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "BagMenu",
+								"image-point": "1",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 375913162378136
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 288151970154679,
+					"parameters": {
+						"variable": "Note2"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 799266007313060,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 339526472786525
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Note2",
+							"sid": 356508739699615,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "BagMenu",
+								"image-point": "2",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 347457289468589
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 905211211938484,
+					"parameters": {
+						"variable": "Note3"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 648071432822569,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 321887576241759
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Note3",
+							"sid": 804492549659592,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "BagMenu",
+								"image-point": "4",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 920162978521078
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 202097112561467,
+					"parameters": {
+						"variable": "Note4"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 658588505916206,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 213922274853509
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Note4",
+							"sid": 138835265920430,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "BagMenu",
+								"image-point": "5",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 691668761219451
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "NoteConfirm",
+					"sid": 975506855504148
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 720318473610973,
+					"parameters": {
+						"variable": "Note4",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 955708354639324
 		}
 	],
 	"sid": 857008041603437
