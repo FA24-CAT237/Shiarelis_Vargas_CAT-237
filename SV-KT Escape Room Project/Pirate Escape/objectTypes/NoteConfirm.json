@@ -1,10 +1,16 @@
 {
-	"name": "Sprite2",
+	"name": "NoteConfirm",
 	"plugin-id": "Sprite",
-	"sid": 224777371171243,
+	"sid": 584289760763812,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 381436310675934
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -19,13 +25,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 899274,
+						"imageSpriteId": 1701010,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 722178159210630,
+				"sid": 733353875705766,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

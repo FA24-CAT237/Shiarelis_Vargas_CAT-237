@@ -64,6 +64,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Drag & Drop",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Fade",
 			"name": "Fade",
 			"author": "Scirra",
@@ -80,6 +87,27 @@
 			"type": "behavior",
 			"id": "Orbit",
 			"name": "Orbit",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Persist",
+			"name": "Persist",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -155,11 +183,34 @@
 			"SandSpot1",
 			"SandSpot2",
 			"SandSpot3",
-			"Sprite2",
+			"HexPiece4",
 			"SandBlow",
 			"Note4",
 			"Note2",
-			"Note2MissingPiece"
+			"Note2MissingPiece",
+			"HexFullPuzzle",
+			"HexPiece5",
+			"HexPiece7",
+			"HexPiece6",
+			"HexPiece2",
+			"HexPiece3",
+			"HexPiece1",
+			"Answer2",
+			"NoteConfirm",
+			"Key",
+			"KeyConfirm",
+			"MazeUI",
+			"PlayerDetector",
+			"KeyUI",
+			"Checkbox",
+			"SandSpot4",
+			"Answer3",
+			"PianoInput",
+			"UINextLayout",
+			"UIPrevLayout",
+			"NoteCollect",
+			"Particles4",
+			"NoteParticles"
 		],
 		"subfolders": []
 	},

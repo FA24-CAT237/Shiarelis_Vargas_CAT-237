@@ -4,7 +4,13 @@
 	"sid": 588913326285205,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 567667616271441
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -44,32 +50,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9307795,
-						"useCollisionPoly": true,
-						"duration": 1,
-						"tag": ""
-					}
-				],
-				"sid": 893689059216226,
-				"name": "Maze",
-				"isLooping": false,
-				"isPingPong": false,
-				"repeatCount": 1,
-				"repeatTo": 0,
-				"speed": 5
-			},
-			{
-				"frames": [
-					{
-						"width": 854,
-						"height": 854,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "lossless",
-						"exportQuality": 0.8,
-						"fileType": "image/png",
-						"imageSpriteId": 7205156,
+						"imageSpriteId": 4163896,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -83,14 +64,67 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5156367,
+						"imageSpriteId": 2477628,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 854,
+						"height": 854,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1208213,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 854,
+						"height": 854,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9244701,
+						"useCollisionPoly": true,
+						"duration": 10,
+						"tag": ""
+					}
+				],
+				"sid": 893689059216226,
+				"name": "Maze",
+				"isLooping": true,
+				"isPingPong": true,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7679419,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 708153329125627,
-				"name": "Piano Cave",
+				"sid": 193655454474216,
+				"name": "Map Background",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -100,15 +134,15 @@
 			{
 				"frames": [
 					{
-						"width": 70,
-						"height": 70,
+						"width": 854,
+						"height": 480,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 873566,
+						"imageSpriteId": 163708,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -133,17 +167,33 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3876671,
+						"imageSpriteId": 7637859,
 						"collisionPoly": {
 							"points": [
-								1,
+								0.375,
 								0,
-								1,
-								1,
+								0.625,
 								0,
+								0.90625,
+								0.18055555555555555,
 								1,
-								0.4619956964288657,
-								0
+								0.3194444444444444,
+								1,
+								0.6805555555555556,
+								0.890625,
+								0.8333333333333334,
+								0.609375,
+								1,
+								0.390625,
+								1,
+								0.09375,
+								0.8194444444444444,
+								0,
+								0.6805555555555556,
+								0,
+								0.3194444444444444,
+								0.109375,
+								0.16666666666666666
 							]
 						},
 						"useCollisionPoly": true,
@@ -151,8 +201,8 @@
 						"tag": ""
 					}
 				],
-				"sid": 591002309264638,
-				"name": "Animation 1",
+				"sid": 943215286412827,
+				"name": "Rotation Puzzle (Finished)",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -162,22 +212,47 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7679419,
+						"imageSpriteId": 5155693,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 193655454474216,
-				"name": "Map Background",
+				"sid": 708153329125627,
+				"name": "Piano Cave",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4965457,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 515344119769524,
+				"name": "Piano Cave (Open Door)",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

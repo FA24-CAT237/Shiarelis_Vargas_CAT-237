@@ -1,0 +1,126 @@
+{
+	"name": "HexPiece7",
+	"plugin-id": "Sprite",
+	"sid": 428396244647213,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Solved",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 827135772584962
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 20,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 1.1,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 142098,
+						"collisionPoly": {
+							"points": [
+								0.3,
+								0,
+								0.7,
+								0,
+								1,
+								0.6,
+								1,
+								0.7,
+								0.85,
+								1,
+								0.15,
+								1,
+								0,
+								0.7,
+								0,
+								0.6
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.5,
+								"y": 1.2
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 271482799917909,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 20,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 1.1,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5405425,
+						"collisionPoly": {
+							"points": [
+								0.3,
+								0,
+								0.7,
+								0,
+								1,
+								0.6,
+								1,
+								0.7,
+								0.85,
+								1,
+								0.15,
+								1,
+								0,
+								0.7,
+								0,
+								0.6
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.5,
+								"y": 1.2
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 116914049610884,
+				"name": "Animation 2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

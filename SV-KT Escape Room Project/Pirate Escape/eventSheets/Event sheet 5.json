@@ -12,6 +12,16 @@
 			"sid": 456536964141566
 		},
 		{
+			"eventType": "variable",
+			"name": "KeyPressed",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 880781728524173
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -21,6 +31,11 @@
 					"parameters": {
 						"key": 38
 					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 886777956856675
 				}
 			],
 			"actions": [
@@ -57,6 +72,23 @@
 					"parameters": {
 						"animation": "\"Rest\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "append-text",
+					"objectClass": "PianoInput",
+					"sid": 953671492143740,
+					"parameters": {
+						"text": "\"1\""
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 315541742167494,
+					"parameters": {
+						"variable": "KeyPressed",
+						"value": "1"
 					}
 				}
 			],
@@ -99,6 +131,11 @@
 					"parameters": {
 						"key": 40
 					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 308607169825958
 				}
 			],
 			"actions": [
@@ -135,6 +172,23 @@
 					"parameters": {
 						"animation": "\"Rest\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "append-text",
+					"objectClass": "PianoInput",
+					"sid": 712670869531617,
+					"parameters": {
+						"text": "\"2\""
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 252430893363792,
+					"parameters": {
+						"variable": "KeyPressed",
+						"value": "1"
 					}
 				}
 			],
@@ -177,6 +231,11 @@
 					"parameters": {
 						"key": 37
 					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 640512977804668
 				}
 			],
 			"actions": [
@@ -213,6 +272,23 @@
 					"parameters": {
 						"animation": "\"Rest\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "append-text",
+					"objectClass": "PianoInput",
+					"sid": 229359751225323,
+					"parameters": {
+						"text": "\"3\""
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 785612649976273,
+					"parameters": {
+						"variable": "KeyPressed",
+						"value": "1"
 					}
 				}
 			],
@@ -255,6 +331,11 @@
 					"parameters": {
 						"key": 39
 					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 887980664361158
 				}
 			],
 			"actions": [
@@ -291,6 +372,23 @@
 					"parameters": {
 						"animation": "\"Rest\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "append-text",
+					"objectClass": "PianoInput",
+					"sid": 624476306697122,
+					"parameters": {
+						"text": "\"4\""
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 206176955533315,
+					"parameters": {
+						"variable": "KeyPressed",
+						"value": "1"
 					}
 				}
 			],
@@ -333,6 +431,11 @@
 					"parameters": {
 						"key": 32
 					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 737423206874237
 				}
 			],
 			"actions": [
@@ -369,6 +472,23 @@
 					"parameters": {
 						"animation": "\"Rest\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "append-text",
+					"objectClass": "PianoInput",
+					"sid": 661853745669362,
+					"parameters": {
+						"text": "\"5\""
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 672554856590674,
+					"parameters": {
+						"variable": "KeyPressed",
+						"value": "1"
 					}
 				}
 			],
@@ -407,9 +527,9 @@
 				{
 					"id": "on-click",
 					"objectClass": "Mouse",
-					"sid": 289002963029799,
+					"sid": 786754770811225,
 					"parameters": {
-						"mouse-button": "left",
+						"mouse-button": "right",
 						"click-type": "clicked"
 					}
 				}
@@ -449,6 +569,23 @@
 						"animation": "\"Rest\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "append-text",
+					"objectClass": "PianoInput",
+					"sid": 780603458590685,
+					"parameters": {
+						"text": "\"6\""
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 798649331388030,
+					"parameters": {
+						"variable": "KeyPressed",
+						"value": "1"
+					}
 				}
 			],
 			"sid": 650301724270524
@@ -478,6 +615,167 @@
 			],
 			"sid": 165660385060754,
 			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "PianoInput",
+					"sid": 522803500850269,
+					"parameters": {
+						"text": "\"135642\"",
+						"case": "case-insensitive"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 535621015627276,
+					"parameters": {
+						"variable": "KeyPressed",
+						"comparison": 0,
+						"value": "6"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "BG",
+					"sid": 603977955195828,
+					"parameters": {
+						"animation": "\"Piano Cave (Open Door)\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 830817827392477,
+					"parameters": {
+						"variable": "KeyPressed",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-active",
+					"objectClass": "BG",
+					"sid": 819799179239413,
+					"behaviorType": "Sine",
+					"parameters": {
+						"state": "active"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PianoInput",
+					"sid": 607843453136542,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 877611014302534,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-active",
+					"objectClass": "BG",
+					"sid": 684166651021701,
+					"behaviorType": "Sine",
+					"parameters": {
+						"state": "inactive"
+					}
+				}
+			],
+			"sid": 207881836280692
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-animation-playing",
+					"objectClass": "BG",
+					"sid": 442463320533847,
+					"parameters": {
+						"animation": "\"Piano Cave (Open Door)\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "PianoInput",
+					"sid": 983628528628104,
+					"parameters": {
+						"text": "\"135642\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 990702506381946,
+					"parameters": {
+						"variable": "KeyPressed",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "BG",
+					"sid": 215961761843106,
+					"parameters": {
+						"animation": "\"Piano Cave (Open Door)\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 295425903788947
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-animation-playing",
+					"objectClass": "BG",
+					"sid": 391220412426990,
+					"parameters": {
+						"animation": "\"Piano Cave (Open Door)\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 993344568606326,
+					"parameters": {
+						"variable": "KeyPressed",
+						"comparison": 5,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 347686896811386,
+					"parameters": {
+						"variable": "KeyPressed",
+						"value": "6"
+					}
+				}
+			],
+			"sid": 893946176165485
 		}
 	],
 	"sid": 240658990189305

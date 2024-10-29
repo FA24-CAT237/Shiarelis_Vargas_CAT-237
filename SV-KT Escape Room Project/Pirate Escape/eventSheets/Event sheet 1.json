@@ -22,6 +22,56 @@
 			"sid": 300466209136608
 		},
 		{
+			"eventType": "variable",
+			"name": "Note1",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 859215081149078
+		},
+		{
+			"eventType": "variable",
+			"name": "Note2",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 235228334684760
+		},
+		{
+			"eventType": "variable",
+			"name": "Note2MissingPiece",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 835702701710660
+		},
+		{
+			"eventType": "variable",
+			"name": "Note3",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 984305626098504
+		},
+		{
+			"eventType": "variable",
+			"name": "Note4",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 428678936596581
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -917,6 +967,19 @@
 					}
 				},
 				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 391868877375170,
+					"parameters": {
+						"object-to-create": "NoteCollect",
+						"layer": "1",
+						"x": "Clam3.X",
+						"y": "Clam3.Y-15",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 486935475461927,
@@ -934,6 +997,87 @@
 				}
 			],
 			"sid": 163222849299319
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 677801306411000,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Clam3"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 494071601604769,
+					"parameters": {
+						"variable": "PlayAnimation"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Clamily",
+					"sid": 957889315044776,
+					"parameters": {
+						"instance-variable": "Confirm"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Clamily",
+					"sid": 683113678943738,
+					"parameters": {
+						"instance-variable": "Confirm",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Clam3",
+					"sid": 550833237600714,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 429894966514694,
+					"parameters": {
+						"object-to-create": "NoteCollect",
+						"layer": "1",
+						"x": "Clam3.X",
+						"y": "Clam3.Y-15",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 314094738182722,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RestartButton",
+					"sid": 187425106971878,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 295793397211449
 		},
 		{
 			"eventType": "block",
@@ -1239,6 +1383,95 @@
 				}
 			],
 			"sid": 748362024061648
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 423979648951155,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "NoteCollect"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 575232394970053,
+					"parameters": {
+						"object-to-create": "NoteParticles",
+						"layer": "1",
+						"x": "Mouse.X",
+						"y": "Mouse.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "NoteCollect",
+					"sid": 524625215163164
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 577851804953814,
+					"parameters": {
+						"variable": "Note3",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 971124141748918
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 734949873433758,
+					"parameters": {
+						"variable": "Note3"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 328257010887106,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 526933836144885
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Note3",
+							"sid": 746242270862196,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "BagMenu",
+								"image-point": "4",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 740023309107002
+				}
+			]
 		}
 	],
 	"sid": 860969932998343

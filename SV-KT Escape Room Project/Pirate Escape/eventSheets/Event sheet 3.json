@@ -110,9 +110,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Answer",
-					"sid": 167155110226446,
+					"sid": 864460130086087,
 					"parameters": {
-						"text": "\"Enter 5-Letter Password\""
+						"text": "\"Enter Password\""
 					}
 				}
 			],
@@ -131,9 +131,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Answer",
-					"sid": 574777670046729,
+					"sid": 405793835163081,
 					"parameters": {
-						"text": "\"Enter 5-Letter Password\""
+						"text": "\"Enter Password\""
 					}
 				}
 			],
@@ -249,6 +249,175 @@
 				}
 			],
 			"sid": 345783125550772
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 658548651044136,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "SandSpot4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "start-fade",
+					"objectClass": "SandSpot4",
+					"sid": 726690416932625,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 550791060824394,
+					"parameters": {
+						"object-to-create": "SandBlow",
+						"layer": "2",
+						"x": "Mouse.X",
+						"y": "Mouse.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 434023661185269
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 993040105671734,
+					"parameters": {
+						"variable": "Note1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 789877164826021,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 331835639376207
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Note1",
+							"sid": 923040155826550,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "BagMenu",
+								"image-point": "1",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 936890575944316
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 516266118890380,
+					"parameters": {
+						"variable": "Note3"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 834880512186534,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 773272106672086
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Note3",
+							"sid": 816363457070539,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "BagMenu",
+								"image-point": "4",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 446920997721557
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 284298466416878,
+					"parameters": {
+						"variable": "Note2"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 772297572105889,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 936486042792366
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Note2",
+							"sid": 614487099078928,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "BagMenu",
+								"image-point": "2",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 457211082816125
+				}
+			]
 		}
 	],
 	"sid": 621207810367692

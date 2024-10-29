@@ -1,0 +1,80 @@
+{
+	"name": "HexPiece1",
+	"plugin-id": "Sprite",
+	"sid": 966290327975739,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Solved",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 504901193455496
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 770189486738381
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 20,
+						"height": 13,
+						"originX": 0.5,
+						"originY": 0.15384615384615385,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9672401,
+						"collisionPoly": {
+							"points": [
+								0.3,
+								0,
+								0.7,
+								0,
+								1,
+								0.46153846153846156,
+								1,
+								0.5384615384615384,
+								0.6,
+								1,
+								0.4,
+								1,
+								0,
+								0.5384615384615384,
+								0,
+								0.46153846153846156
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.5,
+								"y": 0.07692307692307693
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 320318419075311,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

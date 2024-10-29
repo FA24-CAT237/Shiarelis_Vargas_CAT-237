@@ -3,12 +3,68 @@
 	"plugin-id": "Sprite",
 	"sid": 371032936954362,
 	"isGlobal": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "Note1Collected",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 668646663597626
+		},
+		{
+			"name": "Note2Collected",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 976410006639560
+		},
+		{
+			"name": "Note2MissingPieceCollected",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 659875888507668
+		},
+		{
+			"name": "Note3Collected",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 923911101502144
+		},
+		{
+			"name": "Note4Collected",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 204093171908768
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Fade",
 			"name": "Fade",
 			"sid": 376205910032571
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 320345602407373
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 691975429725919
+		},
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 249573848744941
+		},
+		{
+			"behaviorId": "bound",
+			"name": "BoundToLayout",
+			"sid": 117308179801764
 		}
 	],
 	"effectTypes": [],
@@ -19,13 +75,25 @@
 					{
 						"width": 854,
 						"height": 480,
-						"originX": 0.5,
+						"originX": 0.9156908665105387,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
 						"imageSpriteId": 6939220,
+						"collisionPoly": {
+							"points": [
+								0.8992974238875878,
+								0,
+								1,
+								0,
+								1,
+								1,
+								0.8992974238875878,
+								1
+							]
+						},
 						"useCollisionPoly": true,
 						"imagePoints": [
 							{

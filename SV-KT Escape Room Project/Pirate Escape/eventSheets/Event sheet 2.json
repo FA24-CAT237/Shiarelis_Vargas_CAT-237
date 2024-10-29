@@ -29,6 +29,12 @@
 					"parameters": {
 						"object": "RedXSpot"
 					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "RedXSpot",
+					"sid": 188938873010054,
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -74,6 +80,12 @@
 					"parameters": {
 						"object": "RedXSpot2"
 					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "RedXSpot2",
+					"sid": 565736176526860,
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -119,6 +131,12 @@
 					"parameters": {
 						"object": "RedXSpot3"
 					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "RedXSpot3",
+					"sid": 356700491475365,
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -142,6 +160,15 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 212451053148870,
+					"parameters": {
+						"variable": "Note1",
+						"value": "true"
+					}
 				}
 			],
 			"sid": 863681818828351
@@ -164,6 +191,12 @@
 					"parameters": {
 						"object": "RedXSpot4"
 					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "RedXSpot4",
+					"sid": 611412195749563,
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -209,6 +242,12 @@
 					"parameters": {
 						"object": "RedXSpot5"
 					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "RedXSpot5",
+					"sid": 622377011739499,
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -231,6 +270,15 @@
 					"sid": 984653860019689,
 					"parameters": {
 						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Pirate",
+					"sid": 274384602526096,
+					"parameters": {
+						"instance-variable": "KeyPickedUp",
+						"value": "true"
 					}
 				}
 			],
@@ -264,6 +312,206 @@
 				}
 			],
 			"sid": 687706662389402
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Pirate",
+					"sid": 915365218069474,
+					"parameters": {
+						"object": "PlayerDetector"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "MazeUI",
+					"sid": 411622685364074,
+					"parameters": {
+						"opacity": "20"
+					}
+				}
+			],
+			"sid": 568558359215702
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Pirate",
+					"sid": 855627091810935,
+					"parameters": {
+						"instance-variable": "KeyPickedUp"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Checkbox",
+					"sid": 474318115184437,
+					"parameters": {
+						"animation": "\"Animation 2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 859729757415862,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 478496036893132,
+							"parameters": {
+								"key": 32
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Pirate",
+							"sid": 982144151030875,
+							"parameters": {
+								"object": "KeyConfirm"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Pirate",
+							"sid": 249234410176614,
+							"parameters": {
+								"instance-variable": "KeyPickedUp"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "MazeDoor",
+							"sid": 526342494017630
+						}
+					],
+					"sid": 131396510469322
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Pirate",
+					"sid": 995930362318046,
+					"parameters": {
+						"object": "Quicksand"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 454040205318406,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 111491450718213
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 189775129046868,
+					"parameters": {
+						"variable": "Note1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 603364944885343,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 391914342249477
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Note1",
+							"sid": 870867577808664,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "BagMenu",
+								"image-point": "1",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 929269872597321
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 946663314904699,
+					"parameters": {
+						"variable": "Note3"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 759651322262997,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 421418707171700
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Note3",
+							"sid": 261258217393635,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "BagMenu",
+								"image-point": "4",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 111031537271943
+				}
+			]
 		}
 	],
 	"sid": 711488796191431

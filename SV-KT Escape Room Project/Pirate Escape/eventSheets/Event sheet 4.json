@@ -10,6 +10,755 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 122319711585097
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 764938175026739
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "HexPiece1",
+					"sid": 508233389801277,
+					"parameters": {
+						"angle": "120"
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "HexPiece2",
+					"sid": 362714317613924,
+					"parameters": {
+						"angle": "60"
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "HexPiece3",
+					"sid": 580118762291802,
+					"parameters": {
+						"angle": "300"
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "HexPiece5",
+					"sid": 683237323427368,
+					"parameters": {
+						"angle": "240"
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "HexPiece6",
+					"sid": 258417710955240,
+					"parameters": {
+						"angle": "60"
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "HexPiece7",
+					"sid": 895109798671729,
+					"parameters": {
+						"angle": "180"
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "HexPiece4",
+					"sid": 753753505279107,
+					"parameters": {
+						"angle": "240"
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "NoteConfirm",
+					"sid": 891330540957726,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "HexPiece5",
+						"image-point": "2",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 706206150495208
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 325804792193345,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "HexPiece1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "rotate-clockwise",
+					"objectClass": "HexPiece1",
+					"sid": 972918717022606,
+					"parameters": {
+						"degrees": "60"
+					}
+				}
+			],
+			"sid": 709560083413745
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 405637491545856,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "HexPiece2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "rotate-clockwise",
+					"objectClass": "HexPiece2",
+					"sid": 723745404230137,
+					"parameters": {
+						"degrees": "60"
+					}
+				}
+			],
+			"sid": 288959779158675
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 384119520615844,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "HexPiece3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "rotate-clockwise",
+					"objectClass": "HexPiece3",
+					"sid": 102497758927758,
+					"parameters": {
+						"degrees": "60"
+					}
+				}
+			],
+			"sid": 274771949867283
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 977497781267595,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "HexPiece4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "rotate-clockwise",
+					"objectClass": "HexPiece4",
+					"sid": 858354977475849,
+					"parameters": {
+						"degrees": "60"
+					}
+				}
+			],
+			"sid": 947809347245907
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 116637489089844,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "HexPiece5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "rotate-clockwise",
+					"objectClass": "HexPiece5",
+					"sid": 204233874514578,
+					"parameters": {
+						"degrees": "60"
+					}
+				}
+			],
+			"sid": 205039848356707
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 136653908620548,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "HexPiece6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "rotate-clockwise",
+					"objectClass": "HexPiece6",
+					"sid": 543385255884664,
+					"parameters": {
+						"degrees": "60"
+					}
+				}
+			],
+			"sid": 630981280989774
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 656904112618612,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "HexPiece7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "rotate-clockwise",
+					"objectClass": "HexPiece7",
+					"sid": 651074208440323,
+					"parameters": {
+						"degrees": "60"
+					}
+				}
+			],
+			"sid": 825122853722795
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-between-angles",
+					"objectClass": "HexPiece1",
+					"sid": 637076826309504,
+					"parameters": {
+						"first-angle": "359.5",
+						"second-angle": "0.5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "HexPiece1",
+					"sid": 305019161916027,
+					"parameters": {
+						"instance-variable": "Solved",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 776169652078299
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-between-angles",
+					"objectClass": "HexPiece1",
+					"sid": 685451969804433,
+					"parameters": {
+						"first-angle": "359.5",
+						"second-angle": "0.5"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "HexPiece1",
+					"sid": 210734668895930,
+					"parameters": {
+						"instance-variable": "Solved",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 960560266482387
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-between-angles",
+					"objectClass": "HexPiece2",
+					"sid": 627766721878563,
+					"parameters": {
+						"first-angle": "359.5",
+						"second-angle": "0.5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "HexPiece2",
+					"sid": 982189253791666,
+					"parameters": {
+						"instance-variable": "Solved",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 281717231439418
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-between-angles",
+					"objectClass": "HexPiece2",
+					"sid": 919286213087266,
+					"parameters": {
+						"first-angle": "359.5",
+						"second-angle": "0.5"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "HexPiece2",
+					"sid": 447838979721858,
+					"parameters": {
+						"instance-variable": "Solved",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 540797655613468
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-between-angles",
+					"objectClass": "HexPiece3",
+					"sid": 799775606466008,
+					"parameters": {
+						"first-angle": "359.5",
+						"second-angle": "0.5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "HexPiece3",
+					"sid": 667139786930502,
+					"parameters": {
+						"instance-variable": "Solved",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 653975278276507
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-between-angles",
+					"objectClass": "HexPiece3",
+					"sid": 806701154162432,
+					"parameters": {
+						"first-angle": "359.5",
+						"second-angle": "0.5"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "HexPiece3",
+					"sid": 253598153775828,
+					"parameters": {
+						"instance-variable": "Solved",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 120017526331119
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-between-angles",
+					"objectClass": "HexPiece4",
+					"sid": 527889392639903,
+					"parameters": {
+						"first-angle": "359.5",
+						"second-angle": "0.5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "HexPiece4",
+					"sid": 117473979171336,
+					"parameters": {
+						"instance-variable": "Solved",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 741479466051426
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-between-angles",
+					"objectClass": "HexPiece4",
+					"sid": 427124346867412,
+					"parameters": {
+						"first-angle": "359.5",
+						"second-angle": "0.5"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "HexPiece4",
+					"sid": 342619682362449,
+					"parameters": {
+						"instance-variable": "Solved",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 929130506712912
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-between-angles",
+					"objectClass": "HexPiece5",
+					"sid": 766062511112357,
+					"parameters": {
+						"first-angle": "359.5",
+						"second-angle": "0.5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "HexPiece5",
+					"sid": 966940472622294,
+					"parameters": {
+						"instance-variable": "Solved",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 292427111126347
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-between-angles",
+					"objectClass": "HexPiece5",
+					"sid": 701988269878497,
+					"parameters": {
+						"first-angle": "359.5",
+						"second-angle": "0.5"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "HexPiece5",
+					"sid": 935874982174369,
+					"parameters": {
+						"instance-variable": "Solved",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 763694874466420
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-between-angles",
+					"objectClass": "HexPiece6",
+					"sid": 859540118189604,
+					"parameters": {
+						"first-angle": "359.5",
+						"second-angle": "0.5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "HexPiece6",
+					"sid": 969578989650288,
+					"parameters": {
+						"instance-variable": "Solved",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 123945424776166
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-between-angles",
+					"objectClass": "HexPiece6",
+					"sid": 549595156423412,
+					"parameters": {
+						"first-angle": "359.5",
+						"second-angle": "0.5"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "HexPiece6",
+					"sid": 206004850366499,
+					"parameters": {
+						"instance-variable": "Solved",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 756688952588668
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-between-angles",
+					"objectClass": "HexPiece7",
+					"sid": 829823490284357,
+					"parameters": {
+						"first-angle": "359.5",
+						"second-angle": "0.5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "HexPiece7",
+					"sid": 449712910568320,
+					"parameters": {
+						"instance-variable": "Solved",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 333815975239149
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-between-angles",
+					"objectClass": "HexPiece7",
+					"sid": 373158693127874,
+					"parameters": {
+						"first-angle": "359.5",
+						"second-angle": "0.5"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "HexPiece7",
+					"sid": 779986140153739,
+					"parameters": {
+						"instance-variable": "Solved",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 292324982525099
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "HexPiece1",
+					"sid": 845519285833794,
+					"parameters": {
+						"instance-variable": "Solved"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "HexPiece2",
+					"sid": 986705354129870,
+					"parameters": {
+						"instance-variable": "Solved"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "HexPiece3",
+					"sid": 390397998527456,
+					"parameters": {
+						"instance-variable": "Solved"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "HexPiece4",
+					"sid": 709451884811836,
+					"parameters": {
+						"instance-variable": "Solved"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "HexPiece5",
+					"sid": 771499772348129,
+					"parameters": {
+						"instance-variable": "Solved"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "HexPiece6",
+					"sid": 954983912704786,
+					"parameters": {
+						"instance-variable": "Solved"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "HexPiece7",
+					"sid": 286623931225132,
+					"parameters": {
+						"instance-variable": "Solved"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HexPiece4",
+					"sid": 824596314639911,
+					"parameters": {
+						"animation": "\"Animation 2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 971057808526192,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 854605624659238
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 867188093692348,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "NoteConfirm"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "NoteConfirm",
+					"sid": 602915523725948
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "HexPiece5",
+					"sid": 245238007152896,
+					"parameters": {
+						"animation": "\"Animation 2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 721188611956637
 		}
 	],
 	"sid": 857008041603437

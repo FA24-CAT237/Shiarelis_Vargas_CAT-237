@@ -3,7 +3,15 @@
 	"plugin-id": "Sprite",
 	"sid": 543296229591750,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "NoteCollect",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 254394844056488
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Sin",

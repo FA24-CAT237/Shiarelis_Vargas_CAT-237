@@ -3,7 +3,15 @@
 	"plugin-id": "Sprite",
 	"sid": 580334209961040,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "KeyPickedUp",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 116349332818255
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "TileMovement",
