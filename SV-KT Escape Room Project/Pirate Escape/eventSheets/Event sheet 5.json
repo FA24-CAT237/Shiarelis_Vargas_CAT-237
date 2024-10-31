@@ -612,9 +612,9 @@
 				{
 					"id": "on-click",
 					"objectClass": "Mouse",
-					"sid": 786754770811225,
+					"sid": 881288476466251,
 					"parameters": {
-						"mouse-button": "right",
+						"mouse-button": "left",
 						"click-type": "clicked"
 					}
 				}
