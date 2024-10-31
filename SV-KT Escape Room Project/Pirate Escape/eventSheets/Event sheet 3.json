@@ -151,15 +151,6 @@
 						"click-type": "clicked",
 						"object-clicked": "SandSpot1"
 					}
-				},
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "BagMenu",
-					"sid": 548533023585806,
-					"parameters": {
-						"object": "SandSpot1"
-					},
-					"isInverted": true
 				}
 			],
 			"actions": [
