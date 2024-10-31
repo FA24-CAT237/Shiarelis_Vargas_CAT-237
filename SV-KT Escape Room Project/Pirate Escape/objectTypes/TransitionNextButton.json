@@ -1,7 +1,7 @@
 {
-	"name": "RestartButton",
+	"name": "TransitionNextButton",
 	"plugin-id": "Sprite",
-	"sid": 435600139754746,
+	"sid": 303995666286390,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -19,7 +19,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4794006,
+						"imageSpriteId": 6233446,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -33,13 +33,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8610684,
+						"imageSpriteId": 1598326,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 503049031428523,
+				"sid": 576260177947680,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

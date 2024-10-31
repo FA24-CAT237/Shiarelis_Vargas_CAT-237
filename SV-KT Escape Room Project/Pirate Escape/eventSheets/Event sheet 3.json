@@ -50,11 +50,11 @@
 					}
 				},
 				{
-					"id": "go-to-nextprevious-layout",
-					"objectClass": "System",
-					"sid": 589434461658364,
+					"id": "set-visible",
+					"objectClass": "TransitionNextButton",
+					"sid": 941113476219541,
 					"parameters": {
-						"which": "next"
+						"visibility": "visible"
 					}
 				}
 			],
@@ -151,6 +151,15 @@
 						"click-type": "clicked",
 						"object-clicked": "SandSpot1"
 					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "BagMenu",
+					"sid": 548533023585806,
+					"parameters": {
+						"object": "SandSpot1"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -463,6 +472,166 @@
 				}
 			],
 			"sid": 609611233455849
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 296656505437813,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "TransitionButton"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "TransitionButton",
+					"sid": 305960769361112
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 958300095196116,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 274657870519274
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 290414418570066,
+					"parameters": {
+						"object": "TransitionButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "TransitionButton",
+					"sid": 564915766499972,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 250839493479453
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 218281321926037,
+					"parameters": {
+						"object": "TransitionButton"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "TransitionButton",
+					"sid": 993527269448957,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 162655808376702
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 494777991394228,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "TransitionNextButton"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "TransitionNextButton",
+					"sid": 310579880343992
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 901396300482423,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 832270970855680
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 260314183031654,
+					"parameters": {
+						"object": "TransitionNextButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "TransitionNextButton",
+					"sid": 902209015972382,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 857942780115579
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 819484043394936,
+					"parameters": {
+						"object": "TransitionNextButton"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "TransitionNextButton",
+					"sid": 249322220554874,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 665945427258558
 		}
 	],
 	"sid": 621207810367692

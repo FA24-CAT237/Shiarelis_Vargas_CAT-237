@@ -22,6 +22,11 @@
 			"behaviorId": "bound",
 			"name": "BoundToLayout",
 			"sid": 205948118486649
+		},
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 286393379754987
 		}
 	],
 	"effectTypes": [],
@@ -30,15 +35,47 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9481486,
+						"imageSpriteId": 3332383,
+						"collisionPoly": {
+							"points": [
+								0.46875,
+								0,
+								0.53125,
+								0,
+								0.59375,
+								0.0625,
+								1,
+								0.59375,
+								1,
+								0.71875,
+								0.96875,
+								0.84375,
+								0.90625,
+								0.96875,
+								0.875,
+								1,
+								0.125,
+								1,
+								0.09375,
+								0.96875,
+								0.03125,
+								0.84375,
+								0,
+								0.71875,
+								0,
+								0.59375,
+								0.40625,
+								0.0625
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

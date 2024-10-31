@@ -424,11 +424,11 @@
 			],
 			"actions": [
 				{
-					"id": "go-to-nextprevious-layout",
-					"objectClass": "System",
-					"sid": 454040205318406,
+					"id": "set-visible",
+					"objectClass": "TransitionNextButton",
+					"sid": 377650136339054,
 					"parameters": {
-						"which": "next"
+						"visibility": "visible"
 					}
 				}
 			],
@@ -521,6 +521,277 @@
 					"sid": 111031537271943
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 763919438612763,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "TransitionButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 943601430560905,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 685127934033627
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 478193301051239,
+					"parameters": {
+						"object": "TransitionButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "TransitionButton",
+					"sid": 318243430713971,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "TransitionButton",
+					"sid": 708180463293620,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 752008901831361
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 882010116575116,
+					"parameters": {
+						"object": "TransitionButton"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "TransitionButton",
+					"sid": 863466149230167,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "TransitionButton",
+					"sid": 122016691561938,
+					"parameters": {
+						"opacity": "20"
+					}
+				}
+			],
+			"sid": 516775666376605
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 361389726820621,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "TransitionNextButton"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "TransitionNextButton",
+					"sid": 954493720910885
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 146252428515269,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 506436356902424
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 632906270548556,
+					"parameters": {
+						"object": "TransitionNextButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "TransitionNextButton",
+					"sid": 893399357337395,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 779310372605117
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 819952185173593,
+					"parameters": {
+						"object": "TransitionNextButton"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "TransitionNextButton",
+					"sid": 391547000502176,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 689458331322768
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving-direction",
+					"objectClass": "Pirate",
+					"sid": 248029735423200,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"direction": "right"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "Pirate",
+					"sid": 683081538983525,
+					"parameters": {
+						"angle": "90"
+					}
+				}
+			],
+			"sid": 942525696669082
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving-direction",
+					"objectClass": "Pirate",
+					"sid": 251824723464461,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"direction": "up"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "Pirate",
+					"sid": 891924174171699,
+					"parameters": {
+						"angle": "0"
+					}
+				}
+			],
+			"sid": 962231388787089
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving-direction",
+					"objectClass": "Pirate",
+					"sid": 743832778038771,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"direction": "left"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "Pirate",
+					"sid": 803399740555654,
+					"parameters": {
+						"angle": "270"
+					}
+				}
+			],
+			"sid": 407728004864616
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving-direction",
+					"objectClass": "Pirate",
+					"sid": 832379519677545,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"direction": "down"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "Pirate",
+					"sid": 426797729715019,
+					"parameters": {
+						"angle": "180"
+					}
+				}
+			],
+			"sid": 763833271360893
 		}
 	],
 	"sid": 711488796191431

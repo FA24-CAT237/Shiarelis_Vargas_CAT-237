@@ -49,6 +49,23 @@
 					}
 				},
 				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 494244672843002
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 288779372668582,
+					"parameters": {
+						"audio-file": "448541__tedagame__c2",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "set-boolean-instvar",
 					"objectClass": "Piano",
 					"sid": 992105867983754,
@@ -146,6 +163,23 @@
 					"parameters": {
 						"animation": "\"Key2\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 494244672843002
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 177379885572538,
+					"parameters": {
+						"audio-file": "448600__tedagame__d2",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				},
 				{
@@ -249,6 +283,23 @@
 					}
 				},
 				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 494244672843002
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 909424258284781,
+					"parameters": {
+						"audio-file": "448615__tedagame__e2",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "set-boolean-instvar",
 					"objectClass": "Piano",
 					"sid": 919125123885328,
@@ -346,6 +397,23 @@
 					"parameters": {
 						"animation": "\"Key4\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 494244672843002
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 485714592135144,
+					"parameters": {
+						"audio-file": "448587__tedagame__f2",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				},
 				{
@@ -449,6 +517,23 @@
 					}
 				},
 				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 494244672843002
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 966535454954643,
+					"parameters": {
+						"audio-file": "448558__tedagame__g2",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "set-boolean-instvar",
 					"objectClass": "Piano",
 					"sid": 872451524433062,
@@ -545,6 +630,23 @@
 					}
 				},
 				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 494244672843002
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 450537591818373,
+					"parameters": {
+						"audio-file": "448571__tedagame__a2",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "set-boolean-instvar",
 					"objectClass": "Piano",
 					"sid": 781570036912797,
@@ -622,9 +724,9 @@
 				{
 					"id": "compare-text",
 					"objectClass": "PianoInput",
-					"sid": 522803500850269,
+					"sid": 844109439627263,
 					"parameters": {
-						"text": "\"135642\"",
+						"text": "\"135431\"",
 						"case": "case-insensitive"
 					},
 					"isInverted": true
@@ -711,9 +813,9 @@
 				{
 					"id": "compare-text",
 					"objectClass": "PianoInput",
-					"sid": 983628528628104,
+					"sid": 891834044216195,
 					"parameters": {
-						"text": "\"135642\"",
+						"text": "\"135431\"",
 						"case": "case-insensitive"
 					}
 				},
@@ -1109,6 +1211,126 @@
 				}
 			],
 			"sid": 611003294188575
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 554505156924851,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "NoteCollect"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "NoteCollect",
+					"sid": 810007007300555
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 682071676071250,
+					"parameters": {
+						"object-to-create": "NoteParticles",
+						"layer": "1",
+						"x": "Mouse.X",
+						"y": "Mouse.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 115969762473225,
+					"parameters": {
+						"variable": "Note2MissingPiece",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 883003480369281
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 188963300197584,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "TransitionButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 667579209493743,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 182445311970335
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 658761097359601,
+					"parameters": {
+						"object": "TransitionButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "TransitionButton",
+					"sid": 767535206097507,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 911396440415861
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 589532521469011,
+					"parameters": {
+						"object": "TransitionButton"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "TransitionButton",
+					"sid": 791743092200358,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 418224179767895
 		}
 	],
 	"sid": 240658990189305

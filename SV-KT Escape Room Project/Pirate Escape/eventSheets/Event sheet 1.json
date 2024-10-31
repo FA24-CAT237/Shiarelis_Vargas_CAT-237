@@ -107,7 +107,7 @@
 				},
 				{
 					"id": "stop-animation",
-					"objectClass": "RestartButton",
+					"objectClass": "TransitionButton",
 					"sid": 912074067462727
 				}
 			],
@@ -1073,7 +1073,7 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "RestartButton",
+					"objectClass": "TransitionButton",
 					"sid": 181692623210452,
 					"parameters": {
 						"visibility": "visible"
@@ -1155,7 +1155,7 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "RestartButton",
+					"objectClass": "TransitionButton",
 					"sid": 454000763880765,
 					"parameters": {
 						"visibility": "visible"
@@ -1236,7 +1236,7 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "RestartButton",
+					"objectClass": "TransitionButton",
 					"sid": 187425106971878,
 					"parameters": {
 						"visibility": "visible"
@@ -1281,7 +1281,7 @@
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
-						"object-clicked": "RestartButton"
+						"object-clicked": "TransitionButton"
 					}
 				}
 			],
@@ -1302,14 +1302,14 @@
 					"objectClass": "Mouse",
 					"sid": 263979380599446,
 					"parameters": {
-						"object": "RestartButton"
+						"object": "TransitionButton"
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-animation-frame",
-					"objectClass": "RestartButton",
+					"objectClass": "TransitionButton",
 					"sid": 641474308235052,
 					"parameters": {
 						"frame-number": "1"
@@ -1326,7 +1326,7 @@
 					"objectClass": "Mouse",
 					"sid": 197744016511673,
 					"parameters": {
-						"object": "RestartButton"
+						"object": "TransitionButton"
 					},
 					"isInverted": true
 				}
@@ -1334,7 +1334,7 @@
 			"actions": [
 				{
 					"id": "set-animation-frame",
-					"objectClass": "RestartButton",
+					"objectClass": "TransitionButton",
 					"sid": 159717108588422,
 					"parameters": {
 						"frame-number": "0"

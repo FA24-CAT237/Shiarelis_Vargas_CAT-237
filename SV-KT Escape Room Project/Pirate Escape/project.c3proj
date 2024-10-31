@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Json",
 			"name": "JSON",
 			"author": "Scirra",
@@ -163,7 +170,7 @@
 			"Arrow2",
 			"Arrow3",
 			"ClamSelector",
-			"RestartButton",
+			"TransitionButton",
 			"RedXSpot2",
 			"RedXSpot3",
 			"RedXSpot4",
@@ -206,12 +213,12 @@
 			"SandSpot4",
 			"Answer3",
 			"PianoInput",
-			"UINextLayout",
-			"UIPrevLayout",
 			"NoteCollect",
 			"Particles4",
 			"NoteParticles",
-			"PianoRope"
+			"PianoRope",
+			"TransitionNextButton",
+			"Audio"
 		],
 		"subfolders": []
 	},
@@ -255,7 +262,110 @@
 		},
 		"music": {
 			"items": [],
-			"subfolders": []
+			"subfolders": [
+				{
+					"items": [
+						{
+							"name": "448541__tedagame__c2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 294194961483951,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "448547__tedagame__c2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 521942192293895,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "448558__tedagame__g2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 529296038993695,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "448563__tedagame__a2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 546947161271208,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "448569__tedagame__b2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 164202949927268,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "448571__tedagame__a2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 508758036210337,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "448587__tedagame__f2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 352792544905454,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "448588__tedagame__f2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 696275427704176,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "448590__tedagame__g2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 146359734926758,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "448600__tedagame__d2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 903228855568380,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "448607__tedagame__d2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 342922679758152,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "448615__tedagame__e2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 248126443871872,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "2"
+				}
+			]
 		},
 		"video": {
 			"items": [],

@@ -4,7 +4,13 @@
 	"sid": 145920993308712,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 223175379214102
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

@@ -423,7 +423,7 @@
 					}
 				},
 				{
-					"type": "RestartButton",
+					"type": "TransitionButton",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -441,10 +441,10 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 721,
-						"y": 93,
-						"width": 211.20658319282825,
-						"height": 167.13766780711043,
+						"x": 755.5572691697636,
+						"y": 99.43688498960901,
+						"width": 118.52453557885018,
+						"height": 93.79401984115128,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -896,76 +896,6 @@
 						"y": -88,
 						"width": 167.50035349530648,
 						"height": 76.71081124231803,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "UIPrevLayout",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 2",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 66,
-					"sid": 137351256705014,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 137351256705014,
-						"expanded": true
-					},
-					"world": {
-						"x": 50,
-						"y": 310,
-						"width": 64,
-						"height": 64,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "UINextLayout",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 65,
-					"sid": 759779983953979,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 759779983953979,
-						"expanded": true
-					},
-					"world": {
-						"x": 804,
-						"y": 310,
-						"width": 64,
-						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
