@@ -1,5 +1,472 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
-	"sid": 652765664189509
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Enemy",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Idle",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-los-to-object",
+									"objectClass": "Enemy",
+									"sid": 990767156091018,
+									"behaviorType": "LineOfSight",
+									"parameters": {
+										"object": "Player",
+										"image-point": "0"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 271109866292321,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 702888461892231,
+											"parameters": {
+												"interval-seconds": "random(2,4)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "find-path",
+											"objectClass": "Enemy",
+											"sid": 876037118721595,
+											"behaviorType": "Pathfinding",
+											"parameters": {
+												"x": "Enemy.X+random(-50,50)",
+												"y": "Enemy.Y+random(-50,50)"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Enemy",
+											"sid": 426938226375517,
+											"parameters": {
+												"frame-number": "0"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Enemy",
+											"sid": 124093309617024,
+											"behaviorType": "Pathfinding",
+											"parameters": {
+												"set": "enabled"
+											}
+										}
+									],
+									"sid": 606690205314163
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-path-found",
+									"objectClass": "Enemy",
+									"sid": 770548101981983,
+									"behaviorType": "Pathfinding"
+								}
+							],
+							"actions": [
+								{
+									"id": "move-along-path",
+									"objectClass": "Enemy",
+									"sid": 347379802304918,
+									"behaviorType": "Pathfinding"
+								}
+							],
+							"sid": 397431574009644
+						}
+					],
+					"sid": 603995207827342
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Found/Chase",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-los-to-object",
+									"objectClass": "Enemy",
+									"sid": 607983941516959,
+									"behaviorType": "LineOfSight",
+									"parameters": {
+										"object": "Player",
+										"image-point": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Enemy",
+									"sid": 586963991713849,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "move-to-object",
+									"objectClass": "Enemy",
+									"sid": 303136282035683,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"object": "Player",
+										"image-point": "0",
+										"mode": "direct"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "Enemy",
+									"sid": 596732559335991,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"set": "disabled"
+									}
+								}
+							],
+							"sid": 934871125081213
+						}
+					],
+					"sid": 247851591344390
+				}
+			],
+			"sid": 138351403068432
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Dog",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 849899607534046
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "dog",
+							"sid": 707792984238164,
+							"parameters": {
+								"x": "dogStarter.X",
+								"y": "dogStarter.Y"
+							}
+						}
+					],
+					"sid": 350516224016051
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Chase",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 187208544869443,
+									"parameters": {
+										"key": 69
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "dog",
+									"sid": 414391057406050,
+									"parameters": {
+										"instance-variable": "Chase",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "dog",
+									"sid": 231580841414477,
+									"parameters": {
+										"instance-variable": "Attack",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "dog",
+									"sid": 342109566056782,
+									"parameters": {
+										"instance-variable": "idle",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 517922958065738,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "agroRange",
+											"sid": 681640634622597,
+											"parameters": {
+												"object": "Enemy"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 764763238216731,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "every-tick",
+													"objectClass": "System",
+													"sid": 550554988316880
+												}
+											],
+											"actions": [
+												{
+													"id": "find-path",
+													"objectClass": "dog",
+													"sid": 618446876349430,
+													"behaviorType": "Pathfinding",
+													"parameters": {
+														"x": "Enemy.X-10",
+														"y": "Enemy.Y-10"
+													}
+												},
+												{
+													"id": "set-text",
+													"objectClass": "test",
+													"sid": 745814318820214,
+													"parameters": {
+														"text": "\"Found Path\""
+													}
+												}
+											],
+											"sid": 655512131505235
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 261208831622651
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "dog",
+											"sid": 290514825408064,
+											"parameters": {
+												"instance-variable": "idle",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "test",
+											"sid": 524559073788729,
+											"parameters": {
+												"text": "\"Not Found\""
+											}
+										}
+									],
+									"sid": 583533896202265
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-path-found",
+									"objectClass": "dog",
+									"sid": 943806672125929,
+									"behaviorType": "Pathfinding"
+								}
+							],
+							"actions": [
+								{
+									"id": "move-along-path",
+									"objectClass": "dog",
+									"sid": 274412705458593,
+									"behaviorType": "Pathfinding"
+								}
+							],
+							"sid": 832430728655645
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-failed-to-find-path",
+									"objectClass": "dog",
+									"sid": 161476762557676,
+									"behaviorType": "Pathfinding"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "dog",
+									"sid": 785319698356900,
+									"parameters": {
+										"instance-variable": "idle",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 382951251225999
+						}
+					],
+					"sid": 726339784626308
+				}
+			],
+			"sid": 919692407587052
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 742839109559173
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "hitbox",
+					"sid": 864729624436541,
+					"parameters": {
+						"x": "dog.X+33",
+						"y": "dog.Y"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "agroRange",
+					"sid": 612352906249937,
+					"parameters": {
+						"x": "dog.X",
+						"y": "dog.Y"
+					}
+				}
+			],
+			"sid": 530565749549926
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "dog",
+					"sid": 257836350487307,
+					"parameters": {
+						"instance-variable": "idle"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "dog",
+					"sid": 344217227082913,
+					"parameters": {
+						"instance-variable": "Chase"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "dog",
+					"sid": 291730673231675,
+					"parameters": {
+						"instance-variable": "Attack"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 784073483826247,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 547628721105739
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "dogStarter",
+							"sid": 525099832342620,
+							"parameters": {
+								"x": "Player.X+41",
+								"y": "Player.Y+61"
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "dog",
+							"sid": 174027646216436,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "dogStarter",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 817345742304457
+				}
+			]
+		}
+	],
+	"sid": 588721529148201
 }

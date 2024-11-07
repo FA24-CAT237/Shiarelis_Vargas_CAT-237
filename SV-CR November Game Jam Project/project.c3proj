@@ -1,15 +1,94 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 40702,
-	"name": "SV-CR November Game Jam Project",
+	"name": "GameJam_Sercerts",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
-	"usedAddons": [],
-	"uniqueId": "fqyilwi65y6",
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "LOS",
+			"name": "Line of sight",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Move To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pathfinding",
+			"name": "Pathfinding",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "5ejvk3y7rxh",
 	"objectTypes": {
-		"items": [],
-		"subfolders": []
+		"items": [
+			"Player",
+			"Keyboard",
+			"test"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"dog",
+					"Enemy",
+					"dogStarter"
+				],
+				"subfolders": [],
+				"name": "NPC"
+			},
+			{
+				"items": [
+					"agroRange",
+					"hitbox"
+				],
+				"subfolders": [],
+				"name": "hitboxs"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [],
@@ -53,25 +132,17 @@
 		"icon": {
 			"items": [
 				{
-					"name": "icon-256.png",
-					"type": "image/png",
-					"sid": 318390602825483,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-512.png",
-					"type": "image/png",
-					"sid": 589648121038104,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
 					"name": "icon-16.png",
 					"type": "image/png",
-					"sid": 233374591565886,
+					"sid": 250082228821913,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 734036808480120,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -79,7 +150,7 @@
 				{
 					"name": "icon-64.png",
 					"type": "image/png",
-					"sid": 468883380577979,
+					"sid": 561161934917386,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -87,7 +158,23 @@
 				{
 					"name": "icon-128.png",
 					"type": "image/png",
-					"sid": 441219750625922,
+					"sid": 781916381512011,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 562006347612352,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 127885092205599,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -95,17 +182,9 @@
 				{
 					"name": "loading-logo.png",
 					"type": "image/png",
-					"sid": 723519091988208,
+					"sid": 516198851189007,
 					"icon-info": {
 						"purpose": "loading-logo"
-					}
-				},
-				{
-					"name": "icon-32.png",
-					"type": "image/png",
-					"sid": 135798762976366,
-					"icon-info": {
-						"purpose": "app-icon"
 					}
 				}
 			],
@@ -138,12 +217,12 @@
 		"authorEmail": "",
 		"authorWebsite": "",
 		"appId": "",
-		"pixelRounding": true,
+		"pixelRounding": false,
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
-		"fullscreenMode": "letterbox-integer-scale",
-		"fullscreenQuality": "low",
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
 		"viewportFit": "auto",
 		"backgroundColor": [
 			0,
@@ -169,7 +248,7 @@
 		"gpuPreference": "high-performance",
 		"scriptsType": "module",
 		"framerateMode": "vsync",
-		"sampling": "nearest",
+		"sampling": "trilinear",
 		"downscaling": "medium",
 		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",
