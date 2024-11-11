@@ -57,8 +57,22 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Turret",
+			"name": "Turret",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "scrollto",
 			"name": "Scroll To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -68,7 +82,8 @@
 		"items": [
 			"Player",
 			"Keyboard",
-			"test"
+			"test",
+			"dogRange"
 		],
 		"subfolders": [
 			{
@@ -83,7 +98,8 @@
 			{
 				"items": [
 					"agroRange",
-					"hitbox"
+					"Dog_hitbox",
+					"Enemy_hitbox"
 				],
 				"subfolders": [],
 				"name": "hitboxs"

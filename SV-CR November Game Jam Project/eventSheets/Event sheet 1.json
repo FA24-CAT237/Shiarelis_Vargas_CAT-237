@@ -9,9 +9,45 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 298616090503410
+						}
+					],
+					"actions": [],
+					"sid": 171132873599379,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 101060119017005
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position-to-another-object",
+									"objectClass": "Enemy_hitbox",
+									"sid": 841671533099838,
+									"parameters": {
+										"object": "Enemy",
+										"image-point-optional": "1"
+									}
+								}
+							],
+							"sid": 172422424042215
+						}
+					]
+				},
+				{
 					"eventType": "group",
 					"disabled": false,
-					"title": "Idle",
+					"title": "Enemy Idle",
 					"description": "",
 					"isActiveOnStart": true,
 					"children": [
@@ -185,9 +221,127 @@
 								"x": "dogStarter.X",
 								"y": "dogStarter.Y"
 							}
+						},
+						{
+							"id": "acquire-target",
+							"objectClass": "dog",
+							"sid": 299967263113382,
+							"behaviorType": "Turret",
+							"parameters": {
+								"target": "Enemy"
+							}
 						}
 					],
 					"sid": 350516224016051
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 320350095998911
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "Dog_hitbox",
+							"sid": 491273317737238,
+							"parameters": {
+								"object": "dog",
+								"image-point-optional": "1"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "agroRange",
+							"sid": 628788344196315,
+							"parameters": {
+								"x": "dog.X",
+								"y": "dog.Y"
+							}
+						}
+					],
+					"sid": 477039566187688
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Dog idle",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "dog",
+									"sid": 502921724446753,
+									"parameters": {
+										"instance-variable": "idle"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "dog",
+									"sid": 772783834879519,
+									"parameters": {
+										"instance-variable": "Chase"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "dog",
+									"sid": 372218332317023,
+									"parameters": {
+										"instance-variable": "Attack"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 771160542806515,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-tick",
+											"objectClass": "System",
+											"sid": 484394076055981
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "dogStarter",
+											"sid": 771934275160662,
+											"parameters": {
+												"x": "Player.X+41",
+												"y": "Player.Y+61"
+											}
+										},
+										{
+											"id": "move-to-object",
+											"objectClass": "dog",
+											"sid": 701823407569744,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "dogStarter",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 479212003525769
+								}
+							]
+						}
+					],
+					"sid": 878172977754429
 				},
 				{
 					"eventType": "group",
@@ -202,9 +356,17 @@
 								{
 									"id": "on-key-pressed",
 									"objectClass": "Keyboard",
-									"sid": 187208544869443,
+									"sid": 306202034140337,
 									"parameters": {
 										"key": 69
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "agroRange",
+									"sid": 521717075201182,
+									"parameters": {
+										"object": "Enemy"
 									}
 								}
 							],
@@ -212,7 +374,16 @@
 								{
 									"id": "set-boolean-instvar",
 									"objectClass": "dog",
-									"sid": 414391057406050,
+									"sid": 155788617100110,
+									"parameters": {
+										"instance-variable": "idle",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "dog",
+									"sid": 398915725820993,
 									"parameters": {
 										"instance-variable": "Chase",
 										"value": "true"
@@ -221,23 +392,29 @@
 								{
 									"id": "set-boolean-instvar",
 									"objectClass": "dog",
-									"sid": 231580841414477,
+									"sid": 748837731731763,
 									"parameters": {
 										"instance-variable": "Attack",
 										"value": "false"
 									}
-								},
+								}
+							],
+							"sid": 213302088599887
+						},
+						{
+							"eventType": "block",
+							"conditions": [
 								{
-									"id": "set-boolean-instvar",
+									"id": "is-boolean-instance-variable-set",
 									"objectClass": "dog",
-									"sid": 342109566056782,
+									"sid": 597026271326714,
 									"parameters": {
-										"instance-variable": "idle",
-										"value": "false"
+										"instance-variable": "Chase"
 									}
 								}
 							],
-							"sid": 517922958065738,
+							"actions": [],
+							"sid": 203247121145909,
 							"children": [
 								{
 									"eventType": "block",
@@ -245,14 +422,14 @@
 										{
 											"id": "is-overlapping-another-object",
 											"objectClass": "agroRange",
-											"sid": 681640634622597,
+											"sid": 131284840052715,
 											"parameters": {
 												"object": "Enemy"
 											}
 										}
 									],
 									"actions": [],
-									"sid": 764763238216731,
+									"sid": 141811381504182,
 									"children": [
 										{
 											"eventType": "block",
@@ -260,62 +437,24 @@
 												{
 													"id": "every-tick",
 													"objectClass": "System",
-													"sid": 550554988316880
+													"sid": 819082545216819
 												}
 											],
 											"actions": [
 												{
 													"id": "find-path",
 													"objectClass": "dog",
-													"sid": 618446876349430,
+													"sid": 489527391483402,
 													"behaviorType": "Pathfinding",
 													"parameters": {
-														"x": "Enemy.X-10",
-														"y": "Enemy.Y-10"
-													}
-												},
-												{
-													"id": "set-text",
-													"objectClass": "test",
-													"sid": 745814318820214,
-													"parameters": {
-														"text": "\"Found Path\""
+														"x": "Enemy.X",
+														"y": "Enemy.Y"
 													}
 												}
 											],
-											"sid": 655512131505235
+											"sid": 133865470137775
 										}
 									]
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "else",
-											"objectClass": "System",
-											"sid": 261208831622651
-										}
-									],
-									"actions": [
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "dog",
-											"sid": 290514825408064,
-											"parameters": {
-												"instance-variable": "idle",
-												"value": "true"
-											}
-										},
-										{
-											"id": "set-text",
-											"objectClass": "test",
-											"sid": 524559073788729,
-											"parameters": {
-												"text": "\"Not Found\""
-											}
-										}
-									],
-									"sid": 583533896202265
 								}
 							]
 						},
@@ -325,19 +464,36 @@
 								{
 									"id": "on-path-found",
 									"objectClass": "dog",
-									"sid": 943806672125929,
+									"sid": 297291575620752,
 									"behaviorType": "Pathfinding"
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 628271632595935,
+							"children": [
 								{
-									"id": "move-along-path",
-									"objectClass": "dog",
-									"sid": 274412705458593,
-									"behaviorType": "Pathfinding"
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-tick",
+											"objectClass": "System",
+											"sid": 110110004210959
+										}
+									],
+									"actions": [
+										{
+											"id": "move-along-pathfinding-path",
+											"objectClass": "dog",
+											"sid": 684051208786333,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 377868222243171
 								}
-							],
-							"sid": 832430728655645
+							]
 						},
 						{
 							"eventType": "block",
@@ -345,7 +501,7 @@
 								{
 									"id": "on-failed-to-find-path",
 									"objectClass": "dog",
-									"sid": 161476762557676,
+									"sid": 631748502629377,
 									"behaviorType": "Pathfinding"
 								}
 							],
@@ -353,84 +509,104 @@
 								{
 									"id": "set-boolean-instvar",
 									"objectClass": "dog",
-									"sid": 785319698356900,
+									"sid": 806041484873214,
 									"parameters": {
 										"instance-variable": "idle",
 										"value": "true"
 									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "dog",
+									"sid": 844645101903406,
+									"parameters": {
+										"instance-variable": "Chase",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "dog",
+									"sid": 642921681388696,
+									"parameters": {
+										"instance-variable": "Attack",
+										"value": "false"
+									}
 								}
 							],
-							"sid": 382951251225999
+							"sid": 672775014054125
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "dog",
+									"sid": 432467158413430,
+									"parameters": {
+										"object": "dogRange"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "dog",
+									"sid": 297049419534419,
+									"parameters": {
+										"instance-variable": "idle",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "dog",
+									"sid": 601428296947981,
+									"parameters": {
+										"instance-variable": "Chase",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "dog",
+									"sid": 627235241975054,
+									"parameters": {
+										"instance-variable": "Attack",
+										"value": "false"
+									}
+								},
+								{
+									"id": "stop",
+									"objectClass": "dog",
+									"sid": 446219780541926,
+									"behaviorType": "Pathfinding"
+								}
+							],
+							"sid": 470076995296599
 						}
 					],
 					"sid": 726339784626308
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Dog Attack",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 873948314460135
 				}
 			],
 			"sid": 919692407587052
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 742839109559173
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "hitbox",
-					"sid": 864729624436541,
-					"parameters": {
-						"x": "dog.X+33",
-						"y": "dog.Y"
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "agroRange",
-					"sid": 612352906249937,
-					"parameters": {
-						"x": "dog.X",
-						"y": "dog.Y"
-					}
-				}
-			],
-			"sid": 530565749549926
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "dog",
-					"sid": 257836350487307,
-					"parameters": {
-						"instance-variable": "idle"
-					}
-				},
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "dog",
-					"sid": 344217227082913,
-					"parameters": {
-						"instance-variable": "Chase"
-					},
-					"isInverted": true
-				},
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "dog",
-					"sid": 291730673231675,
-					"parameters": {
-						"instance-variable": "Attack"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [],
-			"sid": 784073483826247,
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player",
+			"description": "",
+			"isActiveOnStart": true,
 			"children": [
 				{
 					"eventType": "block",
@@ -438,34 +614,24 @@
 						{
 							"id": "every-tick",
 							"objectClass": "System",
-							"sid": 547628721105739
+							"sid": 146517620186941
 						}
 					],
 					"actions": [
 						{
 							"id": "set-position",
-							"objectClass": "dogStarter",
-							"sid": 525099832342620,
+							"objectClass": "dogRange",
+							"sid": 740451202630775,
 							"parameters": {
-								"x": "Player.X+41",
-								"y": "Player.Y+61"
-							}
-						},
-						{
-							"id": "move-to-object",
-							"objectClass": "dog",
-							"sid": 174027646216436,
-							"behaviorType": "MoveTo",
-							"parameters": {
-								"object": "dogStarter",
-								"image-point": "0",
-								"mode": "direct"
+								"x": "Player.X",
+								"y": "Player.Y"
 							}
 						}
 					],
-					"sid": 817345742304457
+					"sid": 678483150100953
 				}
-			]
+			],
+			"sid": 479916877418916
 		}
 	],
 	"sid": 588721529148201

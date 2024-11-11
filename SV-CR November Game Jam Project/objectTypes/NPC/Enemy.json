@@ -19,6 +19,11 @@
 			"behaviorId": "Pathfinding",
 			"name": "Pathfinding",
 			"sid": 355776120330676
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 260516559736978
 		}
 	],
 	"effectTypes": [],
@@ -37,6 +42,13 @@
 						"fileType": "image/png",
 						"imageSpriteId": 7753823,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.008,
+								"y": 0.452
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					},
@@ -51,6 +63,13 @@
 						"fileType": "image/png",
 						"imageSpriteId": 2726822,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.008,
+								"y": 0.492
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					}

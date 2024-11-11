@@ -1,26 +1,10 @@
 {
-	"name": "Player",
+	"name": "Enemy_hitbox",
 	"plugin-id": "Sprite",
-	"sid": 704887313575399,
+	"sid": 970733665565441,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "scrollto",
-			"name": "ScrollTo",
-			"sid": 576541504867984
-		},
-		{
-			"behaviorId": "EightDir",
-			"name": "8Direction",
-			"sid": 726386844515048
-		},
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 836613037468748
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -35,13 +19,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 499445,
+						"imageSpriteId": 392191,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 287182588499261,
+				"sid": 396831720450244,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
