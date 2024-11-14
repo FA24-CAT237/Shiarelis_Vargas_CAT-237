@@ -2,6 +2,26 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "FlipResult",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 403102947570798
+		},
+		{
+			"eventType": "variable",
+			"name": "FlipGuess",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 503271490340641
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Enemy",
@@ -12,37 +32,23 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-start-of-layout",
+							"id": "every-tick",
 							"objectClass": "System",
-							"sid": 298616090503410
+							"sid": 877707710085981
 						}
 					],
-					"actions": [],
-					"sid": 171132873599379,
-					"children": [
+					"actions": [
 						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "every-tick",
-									"objectClass": "System",
-									"sid": 101060119017005
-								}
-							],
-							"actions": [
-								{
-									"id": "set-position-to-another-object",
-									"objectClass": "Enemy_hitbox",
-									"sid": 841671533099838,
-									"parameters": {
-										"object": "Enemy",
-										"image-point-optional": "1"
-									}
-								}
-							],
-							"sid": 172422424042215
+							"id": "set-position-to-another-object",
+							"objectClass": "Enemy_hitbox",
+							"sid": 184779317418973,
+							"parameters": {
+								"object": "Enemy",
+								"image-point-optional": "0"
+							}
 						}
-					]
+					],
+					"sid": 616559855197665
 				},
 				{
 					"eventType": "group",
@@ -188,7 +194,31 @@
 									}
 								}
 							],
-							"sid": 934871125081213
+							"sid": 934871125081213,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Enemy_hitbox",
+											"sid": 535026129216576,
+											"parameters": {
+												"object": "Player"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "stop",
+											"objectClass": "Enemy",
+											"sid": 701504252781402,
+											"behaviorType": "MoveTo"
+										}
+									],
+									"sid": 667304852981157
+								}
+							]
 						}
 					],
 					"sid": 247851591344390
@@ -535,56 +565,6 @@
 								}
 							],
 							"sid": 672775014054125
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "dog",
-									"sid": 432467158413430,
-									"parameters": {
-										"object": "dogRange"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "dog",
-									"sid": 297049419534419,
-									"parameters": {
-										"instance-variable": "idle",
-										"value": "true"
-									}
-								},
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "dog",
-									"sid": 601428296947981,
-									"parameters": {
-										"instance-variable": "Chase",
-										"value": "false"
-									}
-								},
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "dog",
-									"sid": 627235241975054,
-									"parameters": {
-										"instance-variable": "Attack",
-										"value": "false"
-									}
-								},
-								{
-									"id": "stop",
-									"objectClass": "dog",
-									"sid": 446219780541926,
-									"behaviorType": "Pathfinding"
-								}
-							],
-							"sid": 470076995296599
 						}
 					],
 					"sid": 726339784626308
@@ -597,6 +577,125 @@
 					"isActiveOnStart": true,
 					"children": [],
 					"sid": 873948314460135
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Dog_hitbox",
+							"sid": 594528496823782,
+							"parameters": {
+								"object": "Enemy"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "dog",
+							"sid": 238951276384989,
+							"parameters": {
+								"instance-variable": "idle",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "dog",
+							"sid": 438123609738255,
+							"parameters": {
+								"instance-variable": "Chase",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "dog",
+							"sid": 251825398254105,
+							"parameters": {
+								"instance-variable": "Attack",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 905967281862322
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "dog",
+							"sid": 139300561207062,
+							"parameters": {
+								"instance-variable": "Attack"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 995813191225585,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Dog_hitbox",
+									"sid": 812591534132330,
+									"parameters": {
+										"object": "Enemy"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "test",
+									"sid": 336319169624958,
+									"parameters": {
+										"text": "\"Hit (Enter Code Here\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 347014925673030,
+									"parameters": {
+										"seconds": "1.5"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "dog",
+									"sid": 956360270464909,
+									"parameters": {
+										"instance-variable": "idle",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "dog",
+									"sid": 445522061541094,
+									"parameters": {
+										"instance-variable": "Chase",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "dog",
+									"sid": 614461702831087,
+									"parameters": {
+										"instance-variable": "Attack",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 422900675558671
+						}
+					]
 				}
 			],
 			"sid": 919692407587052
@@ -629,9 +728,600 @@
 						}
 					],
 					"sid": 678483150100953
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-click",
+							"objectClass": "Mouse",
+							"sid": 914682742458022,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-position",
+							"objectClass": "Player",
+							"sid": 233060227034306,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"x": "Mouse.X",
+								"y": "Mouse.Y",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 565773609530180,
+					"disabled": true
 				}
 			],
 			"sid": 479916877418916
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Coin Flip",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 316162599726749
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "coin",
+							"sid": 910712528299899,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "HeadsButton",
+							"sid": 702449284015748,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TailsButton",
+							"sid": 329929425737520,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 473390764462848
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 882069556451123,
+							"parameters": {
+								"object": "Chest"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "coin",
+							"sid": 182648526135850,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "HeadsButton",
+							"sid": 627385278055670,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TailsButton",
+							"sid": 291293526678545,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Player",
+							"sid": 143592135631054,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"speed": "0"
+							}
+						}
+					],
+					"sid": 626350191445847
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "HeadsButton",
+							"sid": 142090861371501
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "coin",
+							"sid": 437387534469944,
+							"parameters": {
+								"animation": "\"Flips\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 583196195420059,
+							"parameters": {
+								"variable": "FlipGuess",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 642422847181968,
+							"parameters": {
+								"variable": "FlipResult",
+								"value": "round(random(1,2))"
+							}
+						}
+					],
+					"sid": 655866920282348,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 962061968068637,
+									"parameters": {
+										"variable": "FlipResult",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 906779154001338,
+									"parameters": {
+										"seconds": "1.5"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "coin",
+									"sid": 745269027151785,
+									"parameters": {
+										"animation": "\"Heads\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 309314576324673
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 156017981749434,
+									"parameters": {
+										"variable": "FlipResult",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 202350541740127,
+									"parameters": {
+										"seconds": "1.5"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "coin",
+									"sid": 312326162637360,
+									"parameters": {
+										"animation": "\"Tails\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 379247674227983
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 512972942646614,
+									"parameters": {
+										"variable": "FlipGuess",
+										"comparison": 0,
+										"value": "FlipResult"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 176739230009361,
+									"parameters": {
+										"seconds": "2"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "test",
+									"sid": 935648939672197,
+									"parameters": {
+										"text": "\"Nice\""
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "coin",
+									"sid": 274547867916283,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "HeadsButton",
+									"sid": 726472434680467,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "TailsButton",
+									"sid": 433045699809115,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Chest",
+									"sid": 862462244303813
+								}
+							],
+							"sid": 617757168100937
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 161159960815489
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 482373082905394,
+									"parameters": {
+										"seconds": "2"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "test",
+									"sid": 612336933239485,
+									"parameters": {
+										"text": "\"Fail\""
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "coin",
+									"sid": 116158476377894,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "HeadsButton",
+									"sid": 656753800100622,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "TailsButton",
+									"sid": 860466655585586,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Chest",
+									"sid": 779067142046076
+								}
+							],
+							"sid": 254576373596882
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "TailsButton",
+							"sid": 237040134171485
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "coin",
+							"sid": 701160585899315,
+							"parameters": {
+								"animation": "\"Flips\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 631529354763920,
+							"parameters": {
+								"variable": "FlipGuess",
+								"value": "2"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 572625593649954,
+							"parameters": {
+								"variable": "FlipResult",
+								"value": "round(random(1,2))"
+							}
+						}
+					],
+					"sid": 298363238481433,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 522531671086711,
+									"parameters": {
+										"variable": "FlipResult",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 959887617811500,
+									"parameters": {
+										"seconds": "1.5"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "coin",
+									"sid": 751180135647648,
+									"parameters": {
+										"animation": "\"Heads\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 594121147736138
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 946033481217049,
+									"parameters": {
+										"variable": "FlipResult",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 825297943517134,
+									"parameters": {
+										"seconds": "1.5"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "coin",
+									"sid": 531773321174338,
+									"parameters": {
+										"animation": "\"Tails\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 979700975067051
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 822957296871475,
+									"parameters": {
+										"variable": "FlipGuess",
+										"comparison": 0,
+										"value": "FlipResult"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 974861174064136,
+									"parameters": {
+										"seconds": "2"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "test",
+									"sid": 699482030413685,
+									"parameters": {
+										"text": "\"Nice\""
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "coin",
+									"sid": 519723227302792,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "HeadsButton",
+									"sid": 378689336160299,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "TailsButton",
+									"sid": 871272468181061,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Chest",
+									"sid": 977262141450572
+								}
+							],
+							"sid": 404045443244803
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 639117353323686
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 540519602624291,
+									"parameters": {
+										"seconds": "2"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "test",
+									"sid": 868352343234147,
+									"parameters": {
+										"text": "\"Fail\""
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "coin",
+									"sid": 973825932759007,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "HeadsButton",
+									"sid": 532079207237879,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "TailsButton",
+									"sid": 455055672342454,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Chest",
+									"sid": 340182583732037
+								}
+							],
+							"sid": 394806300104247
+						}
+					]
+				}
+			],
+			"sid": 758345830275996
 		}
 	],
 	"sid": 588721529148201
