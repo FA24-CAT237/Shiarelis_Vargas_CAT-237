@@ -83,7 +83,8 @@
 			"Player",
 			"Keyboard",
 			"test",
-			"dogRange"
+			"dogRange",
+			"coin"
 		],
 		"subfolders": [
 			{
