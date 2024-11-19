@@ -106,7 +106,6 @@
 			"test",
 			"Mouse",
 			"TiledBackground",
-			"EvilSpirit",
 			"teleportBlock"
 		],
 		"subfolders": [
@@ -114,7 +113,8 @@
 				"items": [
 					"dog",
 					"Enemy",
-					"dogStarter"
+					"dogStarter",
+					"EvilSpirit"
 				],
 				"subfolders": [],
 				"name": "NPC"

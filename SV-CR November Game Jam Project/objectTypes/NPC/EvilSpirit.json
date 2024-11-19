@@ -1,16 +1,10 @@
 {
-	"name": "Enemy_hitbox",
+	"name": "EvilSpirit",
 	"plugin-id": "Sprite",
-	"sid": 970733665565441,
+	"sid": 813755195854410,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 261522030012100
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -25,13 +19,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 392191,
+						"imageSpriteId": 3316127,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 396831720450244,
+				"sid": 580575468495630,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

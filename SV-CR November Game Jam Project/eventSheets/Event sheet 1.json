@@ -61,6 +61,40 @@
 					"sid": 616559855197665
 				},
 				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 565594459100138
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "Enemy",
+							"sid": 456807512203455,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "Enemy.X+random(-50,50)",
+								"y": "Enemy.Y+random(-50,50)"
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "Enemy",
+							"sid": 201576532970161,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Player",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 313801281122106
+				},
+				{
 					"eventType": "group",
 					"disabled": false,
 					"title": "Enemy Idle",
@@ -82,7 +116,16 @@
 									"isInverted": true
 								}
 							],
-							"actions": [],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "test",
+									"sid": 864713215104163,
+									"parameters": {
+										"text": "\"Searching\""
+									}
+								}
+							],
 							"sid": 271109866292321,
 							"children": [
 								{
@@ -141,6 +184,14 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "test",
+									"sid": 473495547952632,
+									"parameters": {
+										"text": "\"Found\""
+									}
+								},
 								{
 									"id": "move-along-path",
 									"objectClass": "Enemy",
@@ -1077,6 +1128,11 @@
 									"parameters": {
 										"visibility": "invisible"
 									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Chest",
+									"sid": 648716625800935
 								}
 							],
 							"sid": 617757168100937
@@ -1134,10 +1190,10 @@
 								{
 									"id": "set-vector-x",
 									"objectClass": "Player",
-									"sid": 118872921020851,
+									"sid": 161557138785290,
 									"behaviorType": "8Direction",
 									"parameters": {
-										"vector-x": "-2000"
+										"vector-x": "-400"
 									}
 								}
 							],
@@ -1366,6 +1422,15 @@
 									"sid": 455055672342454,
 									"parameters": {
 										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-vector-x",
+									"objectClass": "Player",
+									"sid": 284879012351471,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"vector-x": "-400"
 									}
 								}
 							],
