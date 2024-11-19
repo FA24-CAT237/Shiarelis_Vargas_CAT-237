@@ -22,6 +22,16 @@
 			"sid": 503271490340641
 		},
 		{
+			"eventType": "variable",
+			"name": "Tp_number",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 942850104164444
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Enemy",
@@ -711,52 +721,101 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 146517620186941
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 775809326868031,
+							"parameters": {
+								"key": 87
+							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-position",
-							"objectClass": "dogRange",
-							"sid": 740451202630775,
+							"id": "simulate-control",
+							"objectClass": "Player",
+							"sid": 406407583856496,
+							"behaviorType": "8Direction",
 							"parameters": {
-								"x": "Player.X",
-								"y": "Player.Y"
+								"control": "up"
 							}
 						}
 					],
-					"sid": 678483150100953
+					"sid": 497588136093973
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-click",
-							"objectClass": "Mouse",
-							"sid": 914682742458022,
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 931625840143018,
 							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked"
+								"key": 83
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "move-to-position",
+							"id": "simulate-control",
 							"objectClass": "Player",
-							"sid": 233060227034306,
-							"behaviorType": "MoveTo",
+							"sid": 264316488810984,
+							"behaviorType": "8Direction",
 							"parameters": {
-								"x": "Mouse.X",
-								"y": "Mouse.Y",
-								"mode": "direct"
+								"control": "down"
 							}
 						}
 					],
-					"sid": 565773609530180,
-					"disabled": true
+					"sid": 355875941185365
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 857733124036751,
+							"parameters": {
+								"key": 65
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Player",
+							"sid": 330046317798181,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "left"
+							}
+						}
+					],
+					"sid": 953741682087845
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 338432289129376,
+							"parameters": {
+								"key": 68
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Player",
+							"sid": 336547271498634,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 692407665869283
 				}
 			],
 			"sid": 479916877418916
@@ -811,7 +870,7 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "Player",
-							"sid": 882069556451123,
+							"sid": 846637516814731,
 							"parameters": {
 								"object": "Chest"
 							}
@@ -821,7 +880,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "coin",
-							"sid": 182648526135850,
+							"sid": 259978959513228,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -829,7 +888,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "HeadsButton",
-							"sid": 627385278055670,
+							"sid": 836339806218175,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -837,7 +896,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "TailsButton",
-							"sid": 291293526678545,
+							"sid": 872541432204405,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -845,14 +904,14 @@
 						{
 							"id": "set-speed",
 							"objectClass": "Player",
-							"sid": 143592135631054,
+							"sid": 752739309671302,
 							"behaviorType": "8Direction",
 							"parameters": {
 								"speed": "0"
 							}
 						}
 					],
-					"sid": 626350191445847
+					"sid": 734031135212220
 				},
 				{
 					"eventType": "block",
@@ -912,9 +971,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 906779154001338,
+									"sid": 998360830484270,
 									"parameters": {
-										"seconds": "1.5"
+										"seconds": "1"
 									}
 								},
 								{
@@ -947,9 +1006,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 202350541740127,
+									"sid": 305989652810951,
 									"parameters": {
-										"seconds": "1.5"
+										"seconds": "1"
 									}
 								},
 								{
@@ -1018,11 +1077,6 @@
 									"parameters": {
 										"visibility": "invisible"
 									}
-								},
-								{
-									"id": "destroy",
-									"objectClass": "Chest",
-									"sid": 862462244303813
 								}
 							],
 							"sid": 617757168100937
@@ -1078,9 +1132,13 @@
 									}
 								},
 								{
-									"id": "destroy",
-									"objectClass": "Chest",
-									"sid": 779067142046076
+									"id": "set-vector-x",
+									"objectClass": "Player",
+									"sid": 118872921020851,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"vector-x": "-2000"
+									}
 								}
 							],
 							"sid": 254576373596882
@@ -1309,11 +1367,6 @@
 									"parameters": {
 										"visibility": "invisible"
 									}
-								},
-								{
-									"id": "destroy",
-									"objectClass": "Chest",
-									"sid": 340182583732037
 								}
 							],
 							"sid": 394806300104247
@@ -1322,6 +1375,68 @@
 				}
 			],
 			"sid": 758345830275996
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Final Boss",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 842100467531902,
+							"parameters": {
+								"interval-seconds": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 384362670985366,
+							"parameters": {
+								"variable": "Tp_number",
+								"value": "round(random(1,4))"
+							}
+						}
+					],
+					"sid": 626972164031096
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "teleportBlock",
+							"sid": 717208521266829,
+							"parameters": {
+								"instance-variable": "Tp_ID",
+								"comparison": 0,
+								"value": "Tp_number"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "EvilSpirit",
+							"sid": 257069977205697,
+							"parameters": {
+								"object": "teleportBlock",
+								"image-point-optional": "0"
+							}
+						}
+					],
+					"sid": 897832055245300
+				}
+			],
+			"sid": 462970932310075
 		}
 	],
 	"sid": 588721529148201
