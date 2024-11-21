@@ -79,17 +79,6 @@
 								"x": "Enemy.X+random(-50,50)",
 								"y": "Enemy.Y+random(-50,50)"
 							}
-						},
-						{
-							"id": "move-to-object",
-							"objectClass": "Enemy",
-							"sid": 201576532970161,
-							"behaviorType": "MoveTo",
-							"parameters": {
-								"object": "Player",
-								"image-point": "0",
-								"mode": "direct"
-							}
 						}
 					],
 					"sid": 313801281122106
@@ -134,7 +123,7 @@
 										{
 											"id": "every-x-seconds",
 											"objectClass": "System",
-											"sid": 702888461892231,
+											"sid": 969641543433694,
 											"parameters": {
 												"interval-seconds": "random(2,4)"
 											}
@@ -142,9 +131,18 @@
 									],
 									"actions": [
 										{
+											"id": "set-enabled",
+											"objectClass": "Enemy",
+											"sid": 506068701426344,
+											"behaviorType": "Pathfinding",
+											"parameters": {
+												"set": "enabled"
+											}
+										},
+										{
 											"id": "find-path",
 											"objectClass": "Enemy",
-											"sid": 876037118721595,
+											"sid": 874509641026142,
 											"behaviorType": "Pathfinding",
 											"parameters": {
 												"x": "Enemy.X+random(-50,50)",
@@ -154,22 +152,13 @@
 										{
 											"id": "set-animation-frame",
 											"objectClass": "Enemy",
-											"sid": 426938226375517,
+											"sid": 474423175893486,
 											"parameters": {
 												"frame-number": "0"
 											}
-										},
-										{
-											"id": "set-enabled",
-											"objectClass": "Enemy",
-											"sid": 124093309617024,
-											"behaviorType": "Pathfinding",
-											"parameters": {
-												"set": "enabled"
-											}
 										}
 									],
-									"sid": 606690205314163
+									"sid": 260397615609651
 								}
 							]
 						},
@@ -217,7 +206,7 @@
 								{
 									"id": "has-los-to-object",
 									"objectClass": "Enemy",
-									"sid": 607983941516959,
+									"sid": 228886610107428,
 									"behaviorType": "LineOfSight",
 									"parameters": {
 										"object": "Player",
@@ -227,9 +216,18 @@
 							],
 							"actions": [
 								{
+									"id": "set-enabled",
+									"objectClass": "Enemy",
+									"sid": 913662968141456,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"set": "disabled"
+									}
+								},
+								{
 									"id": "set-animation-frame",
 									"objectClass": "Enemy",
-									"sid": 586963991713849,
+									"sid": 152736149577014,
 									"parameters": {
 										"frame-number": "1"
 									}
@@ -237,25 +235,16 @@
 								{
 									"id": "move-to-object",
 									"objectClass": "Enemy",
-									"sid": 303136282035683,
+									"sid": 820371592138670,
 									"behaviorType": "MoveTo",
 									"parameters": {
 										"object": "Player",
 										"image-point": "0",
 										"mode": "direct"
 									}
-								},
-								{
-									"id": "set-enabled",
-									"objectClass": "Enemy",
-									"sid": 596732559335991,
-									"behaviorType": "Pathfinding",
-									"parameters": {
-										"set": "disabled"
-									}
 								}
 							],
-							"sid": 934871125081213,
+							"sid": 431195823113973,
 							"children": [
 								{
 									"eventType": "block",
@@ -263,7 +252,7 @@
 										{
 											"id": "is-overlapping-another-object",
 											"objectClass": "Enemy_hitbox",
-											"sid": 535026129216576,
+											"sid": 699732534322467,
 											"parameters": {
 												"object": "Player"
 											}
@@ -273,16 +262,25 @@
 										{
 											"id": "stop",
 											"objectClass": "Enemy",
-											"sid": 701504252781402,
+											"sid": 428571921598459,
 											"behaviorType": "MoveTo"
 										}
 									],
-									"sid": 667304852981157
+									"sid": 506383649877647
 								}
 							]
 						}
 					],
-					"sid": 247851591344390
+					"sid": 677858071124085
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Attack",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 229015611553281
 				}
 			],
 			"sid": 138351403068432
@@ -311,15 +309,6 @@
 							"parameters": {
 								"x": "dogStarter.X",
 								"y": "dogStarter.Y"
-							}
-						},
-						{
-							"id": "acquire-target",
-							"objectClass": "dog",
-							"sid": 299967263113382,
-							"behaviorType": "Turret",
-							"parameters": {
-								"target": "Enemy"
 							}
 						}
 					],
@@ -1502,6 +1491,249 @@
 				}
 			],
 			"sid": 462970932310075
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Projectile Enemy",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 239294099733942
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "ProjectlieEnemy",
+							"sid": 228678528458525,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "ProjectlieEnemy.X+random(-50,50)",
+								"y": "ProjectlieEnemy.Y+random(-50,50)"
+							}
+						}
+					],
+					"sid": 556545340220655
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 881974544816471
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "enemyRange",
+							"sid": 157363375203077,
+							"parameters": {
+								"object": "ProjectlieEnemy",
+								"image-point-optional": "0"
+							}
+						}
+					],
+					"sid": 439001915039054
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Idle",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-los-to-object",
+									"objectClass": "ProjectlieEnemy",
+									"sid": 157784119994970,
+									"behaviorType": "LineOfSight",
+									"parameters": {
+										"object": "Player",
+										"image-point": "0"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 744741072685004,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 808859409245206,
+											"parameters": {
+												"interval-seconds": "random(2,4)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "find-path",
+											"objectClass": "ProjectlieEnemy",
+											"sid": 620683363297182,
+											"behaviorType": "Pathfinding",
+											"parameters": {
+												"x": "ProjectlieEnemy.X+random(-50,50)",
+												"y": "ProjectlieEnemy.Y+random(-50,50)"
+											}
+										}
+									],
+									"sid": 206758644252919
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-path-found",
+									"objectClass": "ProjectlieEnemy",
+									"sid": 866671526521214,
+									"behaviorType": "Pathfinding"
+								}
+							],
+							"actions": [
+								{
+									"id": "move-along-path",
+									"objectClass": "ProjectlieEnemy",
+									"sid": 206773924156040,
+									"behaviorType": "Pathfinding"
+								}
+							],
+							"sid": 351912513857396
+						}
+					],
+					"sid": 648231464830288
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Shoot/Move",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-los-to-object",
+									"objectClass": "ProjectlieEnemy",
+									"sid": 326627221278514,
+									"behaviorType": "LineOfSight",
+									"parameters": {
+										"object": "Player",
+										"image-point": "0"
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "enemyRange",
+									"sid": 129166411691586,
+									"parameters": {
+										"object": "Player"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 177433431461296,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 724435378833590,
+											"parameters": {
+												"interval-seconds": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "signal",
+											"objectClass": "System",
+											"sid": 446641933793502,
+											"parameters": {
+												"tag": "\"Shoot\""
+											}
+										}
+									],
+									"sid": 955844609197022
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 565745435554037
+								}
+							],
+							"actions": [],
+							"sid": 594267481875149,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-signal",
+											"objectClass": "System",
+											"sid": 151003739551165,
+											"parameters": {
+												"tag": "\"Shoot\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "ProjectlieEnemy",
+											"sid": 516833855858102,
+											"parameters": {
+												"object": "Arrow",
+												"layer": "0",
+												"image-point": "1",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-angle-toward-position",
+											"objectClass": "Arrow",
+											"sid": 721748886560776,
+											"parameters": {
+												"x": "Player.X",
+												"y": "Player.Y"
+											}
+										}
+									],
+									"sid": 603391457639310
+								}
+							]
+						}
+					],
+					"sid": 457483386703217
+				}
+			],
+			"sid": 775710196582622
 		}
 	],
 	"sid": 588721529148201

@@ -1,37 +1,24 @@
 {
-	"name": "Player",
+	"name": "ProjectlieEnemy",
 	"plugin-id": "Sprite",
-	"sid": 704887313575399,
+	"sid": 781556699421370,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "HitPoint",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 764545347457139
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "scrollto",
-			"name": "ScrollTo",
-			"sid": 576541504867984
-		},
-		{
-			"behaviorId": "EightDir",
-			"name": "8Direction",
-			"sid": 726386844515048
-		},
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 836613037468748
+			"behaviorId": "Pathfinding",
+			"name": "Pathfinding",
+			"sid": 820119536529167
 		},
 		{
 			"behaviorId": "MoveTo",
 			"name": "MoveTo",
-			"sid": 194145231147301
+			"sid": 892250256543033
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 502443811434383
 		}
 	],
 	"effectTypes": [],
@@ -48,13 +35,20 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 499445,
+						"imageSpriteId": 8275185,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.044,
+								"y": 0.484
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 287182588499261,
+				"sid": 239687152602218,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

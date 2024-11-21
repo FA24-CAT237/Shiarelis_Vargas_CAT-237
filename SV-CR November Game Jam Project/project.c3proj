@@ -50,6 +50,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
 			"author": "Scirra",
@@ -114,7 +121,8 @@
 					"dog",
 					"Enemy",
 					"dogStarter",
-					"EvilSpirit"
+					"EvilSpirit",
+					"ProjectlieEnemy"
 				],
 				"subfolders": [],
 				"name": "NPC"
@@ -124,7 +132,7 @@
 					"agroRange",
 					"Dog_hitbox",
 					"Enemy_hitbox",
-					"dogRange"
+					"enemyRange"
 				],
 				"subfolders": [],
 				"name": "hitboxs"
@@ -138,6 +146,13 @@
 				],
 				"subfolders": [],
 				"name": "CointThings"
+			},
+			{
+				"items": [
+					"Arrow"
+				],
+				"subfolders": [],
+				"name": "projectiles"
 			}
 		]
 	},
