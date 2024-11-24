@@ -3,7 +3,22 @@
 	"plugin-id": "Sprite",
 	"sid": 781556699421370,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "idle",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 444449232759264
+		},
+		{
+			"name": "inShootingRange",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 507075689638692
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Pathfinding",

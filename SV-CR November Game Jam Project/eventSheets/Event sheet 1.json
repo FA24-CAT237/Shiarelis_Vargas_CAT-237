@@ -105,16 +105,7 @@
 									"isInverted": true
 								}
 							],
-							"actions": [
-								{
-									"id": "set-text",
-									"objectClass": "test",
-									"sid": 864713215104163,
-									"parameters": {
-										"text": "\"Searching\""
-									}
-								}
-							],
+							"actions": [],
 							"sid": 271109866292321,
 							"children": [
 								{
@@ -173,14 +164,6 @@
 								}
 							],
 							"actions": [
-								{
-									"id": "set-text",
-									"objectClass": "test",
-									"sid": 473495547952632,
-									"parameters": {
-										"text": "\"Found\""
-									}
-								},
 								{
 									"id": "move-along-path",
 									"objectClass": "Enemy",
@@ -1518,6 +1501,24 @@
 								"x": "ProjectlieEnemy.X+random(-50,50)",
 								"y": "ProjectlieEnemy.Y+random(-50,50)"
 							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "ProjectlieEnemy",
+							"sid": 141795820604032,
+							"parameters": {
+								"instance-variable": "idle",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "ProjectlieEnemy",
+							"sid": 514845110805717,
+							"parameters": {
+								"instance-variable": "inShootingRange",
+								"value": "false"
+							}
 						}
 					],
 					"sid": 556545340220655
@@ -1555,19 +1556,16 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "has-los-to-object",
+									"id": "is-boolean-instance-variable-set",
 									"objectClass": "ProjectlieEnemy",
-									"sid": 157784119994970,
-									"behaviorType": "LineOfSight",
+									"sid": 610981737010314,
 									"parameters": {
-										"object": "Player",
-										"image-point": "0"
-									},
-									"isInverted": true
+										"instance-variable": "idle"
+									}
 								}
 							],
 							"actions": [],
-							"sid": 744741072685004,
+							"sid": 483379490635685,
 							"children": [
 								{
 									"eventType": "block",
@@ -1575,7 +1573,7 @@
 										{
 											"id": "every-x-seconds",
 											"objectClass": "System",
-											"sid": 808859409245206,
+											"sid": 683697644427233,
 											"parameters": {
 												"interval-seconds": "random(2,4)"
 											}
@@ -1585,7 +1583,7 @@
 										{
 											"id": "find-path",
 											"objectClass": "ProjectlieEnemy",
-											"sid": 620683363297182,
+											"sid": 577020477652407,
 											"behaviorType": "Pathfinding",
 											"parameters": {
 												"x": "ProjectlieEnemy.X+random(-50,50)",
@@ -1593,7 +1591,7 @@
 											}
 										}
 									],
-									"sid": 206758644252919
+									"sid": 794389466394062
 								}
 							]
 						},
@@ -1603,7 +1601,7 @@
 								{
 									"id": "on-path-found",
 									"objectClass": "ProjectlieEnemy",
-									"sid": 866671526521214,
+									"sid": 365041052251953,
 									"behaviorType": "Pathfinding"
 								}
 							],
@@ -1611,11 +1609,11 @@
 								{
 									"id": "move-along-path",
 									"objectClass": "ProjectlieEnemy",
-									"sid": 206773924156040,
+									"sid": 114153258992168,
 									"behaviorType": "Pathfinding"
 								}
 							],
-							"sid": 351912513857396
+							"sid": 306355097647738
 						}
 					],
 					"sid": 648231464830288
@@ -1631,50 +1629,102 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "has-los-to-object",
-									"objectClass": "ProjectlieEnemy",
-									"sid": 326627221278514,
-									"behaviorType": "LineOfSight",
-									"parameters": {
-										"object": "Player",
-										"image-point": "0"
-									}
-								},
-								{
 									"id": "is-overlapping-another-object",
 									"objectClass": "enemyRange",
-									"sid": 129166411691586,
+									"sid": 160124053196524,
 									"parameters": {
 										"object": "Player"
 									}
 								}
 							],
-							"actions": [],
-							"sid": 177433431461296,
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "ProjectlieEnemy",
+									"sid": 341872909928905,
+									"parameters": {
+										"instance-variable": "idle",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "ProjectlieEnemy",
+									"sid": 745858588831463,
+									"parameters": {
+										"instance-variable": "inShootingRange",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 953793759410635,
 							"children": [
 								{
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "every-x-seconds",
-											"objectClass": "System",
-											"sid": 724435378833590,
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "ProjectlieEnemy",
+											"sid": 656502168472320,
 											"parameters": {
-												"interval-seconds": "3"
+												"instance-variable": "inShootingRange"
 											}
 										}
 									],
-									"actions": [
+									"actions": [],
+									"sid": 489670269057618,
+									"children": [
 										{
-											"id": "signal",
-											"objectClass": "System",
-											"sid": 446641933793502,
-											"parameters": {
-												"tag": "\"Shoot\""
-											}
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "every-x-seconds",
+													"objectClass": "System",
+													"sid": 806961608379998,
+													"parameters": {
+														"interval-seconds": "3"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-text",
+													"objectClass": "test",
+													"sid": 253488180207037,
+													"parameters": {
+														"text": "\"Found\""
+													}
+												},
+												{
+													"id": "signal",
+													"objectClass": "System",
+													"sid": 512243670479384,
+													"parameters": {
+														"tag": "\"Shoot\""
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 785093414847019,
+													"parameters": {
+														"seconds": "1.0"
+													}
+												},
+												{
+													"id": "find-path",
+													"objectClass": "ProjectlieEnemy",
+													"sid": 756673580690658,
+													"behaviorType": "Pathfinding",
+													"parameters": {
+														"x": "ProjectlieEnemy.X+random(-150,150)",
+														"y": "ProjectlieEnemy.Y+random(-150,150)"
+													}
+												}
+											],
+											"sid": 399931464236779
 										}
-									],
-									"sid": 955844609197022
+									]
 								}
 							]
 						},
@@ -1682,52 +1732,58 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "trigger-once-while-true",
+									"id": "on-signal",
 									"objectClass": "System",
-									"sid": 565745435554037
+									"sid": 646998289225503,
+									"parameters": {
+										"tag": "\"Shoot\""
+									}
 								}
 							],
-							"actions": [],
-							"sid": 594267481875149,
-							"children": [
+							"actions": [
 								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "on-signal",
-											"objectClass": "System",
-											"sid": 151003739551165,
-											"parameters": {
-												"tag": "\"Shoot\""
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "spawn-another-object",
-											"objectClass": "ProjectlieEnemy",
-											"sid": 516833855858102,
-											"parameters": {
-												"object": "Arrow",
-												"layer": "0",
-												"image-point": "1",
-												"create-hierarchy": false,
-												"template-name": "\"\""
-											}
-										},
-										{
-											"id": "set-angle-toward-position",
-											"objectClass": "Arrow",
-											"sid": 721748886560776,
-											"parameters": {
-												"x": "Player.X",
-												"y": "Player.Y"
-											}
-										}
-									],
-									"sid": 603391457639310
+									"id": "spawn-another-object",
+									"objectClass": "ProjectlieEnemy",
+									"sid": 976331839663732,
+									"parameters": {
+										"object": "Arrow",
+										"layer": "0",
+										"image-point": "1",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-angle-toward-position",
+									"objectClass": "Arrow",
+									"sid": 713008791483467,
+									"parameters": {
+										"x": "Player.X",
+										"y": "Player.Y"
+									}
 								}
-							]
+							],
+							"sid": 370205012942093
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-path-found",
+									"objectClass": "ProjectlieEnemy",
+									"sid": 768051012458776,
+									"behaviorType": "Pathfinding"
+								}
+							],
+							"actions": [
+								{
+									"id": "move-along-path",
+									"objectClass": "ProjectlieEnemy",
+									"sid": 241546761042741,
+									"behaviorType": "Pathfinding"
+								}
+							],
+							"sid": 422394436671010
 						}
 					],
 					"sid": 457483386703217

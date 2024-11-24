@@ -542,7 +542,10 @@
 					"uid": 12,
 					"sid": 828320759761807,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"idle": false,
+						"inShootingRange": false
+					},
 					"behaviors": {
 						"Pathfinding": {
 							"properties": {
@@ -573,7 +576,7 @@
 						"LineOfSight": {
 							"properties": {
 								"obstacles": "solids",
-								"range": 350,
+								"range": 500,
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
