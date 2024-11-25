@@ -53,7 +53,7 @@
 							"objectClass": "Enemy_hitbox",
 							"sid": 184779317418973,
 							"parameters": {
-								"object": "Enemy",
+								"object": "Skeleton",
 								"image-point-optional": "0"
 							}
 						}
@@ -72,12 +72,12 @@
 					"actions": [
 						{
 							"id": "find-path",
-							"objectClass": "Enemy",
+							"objectClass": "Skeleton",
 							"sid": 456807512203455,
 							"behaviorType": "Pathfinding",
 							"parameters": {
-								"x": "Enemy.X+random(-50,50)",
-								"y": "Enemy.Y+random(-50,50)"
+								"x": "Skeleton.X+random(-50,50)",
+								"y": "Skeleton.Y+random(-50,50)"
 							}
 						}
 					],
@@ -95,7 +95,7 @@
 							"conditions": [
 								{
 									"id": "has-los-to-object",
-									"objectClass": "Enemy",
+									"objectClass": "Skeleton",
 									"sid": 990767156091018,
 									"behaviorType": "LineOfSight",
 									"parameters": {
@@ -123,7 +123,7 @@
 									"actions": [
 										{
 											"id": "set-enabled",
-											"objectClass": "Enemy",
+											"objectClass": "Skeleton",
 											"sid": 506068701426344,
 											"behaviorType": "Pathfinding",
 											"parameters": {
@@ -132,17 +132,17 @@
 										},
 										{
 											"id": "find-path",
-											"objectClass": "Enemy",
+											"objectClass": "Skeleton",
 											"sid": 874509641026142,
 											"behaviorType": "Pathfinding",
 											"parameters": {
-												"x": "Enemy.X+random(-50,50)",
-												"y": "Enemy.Y+random(-50,50)"
+												"x": "Skeleton.X+random(-50,50)",
+												"y": "Skeleton.Y+random(-50,50)"
 											}
 										},
 										{
 											"id": "set-animation-frame",
-											"objectClass": "Enemy",
+											"objectClass": "Skeleton",
 											"sid": 474423175893486,
 											"parameters": {
 												"frame-number": "0"
@@ -158,7 +158,7 @@
 							"conditions": [
 								{
 									"id": "on-path-found",
-									"objectClass": "Enemy",
+									"objectClass": "Skeleton",
 									"sid": 770548101981983,
 									"behaviorType": "Pathfinding"
 								}
@@ -166,7 +166,7 @@
 							"actions": [
 								{
 									"id": "move-along-path",
-									"objectClass": "Enemy",
+									"objectClass": "Skeleton",
 									"sid": 347379802304918,
 									"behaviorType": "Pathfinding"
 								}
@@ -188,7 +188,7 @@
 							"conditions": [
 								{
 									"id": "has-los-to-object",
-									"objectClass": "Enemy",
+									"objectClass": "Skeleton",
 									"sid": 228886610107428,
 									"behaviorType": "LineOfSight",
 									"parameters": {
@@ -200,7 +200,7 @@
 							"actions": [
 								{
 									"id": "set-enabled",
-									"objectClass": "Enemy",
+									"objectClass": "Skeleton",
 									"sid": 913662968141456,
 									"behaviorType": "Pathfinding",
 									"parameters": {
@@ -209,7 +209,7 @@
 								},
 								{
 									"id": "set-animation-frame",
-									"objectClass": "Enemy",
+									"objectClass": "Skeleton",
 									"sid": 152736149577014,
 									"parameters": {
 										"frame-number": "1"
@@ -217,7 +217,7 @@
 								},
 								{
 									"id": "move-to-object",
-									"objectClass": "Enemy",
+									"objectClass": "Skeleton",
 									"sid": 820371592138670,
 									"behaviorType": "MoveTo",
 									"parameters": {
@@ -244,7 +244,7 @@
 									"actions": [
 										{
 											"id": "stop",
-											"objectClass": "Enemy",
+											"objectClass": "Skeleton",
 											"sid": 428571921598459,
 											"behaviorType": "MoveTo"
 										}
@@ -429,7 +429,7 @@
 									"objectClass": "agroRange",
 									"sid": 521717075201182,
 									"parameters": {
-										"object": "Enemy"
+										"object": "Skeleton"
 									}
 								}
 							],
@@ -487,7 +487,7 @@
 											"objectClass": "agroRange",
 											"sid": 131284840052715,
 											"parameters": {
-												"object": "Enemy"
+												"object": "Skeleton"
 											}
 										}
 									],
@@ -510,8 +510,8 @@
 													"sid": 489527391483402,
 													"behaviorType": "Pathfinding",
 													"parameters": {
-														"x": "Enemy.X",
-														"y": "Enemy.Y"
+														"x": "Skeleton.X",
+														"y": "Skeleton.Y"
 													}
 												}
 											],
@@ -619,7 +619,7 @@
 							"objectClass": "Dog_hitbox",
 							"sid": 594528496823782,
 							"parameters": {
-								"object": "Enemy"
+								"object": "Skeleton"
 							}
 						}
 					],
@@ -677,7 +677,7 @@
 									"objectClass": "Dog_hitbox",
 									"sid": 812591534132330,
 									"parameters": {
-										"object": "Enemy"
+										"object": "Skeleton"
 									}
 								}
 							],
@@ -1494,17 +1494,17 @@
 					"actions": [
 						{
 							"id": "find-path",
-							"objectClass": "ProjectlieEnemy",
+							"objectClass": "Spider",
 							"sid": 228678528458525,
 							"behaviorType": "Pathfinding",
 							"parameters": {
-								"x": "ProjectlieEnemy.X+random(-50,50)",
-								"y": "ProjectlieEnemy.Y+random(-50,50)"
+								"x": "Spider.X+random(-50,50)",
+								"y": "Spider.Y+random(-50,50)"
 							}
 						},
 						{
 							"id": "set-boolean-instvar",
-							"objectClass": "ProjectlieEnemy",
+							"objectClass": "Spider",
 							"sid": 141795820604032,
 							"parameters": {
 								"instance-variable": "idle",
@@ -1513,7 +1513,7 @@
 						},
 						{
 							"id": "set-boolean-instvar",
-							"objectClass": "ProjectlieEnemy",
+							"objectClass": "Spider",
 							"sid": 514845110805717,
 							"parameters": {
 								"instance-variable": "inShootingRange",
@@ -1538,7 +1538,7 @@
 							"objectClass": "enemyRange",
 							"sid": 157363375203077,
 							"parameters": {
-								"object": "ProjectlieEnemy",
+								"object": "Spider",
 								"image-point-optional": "0"
 							}
 						}
@@ -1557,7 +1557,7 @@
 							"conditions": [
 								{
 									"id": "is-boolean-instance-variable-set",
-									"objectClass": "ProjectlieEnemy",
+									"objectClass": "Spider",
 									"sid": 610981737010314,
 									"parameters": {
 										"instance-variable": "idle"
@@ -1582,12 +1582,12 @@
 									"actions": [
 										{
 											"id": "find-path",
-											"objectClass": "ProjectlieEnemy",
+											"objectClass": "Spider",
 											"sid": 577020477652407,
 											"behaviorType": "Pathfinding",
 											"parameters": {
-												"x": "ProjectlieEnemy.X+random(-50,50)",
-												"y": "ProjectlieEnemy.Y+random(-50,50)"
+												"x": "Spider.X+random(-50,50)",
+												"y": "Spider.Y+random(-50,50)"
 											}
 										}
 									],
@@ -1600,7 +1600,7 @@
 							"conditions": [
 								{
 									"id": "on-path-found",
-									"objectClass": "ProjectlieEnemy",
+									"objectClass": "Spider",
 									"sid": 365041052251953,
 									"behaviorType": "Pathfinding"
 								}
@@ -1608,7 +1608,7 @@
 							"actions": [
 								{
 									"id": "move-along-path",
-									"objectClass": "ProjectlieEnemy",
+									"objectClass": "Spider",
 									"sid": 114153258992168,
 									"behaviorType": "Pathfinding"
 								}
@@ -1640,7 +1640,7 @@
 							"actions": [
 								{
 									"id": "set-boolean-instvar",
-									"objectClass": "ProjectlieEnemy",
+									"objectClass": "Spider",
 									"sid": 341872909928905,
 									"parameters": {
 										"instance-variable": "idle",
@@ -1649,7 +1649,7 @@
 								},
 								{
 									"id": "set-boolean-instvar",
-									"objectClass": "ProjectlieEnemy",
+									"objectClass": "Spider",
 									"sid": 745858588831463,
 									"parameters": {
 										"instance-variable": "inShootingRange",
@@ -1664,7 +1664,7 @@
 									"conditions": [
 										{
 											"id": "is-boolean-instance-variable-set",
-											"objectClass": "ProjectlieEnemy",
+											"objectClass": "Spider",
 											"sid": 656502168472320,
 											"parameters": {
 												"instance-variable": "inShootingRange"
@@ -1713,12 +1713,12 @@
 												},
 												{
 													"id": "find-path",
-													"objectClass": "ProjectlieEnemy",
+													"objectClass": "Spider",
 													"sid": 756673580690658,
 													"behaviorType": "Pathfinding",
 													"parameters": {
-														"x": "ProjectlieEnemy.X+random(-150,150)",
-														"y": "ProjectlieEnemy.Y+random(-150,150)"
+														"x": "Spider.X+random(-150,150)",
+														"y": "Spider.Y+random(-150,150)"
 													}
 												}
 											],
@@ -1743,7 +1743,7 @@
 							"actions": [
 								{
 									"id": "spawn-another-object",
-									"objectClass": "ProjectlieEnemy",
+									"objectClass": "Spider",
 									"sid": 976331839663732,
 									"parameters": {
 										"object": "Arrow",
@@ -1770,7 +1770,7 @@
 							"conditions": [
 								{
 									"id": "on-path-found",
-									"objectClass": "ProjectlieEnemy",
+									"objectClass": "Spider",
 									"sid": 768051012458776,
 									"behaviorType": "Pathfinding"
 								}
@@ -1778,7 +1778,7 @@
 							"actions": [
 								{
 									"id": "move-along-path",
-									"objectClass": "ProjectlieEnemy",
+									"objectClass": "Spider",
 									"sid": 241546761042741,
 									"behaviorType": "Pathfinding"
 								}
