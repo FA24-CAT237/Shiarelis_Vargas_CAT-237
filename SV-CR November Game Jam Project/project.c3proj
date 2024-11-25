@@ -108,7 +108,7 @@
 	"uniqueId": "5ejvk3y7rxh",
 	"objectTypes": {
 		"items": [
-			"Player",
+			"VheranPlayer",
 			"Keyboard",
 			"test",
 			"Mouse",
@@ -118,7 +118,7 @@
 		"subfolders": [
 			{
 				"items": [
-					"dog",
+					"FenWolf",
 					"Skeleton",
 					"dogStarter",
 					"EvilSpirit",

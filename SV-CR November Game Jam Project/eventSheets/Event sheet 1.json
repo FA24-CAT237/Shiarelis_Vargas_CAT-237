@@ -99,7 +99,7 @@
 									"sid": 990767156091018,
 									"behaviorType": "LineOfSight",
 									"parameters": {
-										"object": "Player",
+										"object": "VheranPlayer",
 										"image-point": "0"
 									},
 									"isInverted": true
@@ -192,7 +192,7 @@
 									"sid": 228886610107428,
 									"behaviorType": "LineOfSight",
 									"parameters": {
-										"object": "Player",
+										"object": "VheranPlayer",
 										"image-point": "0"
 									}
 								}
@@ -221,7 +221,7 @@
 									"sid": 820371592138670,
 									"behaviorType": "MoveTo",
 									"parameters": {
-										"object": "Player",
+										"object": "VheranPlayer",
 										"image-point": "0",
 										"mode": "direct"
 									}
@@ -237,7 +237,7 @@
 											"objectClass": "Enemy_hitbox",
 											"sid": 699732534322467,
 											"parameters": {
-												"object": "Player"
+												"object": "VheranPlayer"
 											}
 										}
 									],
@@ -287,7 +287,7 @@
 					"actions": [
 						{
 							"id": "set-position",
-							"objectClass": "dog",
+							"objectClass": "FenWolf",
 							"sid": 707792984238164,
 							"parameters": {
 								"x": "dogStarter.X",
@@ -312,7 +312,7 @@
 							"objectClass": "Dog_hitbox",
 							"sid": 491273317737238,
 							"parameters": {
-								"object": "dog",
+								"object": "FenWolf",
 								"image-point-optional": "1"
 							}
 						},
@@ -321,8 +321,8 @@
 							"objectClass": "agroRange",
 							"sid": 628788344196315,
 							"parameters": {
-								"x": "dog.X",
-								"y": "dog.Y"
+								"x": "FenWolf.X",
+								"y": "FenWolf.Y"
 							}
 						}
 					],
@@ -340,7 +340,7 @@
 							"conditions": [
 								{
 									"id": "is-boolean-instance-variable-set",
-									"objectClass": "dog",
+									"objectClass": "FenWolf",
 									"sid": 502921724446753,
 									"parameters": {
 										"instance-variable": "idle"
@@ -348,7 +348,7 @@
 								},
 								{
 									"id": "is-boolean-instance-variable-set",
-									"objectClass": "dog",
+									"objectClass": "FenWolf",
 									"sid": 772783834879519,
 									"parameters": {
 										"instance-variable": "Chase"
@@ -357,7 +357,7 @@
 								},
 								{
 									"id": "is-boolean-instance-variable-set",
-									"objectClass": "dog",
+									"objectClass": "FenWolf",
 									"sid": 372218332317023,
 									"parameters": {
 										"instance-variable": "Attack"
@@ -383,13 +383,13 @@
 											"objectClass": "dogStarter",
 											"sid": 771934275160662,
 											"parameters": {
-												"x": "Player.X+41",
-												"y": "Player.Y+61"
+												"x": "VheranPlayer.X+41",
+												"y": "VheranPlayer.Y+61"
 											}
 										},
 										{
 											"id": "move-to-object",
-											"objectClass": "dog",
+											"objectClass": "FenWolf",
 											"sid": 701823407569744,
 											"behaviorType": "MoveTo",
 											"parameters": {
@@ -436,7 +436,7 @@
 							"actions": [
 								{
 									"id": "set-boolean-instvar",
-									"objectClass": "dog",
+									"objectClass": "FenWolf",
 									"sid": 155788617100110,
 									"parameters": {
 										"instance-variable": "idle",
@@ -445,7 +445,7 @@
 								},
 								{
 									"id": "set-boolean-instvar",
-									"objectClass": "dog",
+									"objectClass": "FenWolf",
 									"sid": 398915725820993,
 									"parameters": {
 										"instance-variable": "Chase",
@@ -454,7 +454,7 @@
 								},
 								{
 									"id": "set-boolean-instvar",
-									"objectClass": "dog",
+									"objectClass": "FenWolf",
 									"sid": 748837731731763,
 									"parameters": {
 										"instance-variable": "Attack",
@@ -469,7 +469,7 @@
 							"conditions": [
 								{
 									"id": "is-boolean-instance-variable-set",
-									"objectClass": "dog",
+									"objectClass": "FenWolf",
 									"sid": 597026271326714,
 									"parameters": {
 										"instance-variable": "Chase"
@@ -506,7 +506,7 @@
 											"actions": [
 												{
 													"id": "find-path",
-													"objectClass": "dog",
+													"objectClass": "FenWolf",
 													"sid": 489527391483402,
 													"behaviorType": "Pathfinding",
 													"parameters": {
@@ -526,7 +526,7 @@
 							"conditions": [
 								{
 									"id": "on-path-found",
-									"objectClass": "dog",
+									"objectClass": "FenWolf",
 									"sid": 297291575620752,
 									"behaviorType": "Pathfinding"
 								}
@@ -546,7 +546,7 @@
 									"actions": [
 										{
 											"id": "move-along-pathfinding-path",
-											"objectClass": "dog",
+											"objectClass": "FenWolf",
 											"sid": 684051208786333,
 											"behaviorType": "MoveTo",
 											"parameters": {
@@ -563,7 +563,7 @@
 							"conditions": [
 								{
 									"id": "on-failed-to-find-path",
-									"objectClass": "dog",
+									"objectClass": "FenWolf",
 									"sid": 631748502629377,
 									"behaviorType": "Pathfinding"
 								}
@@ -571,7 +571,7 @@
 							"actions": [
 								{
 									"id": "set-boolean-instvar",
-									"objectClass": "dog",
+									"objectClass": "FenWolf",
 									"sid": 806041484873214,
 									"parameters": {
 										"instance-variable": "idle",
@@ -580,7 +580,7 @@
 								},
 								{
 									"id": "set-boolean-instvar",
-									"objectClass": "dog",
+									"objectClass": "FenWolf",
 									"sid": 844645101903406,
 									"parameters": {
 										"instance-variable": "Chase",
@@ -589,7 +589,7 @@
 								},
 								{
 									"id": "set-boolean-instvar",
-									"objectClass": "dog",
+									"objectClass": "FenWolf",
 									"sid": 642921681388696,
 									"parameters": {
 										"instance-variable": "Attack",
@@ -626,7 +626,7 @@
 					"actions": [
 						{
 							"id": "set-boolean-instvar",
-							"objectClass": "dog",
+							"objectClass": "FenWolf",
 							"sid": 238951276384989,
 							"parameters": {
 								"instance-variable": "idle",
@@ -635,7 +635,7 @@
 						},
 						{
 							"id": "set-boolean-instvar",
-							"objectClass": "dog",
+							"objectClass": "FenWolf",
 							"sid": 438123609738255,
 							"parameters": {
 								"instance-variable": "Chase",
@@ -644,7 +644,7 @@
 						},
 						{
 							"id": "set-boolean-instvar",
-							"objectClass": "dog",
+							"objectClass": "FenWolf",
 							"sid": 251825398254105,
 							"parameters": {
 								"instance-variable": "Attack",
@@ -659,7 +659,7 @@
 					"conditions": [
 						{
 							"id": "is-boolean-instance-variable-set",
-							"objectClass": "dog",
+							"objectClass": "FenWolf",
 							"sid": 139300561207062,
 							"parameters": {
 								"instance-variable": "Attack"
@@ -700,7 +700,7 @@
 								},
 								{
 									"id": "set-boolean-instvar",
-									"objectClass": "dog",
+									"objectClass": "FenWolf",
 									"sid": 956360270464909,
 									"parameters": {
 										"instance-variable": "idle",
@@ -709,7 +709,7 @@
 								},
 								{
 									"id": "set-boolean-instvar",
-									"objectClass": "dog",
+									"objectClass": "FenWolf",
 									"sid": 445522061541094,
 									"parameters": {
 										"instance-variable": "Chase",
@@ -718,7 +718,7 @@
 								},
 								{
 									"id": "set-boolean-instvar",
-									"objectClass": "dog",
+									"objectClass": "FenWolf",
 									"sid": 614461702831087,
 									"parameters": {
 										"instance-variable": "Attack",
@@ -755,7 +755,7 @@
 					"actions": [
 						{
 							"id": "simulate-control",
-							"objectClass": "Player",
+							"objectClass": "VheranPlayer",
 							"sid": 406407583856496,
 							"behaviorType": "8Direction",
 							"parameters": {
@@ -780,7 +780,7 @@
 					"actions": [
 						{
 							"id": "simulate-control",
-							"objectClass": "Player",
+							"objectClass": "VheranPlayer",
 							"sid": 264316488810984,
 							"behaviorType": "8Direction",
 							"parameters": {
@@ -805,7 +805,7 @@
 					"actions": [
 						{
 							"id": "simulate-control",
-							"objectClass": "Player",
+							"objectClass": "VheranPlayer",
 							"sid": 330046317798181,
 							"behaviorType": "8Direction",
 							"parameters": {
@@ -830,7 +830,7 @@
 					"actions": [
 						{
 							"id": "simulate-control",
-							"objectClass": "Player",
+							"objectClass": "VheranPlayer",
 							"sid": 336547271498634,
 							"behaviorType": "8Direction",
 							"parameters": {
@@ -892,7 +892,7 @@
 					"conditions": [
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "Player",
+							"objectClass": "VheranPlayer",
 							"sid": 846637516814731,
 							"parameters": {
 								"object": "Chest"
@@ -926,7 +926,7 @@
 						},
 						{
 							"id": "set-speed",
-							"objectClass": "Player",
+							"objectClass": "VheranPlayer",
 							"sid": 752739309671302,
 							"behaviorType": "8Direction",
 							"parameters": {
@@ -1161,7 +1161,7 @@
 								},
 								{
 									"id": "set-vector-x",
-									"objectClass": "Player",
+									"objectClass": "VheranPlayer",
 									"sid": 161557138785290,
 									"behaviorType": "8Direction",
 									"parameters": {
@@ -1398,7 +1398,7 @@
 								},
 								{
 									"id": "set-vector-x",
-									"objectClass": "Player",
+									"objectClass": "VheranPlayer",
 									"sid": 284879012351471,
 									"behaviorType": "8Direction",
 									"parameters": {
@@ -1633,7 +1633,7 @@
 									"objectClass": "enemyRange",
 									"sid": 160124053196524,
 									"parameters": {
-										"object": "Player"
+										"object": "VheranPlayer"
 									}
 								}
 							],
@@ -1758,8 +1758,8 @@
 									"objectClass": "Arrow",
 									"sid": 713008791483467,
 									"parameters": {
-										"x": "Player.X",
-										"y": "Player.Y"
+										"x": "VheranPlayer.X",
+										"y": "VheranPlayer.Y"
 									}
 								}
 							],

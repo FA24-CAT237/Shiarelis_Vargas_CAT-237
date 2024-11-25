@@ -122,7 +122,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Player",
+					"type": "VheranPlayer",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Idle",
@@ -279,7 +279,7 @@
 					}
 				},
 				{
-					"type": "dog",
+					"type": "FenWolf",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -348,8 +348,8 @@
 					"world": {
 						"x": 197,
 						"y": 863,
-						"width": 40.398019753448295,
-						"height": 40.398019753448295,
+						"width": 6.140499002524141,
+						"height": 3.55502573830345,
 						"originX": 0.492,
 						"originY": 0.496,
 						"color": [
@@ -676,6 +676,40 @@
 				0.3686274509803922,
 				0.3686274509803922,
 				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Dialogue",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 223213525134376,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.5019607843137255,
+				0.5019607843137255,
+				0.5019607843137255,
 				1
 			],
 			"isTransparent": true,
