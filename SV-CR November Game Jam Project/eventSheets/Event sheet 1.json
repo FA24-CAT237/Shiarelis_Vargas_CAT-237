@@ -1746,7 +1746,7 @@
 									"objectClass": "Spider",
 									"sid": 976331839663732,
 									"parameters": {
-										"object": "Arrow",
+										"object": "Summon",
 										"layer": "0",
 										"image-point": "1",
 										"create-hierarchy": false,
@@ -1755,7 +1755,7 @@
 								},
 								{
 									"id": "set-angle-toward-position",
-									"objectClass": "Arrow",
+									"objectClass": "Summon",
 									"sid": 713008791483467,
 									"parameters": {
 										"x": "VheranPlayer.X",

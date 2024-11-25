@@ -49,6 +49,13 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Bullet",
 			"name": "Bullet",
@@ -108,7 +115,6 @@
 	"uniqueId": "5ejvk3y7rxh",
 	"objectTypes": {
 		"items": [
-			"VheranPlayer",
 			"Keyboard",
 			"test",
 			"Mouse",
@@ -118,14 +124,14 @@
 		"subfolders": [
 			{
 				"items": [
-					"FenWolf",
 					"Skeleton",
 					"dogStarter",
 					"EvilSpirit",
-					"Spider"
+					"Spider",
+					"Summon"
 				],
 				"subfolders": [],
-				"name": "NPC"
+				"name": "Enemy"
 			},
 			{
 				"items": [
@@ -141,18 +147,29 @@
 				"items": [
 					"HeadsButton",
 					"TailsButton",
-					"coin",
-					"Chest"
+					"coin"
 				],
 				"subfolders": [],
 				"name": "CointThings"
 			},
 			{
 				"items": [
-					"Arrow"
+					"VheranPlayer",
+					"FenWolf"
 				],
 				"subfolders": [],
-				"name": "projectiles"
+				"name": "PlayerSprites"
+			},
+			{
+				"items": [
+					"Altar",
+					"Crystal",
+					"Caves",
+					"Darkbarrier",
+					"Chest"
+				],
+				"subfolders": [],
+				"name": "TileBackgrounds"
 			}
 		]
 	},

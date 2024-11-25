@@ -1,0 +1,22 @@
+{
+	"name": "Altar",
+	"plugin-id": "TiledBg",
+	"sid": 130609305113258,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 64,
+		"height": 64,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 3826570,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}
