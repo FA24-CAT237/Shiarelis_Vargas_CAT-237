@@ -3,19 +3,27 @@
 	"plugin-id": "TiledBg",
 	"sid": 523952762383282,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "Health",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 182457613294012
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 64,
-		"height": 64,
+		"width": 128,
+		"height": 128,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 451591,
+		"imageSpriteId": 6340992,
 		"useCollisionPoly": true,
 		"tag": ""
 	}

@@ -1,0 +1,75 @@
+{
+	"name": "Webbing",
+	"plugin-id": "Sprite",
+	"sid": 827465232513918,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Hitpoint",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 306626262428914
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 824536757219379
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8659096,
+						"collisionPoly": {
+							"points": [
+								0.5,
+								0.1875,
+								0.5625,
+								0.1875,
+								0.6875,
+								0.5,
+								0.6875,
+								0.65625,
+								0.625,
+								0.71875,
+								0.5625,
+								0.75,
+								0.5,
+								0.75,
+								0.1875,
+								0.5625,
+								0.1875,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 718129601837876,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"name": "Crystal2",
+	"plugin-id": "TiledBg",
+	"sid": 574479046808798,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Health",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 870410754193367
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 128,
+		"height": 128,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 9327806,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

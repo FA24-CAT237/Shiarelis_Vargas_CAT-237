@@ -133,18 +133,22 @@
 			"test",
 			"Mouse",
 			"TiledBackground",
-			"teleportBlock",
-			"Trees",
-			"test123"
+			"test123",
+			"Webbing"
 		],
 		"subfolders": [
 			{
 				"items": [
 					"Skeleton",
-					"dogStarter",
 					"EvilSpirit",
 					"Spider",
-					"Summon"
+					"Summon",
+					"Spider2",
+					"Spider3",
+					"Skeleton2",
+					"Skeleton3",
+					"Skeleton4",
+					"Skeleton5"
 				],
 				"subfolders": [],
 				"name": "Enemy"
@@ -171,7 +175,8 @@
 			{
 				"items": [
 					"VheranPlayer",
-					"FenWolf"
+					"FenWolf",
+					"dogStarter"
 				],
 				"subfolders": [],
 				"name": "PlayerSprites"
@@ -182,7 +187,19 @@
 					"Crystal",
 					"Caves",
 					"Darkbarrier",
-					"Chest"
+					"Chest",
+					"CaveDoor",
+					"Solids",
+					"Solids2",
+					"Solids3",
+					"Solids4",
+					"Trees",
+					"teleportBlock",
+					"KeyDoor",
+					"Crystal2",
+					"Crystal3",
+					"Key",
+					"Artifact"
 				],
 				"subfolders": [],
 				"name": "TileBackgrounds"

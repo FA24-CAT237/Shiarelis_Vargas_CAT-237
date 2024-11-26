@@ -108,7 +108,9 @@
 					"uid": 19,
 					"sid": 358137178459605,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Health": 1
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 358137178459605,
@@ -293,7 +295,8 @@
 					"sid": 818869615405509,
 					"tags": "",
 					"instanceVariables": {
-						"HitPoint": 10
+						"HitPoint": 10,
+						"Health": 20
 					},
 					"behaviors": {
 						"ScrollTo": {
@@ -346,8 +349,8 @@
 					"world": {
 						"x": 254,
 						"y": 771,
-						"width": 12.925465098014847,
-						"height": 16.156831372518557,
+						"width": 51.70186039205939,
+						"height": 64.62732549007423,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -455,7 +458,8 @@
 					"instanceVariables": {
 						"Chase": false,
 						"idle": true,
-						"Attack": false
+						"Attack": false,
+						"Hitpoint": 2
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -510,8 +514,8 @@
 					"world": {
 						"x": 197,
 						"y": 863,
-						"width": 6.140499002524141,
-						"height": 3.55502573830345,
+						"width": 24.561996010096564,
+						"height": 10.665077214910351,
 						"originX": 0.492,
 						"originY": 0.496,
 						"color": [
@@ -528,7 +532,7 @@
 					"type": "Chest",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Closed",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -550,8 +554,8 @@
 					"world": {
 						"x": 382,
 						"y": 229,
-						"width": 29.376069789289133,
-						"height": 29.376069789289133,
+						"width": 58.752139578578266,
+						"height": 58.752139578578266,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -623,7 +627,10 @@
 					"uid": 3,
 					"sid": 747609752618926,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Hitpoint": 1,
+						"Health": 10
+					},
 					"behaviors": {
 						"MoveTo": {
 							"properties": {
@@ -678,8 +685,8 @@
 					"world": {
 						"x": 1637,
 						"y": 54,
-						"width": 8.68848729654205,
-						"height": 8.192002308168217,
+						"width": 34.7539491861682,
+						"height": 32.76800923267287,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -696,7 +703,7 @@
 					"type": "Spider",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -706,7 +713,8 @@
 					"tags": "",
 					"instanceVariables": {
 						"idle": false,
-						"inShootingRange": false
+						"inShootingRange": false,
+						"Health": 10
 					},
 					"behaviors": {
 						"Pathfinding": {
@@ -756,8 +764,8 @@
 					"world": {
 						"x": 794,
 						"y": 685,
-						"width": 11.365767396061631,
-						"height": 5.682883698030816,
+						"width": 45.463069584246526,
+						"height": 22.731534792123263,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -782,7 +790,9 @@
 					"uid": 10,
 					"sid": 386613479951230,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Hitpoint": 2
+					},
 					"behaviors": {
 						"Bullet": {
 							"properties": {
@@ -808,8 +818,8 @@
 					"world": {
 						"x": 1151.7095590952968,
 						"y": -179.589619264119,
-						"width": 8.66469357313577,
-						"height": 16.24177980032433,
+						"width": 25.99408071940731,
+						"height": 64.96711920129732,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
