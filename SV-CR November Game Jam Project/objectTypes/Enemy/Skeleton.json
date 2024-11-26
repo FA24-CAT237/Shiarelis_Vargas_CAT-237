@@ -5,7 +5,7 @@
 	"isGlobal": false,
 	"instanceVariables": [
 		{
-			"name": "Hitpoint",
+			"name": "id",
 			"type": "number",
 			"desc": "",
 			"show": true,
@@ -60,6 +60,11 @@
 			"behaviorId": "solid",
 			"name": "Solid",
 			"sid": 260516559736978
+		},
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 697469896833721
 		}
 	],
 	"effectTypes": [],
@@ -1655,6 +1660,137 @@
 				],
 				"sid": 162239863062811,
 				"name": "Death",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 140,
+						"height": 132,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7528588,
+						"collisionPoly": {
+							"points": [
+								0.6,
+								0,
+								0.7428571428571429,
+								0,
+								0.8,
+								0.06060606060606061,
+								0.9428571428571428,
+								0.5757575757575758,
+								0.9428571428571428,
+								0.6363636363636364,
+								0.7428571428571429,
+								0.9696969696969697,
+								0.08571428571428572,
+								1,
+								0.02857142857142857,
+								0.9696969696969697,
+								0,
+								0.8787878787878788,
+								0.17142857142857143,
+								0.5454545454545454,
+								0.5714285714285714,
+								0.030303030303030304
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 140,
+						"height": 132,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 598753,
+						"collisionPoly": {
+							"points": [
+								0.6,
+								0,
+								0.7428571428571429,
+								0,
+								0.8,
+								0.06060606060606061,
+								0.9428571428571428,
+								0.5757575757575758,
+								0.9428571428571428,
+								0.6363636363636364,
+								0.7428571428571429,
+								0.9696969696969697,
+								0.08571428571428572,
+								1,
+								0.02857142857142857,
+								0.9696969696969697,
+								0,
+								0.8787878787878788,
+								0.17142857142857143,
+								0.5454545454545454,
+								0.5714285714285714,
+								0.030303030303030304
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 140,
+						"height": 132,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1649451,
+						"collisionPoly": {
+							"points": [
+								0.6,
+								0,
+								0.7428571428571429,
+								0,
+								0.8,
+								0.06060606060606061,
+								0.9428571428571428,
+								0.5757575757575758,
+								0.9428571428571428,
+								0.6363636363636364,
+								0.7428571428571429,
+								0.9696969696969697,
+								0.08571428571428572,
+								1,
+								0.02857142857142857,
+								0.9696969696969697,
+								0,
+								0.8787878787878788,
+								0.17142857142857143,
+								0.5454545454545454,
+								0.5714285714285714,
+								0.030303030303030304
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 848183158785030,
+				"name": "Hurt",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

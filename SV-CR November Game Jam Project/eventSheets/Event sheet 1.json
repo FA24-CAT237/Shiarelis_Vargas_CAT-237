@@ -66,6 +66,15 @@
 								"object": "Skeleton",
 								"image-point-optional": "0"
 							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "agroRange2",
+							"sid": 752566310514877,
+							"parameters": {
+								"x": "Skeleton.X",
+								"y": "Skeleton.Y"
+							}
 						}
 					],
 					"sid": 616559855197665
@@ -88,6 +97,18 @@
 							"parameters": {
 								"x": "Skeleton.X+random(-50,50)",
 								"y": "Skeleton.Y+random(-50,50)"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Skeleton",
+							"sid": 847556252530061,
+							"parameters": {
+								"object": "agroRange2",
+								"layer": "3",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -276,28 +297,54 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "Skeleton",
-									"sid": 228060092895374,
+									"id": "is-overlapping-another-object",
+									"objectClass": "agroRange2",
+									"sid": 959186260642412,
 									"parameters": {
-										"instance-variable": "Found_Chase"
+										"object": "VheranPlayer"
 									}
 								}
 							],
-							"actions": [],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Skeleton",
+									"sid": 889615847205597,
+									"parameters": {
+										"instance-variable": "Idle",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Skeleton",
+									"sid": 629816288527268,
+									"parameters": {
+										"instance-variable": "Found_Chase",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Skeleton",
+									"sid": 782182351649718,
+									"parameters": {
+										"instance-variable": "Attack",
+										"value": "false"
+									}
+								}
+							],
 							"sid": 150818608059860,
 							"children": [
 								{
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "has-los-to-object",
+											"id": "is-boolean-instance-variable-set",
 											"objectClass": "Skeleton",
-											"sid": 254926213635516,
-											"behaviorType": "LineOfSight",
+											"sid": 907849909633808,
 											"parameters": {
-												"object": "VheranPlayer",
-												"image-point": "0"
+												"instance-variable": "Found_Chase"
 											}
 										},
 										{
@@ -312,30 +359,23 @@
 									],
 									"actions": [
 										{
-											"id": "set-boolean-instvar",
+											"id": "set-animation",
 											"objectClass": "Skeleton",
-											"sid": 152680288921777,
+											"sid": 432865024031399,
 											"parameters": {
-												"instance-variable": "Idle",
-												"value": "false"
+												"animation": "\"Walk\"",
+												"from": "beginning"
 											}
 										},
 										{
-											"id": "set-boolean-instvar",
+											"id": "move-to-object",
 											"objectClass": "Skeleton",
-											"sid": 203699999362888,
+											"sid": 576177634997455,
+											"behaviorType": "MoveTo",
 											"parameters": {
-												"instance-variable": "Found_Chase",
-												"value": "true"
-											}
-										},
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "Skeleton",
-											"sid": 739412011418480,
-											"parameters": {
-												"instance-variable": "Attack",
-												"value": "false"
+												"object": "VheranPlayer",
+												"image-point": "0",
+												"mode": "direct"
 											}
 										},
 										{
@@ -354,26 +394,6 @@
 											"parameters": {
 												"frame-number": "1"
 											}
-										},
-										{
-											"id": "set-animation",
-											"objectClass": "Skeleton",
-											"sid": 293101124856430,
-											"parameters": {
-												"animation": "\"Walk\"",
-												"from": "beginning"
-											}
-										},
-										{
-											"id": "move-to-object",
-											"objectClass": "Skeleton",
-											"sid": 584426821749235,
-											"behaviorType": "MoveTo",
-											"parameters": {
-												"object": "VheranPlayer",
-												"image-point": "0",
-												"mode": "direct"
-											}
 										}
 									],
 									"sid": 879591568566318,
@@ -384,9 +404,9 @@
 												{
 													"id": "compare-x",
 													"objectClass": "Skeleton",
-													"sid": 303931213876091,
+													"sid": 115737644569504,
 													"parameters": {
-														"comparison": 3,
+														"comparison": 5,
 														"x-co-ordinate": "VheranPlayer.X"
 													}
 												}
@@ -575,6 +595,31 @@
 								}
 							],
 							"sid": 381293116493100
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "Skeleton",
+									"sid": 750923024816440,
+									"parameters": {
+										"animation": "\"Attack\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Skeleton",
+									"sid": 799218631633900,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 407485693440790
 						}
 					],
 					"sid": 229015611553281
@@ -585,7 +630,363 @@
 					"title": "Hit",
 					"description": "",
 					"isActiveOnStart": true,
-					"children": [],
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "VheranPlayer",
+									"sid": 247892383804120,
+									"parameters": {
+										"animation": "\"Attack1\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 131244618633344,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "VheranPlayer",
+											"sid": 842141892731090,
+											"parameters": {
+												"object": "Skeleton"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Skeleton",
+											"sid": 908792285156901,
+											"parameters": {
+												"animation": "\"Hurt\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "Skeleton",
+											"sid": 921226653886342,
+											"parameters": {
+												"instance-variable": "Health",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "test123",
+											"sid": 371940957154551,
+											"parameters": {
+												"text": "\"1\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Skeleton",
+											"sid": 488307720694070,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": false
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Skeleton",
+											"sid": 592397824582382,
+											"behaviorType": "Pathfinding",
+											"parameters": {
+												"set": "disabled"
+											}
+										}
+									],
+									"sid": 506879343572325
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "VheranPlayer",
+									"sid": 529224540777783,
+									"parameters": {
+										"animation": "\"Attack2\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 918663369989955,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "VheranPlayer",
+											"sid": 473245586310292,
+											"parameters": {
+												"object": "Skeleton"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Skeleton",
+											"sid": 316953345778697,
+											"parameters": {
+												"animation": "\"Hurt\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "Skeleton",
+											"sid": 447298341697152,
+											"parameters": {
+												"instance-variable": "Health",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "test123",
+											"sid": 898348579242628,
+											"parameters": {
+												"text": "\"2\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Skeleton",
+											"sid": 545965992164911,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": false
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Skeleton",
+											"sid": 185788192152473,
+											"behaviorType": "Pathfinding",
+											"parameters": {
+												"set": "disabled"
+											}
+										}
+									],
+									"sid": 534273430142572
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "VheranPlayer",
+									"sid": 174007238945545,
+									"parameters": {
+										"animation": "\"Attack3\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 768483438565712,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "VheranPlayer",
+											"sid": 722762386624327,
+											"parameters": {
+												"object": "Skeleton"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Skeleton",
+											"sid": 643118775757878,
+											"parameters": {
+												"animation": "\"Hurt\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "Skeleton",
+											"sid": 668614095074999,
+											"parameters": {
+												"instance-variable": "Health",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "test123",
+											"sid": 283411211222562,
+											"parameters": {
+												"text": "\"3\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Skeleton",
+											"sid": 863132245029631,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": false
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Skeleton",
+											"sid": 200085855024981,
+											"behaviorType": "Pathfinding",
+											"parameters": {
+												"set": "disabled"
+											}
+										}
+									],
+									"sid": 745531761350517,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-x",
+													"objectClass": "Skeleton",
+													"sid": 393794501404190,
+													"parameters": {
+														"comparison": 5,
+														"x-co-ordinate": "VheranPlayer.X"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-vector-x",
+													"objectClass": "Skeleton",
+													"sid": 119965539459665,
+													"behaviorType": "8Direction",
+													"parameters": {
+														"vector-x": "-400"
+													}
+												}
+											],
+											"sid": 114218657871669
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 654565129369882
+												}
+											],
+											"actions": [
+												{
+													"id": "set-vector-x",
+													"objectClass": "Skeleton",
+													"sid": 218804568361612,
+													"behaviorType": "8Direction",
+													"parameters": {
+														"vector-x": "400"
+													}
+												}
+											],
+											"sid": 486050031344025
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Skeleton",
+											"sid": 756180989910913,
+											"parameters": {
+												"instance-variable": "Health",
+												"comparison": 3,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Skeleton",
+											"sid": 128181779998485,
+											"parameters": {
+												"animation": "\"Death\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 715742200789157,
+											"parameters": {
+												"seconds": "2"
+											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "Skeleton",
+											"sid": 559994746770920
+										}
+									],
+									"sid": 722471005452761
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-animation-finished",
+											"objectClass": "Spider",
+											"sid": 878976568770183,
+											"parameters": {
+												"animation": "\"Hurt\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Skeleton",
+											"sid": 607706786893606,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Skeleton",
+											"sid": 762074285678722,
+											"behaviorType": "8Direction",
+											"parameters": {
+												"state": "enabled"
+											}
+										}
+									],
+									"sid": 308732741492872
+								}
+							]
+						}
+					],
 					"sid": 605534661663507
 				}
 			],
@@ -1025,6 +1426,18 @@
 									"parameters": {
 										"instance-variable": "Attack",
 										"value": "true"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 754837679993938,
+									"parameters": {
+										"audio-file": "260776__deleted_user_3424813__angry-dog-bark-snarl-flat",
+										"loop": "not-looping",
+										"volume": "5",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -1477,6 +1890,18 @@
 									],
 									"actions": [
 										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 943669593340924,
+											"parameters": {
+												"audio-file": "sword-swing-whoosh-sound-effect-1-241824",
+												"loop": "not-looping",
+												"volume": "5",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
 											"id": "set-animation",
 											"objectClass": "VheranPlayer",
 											"sid": 342438057256998,
@@ -1514,6 +1939,18 @@
 										}
 									],
 									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 244932165204585,
+											"parameters": {
+												"audio-file": "sword-swing-whoosh-sound-effect-1-241824",
+												"loop": "not-looping",
+												"volume": "5",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
 										{
 											"id": "wait",
 											"objectClass": "System",
@@ -1560,6 +1997,18 @@
 										}
 									],
 									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 663468393158847,
+											"parameters": {
+												"audio-file": "sword-swing-whoosh-sound-effect-1-241824",
+												"loop": "not-looping",
+												"volume": "5",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
 										{
 											"id": "wait",
 											"objectClass": "System",
@@ -3871,6 +4320,14 @@
 					"parameters": {
 						"which": "next"
 					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 960935973511508,
+					"parameters": {
+						"tag": "\"BG\""
+					}
 				}
 			],
 			"sid": 575156763005797
@@ -3936,6 +4393,31 @@
 				}
 			],
 			"sid": 145699147099358
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 577362241615675
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 624517273016562,
+					"parameters": {
+						"audio-file": "270366__foolboymedia__dramatic-scroller",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"BG\""
+					}
+				}
+			],
+			"sid": 992895151797942
 		}
 	],
 	"sid": 588721529148201

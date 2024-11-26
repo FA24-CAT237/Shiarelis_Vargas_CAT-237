@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Button",
 			"name": "Button",
 			"author": "Scirra",
@@ -134,7 +141,8 @@
 			"Mouse",
 			"TiledBackground",
 			"test123",
-			"Webbing"
+			"Webbing",
+			"Audio"
 		],
 		"subfolders": [
 			{
@@ -160,7 +168,8 @@
 					"Enemy_hitbox",
 					"enemyRange",
 					"enemyRange2",
-					"enemyRange3"
+					"enemyRange3",
+					"agroRange2"
 				],
 				"subfolders": [],
 				"name": "hitboxs"
@@ -260,7 +269,64 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "running-in-grass-6237.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 739456500284056,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "sword-swing-whoosh-sound-effect-1-241824.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 928661199461488,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "walking-on-concrete-ver-2-268513.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 442998923023254,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "260776__deleted_user_3424813__angry-dog-bark-snarl-flat.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 817854564090389,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "500166__sad3d__forest-ambience-and-music.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 893269714499546,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "443128__sirkoto51__boss-battle-loop-3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 257120881982181,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "270366__foolboymedia__dramatic-scroller.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 422780849560786,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"music": {

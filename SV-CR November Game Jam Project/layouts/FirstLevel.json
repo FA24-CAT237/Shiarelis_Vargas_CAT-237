@@ -992,10 +992,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": -280.61256168079626,
-						"y": -119.09329256336038,
-						"width": 100.95921132357702,
-						"height": 82.72416549275195,
+						"x": -293.4162656525655,
+						"y": -129.73012940546806,
+						"width": 75.20834549526853,
+						"height": 61.62436827330623,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1021,7 +1021,7 @@
 					"sid": 848089448940099,
 					"tags": "",
 					"instanceVariables": {
-						"Hitpoint": 1,
+						"id": 1,
 						"Health": 10,
 						"Idle": false,
 						"Found_Chase": false,
@@ -1066,6 +1066,18 @@
 							"properties": {
 								"enabled": false,
 								"tags": ""
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"allow-sliding": false,
+								"default-controls": true,
+								"enabled": true
 							}
 						}
 					},
@@ -1186,6 +1198,46 @@
 							1,
 							1,
 							0.3
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "agroRange2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 98,
+					"sid": 498301091834194,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 498301091834194,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": -271,
+						"y": 1005,
+						"width": 845.7855987476748,
+						"height": 788.4700435788425,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.1
 						],
 						"angle": 0,
 						"zElevation": 0

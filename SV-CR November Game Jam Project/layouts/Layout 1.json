@@ -637,7 +637,7 @@
 					"sid": 747609752618926,
 					"tags": "",
 					"instanceVariables": {
-						"Hitpoint": 1,
+						"id": 1,
 						"Health": 10,
 						"Idle": false,
 						"Found_Chase": false,
@@ -682,6 +682,18 @@
 							"properties": {
 								"enabled": false,
 								"tags": ""
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"allow-sliding": false,
+								"default-controls": true,
+								"enabled": true
 							}
 						}
 					},

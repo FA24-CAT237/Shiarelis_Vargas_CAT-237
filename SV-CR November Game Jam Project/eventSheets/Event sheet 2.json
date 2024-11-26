@@ -1418,6 +1418,18 @@
 							"id": "destroy",
 							"objectClass": "Altar",
 							"sid": 323891210532772
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 882079302592103,
+							"parameters": {
+								"audio-file": "443128__sirkoto51__boss-battle-loop-3",
+								"loop": "looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 518922538465801,
