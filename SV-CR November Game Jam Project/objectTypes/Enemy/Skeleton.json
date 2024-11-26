@@ -206,7 +206,7 @@
 					}
 				],
 				"sid": 797468500150285,
-				"name": "Animation 2",
+				"name": "Idle",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -681,7 +681,7 @@
 					}
 				],
 				"sid": 255269692389785,
-				"name": "Animation 3",
+				"name": "Walk",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -1633,7 +1633,7 @@
 					}
 				],
 				"sid": 162239863062811,
-				"name": "Animation 4",
+				"name": "Death",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

@@ -619,7 +619,7 @@
 					"type": "Skeleton",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 2",
+						"initial-animation": "Idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -749,6 +749,18 @@
 								"range": 500,
 								"cone-of-view": 360,
 								"use-collision-cells": true
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"allow-sliding": false,
+								"default-controls": true,
+								"enabled": true
 							}
 						}
 					},

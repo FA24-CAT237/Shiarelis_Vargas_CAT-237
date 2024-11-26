@@ -272,7 +272,30 @@
 					"title": "Attack",
 					"description": "",
 					"isActiveOnStart": true,
-					"children": [],
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Enemy_hitbox",
+									"sid": 333877974673548,
+									"parameters": {
+										"object": "VheranPlayer"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop",
+									"objectClass": "Skeleton",
+									"sid": 918946979443619,
+									"behaviorType": "MoveTo"
+								}
+							],
+							"sid": 331340165821650
+						}
+					],
 					"sid": 229015611553281
 				}
 			],
@@ -618,66 +641,6 @@
 					"title": "Dog Attack",
 					"description": "",
 					"isActiveOnStart": true,
-					"children": [],
-					"sid": 873948314460135
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Dog_hitbox",
-							"sid": 594528496823782,
-							"parameters": {
-								"object": "Skeleton"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "FenWolf",
-							"sid": 238951276384989,
-							"parameters": {
-								"instance-variable": "idle",
-								"value": "false"
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "FenWolf",
-							"sid": 438123609738255,
-							"parameters": {
-								"instance-variable": "Chase",
-								"value": "false"
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "FenWolf",
-							"sid": 251825398254105,
-							"parameters": {
-								"instance-variable": "Attack",
-								"value": "true"
-							}
-						}
-					],
-					"sid": 905967281862322
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "FenWolf",
-							"sid": 139300561207062,
-							"parameters": {
-								"instance-variable": "Attack"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 995813191225585,
 					"children": [
 						{
 							"eventType": "block",
@@ -685,7 +648,7 @@
 								{
 									"id": "is-overlapping-another-object",
 									"objectClass": "Dog_hitbox",
-									"sid": 812591534132330,
+									"sid": 607843562177501,
 									"parameters": {
 										"object": "Skeleton"
 									}
@@ -693,34 +656,18 @@
 							],
 							"actions": [
 								{
-									"id": "set-text",
-									"objectClass": "test",
-									"sid": 336319169624958,
-									"parameters": {
-										"text": "\"Hit (Enter Code Here\""
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 347014925673030,
-									"parameters": {
-										"seconds": "1.5"
-									}
-								},
-								{
 									"id": "set-boolean-instvar",
 									"objectClass": "FenWolf",
-									"sid": 956360270464909,
+									"sid": 874744581540331,
 									"parameters": {
 										"instance-variable": "idle",
-										"value": "true"
+										"value": "false"
 									}
 								},
 								{
 									"id": "set-boolean-instvar",
 									"objectClass": "FenWolf",
-									"sid": 445522061541094,
+									"sid": 159023801543846,
 									"parameters": {
 										"instance-variable": "Chase",
 										"value": "false"
@@ -729,16 +676,93 @@
 								{
 									"id": "set-boolean-instvar",
 									"objectClass": "FenWolf",
-									"sid": 614461702831087,
+									"sid": 939691371366614,
 									"parameters": {
 										"instance-variable": "Attack",
-										"value": "false"
+										"value": "true"
 									}
 								}
 							],
-							"sid": 422900675558671
+							"sid": 852076141089429
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "FenWolf",
+									"sid": 532852189753574,
+									"parameters": {
+										"instance-variable": "Attack"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 200282268153269,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Dog_hitbox",
+											"sid": 167750079230153,
+											"parameters": {
+												"object": "Skeleton"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-text",
+											"objectClass": "test",
+											"sid": 549333531594090,
+											"parameters": {
+												"text": "\"Hit (Enter Code Here\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 333464918130878,
+											"parameters": {
+												"seconds": "1.5"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "FenWolf",
+											"sid": 451349867730345,
+											"parameters": {
+												"instance-variable": "idle",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "FenWolf",
+											"sid": 220213776639595,
+											"parameters": {
+												"instance-variable": "Chase",
+												"value": "false"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "FenWolf",
+											"sid": 266335961114947,
+											"parameters": {
+												"instance-variable": "Attack",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 924666102231881
+								}
+							]
 						}
-					]
+					],
+					"sid": 873948314460135
 				}
 			],
 			"sid": 919692407587052
@@ -750,6 +774,90 @@
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Damage",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "VheranPlayer",
+									"sid": 233792593371389,
+									"parameters": {
+										"object": "Webbing"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Webbing",
+									"sid": 835726028393863
+								},
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "VheranPlayer",
+									"sid": 535631074906018,
+									"parameters": {
+										"instance-variable": "Health",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-acceleration",
+									"objectClass": "VheranPlayer",
+									"sid": 920834634071567,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"acceleration": "100"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "VheranPlayer",
+									"sid": 522717405234701,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "100"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 677591607732212,
+									"parameters": {
+										"seconds": "1.5"
+									}
+								},
+								{
+									"id": "set-acceleration",
+									"objectClass": "VheranPlayer",
+									"sid": 934420726277988,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"acceleration": "600"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "VheranPlayer",
+									"sid": 553491807963177,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "400"
+									}
+								}
+							],
+							"sid": 143259898395055
+						}
+					],
+					"sid": 969672894891337
+				},
 				{
 					"eventType": "group",
 					"disabled": false,
@@ -1022,14 +1130,6 @@
 												"duration": "0.5",
 												"type": "once",
 												"tag": "\"0\""
-											}
-										},
-										{
-											"id": "set-text",
-											"objectClass": "test123",
-											"sid": 516335053202127,
-											"parameters": {
-												"text": "\"Done\""
 											}
 										}
 									],
@@ -1921,6 +2021,7 @@
 							"id": "find-path",
 							"objectClass": "Spider",
 							"sid": 228678528458525,
+							"disabled": true,
 							"behaviorType": "Pathfinding",
 							"parameters": {
 								"x": "Spider.X+random(-50,50)",
@@ -1943,6 +2044,18 @@
 							"parameters": {
 								"instance-variable": "inShootingRange",
 								"value": "false"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Spider",
+							"sid": 369964686218830,
+							"parameters": {
+								"object": "enemyRange",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						}
 					],
@@ -2080,6 +2193,15 @@
 										"instance-variable": "inShootingRange",
 										"value": "true"
 									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Spider",
+									"sid": 276312516867402,
+									"parameters": {
+										"animation": "\"Attack\"",
+										"from": "beginning"
+									}
 								}
 							],
 							"sid": 953793759410635,
@@ -2103,11 +2225,11 @@
 											"eventType": "block",
 											"conditions": [
 												{
-													"id": "every-x-seconds",
-													"objectClass": "System",
-													"sid": 806961608379998,
+													"id": "on-animation-finished",
+													"objectClass": "Spider",
+													"sid": 598996141532682,
 													"parameters": {
-														"interval-seconds": "3"
+														"animation": "\"Attack\""
 													}
 												}
 											],
@@ -2115,7 +2237,7 @@
 												{
 													"id": "set-text",
 													"objectClass": "test",
-													"sid": 253488180207037,
+													"sid": 441987710415373,
 													"parameters": {
 														"text": "\"Found\""
 													}
@@ -2123,7 +2245,7 @@
 												{
 													"id": "signal",
 													"objectClass": "System",
-													"sid": 512243670479384,
+													"sid": 960679061570366,
 													"parameters": {
 														"tag": "\"Shoot\""
 													}
@@ -2131,23 +2253,40 @@
 												{
 													"id": "wait",
 													"objectClass": "System",
-													"sid": 785093414847019,
+													"sid": 437238620948120,
 													"parameters": {
 														"seconds": "1.0"
 													}
 												},
 												{
+													"id": "set-animation",
+													"objectClass": "Spider",
+													"sid": 421714274124682,
+													"parameters": {
+														"animation": "\"Run\"",
+														"from": "beginning"
+													}
+												},
+												{
 													"id": "find-path",
 													"objectClass": "Spider",
-													"sid": 756673580690658,
+													"sid": 852302097425682,
 													"behaviorType": "Pathfinding",
 													"parameters": {
 														"x": "Spider.X+random(-150,150)",
 														"y": "Spider.Y+random(-150,150)"
 													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 616642556390774,
+													"parameters": {
+														"seconds": "1.0"
+													}
 												}
 											],
-											"sid": 399931464236779
+											"sid": 830442022543649
 										}
 									]
 								}
@@ -2169,19 +2308,19 @@
 								{
 									"id": "spawn-another-object",
 									"objectClass": "Spider",
-									"sid": 731821262978535,
+									"sid": 775807145622070,
 									"parameters": {
 										"object": "Webbing",
-										"layer": "0",
-										"image-point": "1",
+										"layer": "3",
+										"image-point": "0",
 										"create-hierarchy": false,
 										"template-name": "\"\""
 									}
 								},
 								{
 									"id": "set-angle-toward-position",
-									"objectClass": "Summon",
-									"sid": 713008791483467,
+									"objectClass": "Webbing",
+									"sid": 788289751216193,
 									"parameters": {
 										"x": "VheranPlayer.X",
 										"y": "VheranPlayer.Y"
@@ -2206,12 +2345,359 @@
 									"objectClass": "Spider",
 									"sid": 241546761042741,
 									"behaviorType": "Pathfinding"
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Spider",
+									"sid": 447841702366852,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
 								}
 							],
 							"sid": 422394436671010
 						}
 					],
 					"sid": 457483386703217
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Get Hit",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "VheranPlayer",
+									"sid": 546866162829181,
+									"parameters": {
+										"animation": "\"Attack1\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 703118600405791,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "VheranPlayer",
+											"sid": 367589611028937,
+											"parameters": {
+												"object": "Spider"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Spider",
+											"sid": 790209703131534,
+											"parameters": {
+												"animation": "\"Hurt\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "Spider",
+											"sid": 300061529700011,
+											"parameters": {
+												"instance-variable": "Health",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "test123",
+											"sid": 649586832408061,
+											"parameters": {
+												"text": "\"1\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Spider",
+											"sid": 501961560897594,
+											"behaviorType": "Pathfinding",
+											"parameters": {
+												"set": "disabled"
+											}
+										}
+									],
+									"sid": 235343949015062
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "VheranPlayer",
+									"sid": 316984993286855,
+									"parameters": {
+										"animation": "\"Attack2\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 210689009870340,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "VheranPlayer",
+											"sid": 299924843131528,
+											"parameters": {
+												"object": "Spider"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Spider",
+											"sid": 427283044651516,
+											"parameters": {
+												"animation": "\"Hurt\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "Spider",
+											"sid": 609947674099087,
+											"parameters": {
+												"instance-variable": "Health",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "test123",
+											"sid": 251651530679446,
+											"parameters": {
+												"text": "\"2\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Spider",
+											"sid": 591247753417078,
+											"behaviorType": "Pathfinding",
+											"parameters": {
+												"set": "disabled"
+											}
+										}
+									],
+									"sid": 964244704109007
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "VheranPlayer",
+									"sid": 789953795042935,
+									"parameters": {
+										"animation": "\"Attack3\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 277240295355003,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "VheranPlayer",
+											"sid": 130546089694073,
+											"parameters": {
+												"object": "Spider"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Spider",
+											"sid": 972343858833316,
+											"parameters": {
+												"animation": "\"Hurt\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "Spider",
+											"sid": 488348055662495,
+											"parameters": {
+												"instance-variable": "Health",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "test123",
+											"sid": 147970213417388,
+											"parameters": {
+												"text": "\"3\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Spider",
+											"sid": 837975217005143,
+											"behaviorType": "Pathfinding",
+											"parameters": {
+												"set": "disabled"
+											}
+										}
+									],
+									"sid": 664037691397334,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-x",
+													"objectClass": "Spider",
+													"sid": 600871407797100,
+													"parameters": {
+														"comparison": 5,
+														"x-co-ordinate": "VheranPlayer.X"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-vector-x",
+													"objectClass": "Spider",
+													"sid": 745137146392153,
+													"behaviorType": "8Direction",
+													"parameters": {
+														"vector-x": "-400"
+													}
+												}
+											],
+											"sid": 735076073589182
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 687325524373692
+												}
+											],
+											"actions": [
+												{
+													"id": "set-vector-x",
+													"objectClass": "Spider",
+													"sid": 443263818648438,
+													"behaviorType": "8Direction",
+													"parameters": {
+														"vector-x": "400"
+													}
+												}
+											],
+											"sid": 881330290481726
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Spider",
+									"sid": 134897067284633,
+									"parameters": {
+										"instance-variable": "Health",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Spider",
+									"sid": 102303568438811,
+									"parameters": {
+										"animation": "\"Death\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 481887812052930,
+									"parameters": {
+										"seconds": "2"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Spider",
+									"sid": 188004513957815
+								}
+							],
+							"sid": 209475026587485
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "Spider",
+									"sid": 825095304938898,
+									"parameters": {
+										"animation": "\"Hurt\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Spider",
+									"sid": 990063087915001,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "Spider",
+									"sid": 178075160119161,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"set": "enabled"
+									}
+								}
+							],
+							"sid": 966101631518456
+						}
+					],
+					"sid": 573872000410536
 				}
 			],
 			"sid": 775710196582622

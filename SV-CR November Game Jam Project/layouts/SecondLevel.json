@@ -639,6 +639,18 @@
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"allow-sliding": false,
+								"default-controls": true,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
