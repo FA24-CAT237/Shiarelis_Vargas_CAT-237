@@ -224,7 +224,7 @@
 					}
 				],
 				"sid": 636372082686948,
-				"name": "Animation 1",
+				"name": "Walk",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -495,7 +495,7 @@
 					}
 				],
 				"sid": 373957042699138,
-				"name": "Animation 2",
+				"name": "Run",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -746,7 +746,7 @@
 					}
 				],
 				"sid": 998095319272976,
-				"name": "Animation 3",
+				"name": "Attack",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -1316,7 +1316,7 @@
 					}
 				],
 				"sid": 404880595903025,
-				"name": "Animation 5",
+				"name": "Death",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

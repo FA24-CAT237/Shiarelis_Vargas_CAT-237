@@ -1190,28 +1190,30 @@
 							}
 						}
 					],
-					"sid": 199878619658605
-				},
-				{
-					"eventType": "block",
-					"conditions": [
+					"sid": 199878619658605,
+					"children": [
 						{
-							"id": "on-animation-finished",
-							"objectClass": "EvilSpirit",
-							"sid": 387447578013441,
-							"parameters": {
-								"animation": "\"Death\""
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "EvilSpirit",
+									"sid": 932248546541420,
+									"parameters": {
+										"animation": "\"Death\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "EvilSpirit",
+									"sid": 539522167426807
+								}
+							],
+							"sid": 106208637937857
 						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "EvilSpirit",
-							"sid": 884215620223187
-						}
-					],
-					"sid": 904112960091652
+					]
 				}
 			],
 			"sid": 289070573753745

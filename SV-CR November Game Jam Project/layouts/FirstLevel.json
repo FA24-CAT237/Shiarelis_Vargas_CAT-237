@@ -730,7 +730,7 @@
 					"type": "FenWolf",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Walk",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -992,10 +992,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": -248,
-						"y": -92,
-						"width": 166.5497390342528,
-						"height": 136.46786651775946,
+						"x": -280.61256168079626,
+						"y": -119.09329256336038,
+						"width": 100.95921132357702,
+						"height": 82.72416549275195,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1042,7 +1042,7 @@
 						"LineOfSight": {
 							"properties": {
 								"obstacles": "solids",
-								"range": 150,
+								"range": 200,
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
@@ -1090,6 +1090,102 @@
 							1,
 							1,
 							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "test",
+					"properties": {
+						"text": "Text",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 20,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 84,
+					"sid": 773673771403718,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 773673771403718,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 469,
+						"y": 512,
+						"width": 177,
+						"height": 121,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dog_hitbox",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 96,
+					"sid": 869842024517758,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 869842024517758,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": -70,
+						"y": 340,
+						"width": 54.40616148550906,
+						"height": 50.10597066409271,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.3
 						],
 						"angle": 0,
 						"zElevation": 0

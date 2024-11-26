@@ -155,6 +155,15 @@
 												"image-point": "0"
 											},
 											"isInverted": true
+										},
+										{
+											"id": "is-animation-playing",
+											"objectClass": "Skeleton",
+											"sid": 395430971115676,
+											"parameters": {
+												"animation": "\"Attack\""
+											},
+											"isInverted": true
 										}
 									],
 									"actions": [],
@@ -267,74 +276,157 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "has-los-to-object",
+									"id": "is-boolean-instance-variable-set",
 									"objectClass": "Skeleton",
-									"sid": 228886610107428,
-									"behaviorType": "LineOfSight",
+									"sid": 228060092895374,
 									"parameters": {
-										"object": "VheranPlayer",
-										"image-point": "0"
+										"instance-variable": "Found_Chase"
 									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 150818608059860,
+							"children": [
 								{
-									"id": "set-boolean-instvar",
-									"objectClass": "Skeleton",
-									"sid": 155016911367047,
-									"parameters": {
-										"instance-variable": "Idle",
-										"value": "false"
-									}
-								},
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "Skeleton",
-									"sid": 702888305407292,
-									"parameters": {
-										"instance-variable": "Found_Chase",
-										"value": "true"
-									}
-								},
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "Skeleton",
-									"sid": 552699460145814,
-									"parameters": {
-										"instance-variable": "Attack",
-										"value": "false"
-									}
-								},
-								{
-									"id": "set-enabled",
-									"objectClass": "Skeleton",
-									"sid": 913662968141456,
-									"behaviorType": "Pathfinding",
-									"parameters": {
-										"set": "disabled"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Skeleton",
-									"sid": 152736149577014,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "move-to-object",
-									"objectClass": "Skeleton",
-									"sid": 820371592138670,
-									"behaviorType": "MoveTo",
-									"parameters": {
-										"object": "VheranPlayer",
-										"image-point": "0",
-										"mode": "direct"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "has-los-to-object",
+											"objectClass": "Skeleton",
+											"sid": 254926213635516,
+											"behaviorType": "LineOfSight",
+											"parameters": {
+												"object": "VheranPlayer",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "is-animation-playing",
+											"objectClass": "Skeleton",
+											"sid": 384264420468224,
+											"parameters": {
+												"animation": "\"Attack\""
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Skeleton",
+											"sid": 152680288921777,
+											"parameters": {
+												"instance-variable": "Idle",
+												"value": "false"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Skeleton",
+											"sid": 203699999362888,
+											"parameters": {
+												"instance-variable": "Found_Chase",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Skeleton",
+											"sid": 739412011418480,
+											"parameters": {
+												"instance-variable": "Attack",
+												"value": "false"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Skeleton",
+											"sid": 264025606489863,
+											"behaviorType": "Pathfinding",
+											"parameters": {
+												"set": "disabled"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Skeleton",
+											"sid": 850727033219959,
+											"parameters": {
+												"frame-number": "1"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Skeleton",
+											"sid": 293101124856430,
+											"parameters": {
+												"animation": "\"Walk\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "move-to-object",
+											"objectClass": "Skeleton",
+											"sid": 584426821749235,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "VheranPlayer",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 879591568566318,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-x",
+													"objectClass": "Skeleton",
+													"sid": 303931213876091,
+													"parameters": {
+														"comparison": 3,
+														"x-co-ordinate": "VheranPlayer.X"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-mirrored",
+													"objectClass": "Skeleton",
+													"sid": 461445821034038,
+													"parameters": {
+														"state": "mirrored"
+													}
+												}
+											],
+											"sid": 783723061067460
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 260306252794114
+												}
+											],
+											"actions": [
+												{
+													"id": "set-mirrored",
+													"objectClass": "Skeleton",
+													"sid": 233377491721542,
+													"parameters": {
+														"state": "not-mirrored"
+													}
+												}
+											],
+											"sid": 921048116799182
+										}
+									]
 								}
-							],
-							"sid": 431195823113973
+							]
 						},
 						{
 							"eventType": "block",
@@ -342,14 +434,14 @@
 								{
 									"id": "else",
 									"objectClass": "System",
-									"sid": 290636264992078
+									"sid": 650883241611473
 								}
 							],
 							"actions": [
 								{
 									"id": "set-boolean-instvar",
 									"objectClass": "Skeleton",
-									"sid": 724619862715811,
+									"sid": 585959853947410,
 									"parameters": {
 										"instance-variable": "Idle",
 										"value": "true"
@@ -358,7 +450,7 @@
 								{
 									"id": "set-boolean-instvar",
 									"objectClass": "Skeleton",
-									"sid": 767941523083268,
+									"sid": 865850448359052,
 									"parameters": {
 										"instance-variable": "Found_Chase",
 										"value": "false"
@@ -367,14 +459,14 @@
 								{
 									"id": "set-boolean-instvar",
 									"objectClass": "Skeleton",
-									"sid": 747071678928192,
+									"sid": 758351233452363,
 									"parameters": {
 										"instance-variable": "Attack",
 										"value": "false"
 									}
 								}
 							],
-							"sid": 441679617388022
+							"sid": 253452554345064
 						}
 					],
 					"sid": 677858071124085
@@ -412,42 +504,6 @@
 									"parameters": {
 										"tag": "\"Attack\""
 									}
-								},
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "Skeleton",
-									"sid": 985280804511984,
-									"parameters": {
-										"instance-variable": "Idle",
-										"value": "false"
-									}
-								},
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "Skeleton",
-									"sid": 193577082000158,
-									"parameters": {
-										"instance-variable": "Found_Chase",
-										"value": "false"
-									}
-								},
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "Skeleton",
-									"sid": 630602415368327,
-									"parameters": {
-										"instance-variable": "Attack",
-										"value": "true"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Skeleton",
-									"sid": 423137597562873,
-									"parameters": {
-										"animation": "\"Attack\"",
-										"from": "beginning"
-									}
 								}
 							],
 							"sid": 331340165821650
@@ -466,35 +522,71 @@
 							],
 							"actions": [
 								{
-									"id": "set-text",
-									"objectClass": "test123",
-									"sid": 463782938316901,
+									"id": "set-boolean-instvar",
+									"objectClass": "Skeleton",
+									"sid": 266890272973511,
 									"parameters": {
-										"text": "\"att\""
+										"instance-variable": "Idle",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Skeleton",
+									"sid": 960265347586931,
+									"parameters": {
+										"instance-variable": "Found_Chase",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Skeleton",
+									"sid": 740806460986488,
+									"parameters": {
+										"instance-variable": "Attack",
+										"value": "true"
 									}
 								}
 							],
-							"sid": 889747976247283,
-							"children": [
+							"sid": 889747976247283
+						},
+						{
+							"eventType": "block",
+							"conditions": [
 								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "is-boolean-instance-variable-set",
-											"objectClass": "Skeleton",
-											"sid": 135124034334634,
-											"parameters": {
-												"instance-variable": "Attack"
-											}
-										}
-									],
-									"actions": [],
-									"sid": 639189609394336
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Skeleton",
+									"sid": 659357726805181,
+									"parameters": {
+										"instance-variable": "Attack"
+									}
 								}
-							]
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Skeleton",
+									"sid": 215793287984056,
+									"parameters": {
+										"animation": "\"Attack\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 381293116493100
 						}
 					],
 					"sid": 229015611553281
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Hit",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 605534661663507
 				}
 			],
 			"sid": 138351403068432
@@ -665,6 +757,15 @@
 												"image-point": "0",
 												"mode": "direct"
 											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "FenWolf",
+											"sid": 327910701125449,
+											"parameters": {
+												"animation": "\"Walk\"",
+												"from": "beginning"
+											}
 										}
 									],
 									"sid": 479212003525769
@@ -820,6 +921,15 @@
 											"parameters": {
 												"mode": "direct"
 											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "FenWolf",
+											"sid": 187008819028414,
+											"parameters": {
+												"animation": "\"Run\"",
+												"from": "beginning"
+											}
 										}
 									],
 									"sid": 377868222243171
@@ -887,14 +997,6 @@
 									"parameters": {
 										"object": "Skeleton"
 									}
-								},
-								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "FenWolf",
-									"sid": 373741458510242,
-									"parameters": {
-										"instance-variable": "Attack"
-									}
 								}
 							],
 							"actions": [
@@ -957,11 +1059,21 @@
 									],
 									"actions": [
 										{
-											"id": "set-text",
-											"objectClass": "test",
-											"sid": 549333531594090,
+											"id": "set-animation",
+											"objectClass": "FenWolf",
+											"sid": 474905156876807,
 											"parameters": {
-												"text": "\"Hit (Enter Code Here\""
+												"animation": "\"Attack\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "Skeleton",
+											"sid": 319076882335786,
+											"parameters": {
+												"instance-variable": "Health",
+												"value": "1"
 											}
 										},
 										{
