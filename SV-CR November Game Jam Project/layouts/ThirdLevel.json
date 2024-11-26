@@ -820,7 +820,9 @@
 					"uid": 83,
 					"sid": 740765300524967,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"id": 1
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 740765300524967,

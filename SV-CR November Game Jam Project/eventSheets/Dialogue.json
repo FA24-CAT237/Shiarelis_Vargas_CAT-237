@@ -1,0 +1,241 @@
+{
+	"name": "Dialogue",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 111327131127384,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "VheranPlayer",
+					"sid": 483188001993860,
+					"disabled": true,
+					"parameters": {
+						"object": "CaveDoor"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "CaveDoor",
+					"sid": 300718577160770,
+					"disabled": true,
+					"parameters": {
+						"instance-variable": "id",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "CaveDoor",
+					"sid": 751460784570528,
+					"parameters": {
+						"instance-variable": "id",
+						"value": "-1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "VheranPlayer",
+					"sid": 988797348827298,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"callFunction": "VheranDialogue",
+					"sid": 992584454475517,
+					"parameters": [
+						"\"hi\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 568874516540159,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "destroyDialogue",
+					"sid": 780861739696513
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "VheranPlayer",
+					"sid": 634097885994690,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 878625131519275
+		},
+		{
+			"functionName": "VheranDialogue",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "t",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 967632039847458
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "VheranText",
+					"sid": 199975292653850,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "VheranDialogueBox",
+					"sid": 837848767187808,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 144464599391425,
+					"parameters": {
+						"object-to-create": "VheranDialogueBox",
+						"layer": "\"Dialogue\"",
+						"x": "428.5",
+						"y": "415",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 327222638037879,
+					"parameters": {
+						"object-to-create": "VheranText",
+						"layer": "\"Dialogue\"",
+						"x": "428.5",
+						"y": "415",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "VheranText",
+					"sid": 961220596950832,
+					"parameters": {
+						"text": "t",
+						"duration": "2"
+					}
+				}
+			],
+			"sid": 414657795283936
+		},
+		{
+			"functionName": "destroyDialogue",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "VheranText",
+					"sid": 927227940889087
+				},
+				{
+					"id": "destroy",
+					"objectClass": "VheranDialogueBox",
+					"sid": 371066164113882
+				}
+			],
+			"sid": 202937252800913
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 193115799466914,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-running-typewriter-text",
+					"objectClass": "VheranText",
+					"sid": 544220767596701
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-finish",
+					"objectClass": "VheranText",
+					"sid": 913584204867592
+				}
+			],
+			"sid": 479842222147936
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 714686640086506,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-running-typewriter-text",
+					"objectClass": "VheranText",
+					"sid": 384768469429430,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "signal",
+					"objectClass": "System",
+					"sid": 266123033798886,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				}
+			],
+			"sid": 312240264140682
+		}
+	],
+	"sid": 395360581801066
+}

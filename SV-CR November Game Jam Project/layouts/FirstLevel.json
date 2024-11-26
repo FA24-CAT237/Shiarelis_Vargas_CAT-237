@@ -541,7 +541,9 @@
 					"uid": 38,
 					"sid": 297139510185589,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"id": 1
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 297139510185589,

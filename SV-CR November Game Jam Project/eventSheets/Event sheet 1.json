@@ -2,6 +2,10 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "Dialogue"
+		},
+		{
 			"eventType": "variable",
 			"name": "FlipResult",
 			"type": "number",
