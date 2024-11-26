@@ -109,7 +109,8 @@
 					"sid": 358137178459605,
 					"tags": "",
 					"instanceVariables": {
-						"Health": 1
+						"Health": 1,
+						"Id": 1
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -161,7 +162,14 @@
 					"sid": 238790173237505,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 238790173237505,
 						"expanded": true,
@@ -296,7 +304,8 @@
 					"tags": "",
 					"instanceVariables": {
 						"HitPoint": 10,
-						"Health": 20
+						"Health": 20,
+						"SpiderID": 0
 					},
 					"behaviors": {
 						"ScrollTo": {
@@ -714,7 +723,8 @@
 					"instanceVariables": {
 						"idle": false,
 						"inShootingRange": false,
-						"Health": 10
+						"Health": 10,
+						"ID": 0
 					},
 					"behaviors": {
 						"Pathfinding": {

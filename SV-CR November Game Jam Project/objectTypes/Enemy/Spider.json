@@ -24,6 +24,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 375617671137273
+		},
+		{
+			"name": "ID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 963038238730660
 		}
 	],
 	"behaviorTypes": [
@@ -1029,7 +1036,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3714750,
+						"imageSpriteId": 1662737,
 						"collisionPoly": {
 							"points": [
 								0.18181818181818182,

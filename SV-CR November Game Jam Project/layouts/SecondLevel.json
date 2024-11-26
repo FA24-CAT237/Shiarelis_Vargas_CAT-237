@@ -272,7 +272,8 @@
 					"tags": "",
 					"instanceVariables": {
 						"HitPoint": 10,
-						"Health": 20
+						"Health": 20,
+						"SpiderID": 0
 					},
 					"behaviors": {
 						"ScrollTo": {
@@ -323,10 +324,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 111,
-						"y": 685,
-						"width": 53.70186039205939,
-						"height": 71.62732549007423,
+						"x": 134,
+						"y": 665,
+						"width": 99.70186039205939,
+						"height": 111.62732549007423,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -603,7 +604,8 @@
 					"instanceVariables": {
 						"idle": false,
 						"inShootingRange": false,
-						"Health": 10
+						"Health": 10,
+						"ID": 1
 					},
 					"behaviors": {
 						"Pathfinding": {
@@ -663,10 +665,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 162,
-						"y": 248,
-						"width": 63.463069584246526,
-						"height": 46.73153479212326,
+						"x": 208,
+						"y": 249,
+						"width": 96.66617885723697,
+						"height": 71.18090773235977,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -774,7 +776,7 @@
 					}
 				},
 				{
-					"type": "Spider2",
+					"type": "Spider",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Idle",
@@ -783,12 +785,13 @@
 						"live-preview": false
 					},
 					"uid": 77,
-					"sid": 621627425298701,
+					"sid": 351615826786556,
 					"tags": "",
 					"instanceVariables": {
 						"idle": false,
 						"inShootingRange": false,
-						"Health": 10
+						"Health": 10,
+						"ID": 2
 					},
 					"behaviors": {
 						"Pathfinding": {
@@ -824,10 +827,22 @@
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"allow-sliding": false,
+								"default-controls": true,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 621627425298701,
+						"sid": 351615826786556,
 						"expanded": true,
 						"folderName": "",
 						"indexInFolder": -1,
@@ -836,10 +851,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1158,
-						"y": 220,
-						"width": -69.25200941008693,
-						"height": 43.78133133592942,
+						"x": 1138,
+						"y": 215,
+						"width": 108.66424544274741,
+						"height": 54.33212272137371,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -848,12 +863,12 @@
 							1,
 							1
 						],
-						"angle": 6.282935806186759,
+						"angle": 0.02377807709191382,
 						"zElevation": 0
 					}
 				},
 				{
-					"type": "Spider3",
+					"type": "Spider",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Idle",
@@ -862,12 +877,13 @@
 						"live-preview": false
 					},
 					"uid": 78,
-					"sid": 589540950170157,
+					"sid": 623266750124605,
 					"tags": "",
 					"instanceVariables": {
 						"idle": false,
 						"inShootingRange": false,
-						"Health": 10
+						"Health": 10,
+						"ID": 1
 					},
 					"behaviors": {
 						"Pathfinding": {
@@ -903,10 +919,22 @@
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"allow-sliding": false,
+								"default-controls": true,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 589540950170157,
+						"sid": 623266750124605,
 						"expanded": true,
 						"folderName": "",
 						"indexInFolder": -1,
@@ -915,10 +943,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1276,
-						"y": 791,
-						"width": -69.25200941008693,
-						"height": 43.78133133592942,
+						"x": 1174,
+						"y": 750,
+						"width": 96.66617885723699,
+						"height": 71.18090773235977,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -927,7 +955,7 @@
 							1,
 							1
 						],
-						"angle": 6.282935806186759,
+						"angle": 0,
 						"zElevation": 0
 					}
 				}

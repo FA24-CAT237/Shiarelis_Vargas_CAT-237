@@ -618,7 +618,8 @@
 					"tags": "",
 					"instanceVariables": {
 						"HitPoint": 10,
-						"Health": 20
+						"Health": 20,
+						"SpiderID": 0
 					},
 					"behaviors": {
 						"ScrollTo": {
@@ -961,7 +962,54 @@
 					}
 				},
 				{
-					"type": "Skeleton",
+					"type": "Enemy_hitbox",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 88,
+					"sid": 202999535612669,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": false,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 202999535612669,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 655,
+						"y": 373,
+						"width": 166.5497390342528,
+						"height": 136.46786651775946,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.15
+						],
+						"angle": 3.1483637456721354,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Spider",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Idle",
@@ -969,33 +1017,16 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 84,
-					"sid": 536264401783627,
+					"uid": 97,
+					"sid": 209124835921617,
 					"tags": "",
 					"instanceVariables": {
-						"Hitpoint": 1,
-						"Health": 10
+						"idle": false,
+						"inShootingRange": false,
+						"Health": 10,
+						"ID": 0
 					},
 					"behaviors": {
-						"MoveTo": {
-							"properties": {
-								"max-speed": 300,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 0,
-								"set-angle": false,
-								"stop-on-solids": false,
-								"enabled": true
-							}
-						},
-						"LineOfSight": {
-							"properties": {
-								"obstacles": "solids",
-								"range": 150,
-								"cone-of-view": 360,
-								"use-collision-cells": true
-							}
-						},
 						"Pathfinding": {
 							"properties": {
 								"cell-size": 30,
@@ -1011,15 +1042,40 @@
 								"enabled": true
 							}
 						},
-						"Solid": {
+						"MoveTo": {
 							"properties": {
-								"enabled": false,
-								"tags": ""
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"allow-sliding": false,
+								"default-controls": true,
+								"enabled": true
 							}
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 536264401783627,
+						"sid": 209124835921617,
 						"expanded": true,
 						"folderName": "",
 						"indexInFolder": -1,
@@ -1028,10 +1084,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 534,
-						"y": 665,
-						"width": 88.72710098288772,
-						"height": 83.65698092672268,
+						"x": 280.25183237761524,
+						"y": 246.33287136431798,
+						"width": 61.96673433947706,
+						"height": 42.06579206348731,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

@@ -1,5 +1,1499 @@
 {
 	"name": "Event sheet 2",
-	"events": [],
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "RightKillOrder1",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 506619669564628
+		},
+		{
+			"eventType": "variable",
+			"name": "RightKillOrder2",
+			"type": "number",
+			"initialValue": "2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 413729630642868
+		},
+		{
+			"eventType": "variable",
+			"name": "RightKillOrder3",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 818177290754880
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Damage2",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "VheranPlayer",
+									"sid": 359332766276998,
+									"parameters": {
+										"object": "Webbing"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Webbing",
+									"sid": 852433777996290
+								},
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "VheranPlayer",
+									"sid": 390796646528250,
+									"parameters": {
+										"instance-variable": "Health",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-acceleration",
+									"objectClass": "VheranPlayer",
+									"sid": 723880965285665,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"acceleration": "100"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "VheranPlayer",
+									"sid": 122222012884760,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "100"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 254175680401491,
+									"parameters": {
+										"seconds": "1.5"
+									}
+								},
+								{
+									"id": "set-acceleration",
+									"objectClass": "VheranPlayer",
+									"sid": 136644426219744,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"acceleration": "600"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "VheranPlayer",
+									"sid": 415465455528018,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "400"
+									}
+								}
+							],
+							"sid": 716183200856563
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "VheranPlayer",
+									"sid": 531511766410890,
+									"parameters": {
+										"object": "Summon"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Summon",
+									"sid": 198175157652606
+								},
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "VheranPlayer",
+									"sid": 462346248218112,
+									"parameters": {
+										"instance-variable": "Health",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 436273815297516
+						}
+					],
+					"sid": 928907887780342
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Movement2",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 485239764711581,
+									"parameters": {
+										"key": 87
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "VheranPlayer",
+									"sid": 405843507389471,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "up"
+									}
+								}
+							],
+							"sid": 199596668171922
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 649846669196288,
+									"parameters": {
+										"key": 83
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "VheranPlayer",
+									"sid": 241803108331920,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "down"
+									}
+								}
+							],
+							"sid": 212597940910621
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 295334742786548,
+									"parameters": {
+										"key": 65
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "VheranPlayer",
+									"sid": 114268193058505,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "left"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "VheranPlayer",
+									"sid": 590787630070946,
+									"parameters": {
+										"state": "mirrored"
+									}
+								}
+							],
+							"sid": 837051667057771
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 879538924256563
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "VheranPlayer",
+									"sid": 829996967007407,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								}
+							],
+							"sid": 853980332170970
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 132830480577884,
+									"parameters": {
+										"key": 68
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "VheranPlayer",
+									"sid": 962470337846347,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
+							"sid": 654862791554847
+						}
+					],
+					"sid": 930894467556208
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Combo2",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "VheranPlayer",
+									"sid": 385036204242837,
+									"parameters": {
+										"animation": "\"Idle\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 294806973184357,
+									"parameters": {
+										"variable": "comboNumber",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 740770429851149
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-click",
+									"objectClass": "Mouse",
+									"sid": 200768431808691,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 101569651865290,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-timer-running",
+											"objectClass": "VheranPlayer",
+											"sid": 915649063793708,
+											"behaviorType": "Timer",
+											"parameters": {
+												"tag": "\"0\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 914288680630190,
+											"parameters": {
+												"variable": "comboNumber",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 458727803045366
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-timer-running",
+											"objectClass": "VheranPlayer",
+											"sid": 516728313105166,
+											"behaviorType": "Timer",
+											"parameters": {
+												"tag": "\"1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 687594140043644,
+											"parameters": {
+												"variable": "comboNumber",
+												"value": "2"
+											}
+										}
+									],
+									"sid": 341459543226475
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 937804864492026,
+											"parameters": {
+												"variable": "comboNumber",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "VheranPlayer",
+											"sid": 771542677430313,
+											"parameters": {
+												"animation": "\"Attack1\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "start-timer",
+											"objectClass": "VheranPlayer",
+											"sid": 912937985686368,
+											"behaviorType": "Timer",
+											"parameters": {
+												"duration": "0.5",
+												"type": "once",
+												"tag": "\"0\""
+											}
+										}
+									],
+									"sid": 606541855416787
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 773244999608156,
+											"parameters": {
+												"variable": "comboNumber",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 775648950979643,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "VheranPlayer",
+											"sid": 143518457886462,
+											"parameters": {
+												"animation": "\"Attack2\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "start-timer",
+											"objectClass": "VheranPlayer",
+											"sid": 281374869163719,
+											"behaviorType": "Timer",
+											"parameters": {
+												"duration": "0.5",
+												"type": "once",
+												"tag": "\"1\""
+											}
+										}
+									],
+									"sid": 598268861276696
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 152375841575962,
+											"parameters": {
+												"variable": "comboNumber",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 363717495983360,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "VheranPlayer",
+											"sid": 386746744546121,
+											"parameters": {
+												"animation": "\"Attack3\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 161675608209424
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "VheranPlayer",
+									"sid": 637644250566280,
+									"parameters": {
+										"animation": "\"Attack1\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 932171458631079,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 508188710454205,
+											"parameters": {
+												"variable": "comboNumber",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "VheranPlayer",
+											"sid": 100264706483340,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 984756656722880
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "VheranPlayer",
+									"sid": 576290484665840,
+									"parameters": {
+										"animation": "\"Attack2\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 708727265543247,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 598437463013731,
+											"parameters": {
+												"variable": "comboNumber",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "VheranPlayer",
+											"sid": 979426179172142,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 797353107621600
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "VheranPlayer",
+									"sid": 957901301231131,
+									"parameters": {
+										"animation": "\"Attack3\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 317608084742584,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 187354745329277,
+											"parameters": {
+												"variable": "comboNumber",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "VheranPlayer",
+											"sid": 361376420196848,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 911377091155745
+								}
+							]
+						}
+					],
+					"sid": 661584393056029
+				}
+			],
+			"sid": 537964743693901
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Final Boss2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Getting Hit",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "VheranPlayer",
+									"sid": 179765475987139,
+									"parameters": {
+										"animation": "\"Attack1\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 365368625026833,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "VheranPlayer",
+											"sid": 619217713767447,
+											"parameters": {
+												"object": "EvilSpirit"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "EvilSpirit",
+											"sid": 140175979681064,
+											"parameters": {
+												"animation": "\"Hurt\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "EvilSpirit",
+											"sid": 460434534338258,
+											"parameters": {
+												"instance-variable": "Health",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "test123",
+											"sid": 553328114594471,
+											"parameters": {
+												"text": "\"1\""
+											}
+										}
+									],
+									"sid": 997953620782300
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "VheranPlayer",
+									"sid": 788425256391704,
+									"parameters": {
+										"animation": "\"Attack2\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 553696795258827,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "VheranPlayer",
+											"sid": 836934322991719,
+											"parameters": {
+												"object": "EvilSpirit"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "EvilSpirit",
+											"sid": 451913175623939,
+											"parameters": {
+												"animation": "\"Hurt\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "EvilSpirit",
+											"sid": 632320533296228,
+											"parameters": {
+												"instance-variable": "Health",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "test123",
+											"sid": 465795756457554,
+											"parameters": {
+												"text": "\"2\""
+											}
+										}
+									],
+									"sid": 522235817360661
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "VheranPlayer",
+									"sid": 932645998825137,
+									"parameters": {
+										"animation": "\"Attack3\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 572892576338095,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "VheranPlayer",
+											"sid": 136165271788108,
+											"parameters": {
+												"object": "EvilSpirit"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "EvilSpirit",
+											"sid": 173011378572257,
+											"parameters": {
+												"animation": "\"Hurt\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "EvilSpirit",
+											"sid": 759122351803995,
+											"parameters": {
+												"instance-variable": "Health",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "test123",
+											"sid": 916748884383895,
+											"parameters": {
+												"text": "\"3\""
+											}
+										}
+									],
+									"sid": 400703851844001
+								}
+							]
+						}
+					],
+					"sid": 699728236300876
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "EvilSpirit",
+							"sid": 334656137474806,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 487099959906968,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-visible",
+									"objectClass": "EvilSpirit",
+									"sid": 739584240230184
+								}
+							],
+							"actions": [],
+							"sid": 140489883063498,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 752546442748631,
+											"parameters": {
+												"interval-seconds": "7.5"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 218940976930426,
+											"parameters": {
+												"variable": "Tp_number",
+												"value": "round(random(1,4))"
+											}
+										}
+									],
+									"sid": 628001567045205,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "teleportBlock",
+													"sid": 705911620852700,
+													"parameters": {
+														"instance-variable": "Tp_ID",
+														"comparison": 0,
+														"value": "Tp_number"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "EvilSpirit",
+													"sid": 428396983302376,
+													"parameters": {
+														"animation": "\"Teleport1\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 658157919381316,
+													"parameters": {
+														"seconds": "1.0"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "EvilSpirit",
+													"sid": 451199124170833,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-position-to-another-object",
+													"objectClass": "EvilSpirit",
+													"sid": 155678728174277,
+													"parameters": {
+														"object": "teleportBlock",
+														"image-point-optional": "0"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "EvilSpirit",
+													"sid": 633680429198083,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "EvilSpirit",
+													"sid": 289670546007366,
+													"parameters": {
+														"animation": "\"Teleport2\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 799714583856223
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "EvilSpirit",
+							"sid": 353290140452331,
+							"parameters": {
+								"animation": "\"Teleport2\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "EvilSpirit",
+							"sid": 775483293630444,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 414159059735157
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 726145098227551,
+							"parameters": {
+								"interval-seconds": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "EvilSpirit",
+							"sid": 479299090301354,
+							"parameters": {
+								"animation": "\"SummonAttack\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 705174629790724
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "EvilSpirit",
+							"sid": 890099074388327,
+							"parameters": {
+								"animation": "\"SummonAttack\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "instance-signal",
+							"objectClass": "EvilSpirit",
+							"sid": 830717787442675,
+							"disabled": true,
+							"parameters": {
+								"tag": "\"Attack\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "EvilSpirit",
+							"sid": 213656159895355,
+							"parameters": {
+								"object": "Summon",
+								"layer": "3",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-angle-toward-position",
+							"objectClass": "Summon",
+							"sid": 383280707580916,
+							"parameters": {
+								"x": "VheranPlayer.X",
+								"y": "VheranPlayer.Y"
+							}
+						}
+					],
+					"sid": 700628267014529
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-signal",
+							"objectClass": "System",
+							"sid": 843693714824875,
+							"parameters": {
+								"tag": "\"Attack\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Summon",
+							"sid": 124904490375750,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Summon",
+							"sid": 337253039341470,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 367009033647945,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "Summon",
+							"sid": 503410086456217,
+							"parameters": {
+								"animation": "\"Animation 1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Summon",
+							"sid": 136485349366538,
+							"parameters": {
+								"animation": "\"Animation 2\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Summon",
+							"sid": 645131620618849,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 566747360721474,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "Summon",
+							"sid": 860080382866643,
+							"parameters": {
+								"animation": "\"Animation 2\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "Summon",
+							"sid": 392070026114684,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 719097910387767,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "EvilSpirit",
+							"sid": 130494436044236,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "EvilSpirit",
+							"sid": 112274455902885,
+							"parameters": {
+								"animation": "\"Death\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 199878619658605
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "EvilSpirit",
+							"sid": 387447578013441,
+							"parameters": {
+								"animation": "\"Death\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "EvilSpirit",
+							"sid": 884215620223187
+						}
+					],
+					"sid": 904112960091652
+				}
+			],
+			"sid": 289070573753745
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Crystal",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "VheranPlayer",
+							"sid": 409833225949362,
+							"parameters": {
+								"animation": "\"Attack1\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 287415264866767,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "VheranPlayer",
+									"sid": 547869849303447,
+									"parameters": {
+										"object": "CrystalHitbox"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Crystal",
+									"sid": 464585858449735
+								}
+							],
+							"sid": 701691036441291
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "VheranPlayer",
+							"sid": 116618368356307,
+							"parameters": {
+								"animation": "\"Attack1\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 741292464234565,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "VheranPlayer",
+									"sid": 116296752588218,
+									"parameters": {
+										"object": "CrystalHitbox2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Crystal2",
+									"sid": 371416642533525
+								}
+							],
+							"sid": 477580690556514
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "VheranPlayer",
+							"sid": 365611298020210,
+							"parameters": {
+								"animation": "\"Attack1\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 623445734326762,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "VheranPlayer",
+									"sid": 665166662521092,
+									"parameters": {
+										"object": "CrystalHitbox3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Crystal3",
+									"sid": 706877459791234
+								}
+							],
+							"sid": 514957770175665
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "CrystalHitbox2",
+							"sid": 425725936312434,
+							"parameters": {
+								"object": "Crystal2"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "CrystalHitbox",
+							"sid": 425453549909241,
+							"parameters": {
+								"object": "Crystal"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "CrystalHitbox3",
+							"sid": 999174640689016,
+							"parameters": {
+								"object": "Crystal3"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Darkbarrier",
+							"sid": 467246689276945
+						}
+					],
+					"sid": 135462884895577
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "VheranPlayer",
+							"sid": 737924476803533,
+							"parameters": {
+								"object": "Artifact"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "EvilSpirit",
+							"sid": 815057234560929,
+							"parameters": {
+								"x": "Artifact.X",
+								"y": "Artifact.Y"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EvilSpirit",
+							"sid": 966861097123996,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Artifact",
+							"sid": 210566074451836
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Altar",
+							"sid": 323891210532772
+						}
+					],
+					"sid": 518922538465801,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-x",
+									"objectClass": "VheranPlayer",
+									"sid": 165966624877867,
+									"parameters": {
+										"comparison": 5,
+										"x-co-ordinate": "Artifact.X"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-x",
+									"objectClass": "VheranPlayer",
+									"sid": 817375056454226,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"vector-x": "600"
+									}
+								}
+							],
+							"sid": 208414143388401
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 881676753367708
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-x",
+									"objectClass": "VheranPlayer",
+									"sid": 193128002440428,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"vector-x": "-600"
+									}
+								}
+							],
+							"sid": 620427018195160
+						}
+					]
+				}
+			],
+			"sid": 134384924994158
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 420647706284495
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "EvilSpirit",
+					"sid": 565509349055545,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 808068803068382
+		}
+	],
 	"sid": 979872625929928
 }

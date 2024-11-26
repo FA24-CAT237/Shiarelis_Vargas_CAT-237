@@ -266,7 +266,8 @@
 					"tags": "",
 					"instanceVariables": {
 						"HitPoint": 10,
-						"Health": 20
+						"Health": 20,
+						"SpiderID": 0
 					},
 					"behaviors": {
 						"ScrollTo": {

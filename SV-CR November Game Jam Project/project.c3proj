@@ -158,7 +158,9 @@
 					"agroRange",
 					"Dog_hitbox",
 					"Enemy_hitbox",
-					"enemyRange"
+					"enemyRange",
+					"enemyRange2",
+					"enemyRange3"
 				],
 				"subfolders": [],
 				"name": "hitboxs"
@@ -199,7 +201,10 @@
 					"Crystal2",
 					"Crystal3",
 					"Key",
-					"Artifact"
+					"Artifact",
+					"CrystalHitbox",
+					"CrystalHitbox2",
+					"CrystalHitbox3"
 				],
 				"subfolders": [],
 				"name": "TileBackgrounds"
