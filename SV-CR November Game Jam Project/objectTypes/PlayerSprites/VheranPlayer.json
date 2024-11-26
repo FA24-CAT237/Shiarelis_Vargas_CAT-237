@@ -32,6 +32,11 @@
 			"behaviorId": "MoveTo",
 			"name": "MoveTo",
 			"sid": 194145231147301
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 540796964788275
 		}
 	],
 	"effectTypes": [],
@@ -646,7 +651,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1552847,
+						"imageSpriteId": 418354,
 						"collisionPoly": {
 							"points": [
 								0.6,
@@ -684,7 +689,54 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3999705,
+						"imageSpriteId": 3569326,
+						"collisionPoly": {
+							"points": [
+								0.58,
+								0.34285714285714286,
+								0.72,
+								0.34285714285714286,
+								0.76,
+								0.37142857142857144,
+								0.8,
+								0.42857142857142855,
+								0.8,
+								0.8571428571428571,
+								0.78,
+								1,
+								0.44,
+								1,
+								0.26,
+								0.9142857142857143,
+								0.16,
+								0.5142857142857142
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 840588472763419,
+				"name": "Attack1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 8
+			},
+			{
+				"frames": [
+					{
+						"width": 48,
+						"height": 60,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8300270,
 						"collisionPoly": {
 							"points": [
 								0.58,
@@ -720,7 +772,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 223453,
+						"imageSpriteId": 7903752,
 						"collisionPoly": {
 							"points": [
 								0.54,
@@ -772,7 +824,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2175202,
+						"imageSpriteId": 9295994,
 						"collisionPoly": {
 							"points": [
 								0.42,
@@ -812,7 +864,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1003389,
+						"imageSpriteId": 4876289,
 						"collisionPoly": {
 							"points": [
 								0.46,
@@ -848,7 +900,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1590641,
+						"imageSpriteId": 1122190,
 						"collisionPoly": {
 							"points": [
 								0.44,
@@ -882,7 +934,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8540843,
+						"imageSpriteId": 8433399,
 						"collisionPoly": {
 							"points": [
 								0.42,
@@ -904,7 +956,18 @@
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
-					},
+					}
+				],
+				"sid": 144283000834582,
+				"name": "Attack2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
 					{
 						"width": 48,
 						"height": 60,
@@ -914,7 +977,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7605648,
+						"imageSpriteId": 7800512,
 						"collisionPoly": {
 							"points": [
 								0.6,
@@ -954,7 +1017,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7382788,
+						"imageSpriteId": 5261131,
 						"collisionPoly": {
 							"points": [
 								0.62,
@@ -986,7 +1049,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4654725,
+						"imageSpriteId": 2175087,
 						"collisionPoly": {
 							"points": [
 								0.6,
@@ -1016,7 +1079,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2092367,
+						"imageSpriteId": 5682076,
 						"collisionPoly": {
 							"points": [
 								0.62,
@@ -1048,7 +1111,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8050205,
+						"imageSpriteId": 7944703,
 						"collisionPoly": {
 							"points": [
 								0.5,
@@ -1086,7 +1149,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6403403,
+						"imageSpriteId": 7299995,
 						"collisionPoly": {
 							"points": [
 								0.32,
@@ -1122,7 +1185,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9864346,
+						"imageSpriteId": 171151,
 						"collisionPoly": {
 							"points": [
 								0.4,
@@ -1154,7 +1217,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9042970,
+						"imageSpriteId": 2152178,
 						"collisionPoly": {
 							"points": [
 								0.42,
@@ -1182,9 +1245,9 @@
 						"tag": ""
 					}
 				],
-				"sid": 840588472763419,
-				"name": "Attack",
-				"isLooping": true,
+				"sid": 409770772700245,
+				"name": "Attack3",
+				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,

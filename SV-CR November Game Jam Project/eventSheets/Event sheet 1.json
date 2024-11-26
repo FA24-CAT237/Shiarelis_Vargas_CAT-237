@@ -32,6 +32,16 @@
 			"sid": 942850104164444
 		},
 		{
+			"eventType": "variable",
+			"name": "comboNumber",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 335618619038763
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Enemy",
@@ -741,104 +751,507 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "Movement",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 775809326868031,
-							"parameters": {
-								"key": 87
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 812585590333486,
+									"parameters": {
+										"key": 87
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "VheranPlayer",
+									"sid": 787794600511163,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "up"
+									}
+								}
+							],
+							"sid": 393505609038300
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 739781059456133,
+									"parameters": {
+										"key": 83
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "VheranPlayer",
+									"sid": 863938909605651,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "down"
+									}
+								}
+							],
+							"sid": 611792861449305
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 398437894699596,
+									"parameters": {
+										"key": 65
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "VheranPlayer",
+									"sid": 708673582074132,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "left"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "VheranPlayer",
+									"sid": 199960393367713,
+									"parameters": {
+										"state": "mirrored"
+									}
+								}
+							],
+							"sid": 910219469923784
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 147145369399801
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "VheranPlayer",
+									"sid": 920827594497226,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								}
+							],
+							"sid": 845609261398631
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 424550067100586,
+									"parameters": {
+										"key": 68
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "VheranPlayer",
+									"sid": 774898111138509,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
+							"sid": 477737109869650
 						}
 					],
-					"actions": [
-						{
-							"id": "simulate-control",
-							"objectClass": "VheranPlayer",
-							"sid": 406407583856496,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"control": "up"
-							}
-						}
-					],
-					"sid": 497588136093973
+					"sid": 250773402998745
 				},
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "Combo",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 931625840143018,
-							"parameters": {
-								"key": 83
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "VheranPlayer",
+									"sid": 780569209685785,
+									"parameters": {
+										"animation": "\"Idle\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 937631335413315,
+									"parameters": {
+										"variable": "comboNumber",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 837466556340575
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-click",
+									"objectClass": "Mouse",
+									"sid": 907932511094970,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 201640614172446,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-timer-running",
+											"objectClass": "VheranPlayer",
+											"sid": 283300789434828,
+											"behaviorType": "Timer",
+											"parameters": {
+												"tag": "\"0\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 825078787150719,
+											"parameters": {
+												"variable": "comboNumber",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 615706969035174
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-timer-running",
+											"objectClass": "VheranPlayer",
+											"sid": 866759476909258,
+											"behaviorType": "Timer",
+											"parameters": {
+												"tag": "\"1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 218107884613567,
+											"parameters": {
+												"variable": "comboNumber",
+												"value": "2"
+											}
+										}
+									],
+									"sid": 678212592123420
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 321672913014344,
+											"parameters": {
+												"variable": "comboNumber",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "VheranPlayer",
+											"sid": 342438057256998,
+											"parameters": {
+												"animation": "\"Attack1\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "start-timer",
+											"objectClass": "VheranPlayer",
+											"sid": 147650900688150,
+											"behaviorType": "Timer",
+											"parameters": {
+												"duration": "0.5",
+												"type": "once",
+												"tag": "\"0\""
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "test123",
+											"sid": 516335053202127,
+											"parameters": {
+												"text": "\"Done\""
+											}
+										}
+									],
+									"sid": 520449881770416
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 738981376340836,
+											"parameters": {
+												"variable": "comboNumber",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 418046422334595,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "VheranPlayer",
+											"sid": 142080301896463,
+											"parameters": {
+												"animation": "\"Attack2\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "start-timer",
+											"objectClass": "VheranPlayer",
+											"sid": 168670442080834,
+											"behaviorType": "Timer",
+											"parameters": {
+												"duration": "0.5",
+												"type": "once",
+												"tag": "\"1\""
+											}
+										}
+									],
+									"sid": 160805345901509
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 541286700249195,
+											"parameters": {
+												"variable": "comboNumber",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 510357515031842,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "VheranPlayer",
+											"sid": 400614305700464,
+											"parameters": {
+												"animation": "\"Attack3\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 687431869333941
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "VheranPlayer",
+									"sid": 897508892426523,
+									"parameters": {
+										"animation": "\"Attack1\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 521308326762785,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 785774285685015,
+											"parameters": {
+												"variable": "comboNumber",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "VheranPlayer",
+											"sid": 746531781950838,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 364626399406918
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "VheranPlayer",
+									"sid": 900755886995746,
+									"parameters": {
+										"animation": "\"Attack2\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 605087299904789,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 198637800599361,
+											"parameters": {
+												"variable": "comboNumber",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "VheranPlayer",
+											"sid": 618529684719151,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 871362919012737
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "VheranPlayer",
+									"sid": 670750732119037,
+									"parameters": {
+										"animation": "\"Attack3\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 353096837773921,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 194338743474715,
+											"parameters": {
+												"variable": "comboNumber",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "VheranPlayer",
+											"sid": 159551271661972,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 130857384201781
+								}
+							]
 						}
 					],
-					"actions": [
-						{
-							"id": "simulate-control",
-							"objectClass": "VheranPlayer",
-							"sid": 264316488810984,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"control": "down"
-							}
-						}
-					],
-					"sid": 355875941185365
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 857733124036751,
-							"parameters": {
-								"key": 65
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "simulate-control",
-							"objectClass": "VheranPlayer",
-							"sid": 330046317798181,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"control": "left"
-							}
-						}
-					],
-					"sid": 953741682087845
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 338432289129376,
-							"parameters": {
-								"key": 68
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "simulate-control",
-							"objectClass": "VheranPlayer",
-							"sid": 336547271498634,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"control": "right"
-							}
-						}
-					],
-					"sid": 692407665869283
+					"sid": 946520430944141
 				}
 			],
 			"sid": 479916877418916

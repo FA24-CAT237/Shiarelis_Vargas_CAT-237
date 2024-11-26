@@ -99,6 +99,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Turret",
 			"name": "Turret",
 			"author": "Scirra",
@@ -127,7 +134,8 @@
 			"Mouse",
 			"TiledBackground",
 			"teleportBlock",
-			"Trees"
+			"Trees",
+			"test123"
 		],
 		"subfolders": [
 			{

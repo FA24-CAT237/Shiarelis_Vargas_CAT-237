@@ -329,6 +329,9 @@
 								"stop-on-solids": false,
 								"enabled": true
 							}
+						},
+						"Timer": {
+							"properties": {}
 						}
 					},
 					"instanceFolderItem": {
