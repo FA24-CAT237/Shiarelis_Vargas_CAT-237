@@ -19,11 +19,11 @@
 			"sid": 357614356191557
 		},
 		{
-			"name": "SpiderID",
-			"type": "number",
+			"name": "gotKey",
+			"type": "boolean",
 			"desc": "",
 			"show": true,
-			"sid": 810271929008526
+			"sid": 296861910864059
 		}
 	],
 	"behaviorTypes": [

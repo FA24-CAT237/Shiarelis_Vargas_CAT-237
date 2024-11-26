@@ -979,57 +979,7 @@
 						{
 							"id": "on-animation-finished",
 							"objectClass": "EvilSpirit",
-							"sid": 353290140452331,
-							"parameters": {
-								"animation": "\"Teleport2\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "EvilSpirit",
-							"sid": 775483293630444,
-							"parameters": {
-								"animation": "\"Idle\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 414159059735157
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-x-seconds",
-							"objectClass": "System",
-							"sid": 726145098227551,
-							"parameters": {
-								"interval-seconds": "2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "EvilSpirit",
-							"sid": 479299090301354,
-							"parameters": {
-								"animation": "\"SummonAttack\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 705174629790724
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-animation-finished",
-							"objectClass": "EvilSpirit",
-							"sid": 890099074388327,
+							"sid": 248900326962046,
 							"parameters": {
 								"animation": "\"SummonAttack\""
 							}
@@ -1039,7 +989,7 @@
 						{
 							"id": "instance-signal",
 							"objectClass": "EvilSpirit",
-							"sid": 830717787442675,
+							"sid": 151657018293220,
 							"disabled": true,
 							"parameters": {
 								"tag": "\"Attack\""
@@ -1048,7 +998,7 @@
 						{
 							"id": "spawn-another-object",
 							"objectClass": "EvilSpirit",
-							"sid": 213656159895355,
+							"sid": 479060208463507,
 							"parameters": {
 								"object": "Summon",
 								"layer": "3",
@@ -1060,14 +1010,64 @@
 						{
 							"id": "set-angle-toward-position",
 							"objectClass": "Summon",
-							"sid": 383280707580916,
+							"sid": 909769551118090,
 							"parameters": {
 								"x": "VheranPlayer.X",
 								"y": "VheranPlayer.Y"
 							}
 						}
 					],
-					"sid": 700628267014529
+					"sid": 520508186457376
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 463103056200890,
+							"parameters": {
+								"interval-seconds": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "EvilSpirit",
+							"sid": 799674466327826,
+							"parameters": {
+								"animation": "\"SummonAttack\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 183261152441396
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "EvilSpirit",
+							"sid": 294997022429058,
+							"parameters": {
+								"animation": "\"Teleport2\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "EvilSpirit",
+							"sid": 489333547723110,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 217768357380658
 				},
 				{
 					"eventType": "block",

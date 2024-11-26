@@ -273,7 +273,7 @@
 					"instanceVariables": {
 						"HitPoint": 10,
 						"Health": 20,
-						"SpiderID": 0
+						"gotKey": false
 					},
 					"behaviors": {
 						"ScrollTo": {
@@ -667,7 +667,7 @@
 					"world": {
 						"x": 208,
 						"y": 249,
-						"width": 96.66617885723697,
+						"width": 96.66617885723699,
 						"height": 71.18090773235977,
 						"originX": 0.5,
 						"originY": 0.5,

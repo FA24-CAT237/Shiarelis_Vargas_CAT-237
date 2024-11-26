@@ -305,7 +305,7 @@
 					"instanceVariables": {
 						"HitPoint": 10,
 						"Health": 20,
-						"SpiderID": 0
+						"gotKey": false
 					},
 					"behaviors": {
 						"ScrollTo": {
@@ -638,7 +638,10 @@
 					"tags": "",
 					"instanceVariables": {
 						"Hitpoint": 1,
-						"Health": 10
+						"Health": 10,
+						"Idle": false,
+						"Found_Chase": false,
+						"Attack": false
 					},
 					"behaviors": {
 						"MoveTo": {

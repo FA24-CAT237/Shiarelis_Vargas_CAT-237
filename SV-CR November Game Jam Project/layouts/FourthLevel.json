@@ -233,7 +233,7 @@
 					"instanceVariables": {
 						"HitPoint": 10,
 						"Health": 20,
-						"SpiderID": 0
+						"gotKey": false
 					},
 					"behaviors": {
 						"ScrollTo": {

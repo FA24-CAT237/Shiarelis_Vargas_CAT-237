@@ -89,6 +89,33 @@
 								"x": "Skeleton.X+random(-50,50)",
 								"y": "Skeleton.Y+random(-50,50)"
 							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Skeleton",
+							"sid": 378708078261587,
+							"parameters": {
+								"instance-variable": "Idle",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Skeleton",
+							"sid": 491159329179028,
+							"parameters": {
+								"instance-variable": "Found_Chase",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Skeleton",
+							"sid": 221560938052381,
+							"parameters": {
+								"instance-variable": "Attack",
+								"value": "false"
+							}
 						}
 					],
 					"sid": 313801281122106
@@ -104,85 +131,94 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "has-los-to-object",
+									"id": "is-boolean-instance-variable-set",
 									"objectClass": "Skeleton",
-									"sid": 990767156091018,
-									"behaviorType": "LineOfSight",
+									"sid": 815048653886833,
 									"parameters": {
-										"object": "VheranPlayer",
-										"image-point": "0"
-									},
-									"isInverted": true
+										"instance-variable": "Idle"
+									}
 								}
 							],
 							"actions": [],
-							"sid": 271109866292321,
+							"sid": 318954474430663,
 							"children": [
 								{
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "every-x-seconds",
-											"objectClass": "System",
-											"sid": 969641543433694,
+											"id": "has-los-to-object",
+											"objectClass": "Skeleton",
+											"sid": 187890036680344,
+											"behaviorType": "LineOfSight",
 											"parameters": {
-												"interval-seconds": "random(2,4)"
-											}
+												"object": "VheranPlayer",
+												"image-point": "0"
+											},
+											"isInverted": true
 										}
 									],
-									"actions": [
-										{
-											"id": "set-animation",
-											"objectClass": "Skeleton",
-											"sid": 700963010303334,
-											"parameters": {
-												"animation": "\"Idle\"",
-												"from": "beginning"
-											}
-										},
-										{
-											"id": "wait",
-											"objectClass": "System",
-											"sid": 113605954203397,
-											"parameters": {
-												"seconds": "1.0"
-											}
-										},
-										{
-											"id": "set-enabled",
-											"objectClass": "Skeleton",
-											"sid": 506068701426344,
-											"behaviorType": "Pathfinding",
-											"parameters": {
-												"set": "enabled"
-											}
-										},
-										{
-											"id": "find-path",
-											"objectClass": "Skeleton",
-											"sid": 874509641026142,
-											"behaviorType": "Pathfinding",
-											"parameters": {
-												"x": "Skeleton.X+random(-50,50)",
-												"y": "Skeleton.Y+random(-50,50)"
-											}
-										},
-										{
-											"id": "set-animation-frame",
-											"objectClass": "Skeleton",
-											"sid": 474423175893486,
-											"parameters": {
-												"frame-number": "0"
-											}
-										}
-									],
-									"sid": 260397615609651,
+									"actions": [],
+									"sid": 335828641171899,
 									"children": [
 										{
 											"eventType": "block",
-											"conditions": [],
-											"actions": [],
-											"sid": 660291345580271
+											"conditions": [
+												{
+													"id": "every-x-seconds",
+													"objectClass": "System",
+													"sid": 402040007231065,
+													"parameters": {
+														"interval-seconds": "random(2,4)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Skeleton",
+													"sid": 534324215613801,
+													"parameters": {
+														"animation": "\"Idle\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 254727439313608,
+													"parameters": {
+														"seconds": "1.0"
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "Skeleton",
+													"sid": 384698729801919,
+													"behaviorType": "Pathfinding",
+													"parameters": {
+														"set": "enabled"
+													}
+												},
+												{
+													"id": "find-path",
+													"objectClass": "Skeleton",
+													"sid": 835772596356704,
+													"behaviorType": "Pathfinding",
+													"parameters": {
+														"x": "Skeleton.X+random(-50,50)",
+														"y": "Skeleton.Y+random(-50,50)"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "Skeleton",
+													"sid": 154947321019563,
+													"parameters": {
+														"frame-number": "0"
+													}
+												}
+											],
+											"sid": 737321228861630
 										}
 									]
 								}
@@ -194,7 +230,7 @@
 								{
 									"id": "on-path-found",
 									"objectClass": "Skeleton",
-									"sid": 770548101981983,
+									"sid": 135942074905621,
 									"behaviorType": "Pathfinding"
 								}
 							],
@@ -202,20 +238,20 @@
 								{
 									"id": "move-along-path",
 									"objectClass": "Skeleton",
-									"sid": 347379802304918,
+									"sid": 441531335317592,
 									"behaviorType": "Pathfinding"
 								},
 								{
 									"id": "set-animation",
 									"objectClass": "Skeleton",
-									"sid": 581552567545134,
+									"sid": 777122343432174,
 									"parameters": {
 										"animation": "\"Walk\"",
 										"from": "beginning"
 									}
 								}
 							],
-							"sid": 397431574009644
+							"sid": 439435012999216
 						}
 					],
 					"sid": 603995207827342
@@ -242,6 +278,33 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Skeleton",
+									"sid": 155016911367047,
+									"parameters": {
+										"instance-variable": "Idle",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Skeleton",
+									"sid": 702888305407292,
+									"parameters": {
+										"instance-variable": "Found_Chase",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Skeleton",
+									"sid": 552699460145814,
+									"parameters": {
+										"instance-variable": "Attack",
+										"value": "false"
+									}
+								},
 								{
 									"id": "set-enabled",
 									"objectClass": "Skeleton",
@@ -272,6 +335,46 @@
 								}
 							],
 							"sid": 431195823113973
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 290636264992078
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Skeleton",
+									"sid": 724619862715811,
+									"parameters": {
+										"instance-variable": "Idle",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Skeleton",
+									"sid": 767941523083268,
+									"parameters": {
+										"instance-variable": "Found_Chase",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Skeleton",
+									"sid": 747071678928192,
+									"parameters": {
+										"instance-variable": "Attack",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 441679617388022
 						}
 					],
 					"sid": 677858071124085
@@ -303,24 +406,92 @@
 									"behaviorType": "MoveTo"
 								},
 								{
+									"id": "signal",
+									"objectClass": "System",
+									"sid": 129302009188793,
+									"parameters": {
+										"tag": "\"Attack\""
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Skeleton",
+									"sid": 985280804511984,
+									"parameters": {
+										"instance-variable": "Idle",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Skeleton",
+									"sid": 193577082000158,
+									"parameters": {
+										"instance-variable": "Found_Chase",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Skeleton",
+									"sid": 630602415368327,
+									"parameters": {
+										"instance-variable": "Attack",
+										"value": "true"
+									}
+								},
+								{
 									"id": "set-animation",
 									"objectClass": "Skeleton",
-									"sid": 890039990150625,
+									"sid": 423137597562873,
 									"parameters": {
 										"animation": "\"Attack\"",
 										"from": "beginning"
 									}
-								},
-								{
-									"id": "start-animation",
-									"objectClass": "Skeleton",
-									"sid": 727622303397913,
-									"parameters": {
-										"from": "current-frame"
-									}
 								}
 							],
 							"sid": 331340165821650
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-signal",
+									"objectClass": "System",
+									"sid": 216337791525784,
+									"parameters": {
+										"tag": "\"Attack\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "test123",
+									"sid": 463782938316901,
+									"parameters": {
+										"text": "\"att\""
+									}
+								}
+							],
+							"sid": 889747976247283,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Skeleton",
+											"sid": 135124034334634,
+											"parameters": {
+												"instance-variable": "Attack"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 639189609394336
+								}
+							]
 						}
 					],
 					"sid": 229015611553281
@@ -352,6 +523,43 @@
 							"parameters": {
 								"x": "dogStarter.X",
 								"y": "dogStarter.Y"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "FenWolf",
+							"sid": 934433769643639,
+							"parameters": {
+								"object": "agroRange",
+								"layer": "3",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "FenWolf",
+							"sid": 226272451184541,
+							"parameters": {
+								"object": "Dog_hitbox",
+								"layer": "3",
+								"image-point": "1",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "dogStarter",
+							"sid": 519388301384857,
+							"disabled": true,
+							"parameters": {
+								"object": "FenWolf",
+								"layer": "3",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						}
 					],
@@ -678,6 +886,14 @@
 									"sid": 607843562177501,
 									"parameters": {
 										"object": "Skeleton"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "FenWolf",
+									"sid": 373741458510242,
+									"parameters": {
+										"instance-variable": "Attack"
 									}
 								}
 							],
@@ -2279,15 +2495,6 @@
 										"animation": "\"Attack\"",
 										"from": "beginning"
 									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "VheranPlayer",
-									"sid": 770637228266535,
-									"parameters": {
-										"instance-variable": "SpiderID",
-										"value": "Spider.ID"
-									}
 								}
 							],
 							"sid": 953793759410635,
@@ -2301,16 +2508,6 @@
 											"sid": 656502168472320,
 											"parameters": {
 												"instance-variable": "inShootingRange"
-											}
-										},
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "VheranPlayer",
-											"sid": 638561600349197,
-											"parameters": {
-												"instance-variable": "SpiderID",
-												"comparison": 0,
-												"value": "Spider.ID"
 											}
 										}
 									],
@@ -3565,6 +3762,68 @@
 				}
 			],
 			"sid": 575156763005797
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "VheranPlayer",
+					"sid": 877767495661699,
+					"parameters": {
+						"object": "Key"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "VheranPlayer",
+					"sid": 632924196713833,
+					"parameters": {
+						"instance-variable": "gotKey",
+						"value": "true"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Key",
+					"sid": 111391286591579
+				}
+			],
+			"sid": 990222954661888
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "VheranPlayer",
+					"sid": 935473737477073,
+					"parameters": {
+						"object": "KeyDoor"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "VheranPlayer",
+					"sid": 658191173094206,
+					"parameters": {
+						"instance-variable": "gotKey"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 443392914355276,
+					"parameters": {
+						"layout": "ThirdLevel"
+					}
+				}
+			],
+			"sid": 145699147099358
 		}
 	],
 	"sid": 588721529148201

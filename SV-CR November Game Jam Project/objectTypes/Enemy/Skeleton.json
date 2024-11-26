@@ -17,6 +17,27 @@
 			"desc": "",
 			"show": true,
 			"sid": 226647365339700
+		},
+		{
+			"name": "Idle",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 984884362911223
+		},
+		{
+			"name": "Found_Chase",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 533025494790472
+		},
+		{
+			"name": "Attack",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 119259609196204
 		}
 	],
 	"behaviorTypes": [
