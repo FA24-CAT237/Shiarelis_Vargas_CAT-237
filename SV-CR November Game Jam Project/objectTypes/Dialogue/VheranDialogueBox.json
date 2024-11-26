@@ -1,0 +1,22 @@
+{
+	"name": "VheranDialogueBox",
+	"plugin-id": "NinePatch",
+	"sid": 992279517203407,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 228,
+		"height": 223,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 843992,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

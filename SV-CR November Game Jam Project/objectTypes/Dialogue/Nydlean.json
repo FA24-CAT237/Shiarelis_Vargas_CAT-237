@@ -1,0 +1,65 @@
+{
+	"name": "Nydlean",
+	"plugin-id": "Sprite",
+	"sid": 689816005952700,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 820,
+						"height": 832,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6886117,
+						"collisionPoly": {
+							"points": [
+								0.4530487804878049,
+								0.07271634615384616,
+								0.6015243902439025,
+								0.09825721153846154,
+								0.8670731707317073,
+								0.30859375,
+								0.8161585365853659,
+								0.8338341346153846,
+								0.44146341463414634,
+								0.9417067307692307,
+								0.2426829268292683,
+								0.7935697115384616,
+								0.12347560975609756,
+								0.4813701923076923,
+								0.09939024390243903,
+								0.3359375,
+								0.138109756097561,
+								0.21995192307692307,
+								0.18079268292682926,
+								0.17848557692307693,
+								0.37408536585365854,
+								0.09044471153846154
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 945298826391324,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -29,6 +29,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "NinePatch",
+			"name": "9-patch",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -170,6 +177,25 @@
 				],
 				"subfolders": [],
 				"name": "TileBackgrounds"
+			},
+			{
+				"items": [
+					"VheranDialogueBox",
+					"VheranText",
+					"TamarisDialogueBox",
+					"TamarisText",
+					"FenDialogueBox",
+					"FenText",
+					"NydleanDialogueBox",
+					"NydleanText",
+					"Tamaris",
+					"Vheran",
+					"VheranYoung",
+					"Fen",
+					"Nydlean"
+				],
+				"subfolders": [],
+				"name": "Dialogue"
 			}
 		]
 	},

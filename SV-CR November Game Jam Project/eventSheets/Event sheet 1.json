@@ -1790,6 +1790,28 @@
 				}
 			],
 			"sid": 775710196582622
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-running-typewriter-text",
+					"objectClass": "VheranText",
+					"sid": 162519484313202
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "VheranText",
+					"sid": 373795259956676,
+					"parameters": {
+						"text": "\"\"",
+						"duration": "0"
+					}
+				}
+			],
+			"sid": 332841754084072
 		}
 	],
 	"sid": 588721529148201
