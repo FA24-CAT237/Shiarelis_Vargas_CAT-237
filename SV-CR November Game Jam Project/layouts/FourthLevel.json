@@ -1,0 +1,215 @@
+{
+	"name": "FourthLevel",
+	"layers": [
+		{
+			"name": "Game",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 637191436005603,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.5019607843137255,
+				0.5019607843137255,
+				0.5019607843137255,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Dialogue",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 303125123475631,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.5019607843137255,
+				0.5019607843137255,
+				0.5019607843137255,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "UI",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 737214970340307,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.5019607843137255,
+				0.5019607843137255,
+				0.5019607843137255,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Background",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Caves",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 29,
+					"sid": 334180967497927,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"ownData": {
+						"tilemapData": {
+							"width": 53,
+							"height": 30,
+							"max-width": 54,
+							"max-height": 31,
+							"data": "2x938,770vd,722vd,920hd,975hv,1025hd,975hv,1025hd,1026hd,2x989,9x1466,2x1040,696,974hv,924hv,747,924hv,973hv,924hv,0,939,938,920hd,975hv,920hd,974hv,1025hd,974hv,989,2x1041,1462vd,10x1466,1041,696,973hv,2x974hv,2x924hv,923hv,0,2x975hv,973vd,975hv,1025hd,973hv,991,973hv,1042,3x1461,1460vd,5x1466,2x1462vd,1461vd,1466,1042,2x697,973hv,974hv,2x923hv,924hv,0,3x975hv,974hv,1025hd,1026hd,991,2x1466,2x1461,1461vd,599,1462vd,4x1466,4x1462vd,1461,1042,989,697,973hv,974hv,975hv,923hv,0,975hv,2x974hv,973hv,973hd,722vd,824vd,1467vd,2x1462vd,2x1461vd,599,1466,599,2x1466,599,3x1462vd,1461vd,1461,3x1466,697,973hv,974hv,975hv,0,974hv,975hv,973hv,2x1026hd,1467vd,1466vd,1466,1462vd,2x1461vd,1462vd,599,1466,599,2x1466,1461vd,3x1462vd,1461vd,1462vd,3x1466,1041,697,973hv,975hv,0,975hv,974hv,1025hd,2x1026hd,1466vd,1465vd,1466,2x1461vd,3x1462vd,599,2x1466,1460vd,3x1462vd,2x1461vd,1462vd,3x1466,1040,920hd,973hv,974hv,0,974hv,973hv,1025hd,1026hd,991,1466vd,1465vd,1462vd,1461vd,1512vd,1462vd,1461vd,1460vd,599,1466,2x599,3x1462vd,1461vd,3x1462vd,2x1466,1040,989,920hd,973hv,0,973hv,920hd,1025hd,1026hd,991,1465vd,1466,2x1462vd,1461vd,1462vd,3x599,1466,3x599,1462vd,2x1461vd,2x1462vd,2x1466,1465vd,920hd,973hv,920hd,747,0,822vd,2x920hd,2x991,2x1466,3x1462vd,2x1461vd,1461,2x1466,2x599,1462vd,2x1461vd,1460vd,1462vd,2x1466,1466vd,1465vd,1042,990,696,748,0,2x975hv,1026hd,990,1467vd,1466,1461vd,1462vd,1461vd,1462vd,2x1461vd,5x599,1461vd,1462vd,2x1461vd,2x1462vd,1461vd,1467vd,1466vd,1465vd,2x920hd,696,0,2x974hv,748,991,1467vd,1466,1462vd,2x1461vd,1462vd,2x1461vd,2x1461,1460vd,3x1462vd,2x1461vd,1460vd,1462vd,3x1461vd,1466vd,1465vd,1042,920hd,696,0,975hv,973hv,1026hd,991,1466,2x1462vd,1461vd,1511vd,1462vd,1461vd,1462vd,1466,1461,599,1461vd,1462vd,3x1461vd,1460vd,1462vd,3x1461vd,1466vd,1465vd,875hd,1041,920hd,0,975hv,1025hd,1026hd,991,1466vd,1462vd,2x1461vd,1511vd,1462vd,1461vd,1462vd,2x1466,2x599,1462vd,4x1461vd,1462vd,1461vd,2x1462vd,1461vd,2x1465vd,2x920hd,0,2x975hv,1026hd,2x1467vd,3x1462vd,1461vd,1462vd,2x1461vd,2x1466,1461,599,1462vd,1461vd,1462vd,2x1461vd,2x1462vd,1461vd,2x1462vd,1461vd,1465vd,697,748,0,974hv,975hv,1026hd,1467vd,1466vd,1465vd,1462vd,2x1461vd,1462vd,2x1461vd,2x1466,1461,3x1462vd,4x1461vd,2x1460vd,1512vd,1462vd,1461vd,1465vd,2x696,0,973hv,975hv,1026hd,1467vd,1466vd,2x1462vd,1461vd,1462vd,2x1461vd,1462vd,2x1466,1461,1466,1461vd,2x1462vd,1461vd,2x1462vd,1461vd,1460vd,2x1462vd,1461vd,1465vd,696,747,0,938,2x975hv,1467vd,1466vd,1465vd,1462vd,1461vd,1462vd,1461vd,2x1462vd,1461vd,3x1466,1462vd,1461vd,2x1462vd,2x1461vd,1462vd,1461vd,1462vd,3x1461vd,747,920hd,0,939,2x974hv,1466vd,1465vd,1462vd,2x1461vd,1462vd,1461vd,2x1462vd,1461vd,3x1466,7x1461vd,1460vd,1462vd,1461vd,1466vd,1465vd,920hd,748,0,1025hd,2x973hv,1466vd,2x1462vd,1461vd,1462vd,2x1461vd,1462vd,2x1461vd,4x1466,2x1462vd,4x1461vd,1462vd,2x1461vd,1466vd,1465vd,697,696,0,2x1025hd,1026hd,1466vd,3x1462vd,1461vd,1462vd,1461vd,1460vd,1462vd,5x1466,2x1461vd,1513vd,1462vd,2x1461vd,1462vd,1461vd,1462vd,1461vd,2x1465vd,920hd,0,939,1025hd,1026hd,1466vd,3x1462vd,1461vd,1462vd,1461vd,1460vd,1462vd,3x1466,1465vd,1513vd,1462vd,3x1461vd,1462vd,1461vd,1462vd,1461vd,1462vd,1461vd,1466vd,1465vd,747,0,989,1025hd,1026hd,1467vd,2x1462vd,1461vd,1462vd,1461vd,1460vd,1462vd,3x1466,1467vd,1466vd,1466,1461vd,1462vd,2x1461vd,1462vd,3x1461vd,1462vd,1461vd,2x1466,747,0,990,1025hd,1026hd,1466vd,2x1465vd,2x1462vd,1461vd,1460vd,1513vd,5x1467vd,1466vd,1465vd,1511vd,1460vd,1462vd,4x1461vd,1462vd,1461vd,1466vd,1465vd,747,0,991,1025hd,1026hd,1466vd,1465vd,1513vd,2x1462vd,1461vd,1460vd,6x1467vd,1466vd,1465vd,1461vd,1460vd,2x1462vd,1461vd,1462vd,2x1466,1462vd,1466,2x747,0,938,748,989,1466vd,1465vd,1513vd,2x1462vd,1461vd,1460vd,1467vd,1466vd,1465vd,4x1467vd,1466vd,1465vd,1460vd,1513vd,1462vd,1461vd,1462vd,4x1466,2x747,0,1025hd,1026hd,990,1465vd,1461vd,1513vd,2x1462vd,1461vd,2x1467vd,1466vd,2x1465vd,1467vd,1466vd,1465vd,1466vd,1465vd,1462vd,1461vd,1460vd,2x1462vd,4x1466,748,747,0,990,748,991,1466,1466vd,1465vd,2x1462vd,1461vd,3x1467vd,1466vd,4x1465vd,1466vd,1465vd,1462vd,1461vd,1460vd,2x1462vd,1461vd,3x1466,697,747,0,989,748,2x1466,1466vd,1465vd,1461vd,1462vd,1461vd,2x1467vd,1466vd,1465vd,4x1467vd,1466vd,1465vd,1513vd,1512vd,1511vd,2x1462vd,1461vd,3x1466,1040,748,0,990,748,1467vd,1466,3x1461vd,1462vd,1461vd,2x1467vd,1466vd,1465vd,1466vd,3x1467vd,1466vd,1465vd,4x1462vd,1461vd,1462vd,1461vd,2x1466,747,920hd,0,991,748,989,2x1466,1462vd,1461vd,1462vd,1461vd,4x1467vd,1466vd,1465vd,1467vd,1466vd,2x1465vd,4x1462vd,3x1461vd,2x1466,748,747,0,771vd,748,990,2x1466,1462vd,1461vd,1462vd,1461vd,1513vd,1467vd,1466vd,2x1467vd,1466vd,3x1465vd,3x1462vd,1461vd,1462vd,1461vd,1462vd,1461vd,2x1466,1040,747,0,2x748,991,1466,1462vd,2x1461vd,1462vd,1461vd,1513vd,1512vd,3x1467vd,1466vd,2x1465vd,4x1462vd,1461vd,1462vd,3x1461vd,1466,747,1040,747,0,990,748,1467vd,1466,1462vd,1461vd,1460vd,2x1462vd,2x1461vd,1460,1466vd,1467vd,1466vd,2x1465vd,3x1462vd,1461vd,2x1462vd,2x1461vd,2x1466,748,1040,747,0,991,748,1467vd,1466,1461vd,1462vd,1461vd,2x1462vd,2x1461vd,2x1460,1466vd,1460,4x1462vd,5x1461vd,1462vd,2x747,748,1040,747,0,748,991,2x1466,1461vd,1462vd,1461vd,1462vd,3x1461vd,2x1461,1460,1461,2x1462vd,2x1461vd,1462vd,1461vd,1460vd,1462vd,1461vd,1460vd,747,748,1041,1040,974hv,0,1025,991,2x1040,1465vd,1462vd,5x1461vd,2x1462,1461,1462,3x1461vd,6x1462vd,2x1466,748,747,974hv,920hd,0,2x1025,1040,1041,3x1466,1461vd,1462vd,3x1461vd,3x1462,1462vd,1461vd,3x1462vd,1461vd,4x1462vd,1466,2x748,920hd,872hv,0,920hd,1025,1040,1042,2x1466,2x1461vd,1462vd,3x1461vd,1512vd,1462vd,1461vd,2x1462vd,2x1461vd,5x1462vd,1461vd,1466,2x748,920hd,872hv,0,991,1026vd,1025vd,1466vd,2x1466,3x1462vd,3x1461vd,3x1462vd,2x1461vd,4x1462vd,1461vd,3x1462vd,1466,1467vd,1040,974hv,872hv,0,1041vd,1026,1025,2x1040,2x1466,1462vd,1461vd,1462vd,1461vd,3x1462vd,1461vd,1462vd,1461vd,4x1462vd,1461vd,3x1462vd,1461vd,1466,747,920hd,872hv,0,3x920hd,1026hd,748,2x1466,1461vd,1462vd,1461vd,1513vd,2x1462vd,3x1461vd,1462vd,2x1461vd,6x1462vd,1461vd,1467vd,747,2x920hd,0,3x920hd,1025hd,1026hd,3x1466,1462vd,1461vd,1513vd,1512vd,1462vd,4x1461vd,1462vd,1461vd,1462vd,3x1461vd,1462vd,2x1466,1467vd,748,2x920hd,0,2x920hd,1025vd,1025hd,1026hd,1025hd,1026hd,2x1466,1462vd,1461vd,3x1462vd,1461vd,1460vd,1462vd,1461vd,1462vd,3x1461vd,3x1462vd,2x1466,748,2x920hd,0,3x920hd,2x1025hd,2x1026hd,1040,2x1466,2x1462vd,1461vd,1462vd,1461vd,2x1462vd,1461vd,2x1462vd,2x1461vd,1462vd,1461vd,2x1466,2x747,2x920hd,0,973hd,3x920hd,1025hd,2x1026hd,1041,2x1466,1461vd,6x1462vd,3x1461vd,5x1466,2x747,748,2x920hd,0,973hd,974hd,975hd,920hd,1025hd,920hd,2x1026hd,3x1466,3x1461vd,1511vd,1462vd,1461vd,1462vd,1461vd,2x1462vd,3x1466,2x747,748,3x920hd,0,923hd,924hd,975hv,3x920hd,2x1026hd,3x1040,2x1466,2x1461vd,1466,2x1461vd,2x1462vd,1461vd,1462vd,2x1466,3x748,2x920hd,923hv,0,923hd,924hd,974hv,920hd,974hd,3x920hd,1026hd,1041,1040hd,1041hd,12x1466,748,1040,3x920hd,923hv,0,2x923hd,973hv,2x920hd,974hd,3x920hd,2x1026hd,1041hd,1040,1040hd,1041hd,1040,3x1466,1467vd,1466vd,2x1040,2x1041,973,973hv,920hd,923hv,940,0,822vd,922hd,2x923hd,2x920hd,975hd,3x920hd,1026hd,2x1025hd,1026hd,1025,4x1040,1467vd,1040,2x1041,1040,2x973,2x920hd,2x940,0,822vd,2x922hd,923hd,3x920hd,974hd,975hd,973vd,1025hd,1026hd,2x1025hd,1026hd,6x1025,1041hd,920hd,1025,4x920hd,2x923,0,822vd,821vd,922hd,923hd,920hd,2x923hd,920hd,974hd,7x920hd,5x1026,2x920hd,2x923hd,924hd,924,920hd,923,920hd,29x0,2x920hd,0"
+						},
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"instanceFolderItem": {
+						"sid": 334180967497927,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": -4,
+						"y": -2,
+						"width": 1713,
+						"height": 963,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 987301237492181,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		}
+	],
+	"scene-graphs-folder-root": {
+		"items": [],
+		"subfolders": []
+	},
+	"sid": 943817744729145,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 1708,
+	"height": 960,
+	"unboundedScrolling": false,
+	"vpX": 0.5,
+	"vpY": 0.5,
+	"projection": "perspective",
+	"eventSheet": "Event sheet 2"
+}

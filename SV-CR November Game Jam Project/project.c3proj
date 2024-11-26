@@ -126,7 +126,8 @@
 			"test",
 			"Mouse",
 			"TiledBackground",
-			"teleportBlock"
+			"teleportBlock",
+			"Trees"
 		],
 		"subfolders": [
 			{
@@ -208,10 +209,11 @@
 	"layouts": {
 		"items": [
 			"Layout 1",
-			"Layout 2",
 			"FirstLevel",
 			"SecondLevel",
-			"ThirdLevel"
+			"ThirdLevel",
+			"FourthLevel",
+			"Camp"
 		],
 		"subfolders": []
 	},
