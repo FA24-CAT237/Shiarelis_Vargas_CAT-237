@@ -1,0 +1,480 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 41600,
+	"name": "GameJam_Sercerts",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "NinePatch",
+			"name": "9-patch",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "LOS",
+			"name": "Line of sight",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Move To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pathfinding",
+			"name": "Pathfinding",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Turret",
+			"name": "Turret",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "5ejvk3y7rxh",
+	"objectTypes": {
+		"items": [
+			"Keyboard",
+			"test",
+			"Mouse",
+			"TiledBackground",
+			"test123",
+			"Webbing",
+			"Audio"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"Skeleton",
+					"EvilSpirit",
+					"Spider",
+					"Summon",
+					"Spider2",
+					"Spider3",
+					"Skeleton2",
+					"Skeleton3",
+					"Skeleton4",
+					"Skeleton5"
+				],
+				"subfolders": [],
+				"name": "Enemy"
+			},
+			{
+				"items": [
+					"agroRange",
+					"Dog_hitbox",
+					"Enemy_hitbox",
+					"enemyRange",
+					"enemyRange2",
+					"enemyRange3",
+					"agroRange2"
+				],
+				"subfolders": [],
+				"name": "hitboxs"
+			},
+			{
+				"items": [
+					"HeadsButton",
+					"TailsButton",
+					"coin"
+				],
+				"subfolders": [],
+				"name": "CointThings"
+			},
+			{
+				"items": [
+					"VheranPlayer",
+					"FenWolf",
+					"dogStarter"
+				],
+				"subfolders": [],
+				"name": "PlayerSprites"
+			},
+			{
+				"items": [
+					"Altar",
+					"Crystal",
+					"Caves",
+					"Darkbarrier",
+					"Chest",
+					"CaveDoor",
+					"Solids",
+					"Solids2",
+					"Solids3",
+					"Solids4",
+					"Trees",
+					"teleportBlock",
+					"KeyDoor",
+					"Crystal2",
+					"Crystal3",
+					"Key",
+					"Artifact",
+					"CrystalHitbox",
+					"CrystalHitbox2",
+					"CrystalHitbox3"
+				],
+				"subfolders": [],
+				"name": "TileBackgrounds"
+			},
+			{
+				"items": [
+					"VheranDialogueBox",
+					"VheranText",
+					"TamarisDialogueBox",
+					"TamarisText",
+					"FenDialogueBox",
+					"FenText",
+					"NydleanDialogueBox",
+					"NydleanText",
+					"Tamaris",
+					"Vheran",
+					"VheranYoung",
+					"Fen",
+					"Nydlean"
+				],
+				"subfolders": [],
+				"name": "Dialogue"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Layout 1",
+			"FirstLevel",
+			"SecondLevel",
+			"ThirdLevel",
+			"FourthLevel",
+			"Camp"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Event sheet 1",
+			"Event sheet 2"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "running-in-grass-6237.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 739456500284056,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "sword-swing-whoosh-sound-effect-1-241824.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 928661199461488,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "walking-on-concrete-ver-2-268513.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 442998923023254,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "260776__deleted_user_3424813__angry-dog-bark-snarl-flat.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 817854564090389,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "500166__sad3d__forest-ambience-and-music.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 893269714499546,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "443128__sirkoto51__boss-battle-loop-3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 257120881982181,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "270366__foolboymedia__dramatic-scroller.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 422780849560786,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 250082228821913,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 734036808480120,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 561161934917386,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 781916381512011,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 562006347612352,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 127885092205599,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 516198851189007,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Timeline 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": false,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "percent",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"exportFileStructure": "folders",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 854,
+	"viewportHeight": 480,
+	"firstLayout": "FirstLevel"
+}

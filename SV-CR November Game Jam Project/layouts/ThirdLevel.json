@@ -1,0 +1,1028 @@
+{
+	"name": "ThirdLevel",
+	"layers": [
+		{
+			"name": "Dialogue",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 511610409354979,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.5019607843137255,
+				0.5019607843137255,
+				0.5019607843137255,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "UI",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 706015905648066,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.5019607843137255,
+				0.5019607843137255,
+				0.5019607843137255,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Background",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Caves",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 28,
+					"sid": 674562088285690,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"ownData": {
+						"tilemapData": {
+							"width": 53,
+							"height": 30,
+							"max-width": 53,
+							"max-height": 30,
+							"data": "310,2x312vd,311vd,2x310vd,257,3x465hv,2x1383hv,5x2319hv,1445,2x2366hv,2x2215hv,2x1430,53,465hv,104,155,206,257,311,312vd,3x465hv,362vd,55,3x464hv,1541,2319hv,1431,2319hv,3x1446,3x2366hv,2x2214hv,1430,2x465hv,464hv,515hv,361,2x312hv,312,363vd,3x464hv,465hv,55,2x465hv,1541,1379,1430,1431,1445,2321hv,1445,1430,2214hv,2x2366hv,1541,2x1431,465hv,464hv,2x515hv,312hv,2x311hv,2x311,363vd,465hv,514hv,465hv,514hv,465hv,464hv,2x1541,1431,1432,1446,2320hv,1445,1431,1430,3x1541,1432,465hv,464hv,2x515hv,361,3x512hv,310,363vd,362vd,464hv,513hv,465hv,513hv,2x465hv,1384,1541,1380,1541,2321hv,2320hv,1446,1445,1431,2x1430,1431,465hv,464hv,3x515hv,362,514hv,512hv,312hv,2x311,363vd,465hv,512hv,464hv,465hv,2x464hv,1384,1431,1430,1541,2x2320hv,1431,1446,1431,2x1430,1432,2x464hv,4x515hv,513hv,311hv,312hv,2x312,363vd,464hv,512hv,464hv,512hv,465hv,1394hv,1383hv,1430,1431,2x1541,1431,1432,1431,1381,1431,1379,1430,1384,1430,464hv,465hv,514hv,55,3x512hv,310,312,363vd,513hv,2x512hv,465hv,464hv,1394hv,1379,1431,1430,2x1541,1432,2x1431,1430,1431,1379,1541,1384,1430,1486,465hv,513hv,465hv,2x512hv,312hv,311,312,3x514hv,2x465hv,513hv,1383hv,2x1436,3x1541,1488,1432,1436,3x1430,2215hv,1486,1430,2x515hv,464hv,514hv,512hv,312hv,311hv,2x312,513hv,514hv,465hv,2x464hv,2x465hv,1381,465hv,1541,1379,1541,2x1488,1436,1431,1430,1431,2215hv,1486,2215hv,1486,465hv,515hv,514hv,515hv,311hv,310hv,311,312,512hv,514hv,464hv,512hv,3x464hv,465hv,464hv,1541,1430,1436,1437,1488,1436,2x1431,1541,2214hv,1487,2214hv,465hv,464hv,2x513hv,361,310hv,312hv,2x310,363,514hv,513hv,512hv,465hv,464hv,2x465hv,464hv,2x1430,1437,1488,1487,3x1430,2x1541,1487,1430,464hv,515hv,2x514hv,312hv,310hv,311hv,2x311,362,3x514hv,464hv,2x465hv,464hv,1436,2x1431,1437,1436,1487,2x1431,2x1541,1431,1488,465hv,2x514hv,2x513hv,515hv,2x310hv,312,513hv,361,513hv,514hv,513hv,512hv,464hv,465hv,464hv,1431,1430,1437,1488,1430,1487,1431,1432,1430,1541,1430,1487,464hv,3x513hv,361,2x515hv,310hv,310,513hv,361,512hv,2x514hv,465hv,2x464hv,2x1384,1431,1381,1380,1431,1488,1379,2x1431,1541,1430,1488,1431,2x464hv,465hv,362,515hv,312hv,310hv,311,312,2x363vd,513hv,514hv,464hv,513hv,2x1383hv,2x1384,2x1436,1487,1379,1430,2x1432,1487,1431,1435,1430,1431,515hv,511hv,465hv,2x514hv,310hv,3x513hv,361,512hv,2x513hv,2x465hv,1432hv,1385,1384,2x1437,1488,1430,1431,1432,2x1541,1430,1435,1431,1487,1394hv,511hv,464hv,2x513hv,310hv,311,2x513hv,361,3x514hv,2x464hv,1432hv,1386,1385,1384,1436,2321hv,1430,1431,3x1541,1430,1435,1437,1488,4x511hv,310hv,312hv,2x312,361,362,513hv,514hv,2x513hv,464hv,1432hv,1384,1386,1384,1436,2320hv,3x1431,1430,1541,1430,1435,1436,1487,1394hv,465hv,515hv,514hv,310hv,311hv,2x312,361,513hv,512hv,514hv,512hv,465hv,513hv,1432hv,1384,1435,1436,1437,1488,1487,3x1430,2x1541,1430,1436,2x1394hv,465hv,361,513hv,311hv,310hv,311,2x513hv,2x514hv,2x513hv,464hv,513hv,1383hv,1432hv,1435,1437,2321hv,1488,1436,2x1431,1430,1541,2x1431,1487,1394hv,1537,464hv,2x362,2x310hv,312,4x513hv,2x512hv,514hv,513hv,1541,1432hv,1435,2321hv,2320hv,1487,1437,1436,2x1430,2x1541,1488,1487,1488,465hv,515hv,511hv,361,312hv,310hv,2x310,2x513hv,512hv,361,512hv,513hv,2321hv,1541,1383hv,1435,2x2320hv,1488,1380,1437,2x1431,1541,1437,1488,2x1487,465hv,55,511hv,361,311hv,310hv,310,3x513hv,3x361,513hv,2320hv,2321hv,1333,1430,1435,1437,1488,1436,1487,2x1431,2x1430,1541,1488,1394hv,465hv,515hv,2x361,2x310hv,311,312,513hv,310,362,361,514hv,465hv,513hv,2320hv,1541,2x1430,1487,1488,1436,1487,1430,4x1541,1487,1394hv,2x511hv,2x361,2x310hv,312,311,312,2x513hv,361,513hv,515hv,2x513hv,1541,2x1430,1488,1381,1437,1488,1431,2x1430,1541,1436,2x1487,2x465hv,511hv,362,2x310hv,311,3x312,2x361,515hv,514hv,465hv,2x1541,2x1431,1430,1432,2x1379,1541,1430,1541,2321hv,1541,1487,2x465hv,464hv,2x361,2x310hv,310,312,311,513hv,362,3x514hv,464hv,1333,1384,2x1432,1431,1379,2x1430,1431,1430,2321hv,2320hv,1437,1488,2x465hv,515hv,2x361,310hv,311hv,2x311,2x513hv,2x514hv,513hv,2x514hv,2x1432hv,2321hv,1384,1432,1331hv,1431,2x1430,1431,2320hv,2321hv,1437,1488,465hv,515hv,511hv,2x361,2x310hv,2x312,4x513hv,514hv,513hv,465hv,1432hv,2321hv,2320hv,4x1331hv,1431,1541,1432,1430,2320hv,1541,1487,512hv,2x511hv,310,362,310hv,311hv,310,312,2x513hv,512hv,514hv,2x513hv,464hv,1432hv,2x2320hv,1435,1331hv,1430,2x1432,1541,1432,1430,1541,1437,1436,465hv,511hv,464hv,511hv,363,2x310hv,311,312,2x513hv,363,514hv,2x464hv,513hv,1432hv,2x1331hv,1436,7x1430,1488,1430,2x465hv,2x511hv,2x512hv,361,310hv,2x312,513hv,362,514hv,513hv,514hv,465hv,512hv,1432hv,1437,2x1430,2x1431,2x1541,1430,2x1431,1430,1431,464hv,2x512hv,511hv,512hv,2x361,310hv,310,312,4x513hv,465hv,464hv,1541,1384,1435,1431,2x1331hv,1432,1541,2x1431,2x1432,1430,1431,3x512hv,465hv,511hv,361,362,310hv,311,312,361,513hv,2x512hv,465hv,514hv,2x1541,1435,1436,1331hv,1436,1431,2x1430,2x1431,3x1430,1379,464hv,512hv,2x465hv,512hv,361,310hv,2x312,513hv,362,2x514hv,464hv,513hv,1587hv,1541,1435,1437,1331hv,1437,1430,2x1431,1430,1436,2x1431,1430,1379,1430,1488,464hv,2x512hv,362,310hv,518hd,311,3x513hv,514hv,2x465hv,2x1541,1435,1384,1331hv,1436,1431,1430,1436,1431,1436,1487,2x1431,1380,1431,1488,1394hv,2x511hv,312hv,310hv,518hd,2x312,55,512hv,513hv,464hv,2x513hv,3x1541,2x1437,1488,1431,2x1437,1436,2x1487,1431,1430,1432,1488,1394hv,511hv,512hv,2x311hv,2x518hd,513hv,361,3x514hv,513hv,1587hv,1541,1430,1541,1384,2x1436,1487,1435,1384,1436,1541,2x1430,1431,1430,2x1394hv,2x511hv,2x310hv,518hd,310,465hv,362,513hv,2x514hv,512hv,1587hv,1430,1431,2215hv,1385,1541,1437,1488,1384,1379,1436,1541,1430,2x1431,1436,3x512hv,2x362,311hv,2x310,513hv,3x514hv,2x465hv,1333,1431,1430,2214hv,2x1541,2x1384,1379,2x1436,1541,1430,2x1431,1541,512hv,464hv,465hv,310,363,310hv,2x311,2x513hv,58,513hv,2x464hv,1587hv,1432,1431,1430,1541,2215hv,1384,1385,1380,1437,2x1541,1430,1541,1488,1541,1394hv,512hv,511hv,311,361,312hv,312,465hv,518hd,4x514hv,513hv,1587hv,1384,1432,1431,2215hv,2214hv,1379,1430,1436,2x1541,1430,2x1431,1541,1436,1394hv,511hv,512hv,465hv,512,311hv,518hd,464hv,518hd,513hv,2x514hv,513hv,512hv,1333,2x1384,1432,2214hv,1436,1487,1430,1436,2215hv,1541,2x1431,1437,1541,1436,1541,464hv,465hv,464hv,512,310hv,310,312,518hd,2x513hv,514hv,2x512hv,1587hv,2x1384,1435,1486,2x1541,1487,1541,2214hv,1541,1430,1431,1541,1437,1436,1542,464hv,512hv,512,513,310hv,311,312,513hv,4x514hv,1394hv,1384,1435,1384,2x1436,3x1541,2x1430,1541,2215hv,1430,1437,2x1436,1543,512hv,465hv,512,312hv,310hv,2x312,311,514hv,513hv,2x514hv,1394hv,1385,1384,1379,2x1437,1541,3x1430,1431,1541,2214hv,1430,3x1436,465hv,312,465hv,512,512hv,310hv,518hd,310,5x514hv,3x1394hv,2x1430,1431,1386,5x1430,2x1431,2x1436,1539,2x465hv,512hv,513,312hv,311hv,310,311,518hd,464hv,514hv,465hv,513hv,1340,1394hv,2x2319hv,1431,2217hv,1430,2x1431,2319hv,3x1431,1432,1436,1537,3x465hv,2x512hv,312hv,310hv,2x310,518hd,3x514hv,465hv,514hv,1338,1384,2x2319hv,2217hv,2319hv,1431,3x2319hv,1431,1385,1386,2319hv,1538,3x465hv,513,312hv,512hv,310hv,2x311,2x518hd,465hv,2x464hv,513hv,1339,2x1385,2319hv,2217hv,2x2319hv,3x2217hv,2x2319hv,1386,2319hv,465hv,3x464hv,514,512hv,312hv,310hv,2x310,518hd,4x465hv,512hv,2x518hd,2319hv,1430,569hd,3x570hd,571hd,1541,2x2217hv,2319hv,1539,3x465hv,464hv,312hd,312hv,2x311hv,2x311,518hd,4x464hv,512hv,162,4x518hd,2x519hd,520hd,571hd,5x518hd,3x464hv,2x312hd,311hv,2x310hv"
+						},
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"instanceFolderItem": {
+						"sid": 674562088285690,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": -1,
+						"y": -1,
+						"width": 1708,
+						"height": 960,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 581093260047186,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.5019607843137255,
+				0.5019607843137255,
+				0.5019607843137255,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Game",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Skeleton",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 49,
+					"sid": 832945393755751,
+					"tags": "",
+					"instanceVariables": {
+						"id": 1,
+						"Health": 10,
+						"Idle": false,
+						"Found_Chase": false,
+						"Attack": false
+					},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 300,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 150,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 30,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 200,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": false,
+								"diagonals": true,
+								"direct-movement": "to-destination",
+								"enabled": true
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": false,
+								"tags": ""
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"allow-sliding": false,
+								"default-controls": true,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 832945393755751,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1397,
+						"y": 379,
+						"width": 61.7539491861682,
+						"height": 67.76800923267287,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "VheranPlayer",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 53,
+					"sid": 718871113520626,
+					"tags": "",
+					"instanceVariables": {
+						"HitPoint": 10,
+						"Health": 20,
+						"gotKey": false
+					},
+					"behaviors": {
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"allow-sliding": false,
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"Timer": {
+							"properties": {}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 718871113520626,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 150,
+						"y": 560,
+						"width": 80.70186039205939,
+						"height": 93.62732549007423,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "dogStarter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 54,
+					"sid": 207470535864677,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 207470535864677,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 79,
+						"y": 641,
+						"width": 41.713307229228406,
+						"height": 41.713307229228406,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.3
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FenWolf",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Walk",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 55,
+					"sid": 675817091526798,
+					"tags": "",
+					"instanceVariables": {
+						"Chase": false,
+						"idle": true,
+						"Attack": false,
+						"Hitpoint": 2
+					},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 250,
+								"acceleration": 700,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 30,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 200,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": false,
+								"diagonals": true,
+								"direct-movement": "to-destination",
+								"enabled": true
+							}
+						},
+						"Turret": {
+							"properties": {
+								"range": 300,
+								"rate-of-fire": 1,
+								"rotate": true,
+								"rotate-speed": 180,
+								"target-mode": "first-in-range",
+								"predictive-aim": false,
+								"projectile-speed": 500,
+								"use-collision-cells": true,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 675817091526798,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": -104,
+						"y": 540,
+						"width": 41.561996010096564,
+						"height": 35.665077214910355,
+						"originX": 0.492,
+						"originY": 0.496,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CaveDoor",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 83,
+					"sid": 740765300524967,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 740765300524967,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1586,
+						"y": 406,
+						"width": 100,
+						"height": 100,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Skeleton",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 81,
+					"sid": 171104803879929,
+					"tags": "",
+					"instanceVariables": {
+						"id": 2,
+						"Health": 10,
+						"Idle": false,
+						"Found_Chase": false,
+						"Attack": false
+					},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 300,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 150,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 30,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 200,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": false,
+								"diagonals": true,
+								"direct-movement": "to-destination",
+								"enabled": true
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": false,
+								"tags": ""
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"allow-sliding": false,
+								"default-controls": true,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 171104803879929,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1411,
+						"y": 674,
+						"width": 61.7539491861682,
+						"height": 67.76800923267287,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_hitbox",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 79,
+					"sid": 385385263880999,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": false,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 385385263880999,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 369,
+						"y": -139,
+						"width": 80.76460853249048,
+						"height": 80.85596090705211,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.15
+						],
+						"angle": 6.274054016481449,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_hitbox",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 80,
+					"sid": 726216247174734,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": false,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 726216247174734,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 554,
+						"y": -136,
+						"width": 80.76460853249048,
+						"height": 80.85596090705211,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.15
+						],
+						"angle": 6.274054016481449,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 461119219575733,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.5019607843137255,
+				0.5019607843137255,
+				0.5019607843137255,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "PlatformSolids",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Solids",
+					"properties": {
+						"initially-visible": false,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 56,
+					"sid": 364908551556701,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 364908551556701,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 0,
+						"y": -1,
+						"width": 1695,
+						"height": 37,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Solids2",
+					"properties": {
+						"initially-visible": false,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 57,
+					"sid": 939979940750723,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 939979940750723,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": -4,
+						"y": 920,
+						"width": 1695,
+						"height": 37,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Solids3",
+					"properties": {
+						"initially-visible": false,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 58,
+					"sid": 934084665678451,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 934084665678451,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": -5,
+						"y": 968,
+						"width": 968.4526586518218,
+						"height": 29.770972252784908,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.717596336986435,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Solids4",
+					"properties": {
+						"initially-visible": false,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 59,
+					"sid": 825754759896919,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 825754759896919,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1665,
+						"y": 965,
+						"width": 968.4526586518218,
+						"height": 29.770972252784908,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.717596336986435,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 985431010477578,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.5019607843137255,
+				0.5019607843137255,
+				0.5019607843137255,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		}
+	],
+	"scene-graphs-folder-root": {
+		"items": [],
+		"subfolders": []
+	},
+	"sid": 702310781415299,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 1708,
+	"height": 960,
+	"unboundedScrolling": false,
+	"vpX": 0.5,
+	"vpY": 0.5,
+	"projection": "perspective",
+	"eventSheet": "Event sheet 1"
+}

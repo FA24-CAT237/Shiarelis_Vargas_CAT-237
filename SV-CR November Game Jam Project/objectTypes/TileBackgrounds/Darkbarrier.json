@@ -1,0 +1,28 @@
+{
+	"name": "Darkbarrier",
+	"plugin-id": "TiledBg",
+	"sid": 104846253659804,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 240773901995706
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 256,
+		"height": 256,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 6212869,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}
