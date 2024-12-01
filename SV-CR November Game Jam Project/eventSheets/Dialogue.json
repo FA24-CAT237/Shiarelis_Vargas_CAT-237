@@ -3160,6 +3160,475 @@
 							"parameters": {
 								"text": "\"Young Vheran: “Tamaris, why?! The clan?”\""
 							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "VheranYoung",
+							"sid": 569190079503085,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "VheranYoung",
+							"sid": 758626824090746,
+							"parameters": {
+								"animation": "\"Horror\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 992881029572175,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "NydleanText",
+							"sid": 961024886731742,
+							"parameters": {
+								"text": "\"Young Tamaris: “HAHAHAHAHAHA, this boy’s will is weak. No one will stand in my way.”\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Tamaris",
+							"sid": 303318644310651,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Tamaris",
+							"sid": 930003769922478,
+							"parameters": {
+								"animation": "\"Corrupted\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 196407794384307,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "NydleanText",
+							"sid": 538480880893405,
+							"parameters": {
+								"text": "\"Young Vheran: “Tamaris snap out of it! Look at what you’re doing! Please!!!”\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 283477159870098,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "NydleanText",
+							"sid": 435076815630368,
+							"parameters": {
+								"text": "\"Young Tamaris: “Vheran…… Vheran please. I can’t fight it. Do something!”\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 367114754098112,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "NydleanText",
+							"sid": 969044091140899,
+							"parameters": {
+								"text": "\"Young Vheran: “Tamaris!”\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 431850084833922,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "NydleanText",
+							"sid": 526680782399320,
+							"parameters": {
+								"text": "\"Young Tamaris: “Kill me, it’s the only way.” \""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 633866718194248,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "NydleanText",
+							"sid": 361591772933544,
+							"parameters": {
+								"text": "\"Young Vheran: “What?! I can’t!”\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 346065299420518,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "NydleanText",
+							"sid": 387825453090039,
+							"parameters": {
+								"text": "\"Young Tamaris: “It’s the only way to kill him. Quickly before he takes over me again!”\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 128089433820201,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "NydleanText",
+							"sid": 920897358317004,
+							"parameters": {
+								"text": "\"Young Vheran: “Tam- I’m so sorry.” He unsheathes his dagger and strikes it into Tamaris’s heart.\""
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "VheranYoung",
+							"sid": 512578450875495,
+							"parameters": {
+								"animation": "\"Sadness\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 834987333689727,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "NydleanText",
+							"sid": 543095355917770,
+							"parameters": {
+								"text": "\"Young Tamaris: “I’m sorry, Vheran… Thank you…”\""
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Tamaris",
+							"sid": 251714106239172,
+							"parameters": {
+								"animation": "\"Relief\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 685258500847848,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "NydleanText",
+							"sid": 632456904563384,
+							"parameters": {
+								"text": "\"Vheran: “Tam…..”\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 325373931898298,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "VheranYoung",
+							"sid": 207610541930174,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Tamaris",
+							"sid": 993945254750865,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "NydleanText",
+							"sid": 280889681843305,
+							"parameters": {
+								"text": "\"The force of a small body against his legs pulled Vheran from his memories.\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Vheran",
+							"sid": 275093990868639,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 399875935778005,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "NydleanText",
+							"sid": 448472397359557,
+							"parameters": {
+								"text": "\"Nydlean: “Papa! You’re back.”\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Nydlean",
+							"sid": 325808455654676,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 974322545038569,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "NydleanText",
+							"sid": 365960131060636,
+							"parameters": {
+								"text": "\"Vheran: “Nydlean….”\nHe smiled contently at his son. He crouched down and drew him into a tight hug.\""
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Vheran",
+							"sid": 733298498495696,
+							"parameters": {
+								"animation": "\"Content\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 924346289785107,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "NydleanText",
+							"sid": 473491756582656,
+							"parameters": {
+								"text": "\"Nydlean: “Papa, what’s wrong?”\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 248948921636561,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "NydleanText",
+							"sid": 792181550788088,
+							"parameters": {
+								"text": "\"Vheran: “Nothing I just missed you.”\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 550128375344191,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "NydleanText",
+							"sid": 737304826017877,
+							"parameters": {
+								"text": "\"Nydlean: “Oh! Well next time I can go with you.”\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 677746091411910,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "NydleanText",
+							"sid": 386768833749059,
+							"parameters": {
+								"text": "\"Vheran: *chuckle* “Maybe when you get older and have more control over your magic.”\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 584860175403498,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "NydleanText",
+							"sid": 760130243215027,
+							"parameters": {
+								"text": "\"Nydlean: “Ahh, okay, Hi Fen did you protect Papa?” \nHe directed to the wolf. \""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 312159089991696,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "NydleanText",
+							"sid": 652043177746413,
+							"parameters": {
+								"text": "\"Fen: *Bark*\nFen barked and preened in praise.\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Fen",
+							"sid": 896766186400273,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 223074344595998,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "NydleanText",
+							"sid": 302393620702389,
+							"parameters": {
+								"text": "\"Vheran: *chuckle* “Let’s head home, Nydlean, Fen.”\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 158228023205043,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "NydleanText",
+							"sid": 975162758220244,
+							"parameters": {
+								"text": "\"Nydlean: *giggle* “Okay.” \nHe grabbed his father hand and they both took to path back to camp, following Fen who led the way.\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 684596597482753,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Vheran",
+							"sid": 310718754743155,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Fen",
+							"sid": 229729808356089,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Nydlean",
+							"sid": 575793426252337,
+							"parameters": {
+								"visibility": "invisible"
+							}
 						}
 					],
 					"sid": 748742362685566

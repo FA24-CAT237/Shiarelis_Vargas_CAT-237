@@ -1928,6 +1928,30 @@
 				}
 			],
 			"sid": 808068803068382
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "VheranPlayer",
+					"sid": 174178761784441,
+					"parameters": {
+						"object": "Camp"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 530813002836099,
+					"parameters": {
+						"layout": "\"FirstLevel\""
+					}
+				}
+			],
+			"sid": 288384042272136
 		}
 	],
 	"sid": 979872625929928
