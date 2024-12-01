@@ -44,7 +44,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Enemy",
+			"title": "Skeleton",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -995,7 +995,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Dog",
+			"title": "Fen",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -1432,6 +1432,7 @@
 									"id": "play",
 									"objectClass": "Audio",
 									"sid": 754837679993938,
+									"disabled": true,
 									"parameters": {
 										"audio-file": "260776__deleted_user_3424813__angry-dog-bark-snarl-flat",
 										"loop": "not-looping",
@@ -1538,7 +1539,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Player",
+			"title": "Vheran",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -2857,7 +2858,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Projectile Enemy",
+			"title": "Spider",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
