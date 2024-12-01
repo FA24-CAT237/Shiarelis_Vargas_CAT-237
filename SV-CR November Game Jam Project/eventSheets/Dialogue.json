@@ -89,6 +89,372 @@
 			"sid": 564143049789074
 		},
 		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "FirstLevelDialogue",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 473214681733460,
+							"parameters": {
+								"key": 32
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Prompt",
+							"sid": 582572078311132
+						}
+					],
+					"actions": [],
+					"sid": 800731953370995,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 882337834839479,
+									"parameters": {
+										"variable": "NPC",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "FenText",
+									"sid": 707981132304292,
+									"parameters": {
+										"text": "\"Finding the cave wasn’t the hard part, entering it was. The entrance of the cave had a large gaping maw.\""
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Vheran",
+									"sid": 812637729577735,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Vheran",
+									"sid": 639202270331328,
+									"parameters": {
+										"animation": "\"Neutral\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 267822827035838,
+									"parameters": {
+										"seconds": "5"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "FenText",
+									"sid": 834560236883331,
+									"parameters": {
+										"text": "\"Vheran could see the rubble from where the rocks fell to show the cave opening. He remembers a cave just like this when he was younger, when he was reckless and foolish.\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 965887652632830,
+									"parameters": {
+										"seconds": "5"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "FenText",
+									"sid": 351991501673981,
+									"parameters": {
+										"text": "\"Fen: Grr. \r\nFen growled at the entrance, like she could feel the same dark energy he did.\""
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Fen",
+									"sid": 309277809335361,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 675074389062758,
+									"parameters": {
+										"seconds": "5"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Fen",
+									"sid": 975148630253896,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "FenText",
+									"sid": 238050350043942,
+									"parameters": {
+										"text": "\"He placed a hand on her side to ground her. Or was it to ground himself? He didn’t want to go in there, but he knew he was the only one who could.\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 755042128808648,
+									"parameters": {
+										"seconds": "5"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "FenText",
+									"sid": 408733348647173,
+									"parameters": {
+										"text": "\"Nydlean, having sensed the dark magic emanating from the cave, had run back with the other children after quickly convincing the others to return home.\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 609613652256999,
+									"parameters": {
+										"seconds": "5"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "FenText",
+									"sid": 401042697657085,
+									"parameters": {
+										"text": "\"Vheran had told the clan head that he would check out the cave and deal with the dark magic but now standing in front of it all he felt was trepidation. \""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 164493654818175,
+									"parameters": {
+										"seconds": "5"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "FenText",
+									"sid": 572729791418321,
+									"parameters": {
+										"text": "\"Flashback: He feels the phantom emotion of his younger self, eager to enter a cave just like this, naïve to the danger within. He feels the phantom touch of a hand on his shoulder, hears a laugh and a jovial call of “Let’s Go!”\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 811630207955181,
+									"parameters": {
+										"seconds": "6"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "FenText",
+									"sid": 797397274899168,
+									"parameters": {
+										"text": "\"Fen: *whine* \nFen whimpers up at him, she scuffs the ground with her paw. He pats her head. \""
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Fen",
+									"sid": 245567897603158,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 123488896767662,
+									"parameters": {
+										"seconds": "5"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Vheran",
+									"sid": 311185642462717,
+									"parameters": {
+										"animation": "\"Smile\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "FenText",
+									"sid": 563519950854951,
+									"parameters": {
+										"text": "\"Vheran: “I’m fine. We got to clear this place out so we should get started.”\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 312215704127139,
+									"parameters": {
+										"seconds": "5"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "FenText",
+									"sid": 290579608585257,
+									"parameters": {
+										"text": "\"He begins his descent into the cave. He sends a prayer to the Gods for protection, and a thanks that Nydlean didn’t fight him when he told him to stay behind.\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 599115422512050,
+									"parameters": {
+										"seconds": "5"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "FenText",
+									"sid": 861953676560526,
+									"parameters": {
+										"text": "\"A cave like this is no place for a child. And he couldn’t leave this to someone else, it was his job to clear and cleanse places like this.\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 627849747042354,
+									"parameters": {
+										"seconds": "4"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Vheran",
+									"sid": 774364993573126,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 339236692792011
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-nearestfurthest",
+									"objectClass": "FenDialogueBox",
+									"sid": 355380581838584,
+									"parameters": {
+										"which": "nearest",
+										"x": "VheranPlayer.X",
+										"y": "VheranPlayer.Y"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "FenDialogueBox",
+									"sid": 745690937064124,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 124883615539555
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-nearestfurthest",
+									"objectClass": "FenText",
+									"sid": 875116870745077,
+									"parameters": {
+										"which": "nearest",
+										"x": "VheranPlayer.X",
+										"y": "VheranPlayer.Y"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "FenText",
+									"sid": 513270024383292,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 323371681062368
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "Prompt",
+							"sid": 620234098347455,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "FenDialogueBox",
+							"sid": 167642400489801,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "FenText",
+							"sid": 661582429348872,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 445389599831872
+				}
+			],
+			"sid": 228995761392160
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -102,6 +468,30 @@
 					"id": "set-x",
 					"objectClass": "Prompt",
 					"sid": 124724910091157,
+					"parameters": {
+						"x": "VheranPlayer.X"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "Prompt2",
+					"sid": 639433049175368,
+					"parameters": {
+						"x": "VheranPlayer.X"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "Prompt3",
+					"sid": 997995041748187,
+					"parameters": {
+						"x": "VheranPlayer.X"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "Prompt4",
+					"sid": 158641622524875,
 					"parameters": {
 						"x": "VheranPlayer.X"
 					}
@@ -156,6 +546,30 @@
 							"parameters": {
 								"visibility": "visible"
 							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Prompt2",
+							"sid": 915245022691608,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Prompt3",
+							"sid": 619039636086061,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Prompt4",
+							"sid": 103111601935703,
+							"parameters": {
+								"visibility": "visible"
+							}
 						}
 					],
 					"sid": 261248212577382
@@ -177,6 +591,30 @@
 							"parameters": {
 								"visibility": "invisible"
 							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Prompt2",
+							"sid": 537887006828239,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Prompt3",
+							"sid": 110841110556517,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Prompt4",
+							"sid": 349800350288312,
+							"parameters": {
+								"visibility": "invisible"
+							}
 						}
 					],
 					"sid": 439433801204978
@@ -189,19 +627,19 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-					"sid": 722682831614278,
+					"sid": 245911594208039,
 					"parameters": {
 						"key": 32
 					}
 				},
 				{
 					"id": "is-visible",
-					"objectClass": "Prompt",
-					"sid": 931875913659225
+					"objectClass": "Prompt2",
+					"sid": 152271952190416
 				}
 			],
 			"actions": [],
-			"sid": 518824611310326,
+			"sid": 518127207392429,
 			"children": [
 				{
 					"eventType": "block",
@@ -209,7 +647,7 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 356683820761792,
+							"sid": 526826532745158,
 							"parameters": {
 								"variable": "NPC",
 								"comparison": 0,
@@ -220,16 +658,16 @@
 					"actions": [
 						{
 							"id": "set-text",
-							"objectClass": "FenText",
-							"sid": 935004620560795,
+							"objectClass": "VheranText",
+							"sid": 670490724344680,
 							"parameters": {
-								"text": "\"Finding the cave wasn’t the hard part, entering it was. The entrance of the cave had a large gaping maw.\""
+								"text": "\"Entering the cave and the dark presence in the cave grew stronger. He could feel the malevolence surrounding him and if he was a normal man he be chocked with fear.\""
 							}
 						},
 						{
 							"id": "set-visible",
 							"objectClass": "Vheran",
-							"sid": 115630992121649,
+							"sid": 634496609873382,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -237,7 +675,7 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Vheran",
-							"sid": 658692330842992,
+							"sid": 806297183821434,
 							"parameters": {
 								"animation": "\"Neutral\"",
 								"from": "beginning"
@@ -246,206 +684,480 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 113244350231614,
+							"sid": 838110467641235,
 							"parameters": {
 								"seconds": "5"
 							}
 						},
 						{
 							"id": "set-text",
-							"objectClass": "FenText",
-							"sid": 172072686606851,
+							"objectClass": "VheranText",
+							"sid": 570575219524540,
 							"parameters": {
-								"text": "\"Vheran could see the rubble from where the rocks fell to show the cave opening. He remembers a cave just like this when he was younger, when he was reckless and foolish.\""
+								"text": "\"He could tell with the cave wall turning into stone that the cave was another underground ruin. And the bad feelings he had when he was younger came flooding back.\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Vheran",
+							"sid": 256721395208595,
+							"parameters": {
+								"visibility": "invisible"
 							}
 						},
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 542450979306898,
+							"sid": 143466862840505,
 							"parameters": {
 								"seconds": "5"
 							}
 						},
 						{
 							"id": "set-text",
-							"objectClass": "FenText",
-							"sid": 256204313123549,
+							"objectClass": "VheranText",
+							"sid": 809114890980173,
 							"parameters": {
-								"text": "\"Fen: Grr. \r\nFen growled at the entrance, like she could feel the same dark energy he did.\""
+								"text": "\"Young Vheran: “I got a bad feeling about this place, maybe we should go back to the camp? Come back with the clan head and a group?”\""
 							}
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "Fen",
-							"sid": 559744075973084,
+							"objectClass": "VheranYoung",
+							"sid": 968525630250013,
 							"parameters": {
 								"visibility": "visible"
 							}
 						},
 						{
+							"id": "set-animation",
+							"objectClass": "VheranYoung",
+							"sid": 932453355882180,
+							"parameters": {
+								"animation": "\"Shock\"",
+								"from": "beginning"
+							}
+						},
+						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 641071736288594,
+							"sid": 894028104014534,
 							"parameters": {
-								"seconds": "5"
+								"seconds": "4"
 							}
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "Fen",
-							"sid": 877549290987843,
+							"objectClass": "VheranYoung",
+							"sid": 427248146198755,
 							"parameters": {
 								"visibility": "invisible"
 							}
 						},
 						{
 							"id": "set-text",
-							"objectClass": "FenText",
-							"sid": 397397399138136,
+							"objectClass": "VheranText",
+							"sid": 643696513976054,
 							"parameters": {
-								"text": "\"He placed a hand on her side to ground her. Or was it to ground himself? He didn’t want to go in there, but he knew he was the only one who could.\""
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 881544633724693,
-							"parameters": {
-								"seconds": "5"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "FenText",
-							"sid": 236446338985913,
-							"parameters": {
-								"text": "\"Nydlean, having sensed the dark magic emanating from the cave, had run back with the other children after quickly convincing the others to return home.\""
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 955930635484163,
-							"parameters": {
-								"seconds": "5"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "FenText",
-							"sid": 957232355465134,
-							"parameters": {
-								"text": "\"Vheran had told the clan head that he would check out the cave and deal with the dark magic but now standing in front of it all he felt was trepidation. \""
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 496486030120709,
-							"parameters": {
-								"seconds": "5"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "FenText",
-							"sid": 126228062565319,
-							"parameters": {
-								"text": "\"Flashback: He feels the phantom emotion of his younger self, eager to enter a cave just like this, naïve to the danger within. He feels the phantom touch of a hand on his shoulder, hears a laugh and a jovial call of “Let’s Go!”\""
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 937024093166786,
-							"parameters": {
-								"seconds": "6"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "FenText",
-							"sid": 144235425710451,
-							"parameters": {
-								"text": "\"Fen: *whine* \nFen whimpers up at him, she scuffs the ground with her paw. He pats her head. \""
+								"text": "\"Young Tamaris: “I mean I feel it too, but we might find some cool stuff here, and then we can bring it back. Maybe she won’t be so upset with me.”\""
 							}
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "Fen",
-							"sid": 491827164018347,
+							"objectClass": "Tamaris",
+							"sid": 709371097824014,
 							"parameters": {
 								"visibility": "visible"
 							}
 						},
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 632609001622149,
-							"parameters": {
-								"seconds": "5"
-							}
-						},
-						{
 							"id": "set-animation",
-							"objectClass": "Vheran",
-							"sid": 680940966762296,
+							"objectClass": "Tamaris",
+							"sid": 379469410181856,
 							"parameters": {
 								"animation": "\"Smile\"",
 								"from": "beginning"
 							}
 						},
 						{
-							"id": "set-text",
-							"objectClass": "FenText",
-							"sid": 813605268094813,
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 918474829923114,
 							"parameters": {
-								"text": "\"Vheran: “I’m fine. We got to clear this place out so we should get started.”\""
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Tamaris",
+							"sid": 313404713684485,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "VheranText",
+							"sid": 275790787231208,
+							"parameters": {
+								"text": "\"Young Vheran: “How was she only upset with you, I had equal fault for leading the bear to camp.”\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "VheranYoung",
+							"sid": 442836016558653,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "VheranYoung",
+							"sid": 806643677618932,
+							"parameters": {
+								"animation": "\"Smile\"",
+								"from": "beginning"
 							}
 						},
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 261075897639408,
+							"sid": 840066911576562,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "VheranYoung",
+							"sid": 437111439922586,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "VheranText",
+							"sid": 964194944143757,
+							"parameters": {
+								"text": "\"Young Tamaris: “Because I got caught and I wouldn’t rat you out. You know me better than that.”\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Tamaris",
+							"sid": 512839979741120,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Tamaris",
+							"sid": 726359958704215,
+							"parameters": {
+								"animation": "\"Smile\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 650249726482626,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Tamaris",
+							"sid": 922527031196151,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "VheranText",
+							"sid": 176834867022674,
+							"parameters": {
+								"text": "\"Young Vheran: “You really need to stop taking the whole blame for yourself.”\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "VheranYoung",
+							"sid": 286773854492827,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "VheranYoung",
+							"sid": 109432699081064,
+							"parameters": {
+								"animation": "\"Smile\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 468474991842785,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "VheranYoung",
+							"sid": 715702295582161,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "VheranText",
+							"sid": 757982594398768,
+							"parameters": {
+								"text": "\"Young Tamaris: “Eh, I know you’d do the same for me, now come on. If we find something to bring back the clan head might forgive me.”\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Tamaris",
+							"sid": 986693298498524,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Tamaris",
+							"sid": 784837187435341,
+							"parameters": {
+								"animation": "\"Happy\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 543740311741292,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Tamaris",
+							"sid": 671544808287750,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "VheranText",
+							"sid": 239047761800695,
+							"parameters": {
+								"text": "\"Young Vheran: “Alright”\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "VheranYoung",
+							"sid": 232428108031410,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "VheranYoung",
+							"sid": 480079187207584,
+							"parameters": {
+								"animation": "\"Smile\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 641993253457284,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "VheranYoung",
+							"sid": 251140763894352,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "VheranText",
+							"sid": 164417382711978,
+							"parameters": {
+								"text": "\"Fen: *bark* \nFen’s bark drew his attention from his memories. She was growling and primed for an attack. \""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Fen",
+							"sid": 680948706916908,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 110303061201970,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Fen",
+							"sid": 328995398275657,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "VheranText",
+							"sid": 811617892166360,
+							"parameters": {
+								"text": "\"He saw the large spiderwebs covering the walls as they walked deeper in. He needed to focus; one distraction and it would be over. He heard a chittering noise and jumped back from the large form jumping from the shadows.\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Vheran",
+							"sid": 547824826936173,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Vheran",
+							"sid": 798119817797116,
+							"parameters": {
+								"animation": "\"Anger\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 430023863265108,
 							"parameters": {
 								"seconds": "5"
 							}
 						},
 						{
 							"id": "set-text",
-							"objectClass": "FenText",
-							"sid": 900507387695349,
+							"objectClass": "VheranText",
+							"sid": 834922665101654,
 							"parameters": {
-								"text": "\"He begins his descent into the cave. He sends a prayer to the Gods for protection, and a thanks that Nydlean didn’t fight him when he told him to stay behind.\""
+								"text": "\"Vheran Thoughts: “Giant spiders, they must have grown bigger from the dark magic.”\nHe whistled for Fen, so she’d know they were going to head into combat. \""
 							}
 						},
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 402064313080581,
+							"sid": 608199727610357,
 							"parameters": {
 								"seconds": "5"
 							}
 						},
 						{
 							"id": "set-text",
-							"objectClass": "FenText",
-							"sid": 411871163731267,
+							"objectClass": "VheranText",
+							"sid": 553727227022444,
 							"parameters": {
-								"text": "\"A cave like this is no place for a child. And he couldn’t leave this to someone else, it was his job to clear and cleanse places like this.\""
+								"text": "\"Fen: *bark* \nShe barked in confirmation and readied herself for his commands.\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Fen",
+							"sid": 170137862499484,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 502932012558938,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Fen",
+							"sid": 935127263800050,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Vheran",
+							"sid": 820331241627918,
+							"parameters": {
+								"visibility": "invisible"
 							}
 						}
 					],
-					"sid": 662081078416452
+					"sid": 775270248620764
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 102878868690006,
+							"parameters": {
+								"variable": "NPC",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "VheranText",
+							"sid": 366172925143581,
+							"parameters": {
+								"text": "\"Welcome\""
+							}
+						}
+					],
+					"sid": 756540670929012,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
 							"id": "pick-nearestfurthest",
-							"objectClass": "FenDialogueBox",
-							"sid": 863000915054137,
+							"objectClass": "VheranDialogueBox",
+							"sid": 134635747595964,
 							"parameters": {
 								"which": "nearest",
 								"x": "VheranPlayer.X",
@@ -456,22 +1168,22 @@
 					"actions": [
 						{
 							"id": "set-visible",
-							"objectClass": "FenDialogueBox",
-							"sid": 464284079312829,
+							"objectClass": "VheranDialogueBox",
+							"sid": 105539766813621,
 							"parameters": {
 								"visibility": "visible"
 							}
 						}
 					],
-					"sid": 389204763717478
+					"sid": 147762884440415
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
 							"id": "pick-nearestfurthest",
-							"objectClass": "FenText",
-							"sid": 412342752603657,
+							"objectClass": "VheranText",
+							"sid": 850161731395720,
 							"parameters": {
 								"which": "nearest",
 								"x": "VheranPlayer.X",
@@ -482,14 +1194,14 @@
 					"actions": [
 						{
 							"id": "set-visible",
-							"objectClass": "FenText",
-							"sid": 605128813627263,
+							"objectClass": "VheranText",
+							"sid": 410012355669675,
 							"parameters": {
 								"visibility": "visible"
 							}
 						}
 					],
-					"sid": 722162191918550
+					"sid": 410014326693915
 				}
 			]
 		},
@@ -498,30 +1210,355 @@
 			"conditions": [
 				{
 					"id": "is-visible",
-					"objectClass": "Prompt",
-					"sid": 225128930908220,
+					"objectClass": "Prompt2",
+					"sid": 644987606323797,
 					"isInverted": true
 				}
 			],
 			"actions": [
 				{
 					"id": "set-visible",
-					"objectClass": "FenDialogueBox",
-					"sid": 284098203413947,
+					"objectClass": "VheranDialogueBox",
+					"sid": 773432510807681,
 					"parameters": {
 						"visibility": "invisible"
 					}
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "FenText",
-					"sid": 613237271047439,
+					"objectClass": "VheranText",
+					"sid": 569415088334983,
 					"parameters": {
 						"visibility": "invisible"
 					}
 				}
 			],
-			"sid": 269541458553506
+			"sid": 311057685939868
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 570969858446487,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Prompt3",
+					"sid": 983033974008979
+				}
+			],
+			"actions": [],
+			"sid": 603805280526377,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 570209410944525,
+							"parameters": {
+								"variable": "NPC",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "VheranText2",
+							"sid": 827535231356661,
+							"parameters": {
+								"text": "\"Making quick work of the spiders he continued, finding an ornate door, the lock was unpickable so a key would have to be found.\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Vheran2",
+							"sid": 839846577832414,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Vheran",
+							"sid": 968081585778323,
+							"parameters": {
+								"animation": "\"Neutral\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 111703146730427,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "VheranText2",
+							"sid": 918601975009276,
+							"parameters": {
+								"text": "\"Vheran: “There doesn’t seem to be another way around this, so we are going to have to find the key.”\nHe said to Fen. She tilted her head in response.\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Fen2",
+							"sid": 525329340191427,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 995604917876945,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Vheran2",
+							"sid": 180601526468368,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Fen2",
+							"sid": 317736724040785,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 159113815746227
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-nearestfurthest",
+							"objectClass": "VheranDialogueBox2",
+							"sid": 494611923631877,
+							"parameters": {
+								"which": "nearest",
+								"x": "VheranPlayer.X",
+								"y": "VheranPlayer.Y"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "VheranDialogueBox2",
+							"sid": 817585338636393,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 266999870103195
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-nearestfurthest",
+							"objectClass": "VheranText2",
+							"sid": 825129092294283,
+							"parameters": {
+								"which": "nearest",
+								"x": "VheranPlayer.X",
+								"y": "VheranPlayer.Y"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "VheranText2",
+							"sid": 794757398172823,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 998912903192203
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-visible",
+					"objectClass": "Prompt3",
+					"sid": 799005943343537,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "VheranDialogueBox2",
+					"sid": 373813696161225,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "VheranText2",
+					"sid": 141367220200217,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 343398018231846
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 720525776111083,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Prompt4",
+					"sid": 332772135470018
+				}
+			],
+			"actions": [],
+			"sid": 948616178410288,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 856169498135789,
+							"parameters": {
+								"variable": "NPC",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "VheranText3",
+							"sid": 636402290299076,
+							"parameters": {
+								"text": "\"He found a room with a chest. Picking the lock of the chest revealed an ornate key that matched the door from the main room. Taking the key, he felt a surge of dark magic, he cried out in pain and drew his hand back.\""
+							}
+						}
+					],
+					"sid": 114031615191660
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-nearestfurthest",
+							"objectClass": "VheranDialogueBox3",
+							"sid": 518942030466249,
+							"parameters": {
+								"which": "nearest",
+								"x": "VheranPlayer.X",
+								"y": "VheranPlayer.Y"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "VheranDialogueBox3",
+							"sid": 751820216949885,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 250824130199676
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-nearestfurthest",
+							"objectClass": "VheranText3",
+							"sid": 313687835713588,
+							"parameters": {
+								"which": "nearest",
+								"x": "VheranPlayer.X",
+								"y": "VheranPlayer.Y"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "VheranText3",
+							"sid": 368295143722615,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 497951183700652
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-visible",
+					"objectClass": "Prompt4",
+					"sid": 949111858258406,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "VheranDialogueBox3",
+					"sid": 636220657388109,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "VheranText3",
+					"sid": 563858919989665,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 452528215775790
 		}
 	],
 	"sid": 167406621157208

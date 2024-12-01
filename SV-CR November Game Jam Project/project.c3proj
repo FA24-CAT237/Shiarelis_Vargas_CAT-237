@@ -151,7 +151,10 @@
 			"Audio",
 			"Prompt",
 			"DiaAFL",
-			"DialogueTrigger"
+			"DialogueTrigger",
+			"Prompt2",
+			"Prompt3",
+			"Prompt4"
 		],
 		"subfolders": [
 			{
@@ -242,7 +245,15 @@
 					"Vheran",
 					"VheranYoung",
 					"Fen",
-					"Nydlean"
+					"Nydlean",
+					"VheranText2",
+					"VheranText3",
+					"VheranDialogueBox2",
+					"VheranDialogueBox3",
+					"Vheran2",
+					"Vheran3",
+					"Fen2",
+					"Fen3"
 				],
 				"subfolders": [],
 				"name": "Dialogue"

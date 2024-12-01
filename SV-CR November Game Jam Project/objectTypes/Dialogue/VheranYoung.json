@@ -54,7 +54,7 @@
 					}
 				],
 				"sid": 151308869531979,
-				"name": "Animation 1",
+				"name": "Smile",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -107,7 +107,7 @@
 					}
 				],
 				"sid": 654562218496817,
-				"name": "Animation 2",
+				"name": "Shock",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -160,7 +160,7 @@
 					}
 				],
 				"sid": 454457431423377,
-				"name": "Animation 3",
+				"name": "Horror",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -211,7 +211,7 @@
 					}
 				],
 				"sid": 559316774014070,
-				"name": "Animation 4",
+				"name": "Sadness",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
