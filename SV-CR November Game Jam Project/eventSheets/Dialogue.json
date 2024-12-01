@@ -2245,6 +2245,14 @@
 					"parameters": {
 						"x": "VheranPlayer.X"
 					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "Prompt8",
+					"sid": 894443497843480,
+					"parameters": {
+						"x": "VheranPlayer.X"
+					}
 				}
 			],
 			"sid": 590365830759902
@@ -2344,6 +2352,14 @@
 							"parameters": {
 								"visibility": "visible"
 							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Prompt8",
+							"sid": 190712832859897,
+							"parameters": {
+								"visibility": "visible"
+							}
 						}
 					],
 					"sid": 261248212577382
@@ -2410,6 +2426,14 @@
 							"id": "set-visible",
 							"objectClass": "Prompt7",
 							"sid": 621766049358552,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Prompt8",
+							"sid": 977227664860098,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -2667,6 +2691,30 @@
 							}
 						},
 						{
+							"id": "set-visible",
+							"objectClass": "Vheran2",
+							"sid": 517270032346607,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 921571190964951,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Vheran2",
+							"sid": 480016392653262,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
 							"id": "set-text",
 							"objectClass": "TamarisText2",
 							"sid": 928052999060215,
@@ -2675,11 +2723,35 @@
 							}
 						},
 						{
+							"id": "set-visible",
+							"objectClass": "Tamaris",
+							"sid": 797676498345935,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 156853813343888,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
 							"id": "set-text",
 							"objectClass": "TamarisText2",
 							"sid": 795257984800495,
 							"parameters": {
 								"text": "\"Young Vheran: “What is it?”\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 263485279572668,
+							"parameters": {
+								"seconds": "4"
 							}
 						},
 						{
@@ -2725,9 +2797,25 @@
 						{
 							"id": "set-text",
 							"objectClass": "TamarisText2",
-							"sid": 394143231849338,
+							"sid": 113503839278787,
 							"parameters": {
-								"text": "\"Young Vheran: “You tempted me before but this time, I won’t fall for your tricks.”\""
+								"text": "\"Vheran: “You tempted me before but this time, I won’t fall for your tricks.”\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "TamarisText2",
+							"sid": 298239413695458,
+							"parameters": {
+								"text": "\"He went to attack the effigy, but a cry surrounded the cave. A dark spirit formed from the effigy and attacked him.\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "TamarisText2",
+							"sid": 710808540863772,
+							"parameters": {
+								"text": "\"Vheran whistled for Fen to get ready.\""
 							}
 						}
 					],
