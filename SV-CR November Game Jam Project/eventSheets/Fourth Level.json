@@ -1574,6 +1574,19 @@
 								"animation": "\"Death\"",
 								"from": "beginning"
 							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 673993695023203,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "EvilSpirit",
+							"sid": 953905682044079
 						}
 					],
 					"sid": 199878619658605,
@@ -1597,7 +1610,8 @@
 									"sid": 539522167426807
 								}
 							],
-							"sid": 106208637937857
+							"sid": 106208637937857,
+							"disabled": true
 						}
 					]
 				}

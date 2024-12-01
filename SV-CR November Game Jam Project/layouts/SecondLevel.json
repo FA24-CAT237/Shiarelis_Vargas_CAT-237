@@ -1559,8 +1559,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1365,
-						"y": 595,
+						"x": 1368,
+						"y": 608,
 						"width": 651,
 						"height": 138,
 						"originX": 0.5,
@@ -1615,8 +1615,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1366,
-						"y": 598,
+						"x": 1369,
+						"y": 610,
 						"width": 627,
 						"height": 113,
 						"originX": 0.5,
@@ -2005,6 +2005,46 @@
 						"height": 165,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Prompt4",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 119,
+					"sid": 425575291732546,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 425575291732546,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 71,
+						"y": 697,
+						"width": 42,
+						"height": 54,
+						"originX": 0.5,
+						"originY": 0.6851851851851852,
 						"color": [
 							1,
 							1,

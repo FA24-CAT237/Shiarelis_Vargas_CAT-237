@@ -154,7 +154,11 @@
 			"DialogueTrigger",
 			"Prompt2",
 			"Prompt3",
-			"Prompt4"
+			"Prompt4",
+			"Prompt5",
+			"Prompt6",
+			"Prompt7",
+			"Prompt8"
 		],
 		"subfolders": [
 			{
@@ -253,7 +257,13 @@
 					"Vheran2",
 					"Vheran3",
 					"Fen2",
-					"Fen3"
+					"Fen3",
+					"VheranDialogueBox4",
+					"VheranText4",
+					"VheranDialogueBox5",
+					"VheranText5",
+					"TamarisDialogueBox2",
+					"TamarisText2"
 				],
 				"subfolders": [],
 				"name": "Dialogue"
