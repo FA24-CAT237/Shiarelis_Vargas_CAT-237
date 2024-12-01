@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Audio",
 			"name": "Audio",
 			"author": "Scirra",
@@ -141,8 +148,19 @@
 			"Mouse",
 			"TiledBackground",
 			"test123",
-			"Webbing",
-			"Audio"
+			"Audio",
+			"Prompt",
+			"DiaAFL",
+			"DialogueTrigger",
+			"Prompt2",
+			"Prompt3",
+			"Prompt4",
+			"Prompt5",
+			"Prompt6",
+			"Prompt7",
+			"Prompt8",
+			"Prompt9",
+			"Camp"
 		],
 		"subfolders": [
 			{
@@ -156,7 +174,8 @@
 					"Skeleton2",
 					"Skeleton3",
 					"Skeleton4",
-					"Skeleton5"
+					"Skeleton5",
+					"Webbing"
 				],
 				"subfolders": [],
 				"name": "Enemy"
@@ -232,7 +251,21 @@
 					"Vheran",
 					"VheranYoung",
 					"Fen",
-					"Nydlean"
+					"Nydlean",
+					"VheranText2",
+					"VheranText3",
+					"VheranDialogueBox2",
+					"VheranDialogueBox3",
+					"Vheran2",
+					"Vheran3",
+					"Fen2",
+					"Fen3",
+					"VheranDialogueBox4",
+					"VheranText4",
+					"VheranDialogueBox5",
+					"VheranText5",
+					"TamarisDialogueBox2",
+					"TamarisText2"
 				],
 				"subfolders": [],
 				"name": "Dialogue"
@@ -251,15 +284,16 @@
 			"FirstLevel",
 			"SecondLevel",
 			"ThirdLevel",
-			"FourthLevel",
+			"BossRoom",
 			"Camp"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1",
-			"Event sheet 2"
+			"First,Second,Third Levels",
+			"Fourth Level",
+			"Dialogue"
 		],
 		"subfolders": []
 	},

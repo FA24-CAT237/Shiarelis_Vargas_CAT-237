@@ -56,7 +56,7 @@
 					}
 				],
 				"sid": 773242613024071,
-				"name": "Animation 1",
+				"name": "Smile",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -107,7 +107,7 @@
 					}
 				],
 				"sid": 489972850446370,
-				"name": "Animation 2",
+				"name": "Happy",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -164,7 +164,7 @@
 					}
 				],
 				"sid": 198159876332781,
-				"name": "Animation 3",
+				"name": "Scared",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -221,7 +221,7 @@
 					}
 				],
 				"sid": 439327721893156,
-				"name": "Animation 4",
+				"name": "Corrupted",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -278,7 +278,7 @@
 					}
 				],
 				"sid": 714389841278607,
-				"name": "Animation 5",
+				"name": "Relief",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
