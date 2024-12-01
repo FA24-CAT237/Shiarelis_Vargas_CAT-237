@@ -150,7 +150,7 @@
 			"test123",
 			"Audio",
 			"Prompt",
-			"DialogueArray",
+			"DiaAFL",
 			"DialogueTrigger"
 		],
 		"subfolders": [
@@ -261,7 +261,7 @@
 			"FirstLevel",
 			"SecondLevel",
 			"ThirdLevel",
-			"FourthLevel",
+			"BossRoom",
 			"Camp"
 		],
 		"subfolders": []

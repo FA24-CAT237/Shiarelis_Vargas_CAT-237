@@ -12,35 +12,81 @@
 			"sid": 177058675587524
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": true,
+			"title": "ArrayDialogueAttempt",
+			"description": "I realized I could just set the text to what I wanted since typewriter wasn't working",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 737168993840256
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 596752109006331
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-x",
+							"objectClass": "DiaAFL",
+							"sid": 385020751098507,
+							"parameters": {
+								"x": "0",
+								"value": "\"Finding the cave wasn’t the hard part, entering it was. The entrance of the cave had a large gaping maw.\""
+							}
+						},
+						{
+							"id": "set-at-x",
+							"objectClass": "DiaAFL",
+							"sid": 330645561584517,
+							"parameters": {
+								"x": "1",
+								"value": "\"Vheran could see the rubble from where the rocks fell to show the cave opening. He remembers a cave just like this when he was younger, when he was reckless and foolish.\""
+							}
+						},
+						{
+							"id": "set-at-x",
+							"objectClass": "DiaAFL",
+							"sid": 211533559958544,
+							"parameters": {
+								"x": "2",
+								"value": "\"Fen: Grr. \nFen growled at the entrance, like she could feel the same dark energy he did.\""
+							}
+						},
+						{
+							"id": "set-at-x",
+							"objectClass": "DiaAFL",
+							"sid": 335591715945456,
+							"parameters": {
+								"x": "3",
+								"value": "\"He placed a hand on her side to ground her. Or was it to ground himself? He didn’t want to go in there, but he knew he was the only one who could.\""
+							}
+						},
+						{
+							"id": "set-at-x",
+							"objectClass": "DiaAFL",
+							"sid": 424500588447419,
+							"parameters": {
+								"x": "4",
+								"value": "\"Nydlean, having sensed the dark magic emanating from the cave, had run back with the other children after quickly convincing the others to return home.\""
+							}
+						},
+						{
+							"id": "set-at-x",
+							"objectClass": "DiaAFL",
+							"sid": 666437981161326,
+							"parameters": {
+								"x": "5",
+								"value": "\"Vheran had told the clan head that he would check out the cave and deal with the dark magic but now standing in front of it all he felt was trepidation. \""
+							}
+						}
+					],
+					"sid": 522985854913879
 				}
 			],
-			"actions": [
-				{
-					"id": "set-at-x",
-					"objectClass": "DialogueArray",
-					"sid": 930016186937319,
-					"parameters": {
-						"x": "0",
-						"value": "\"Welcome Vheran\""
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "DialogueArray",
-					"sid": 672381053006296,
-					"parameters": {
-						"x": "1",
-						"value": "\"This cave is haunted\""
-					}
-				}
-			],
-			"sid": 956262816780417
+			"sid": 564143049789074
 		},
 		{
 			"eventType": "block",
@@ -175,9 +221,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "FenText",
-							"sid": 552728819227516,
+							"sid": 935004620560795,
 							"parameters": {
-								"text": "DialogueArray.At(0)"
+								"text": "\"Finding the cave wasn’t the hard part, entering it was. The entrance of the cave had a large gaping maw.\""
 							}
 						},
 						{
@@ -200,26 +246,194 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 671001173719049,
+							"sid": 113244350231614,
 							"parameters": {
-								"seconds": ".5"
+								"seconds": "5"
 							}
 						},
 						{
 							"id": "set-text",
 							"objectClass": "FenText",
-							"sid": 906850356895686,
+							"sid": 172072686606851,
 							"parameters": {
-								"text": "DialogueArray.At(1)"
+								"text": "\"Vheran could see the rubble from where the rocks fell to show the cave opening. He remembers a cave just like this when he was younger, when he was reckless and foolish.\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 542450979306898,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "FenText",
+							"sid": 256204313123549,
+							"parameters": {
+								"text": "\"Fen: Grr. \r\nFen growled at the entrance, like she could feel the same dark energy he did.\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Fen",
+							"sid": 559744075973084,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 641071736288594,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Fen",
+							"sid": 877549290987843,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "FenText",
+							"sid": 397397399138136,
+							"parameters": {
+								"text": "\"He placed a hand on her side to ground her. Or was it to ground himself? He didn’t want to go in there, but he knew he was the only one who could.\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 881544633724693,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "FenText",
+							"sid": 236446338985913,
+							"parameters": {
+								"text": "\"Nydlean, having sensed the dark magic emanating from the cave, had run back with the other children after quickly convincing the others to return home.\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 955930635484163,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "FenText",
+							"sid": 957232355465134,
+							"parameters": {
+								"text": "\"Vheran had told the clan head that he would check out the cave and deal with the dark magic but now standing in front of it all he felt was trepidation. \""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 496486030120709,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "FenText",
+							"sid": 126228062565319,
+							"parameters": {
+								"text": "\"Flashback: He feels the phantom emotion of his younger self, eager to enter a cave just like this, naïve to the danger within. He feels the phantom touch of a hand on his shoulder, hears a laugh and a jovial call of “Let’s Go!”\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 937024093166786,
+							"parameters": {
+								"seconds": "6"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "FenText",
+							"sid": 144235425710451,
+							"parameters": {
+								"text": "\"Fen: *whine* \nFen whimpers up at him, she scuffs the ground with her paw. He pats her head. \""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Fen",
+							"sid": 491827164018347,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 632609001622149,
+							"parameters": {
+								"seconds": "5"
 							}
 						},
 						{
 							"id": "set-animation",
 							"objectClass": "Vheran",
-							"sid": 341536561245443,
+							"sid": 680940966762296,
 							"parameters": {
-								"animation": "\"Anger\"",
+								"animation": "\"Smile\"",
 								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "FenText",
+							"sid": 813605268094813,
+							"parameters": {
+								"text": "\"Vheran: “I’m fine. We got to clear this place out so we should get started.”\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 261075897639408,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "FenText",
+							"sid": 900507387695349,
+							"parameters": {
+								"text": "\"He begins his descent into the cave. He sends a prayer to the Gods for protection, and a thanks that Nydlean didn’t fight him when he told him to stay behind.\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 402064313080581,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "FenText",
+							"sid": 411871163731267,
+							"parameters": {
+								"text": "\"A cave like this is no place for a child. And he couldn’t leave this to someone else, it was his job to clear and cleanse places like this.\""
 							}
 						}
 					],

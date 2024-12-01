@@ -1206,7 +1206,7 @@
 	"sid": 811268714142041,
 	"nonworld-instances": [
 		{
-			"type": "DialogueArray",
+			"type": "DiaAFL",
 			"properties": {
 				"width": 10,
 				"height": 1,

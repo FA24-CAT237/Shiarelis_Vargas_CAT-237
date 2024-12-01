@@ -657,6 +657,388 @@
 		{
 			"eventType": "group",
 			"disabled": false,
+			"title": "Fen2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 862516808889786
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "FenWolf",
+							"sid": 954500882263417,
+							"parameters": {
+								"x": "dogStarter.X",
+								"y": "dogStarter.Y"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "FenWolf",
+							"sid": 907657927819172,
+							"parameters": {
+								"object": "agroRange",
+								"layer": "3",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "FenWolf",
+							"sid": 877483707057564,
+							"parameters": {
+								"object": "Dog_hitbox",
+								"layer": "3",
+								"image-point": "1",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "dogStarter",
+							"sid": 670918087937989,
+							"disabled": true,
+							"parameters": {
+								"object": "FenWolf",
+								"layer": "3",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 633838213612819
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 610036699213753
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "Dog_hitbox",
+							"sid": 859631875545033,
+							"parameters": {
+								"object": "FenWolf",
+								"image-point-optional": "1"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "agroRange",
+							"sid": 443726273963420,
+							"parameters": {
+								"x": "FenWolf.X",
+								"y": "FenWolf.Y"
+							}
+						}
+					],
+					"sid": 259038345868198
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "FenWolf",
+							"sid": 870212819117281,
+							"parameters": {
+								"instance-variable": "idle"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "FenWolf",
+							"sid": 468033505788685,
+							"parameters": {
+								"instance-variable": "Chase"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "FenWolf",
+							"sid": 385682326996324,
+							"parameters": {
+								"instance-variable": "Attack"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 962969427990270,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 767649456318283
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "dogStarter",
+									"sid": 680858373822233,
+									"parameters": {
+										"x": "VheranPlayer.X+41",
+										"y": "VheranPlayer.Y+61"
+									}
+								},
+								{
+									"id": "move-to-object",
+									"objectClass": "FenWolf",
+									"sid": 888771635727814,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"object": "dogStarter",
+										"image-point": "0",
+										"mode": "direct"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "FenWolf",
+									"sid": 443802644822416,
+									"parameters": {
+										"animation": "\"Walk\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 746614258062496
+						}
+					]
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Chase2",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 982081219128665,
+									"parameters": {
+										"key": 69
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "agroRange",
+									"sid": 373851562822465,
+									"parameters": {
+										"object": "Skeleton"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "FenWolf",
+									"sid": 954693671068897,
+									"parameters": {
+										"instance-variable": "idle",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "FenWolf",
+									"sid": 629984715061079,
+									"parameters": {
+										"instance-variable": "Chase",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "FenWolf",
+									"sid": 326509029063909,
+									"parameters": {
+										"instance-variable": "Attack",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 561718907018334
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "FenWolf",
+									"sid": 965750254465024,
+									"parameters": {
+										"instance-variable": "Chase"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 356985306260396,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "agroRange",
+											"sid": 958863626966528,
+											"parameters": {
+												"object": "Skeleton"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 628494950447612,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "every-tick",
+													"objectClass": "System",
+													"sid": 801250466289927
+												}
+											],
+											"actions": [
+												{
+													"id": "find-path",
+													"objectClass": "FenWolf",
+													"sid": 781434172020857,
+													"behaviorType": "Pathfinding",
+													"parameters": {
+														"x": "Skeleton.X",
+														"y": "Skeleton.Y"
+													}
+												}
+											],
+											"sid": 732634462282493
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-path-found",
+									"objectClass": "FenWolf",
+									"sid": 357795195334295,
+									"behaviorType": "Pathfinding"
+								}
+							],
+							"actions": [],
+							"sid": 889357259770359,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-tick",
+											"objectClass": "System",
+											"sid": 369496612209042
+										}
+									],
+									"actions": [
+										{
+											"id": "move-along-pathfinding-path",
+											"objectClass": "FenWolf",
+											"sid": 638539834135611,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "FenWolf",
+											"sid": 677458072907416,
+											"parameters": {
+												"animation": "\"Run\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 867800308331725
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-failed-to-find-path",
+									"objectClass": "FenWolf",
+									"sid": 514462347133719,
+									"behaviorType": "Pathfinding"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "FenWolf",
+									"sid": 657646531111118,
+									"parameters": {
+										"instance-variable": "idle",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "FenWolf",
+									"sid": 306503664294429,
+									"parameters": {
+										"instance-variable": "Chase",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "FenWolf",
+									"sid": 640105270897596,
+									"parameters": {
+										"instance-variable": "Attack",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 665430363655574
+						}
+					],
+					"sid": 588815141419601
+				}
+			],
+			"sid": 127254817946779
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
 			"title": "Final Boss2",
 			"description": "",
 			"isActiveOnStart": true,
@@ -1511,388 +1893,6 @@
 				}
 			],
 			"sid": 808068803068382
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Fen2",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 946443257931959
-						}
-					],
-					"actions": [
-						{
-							"id": "set-position",
-							"objectClass": "FenWolf",
-							"sid": 896307442066758,
-							"parameters": {
-								"x": "dogStarter.X",
-								"y": "dogStarter.Y"
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "FenWolf",
-							"sid": 600256762996814,
-							"parameters": {
-								"object": "agroRange",
-								"layer": "3",
-								"image-point": "0",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "FenWolf",
-							"sid": 673844835080904,
-							"parameters": {
-								"object": "Dog_hitbox",
-								"layer": "3",
-								"image-point": "1",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "dogStarter",
-							"sid": 694001249682404,
-							"disabled": true,
-							"parameters": {
-								"object": "FenWolf",
-								"layer": "3",
-								"image-point": "0",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						}
-					],
-					"sid": 458377418631121
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 885905282409118
-						}
-					],
-					"actions": [
-						{
-							"id": "set-position-to-another-object",
-							"objectClass": "Dog_hitbox",
-							"sid": 134389279284609,
-							"parameters": {
-								"object": "FenWolf",
-								"image-point-optional": "1"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "agroRange",
-							"sid": 554974995653635,
-							"parameters": {
-								"x": "FenWolf.X",
-								"y": "FenWolf.Y"
-							}
-						}
-					],
-					"sid": 155861427030869
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "FenWolf",
-							"sid": 787704769834133,
-							"parameters": {
-								"instance-variable": "idle"
-							}
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "FenWolf",
-							"sid": 334446869012639,
-							"parameters": {
-								"instance-variable": "Chase"
-							},
-							"isInverted": true
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "FenWolf",
-							"sid": 911484345944369,
-							"parameters": {
-								"instance-variable": "Attack"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [],
-					"sid": 432107170890832,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "every-tick",
-									"objectClass": "System",
-									"sid": 597030506930514
-								}
-							],
-							"actions": [
-								{
-									"id": "set-position",
-									"objectClass": "dogStarter",
-									"sid": 355764452269099,
-									"parameters": {
-										"x": "VheranPlayer.X+41",
-										"y": "VheranPlayer.Y+61"
-									}
-								},
-								{
-									"id": "move-to-object",
-									"objectClass": "FenWolf",
-									"sid": 725926263507797,
-									"behaviorType": "MoveTo",
-									"parameters": {
-										"object": "dogStarter",
-										"image-point": "0",
-										"mode": "direct"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "FenWolf",
-									"sid": 523416867855876,
-									"parameters": {
-										"animation": "\"Walk\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 135623031517938
-						}
-					]
-				},
-				{
-					"eventType": "group",
-					"disabled": false,
-					"title": "Chase2",
-					"description": "",
-					"isActiveOnStart": true,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-key-pressed",
-									"objectClass": "Keyboard",
-									"sid": 871975568918444,
-									"parameters": {
-										"key": 69
-									}
-								},
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "agroRange",
-									"sid": 291569081274289,
-									"parameters": {
-										"object": "Skeleton"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "FenWolf",
-									"sid": 108363100389127,
-									"parameters": {
-										"instance-variable": "idle",
-										"value": "false"
-									}
-								},
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "FenWolf",
-									"sid": 237483437405072,
-									"parameters": {
-										"instance-variable": "Chase",
-										"value": "true"
-									}
-								},
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "FenWolf",
-									"sid": 449526467640290,
-									"parameters": {
-										"instance-variable": "Attack",
-										"value": "false"
-									}
-								}
-							],
-							"sid": 428033499396709
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "FenWolf",
-									"sid": 509369256175713,
-									"parameters": {
-										"instance-variable": "Chase"
-									}
-								}
-							],
-							"actions": [],
-							"sid": 701828488539446,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "is-overlapping-another-object",
-											"objectClass": "agroRange",
-											"sid": 121294309688120,
-											"parameters": {
-												"object": "Skeleton"
-											}
-										}
-									],
-									"actions": [],
-									"sid": 737636354785626,
-									"children": [
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "every-tick",
-													"objectClass": "System",
-													"sid": 307211478811378
-												}
-											],
-											"actions": [
-												{
-													"id": "find-path",
-													"objectClass": "FenWolf",
-													"sid": 320815794301659,
-													"behaviorType": "Pathfinding",
-													"parameters": {
-														"x": "Skeleton.X",
-														"y": "Skeleton.Y"
-													}
-												}
-											],
-											"sid": 872859482751337
-										}
-									]
-								}
-							]
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-path-found",
-									"objectClass": "FenWolf",
-									"sid": 463284758468874,
-									"behaviorType": "Pathfinding"
-								}
-							],
-							"actions": [],
-							"sid": 441401153394365,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "every-tick",
-											"objectClass": "System",
-											"sid": 475714939596277
-										}
-									],
-									"actions": [
-										{
-											"id": "move-along-pathfinding-path",
-											"objectClass": "FenWolf",
-											"sid": 880351163597332,
-											"behaviorType": "MoveTo",
-											"parameters": {
-												"mode": "direct"
-											}
-										},
-										{
-											"id": "set-animation",
-											"objectClass": "FenWolf",
-											"sid": 384307842828599,
-											"parameters": {
-												"animation": "\"Run\"",
-												"from": "beginning"
-											}
-										}
-									],
-									"sid": 364467839558876
-								}
-							]
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-failed-to-find-path",
-									"objectClass": "FenWolf",
-									"sid": 510592853696773,
-									"behaviorType": "Pathfinding"
-								}
-							],
-							"actions": [
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "FenWolf",
-									"sid": 349470915770379,
-									"parameters": {
-										"instance-variable": "idle",
-										"value": "true"
-									}
-								},
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "FenWolf",
-									"sid": 500048490065417,
-									"parameters": {
-										"instance-variable": "Chase",
-										"value": "false"
-									}
-								},
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "FenWolf",
-									"sid": 403348435487331,
-									"parameters": {
-										"instance-variable": "Attack",
-										"value": "false"
-									}
-								}
-							],
-							"sid": 274675024480264
-						}
-					],
-					"sid": 410018016577461
-				}
-			],
-			"sid": 905471884779730
 		}
 	],
 	"sid": 979872625929928
