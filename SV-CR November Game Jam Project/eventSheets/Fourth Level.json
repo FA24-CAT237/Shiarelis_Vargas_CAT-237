@@ -1612,6 +1612,27 @@
 							],
 							"sid": 106208637937857,
 							"disabled": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-destroyed",
+									"objectClass": "EvilSpirit",
+									"sid": 463106899495072
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout-by-name",
+									"objectClass": "System",
+									"sid": 590793549971269,
+									"parameters": {
+										"layout": "\"Camp\""
+									}
+								}
+							],
+							"sid": 702069362144728
 						}
 					]
 				}

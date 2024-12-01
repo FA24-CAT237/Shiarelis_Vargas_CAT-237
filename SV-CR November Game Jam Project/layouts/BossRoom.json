@@ -427,7 +427,7 @@
 					"tags": "",
 					"instanceVariables": {
 						"HitPoint": 10,
-						"Health": 20,
+						"Health": 30,
 						"gotKey": false
 					},
 					"behaviors": {
