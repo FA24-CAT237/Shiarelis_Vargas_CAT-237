@@ -52,7 +52,7 @@
 					}
 				],
 				"sid": 494125048873732,
-				"name": "Animation 1",
+				"name": "Neutral",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -103,7 +103,7 @@
 					}
 				],
 				"sid": 703653609645467,
-				"name": "Animation 2",
+				"name": "Anger",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -154,7 +154,7 @@
 					}
 				],
 				"sid": 408785905312292,
-				"name": "Animation 3",
+				"name": "Sadness",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -203,7 +203,7 @@
 					}
 				],
 				"sid": 821732515153232,
-				"name": "Animation 5",
+				"name": "Smile",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -252,7 +252,7 @@
 					}
 				],
 				"sid": 788586849502591,
-				"name": "Animation 4",
+				"name": "Content",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

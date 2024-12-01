@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Audio",
 			"name": "Audio",
 			"author": "Scirra",
@@ -141,8 +148,10 @@
 			"Mouse",
 			"TiledBackground",
 			"test123",
-			"Webbing",
-			"Audio"
+			"Audio",
+			"Prompt",
+			"DialogueArray",
+			"DialogueTrigger"
 		],
 		"subfolders": [
 			{
@@ -156,7 +165,8 @@
 					"Skeleton2",
 					"Skeleton3",
 					"Skeleton4",
-					"Skeleton5"
+					"Skeleton5",
+					"Webbing"
 				],
 				"subfolders": [],
 				"name": "Enemy"
@@ -258,8 +268,9 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1",
-			"Event sheet 2"
+			"First,Second,Third Levels",
+			"Fourth Level",
+			"Dialogue"
 		],
 		"subfolders": []
 	},

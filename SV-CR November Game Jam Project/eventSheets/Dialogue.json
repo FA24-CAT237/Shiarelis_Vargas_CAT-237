@@ -1,0 +1,314 @@
+{
+	"name": "Dialogue",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "NPC",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 177058675587524
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 737168993840256
+				}
+			],
+			"actions": [
+				{
+					"id": "set-at-x",
+					"objectClass": "DialogueArray",
+					"sid": 930016186937319,
+					"parameters": {
+						"x": "0",
+						"value": "\"Welcome Vheran\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "DialogueArray",
+					"sid": 672381053006296,
+					"parameters": {
+						"x": "1",
+						"value": "\"This cave is haunted\""
+					}
+				}
+			],
+			"sid": 956262816780417
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 769516371905525
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Prompt",
+					"sid": 124724910091157,
+					"parameters": {
+						"x": "VheranPlayer.X"
+					}
+				}
+			],
+			"sid": 590365830759902
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "pick-nearestfurthest",
+					"objectClass": "DialogueTrigger",
+					"sid": 330607537848685,
+					"parameters": {
+						"which": "nearest",
+						"x": "VheranPlayer.X",
+						"y": "VheranPlayer.Y"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 229598599941594,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "VheranPlayer",
+							"sid": 267962565334934,
+							"parameters": {
+								"comparison": 4,
+								"x-co-ordinate": "DialogueTrigger.X-32"
+							}
+						},
+						{
+							"id": "compare-x",
+							"objectClass": "VheranPlayer",
+							"sid": 496264666481935,
+							"parameters": {
+								"comparison": 2,
+								"x-co-ordinate": "DialogueTrigger.X+32"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Prompt",
+							"sid": 290413814222306,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 261248212577382
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 576841705063776
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Prompt",
+							"sid": 145818195839666,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 439433801204978
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 722682831614278,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Prompt",
+					"sid": 931875913659225
+				}
+			],
+			"actions": [],
+			"sid": 518824611310326,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 356683820761792,
+							"parameters": {
+								"variable": "NPC",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "FenText",
+							"sid": 552728819227516,
+							"parameters": {
+								"text": "DialogueArray.At(0)"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Vheran",
+							"sid": 115630992121649,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Vheran",
+							"sid": 658692330842992,
+							"parameters": {
+								"animation": "\"Neutral\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 671001173719049,
+							"parameters": {
+								"seconds": ".5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "FenText",
+							"sid": 906850356895686,
+							"parameters": {
+								"text": "DialogueArray.At(1)"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Vheran",
+							"sid": 341536561245443,
+							"parameters": {
+								"animation": "\"Anger\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 662081078416452
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-nearestfurthest",
+							"objectClass": "FenDialogueBox",
+							"sid": 863000915054137,
+							"parameters": {
+								"which": "nearest",
+								"x": "VheranPlayer.X",
+								"y": "VheranPlayer.Y"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "FenDialogueBox",
+							"sid": 464284079312829,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 389204763717478
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-nearestfurthest",
+							"objectClass": "FenText",
+							"sid": 412342752603657,
+							"parameters": {
+								"which": "nearest",
+								"x": "VheranPlayer.X",
+								"y": "VheranPlayer.Y"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "FenText",
+							"sid": 605128813627263,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 722162191918550
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-visible",
+					"objectClass": "Prompt",
+					"sid": 225128930908220,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "FenDialogueBox",
+					"sid": 284098203413947,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FenText",
+					"sid": 613237271047439,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 269541458553506
+		}
+	],
+	"sid": 167406621157208
+}
