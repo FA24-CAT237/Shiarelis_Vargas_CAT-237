@@ -1,0 +1,58 @@
+{
+	"name": "Event sheet 6",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 618969886806409,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "StartButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 815039361866103,
+					"parameters": {
+						"layout": "\"Cave\""
+					}
+				}
+			],
+			"sid": 795503318152435
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 321319531351139,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ReplayButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 765715805158670,
+					"parameters": {
+						"layout": "\"Start Screen\""
+					}
+				}
+			],
+			"sid": 591827688549661
+		}
+	],
+	"sid": 941303603038040
+}
