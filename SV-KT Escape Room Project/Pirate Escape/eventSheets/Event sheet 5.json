@@ -839,6 +839,14 @@
 						"animation": "\"Piano Cave (Open Door)\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TransitionNextButton",
+					"sid": 545866386827916,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 295425903788947
@@ -1331,6 +1339,86 @@
 				}
 			],
 			"sid": 418224179767895
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 963951591023040,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "TransitionNextButton"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "TransitionNextButton",
+					"sid": 358501874324230
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 202564816177562,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 951915598592500
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 310911403697932,
+					"parameters": {
+						"object": "TransitionNextButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "TransitionNextButton",
+					"sid": 925087899204128,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 967820899913088
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 801640793297226,
+					"parameters": {
+						"object": "TransitionNextButton"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "TransitionNextButton",
+					"sid": 674009418921345,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 792915354140688
 		}
 	],
 	"sid": 240658990189305
